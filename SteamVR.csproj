@@ -182,8 +182,8 @@
     <Compile Include="Assets\SteamVR\Input\SteamVR_Behaviour_Pose.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\ControllerHoverHighlight.cs" />
     <Compile Include="Assets\SteamVR\Input\BehaviourUnityEvents\SteamVR_Behaviour_Pose_TrackingChangedEvent.cs" />
-    <Compile Include="Assets\SteamVR\InteractionSystem\Teleport\Scripts\ChaperoneInfo.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Longbow\Scripts\SoundBowClick.cs" />
+    <Compile Include="Assets\SteamVR\InteractionSystem\Teleport\Scripts\ChaperoneInfo.cs" />
     <Compile Include="Assets\SteamVR\Input\BehaviourUnityEvents\SteamVR_Behaviour_PoseEvent.cs" />
     <Compile Include="Assets\SteamVR\Input\SteamVR_Action_Pose.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Samples\Scripts\ButtonExample.cs" />

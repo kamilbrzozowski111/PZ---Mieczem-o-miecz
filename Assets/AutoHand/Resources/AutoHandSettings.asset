@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bda962a91c41024b9c86bcb7cb57d2f, type: 3}
   m_Name: AutoHandSettings
   m_EditorClassIdentifier: 
-  ignoreSetup: 0
+  ignoreSetup: 1
   usingDynamicTimestep: 1
   useAutomaticControllerOffset: 0
   quality: 2

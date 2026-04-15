@@ -309,7 +309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
   enemyPrefab: {fileID: 1409989940}
   possiblePresets:
-  - {fileID: 11400000, guid: 423ef542bcd419a439fb3774ed35bc4b, type: 2}
+  - {fileID: 11400000, guid: 40aacce41c3bc85439d13b1924720048, type: 2}
   spawnPoints:
   - {fileID: 686139666}
   - {fileID: 1944864993}
@@ -841,7 +841,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!195 &1409989941
 NavMeshAgent:
   m_ObjectHideFlags: 0

@@ -12,10 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60c2738dd3d9d2b448daf98c375fbde7, type: 3}
   m_Name: Test
   m_EditorClassIdentifier: Assembly-CSharp::EnemyPreset
-  enemyName: Test
   moveSpeed: 3.5
-  angularSpeed: 120
-  acceleration: 8
+  isMobileInDuel: 1
+  duelMoveSpeed: 2
+  minArcMovement: -360
+  maxArcMovement: 360
+  energyPoints: 3
   duelRange: 3
-  health: 100
-  gizmoColor: {r: 1, g: 0, b: 0, a: 1}
+  meleeWeapon: {fileID: 0}
+  minAttackPerSequence: 1
+  maxAttackPerSequence: 3
+  minTimeBetweenSequences: 3
+  maxTimeBetweenSequences: 5
+  minTimeBetweenAttacks: 0.7
+  maxTimeBetweenAttacks: 1.2
+  specialBehavior: {fileID: 0}
+  specialProperties: []

@@ -1217,16 +1217,16 @@
       <HintPath>Library\ScriptAssemblies\Unity.Rendering.LightTransport.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.XR.Hands.Analytics.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.Hands.Analytics.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.AI.Navigation">
       <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.XR.Hands.Analytics.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.XR.Hands.Analytics.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
@@ -1277,12 +1277,12 @@
       <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.XR.CoreUtils">
-      <HintPath>Library\ScriptAssemblies\Unity.XR.CoreUtils.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.Burst.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.XR.CoreUtils">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.CoreUtils.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core">
@@ -1361,12 +1361,16 @@
       <HintPath>Library\ScriptAssemblies\Unity.InputSystem.ForUI.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.XR.OpenXR.Features.OculusQuestSupport">
-      <HintPath>Library\ScriptAssemblies\Unity.XR.OpenXR.Features.OculusQuestSupport.dll</HintPath>
+    <Reference Include="Unity.XR.Hands.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.Hands.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.XR.OpenXR.Features.MetaQuestSupport.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.XR.OpenXR.Features.MetaQuestSupport.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.XR.OpenXR.Features.MetaQuestSupport">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.OpenXR.Features.MetaQuestSupport.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
@@ -1383,10 +1387,6 @@
     </Reference>
     <Reference Include="Unity.Mathematics">
       <HintPath>Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.XR.OpenXR.Features.MetaQuestSupport">
-      <HintPath>Library\ScriptAssemblies\Unity.XR.OpenXR.Features.MetaQuestSupport.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
@@ -1409,8 +1409,8 @@
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.XR.Hands.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.XR.Hands.Editor.dll</HintPath>
+    <Reference Include="Unity.XR.OpenXR.Features.OculusQuestSupport">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.OpenXR.Features.OculusQuestSupport.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.004">
@@ -1479,13 +1479,13 @@
       <Project>{699C0F73-DC48-8257-BCDA-29C874C201C0}</Project>
       <Name>NaughtyAttributes.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="SteamVR.csproj">
-      <Project>{359F0B25-4685-B09E-2B55-EC2344C7D6AF}</Project>
-      <Name>SteamVR</Name>
-    </ProjectReference>
     <ProjectReference Include="SteamVR_Editor.csproj">
       <Project>{ABF12464-235D-0A71-058A-E3DD2C27E2E6}</Project>
       <Name>SteamVR_Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR.csproj">
+      <Project>{359F0B25-4685-B09E-2B55-EC2344C7D6AF}</Project>
+      <Name>SteamVR</Name>
     </ProjectReference>
     <ProjectReference Include="SteamVR_Actions.csproj">
       <Project>{43086F7C-0AE1-C8D5-16B4-FE4F7A305089}</Project>

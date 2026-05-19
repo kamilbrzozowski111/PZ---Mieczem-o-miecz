@@ -24,8 +24,10 @@ MonoBehaviour:
   - animatorTriggerName: Pierce
   - animatorTriggerName: Right
   - animatorTriggerName: TopToBottom
-  minAttackPerSequence: 1
-  maxAttackPerSequence: 4
+  - animatorTriggerName: BottomToTop
+  - animatorTriggerName: UpRight
+  minAttackPerSequence: 3
+  maxAttackPerSequence: 6
   minTimeBetweenSequences: 2
   maxTimeBetweenSequences: 4
   minTimeBetweenAttacks: 0.2

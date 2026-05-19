@@ -427,14 +427,14 @@ MonoBehaviour:
     m_KeySerializationHelper:
     - {fileID: 8523439166763257076, guid: 0874492aa3b54f54ca1ca453e142a20f, type: 2}
     m_ValueSerializationHelper:
-    - e00: 0.9831755
+    - e00: 0.85769254
       e01: 0
       e02: 0
-      e03: -615.81665
+      e03: -331.1456
       e10: 0
-      e11: 0.9831755
+      e11: 0.85769254
       e12: 0
-      e13: 325.1607
+      e13: 252.12054
       e20: 0
       e21: 0
       e22: 1
@@ -1655,22 +1655,10 @@ MonoBehaviour:
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -179936
-      - m_Data: -179926
-      - m_Data: -107118
-      - m_Data: -107114
-      - m_Data: -107104
-      - m_Data: -103814
-      - m_Data: -103804
-      - m_Data: -29882
-      - m_Data: -29152
-      - m_Data: -27794
-      - m_Data: -25678
-      - m_Data: -24704
-      - m_Data: -23750
-      - m_Data: -1304
-      - m_Data: 77860
-      - m_Data: 77878
+      - m_Data: -1370
+      - m_Data: 51404
+      - m_Data: 51424
+      - m_Data: 51440
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2249,9 +2237,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 53.064095, y: -9.223763, z: 4.6552963}
+    m_Target: {x: -84.84136, y: -46.42313, z: 64.51402}
     speed: 2
-    m_Value: {x: 53.064095, y: -9.223763, z: 4.6552963}
+    m_Value: {x: -84.84136, y: -46.42313, z: 64.51402}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -2297,13 +2285,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.13923429, y: 0.68754154, z: -0.13732189, w: 0.69942975}
+    m_Target: {x: -0.18495391, y: 0.40398315, z: -0.0834126, w: -0.8919812}
     speed: 2
-    m_Value: {x: 0.13922323, y: 0.68748695, z: -0.13731098, w: 0.6993742}
+    m_Value: {x: -0.18482874, y: 0.405321, z: -0.08369001, w: -0.89137495}
   m_Size:
-    m_Target: 23.625553
+    m_Target: 61.273956
     speed: 2
-    m_Value: 24.7388
+    m_Value: 61.273956
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -2386,7 +2374,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/EnemyPresets
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -2396,26 +2384,23 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/EnemyPresets
   m_LastFoldersGridSize: 16
   m_LastProjectPath: D:\Unity projekty\VR_MoM
   m_LockTracker:
     m_IsLocked: 0
   m_LastLocalAssetsSearchArea: 1
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 244}
+    scrollPos: {x: 0, y: 79}
     m_SelectedIDs:
-    - m_Data: 80164
+    - m_Data: 51728
     m_LastClickedID:
-      m_Data: 80164
+      m_Data: 51728
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 77184
-    - m_Data: 77186
-    - m_Data: 77392
-    - m_Data: 77398
-    - m_Data: 77434
-    - m_Data: 77436
+    - m_Data: 51554
+    - m_Data: 51556
+    - m_Data: 51728
     - m_Data: 1000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -2450,8 +2435,8 @@ MonoBehaviour:
       m_Data: 67964
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 77184
-    - m_Data: 77186
+    - m_Data: 51554
+    - m_Data: 51556
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2486,8 +2471,8 @@ MonoBehaviour:
     - m_Data: 100358
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: EnemyAnimations
-      m_OriginalName: EnemyAnimations
+      m_Name: Prefabs
+      m_OriginalName: Prefabs
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
@@ -2495,7 +2480,7 @@ MonoBehaviour:
         width: 0
         height: 0
       m_UserData:
-        m_Data: 78490
+        m_Data: 51740
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0

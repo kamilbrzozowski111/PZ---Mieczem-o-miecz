@@ -36,9 +36,9 @@ public class EnemyAI : MonoBehaviour
 
         if (playerTransform == null)
         {
-            GameObject player = GameObject.FindGameObjectWithTag("FakePlayer");
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
             if (player != null) playerTransform = player.transform;
-            else Debug.LogError($"[{gameObject.name}] couldn't find 'FakePlayer'!");
+            else Debug.LogError($"[{gameObject.name}] couldn't find 'Player'!");
         }
 
         _agent.speed = activePreset.moveSpeed;

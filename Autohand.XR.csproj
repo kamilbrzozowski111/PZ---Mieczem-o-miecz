@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{4AB6BB60-1003-F642-1246-084AC2B7CD4F}</ProjectGuid>
+    <ProjectGuid>{F61C8B8D-3CC0-DBC6-FA1B-A65286ED8BF7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Autohand.XR</AssemblyName>
@@ -1171,7 +1171,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="AutoHandAssembly.csproj">
-      <Project>{31FEADAA-139E-D6E9-7830-AC566CD0418A}</Project>
+      <Project>{E5E0DFC4-02A4-DFE4-9441-61773726B30E}</Project>
       <Name>AutoHandAssembly</Name>
     </ProjectReference>
   </ItemGroup>

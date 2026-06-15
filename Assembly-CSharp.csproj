@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{81FEABC4-BFC8-F381-57D5-D9622634AC0E}</ProjectGuid>
+    <ProjectGuid>{0E9A638D-D346-CCB8-8E76-040F8BB631B7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\FakePlayer.cs" />
     <Compile Include="Assets\Scripts\EnemyAI.cs" />
     <Compile Include="Assets\Scripts\EnemyPreset.cs" />
+    <Compile Include="Assets\Scripts v2\EnemyPool.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\EnemySpawner.cs" />
     <Compile Include="Assets\AutoHand\Examples\Scenes\Desktop\HandDesktopControllerLink.cs" />
@@ -1439,56 +1440,48 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="NaughtyAttributes.Editor.csproj">
-      <Project>{699C0F73-DC48-8257-BCDA-29C874C201C0}</Project>
+      <Project>{D60844FA-126D-5532-F3F7-352EF528893F}</Project>
       <Name>NaughtyAttributes.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="SteamVR_Editor.csproj">
-      <Project>{ABF12464-235D-0A71-058A-E3DD2C27E2E6}</Project>
+      <Project>{084262A6-803C-3AF4-6138-B483924A20EF}</Project>
       <Name>SteamVR_Editor</Name>
     </ProjectReference>
     <ProjectReference Include="SteamVR.csproj">
-      <Project>{359F0B25-4685-B09E-2B55-EC2344C7D6AF}</Project>
+      <Project>{3BEB993F-0F1D-5BE7-531E-D68323DB0DCC}</Project>
       <Name>SteamVR</Name>
     </ProjectReference>
     <ProjectReference Include="SteamVR_Actions.csproj">
-      <Project>{43086F7C-0AE1-C8D5-16B4-FE4F7A305089}</Project>
+      <Project>{6A2D953F-6495-8A92-AC9F-A7BBA5ED9A3A}</Project>
       <Name>SteamVR_Actions</Name>
     </ProjectReference>
     <ProjectReference Include="AutoHandAssembly.csproj">
-      <Project>{31FEADAA-139E-D6E9-7830-AC566CD0418A}</Project>
+      <Project>{E5E0DFC4-02A4-DFE4-9441-61773726B30E}</Project>
       <Name>AutoHandAssembly</Name>
     </ProjectReference>
     <ProjectReference Include="Autohand.XR.Editor.csproj">
-      <Project>{29A6F6A2-6CDB-B17C-1F68-9822E8312FAB}</Project>
+      <Project>{912302C6-6D6C-AB24-D3FD-136CE81E3E18}</Project>
       <Name>Autohand.XR.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Autohand.XR.csproj">
-      <Project>{4AB6BB60-1003-F642-1246-084AC2B7CD4F}</Project>
+      <Project>{F61C8B8D-3CC0-DBC6-FA1B-A65286ED8BF7}</Project>
       <Name>Autohand.XR</Name>
     </ProjectReference>
     <ProjectReference Include="Autohand.Editor.csproj">
-      <Project>{599A80A7-BB7E-3460-9765-7F523C5ADD49}</Project>
+      <Project>{E9D0ADBB-6190-9B02-4C93-B91E8ABBFFE2}</Project>
       <Name>Autohand.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="SteamVR_Input_Editor.csproj">
-      <Project>{728D6617-D48F-4880-AE5A-0E27663FF702}</Project>
+      <Project>{D0092DD6-0FB9-FECD-D281-702C34DFC32D}</Project>
       <Name>SteamVR_Input_Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Autohand.OpenXR.Editor.csproj">
-      <Project>{C866833E-B205-1B23-E897-05EF01CF757A}</Project>
-      <Name>Autohand.OpenXR.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="NaughtyAttributes.Core.csproj">
-      <Project>{E622096F-900D-FC18-DA87-2FA8899773C7}</Project>
+      <Project>{C8BB4291-AFD3-E784-ABCC-B065C99FD676}</Project>
       <Name>NaughtyAttributes.Core</Name>
     </ProjectReference>
     <ProjectReference Include="SteamVR_Windows_EditorHelper.csproj">
-      <Project>{B830DE09-9FE6-CC5D-98EE-DDF7DEC76CBA}</Project>
+      <Project>{CA9AC598-A11A-5C88-17EE-FF6C306E8ED3}</Project>
       <Name>SteamVR_Windows_EditorHelper</Name>
-    </ProjectReference>
-    <ProjectReference Include="Autohand.OpenXR.csproj">
-      <Project>{F66064E7-A697-FA78-8478-745ACF3020AF}</Project>
-      <Name>Autohand.OpenXR</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -17,7 +17,7 @@ public class EnemySpawner : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!_hasSpawned && other.CompareTag("FakePlayer"))
+        if (!_hasSpawned && other.CompareTag("Player"))
         {
             SpawnEnemy();
             _hasSpawned = true;

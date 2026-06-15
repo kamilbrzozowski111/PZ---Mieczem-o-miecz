@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>Autohand</RootNamespace>
-    <ProjectGuid>{31FEADAA-139E-D6E9-7830-AC566CD0418A}</ProjectGuid>
+    <ProjectGuid>{E5E0DFC4-02A4-DFE4-9441-61773726B30E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>AutoHandAssembly</AssemblyName>
@@ -1320,11 +1320,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="NaughtyAttributes.Core.csproj">
-      <Project>{E622096F-900D-FC18-DA87-2FA8899773C7}</Project>
+      <Project>{C8BB4291-AFD3-E784-ABCC-B065C99FD676}</Project>
       <Name>NaughtyAttributes.Core</Name>
     </ProjectReference>
     <ProjectReference Include="NaughtyAttributes.Editor.csproj">
-      <Project>{699C0F73-DC48-8257-BCDA-29C874C201C0}</Project>
+      <Project>{D60844FA-126D-5532-F3F7-352EF528893F}</Project>
       <Name>NaughtyAttributes.Editor</Name>
     </ProjectReference>
   </ItemGroup>

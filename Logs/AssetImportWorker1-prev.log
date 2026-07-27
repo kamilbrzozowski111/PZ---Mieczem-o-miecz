@@ -1,27 +1,27 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.3/staging' branch; Version is '6000.3.11f1 (3000ef702840) revision 3145967'; Using compiler version '194234433'; Build Type 'Release'
-OS: 'Windows 11  (10.0.26200) Core' Language: 'en' Physical Memory: 32581 MB
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-sssre" at "2026-06-14T20:29:05.4317003Z"
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'pl' Physical Memory: 16322 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-06-14T20:29:05Z
+Date: 2026-07-27T19:44:47Z
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-kamil546" at "2026-07-27T19:44:47.3154749Z"
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\6000.3.11f1\Editor\Unity.exe
+D:\PROGRAMY\UH\editor\6000.3.11f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker1
 -projectPath
-G:/Unity/PZ---Mieczem-o-miecz-game-develop
+D:/PROJEKTY/UNITY3D/mom/PZ---Mieczem-o-miecz
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-59149
+54885
 -licensingIpc
-LicenseClient-sssre
+LicenseClient-kamil546
 -job-worker-count
 5
 -background-job-worker-count
@@ -30,8 +30,8 @@ LicenseClient-sssre
 1
 -name
 AssetImport
-Successfully changed project path to: G:/Unity/PZ---Mieczem-o-miecz-game-develop
-G:/Unity/PZ---Mieczem-o-miecz-game-develop
+Successfully changed project path to: D:/PROJEKTY/UNITY3D/mom/PZ---Mieczem-o-miecz
+D:/PROJEKTY/UNITY3D/mom/PZ---Mieczem-o-miecz
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
     "memorysetup-temp-allocator-size-audio-worker=65536"
@@ -67,12 +67,16 @@ G:/Unity/PZ---Mieczem-o-miecz-game-develop
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [22736]  Target information:
+Player connection [16684]  Target information:
 
-Player connection [22736]  * "[IP] 192.168.100.159 [Port] 0 [Flags] 2 [Guid] 1747332543 [EditorId] 1747332543 [Version] 1048832 [Id] WindowsEditor(7,Kamil) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [16684]  * "[IP] 192.168.1.143 [Port] 0 [Flags] 2 [Guid] 2092253895 [EditorId] 2092253895 [Version] 1048832 [Id] WindowsEditor(7,kamil546_main) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [22736] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [22736] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [16684]  * "[IP] 192.168.124.1 [Port] 0 [Flags] 2 [Guid] 2092253895 [EditorId] 2092253895 [Version] 1048832 [Id] WindowsEditor(7,kamil546_main) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [16684]  * "[IP] 192.168.211.1 [Port] 0 [Flags] 2 [Guid] 2092253895 [EditorId] 2092253895 [Version] 1048832 [Id] WindowsEditor(7,kamil546_main) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [16684] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [16684] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -84,81 +88,96 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 18.88 ms, found 10 plugins.
+Refreshing native plugins compatible for Editor in 391.34 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.11f1 (3000ef702840)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.11f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path G:/Unity/PZ---Mieczem-o-miecz-game-develop/Assets
+[Subsystems] Discovering subsystems at path D:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/PROJEKTY/UNITY3D/mom/PZ---Mieczem-o-miecz/Assets
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 4060 (ID=0x2882)
-    Vendor:   NVIDIA
-    VRAM:     7956 MB
-    Driver:   32.0.15.9649
+    Renderer: AMD Radeon R9 200 Series (ID=0x679a)
+    Vendor:   ATI
+    VRAM:     3051 MB
+    Driver:   27.20.20913.2000
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.11f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56404
+Mono path[0] = 'D:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/Managed'
+Mono path[1] = 'D:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56692
 Begin MonoManager ReloadAssembly
-Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002031 seconds.
-- Loaded All Assemblies, in  0.455 seconds
 [Licensing::Client] Error: HandshakeResponse reported an error:
 	ResponseCode: 505
 	ResponseStatus: Unsupported protocol version '1.18.0'.
-[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-sssre"
-[Licensing::IpcConnector] LicenseClient-sssre channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-sssre-6000.3.11" at "2026-06-14T20:29:06.4567877Z"
-Native extension for WindowsStandalone target not found
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-kamil546"
+[Licensing::IpcConnector] LicenseClient-kamil546 channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-kamil546-6000.3.11" at "2026-07-27T19:44:53.5655821Z"
+Registering precompiled unity dll's ...
+Register platform support module: D:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+[Licensing::Module] Licensing is not yet initialized.
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.18.0+23225a6
-  Session Id:              e1b4af3ae9444edbb9102c4a46527d1d
-  Correlation Id:          b29de235ec8ca11322b6182d701a75e6
-  External correlation Id: 5604179918598959034
-  Machine Id:              Ll6uc3O14TNzdX4m+Ve18DKV63o=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-sssre-6000.3.11" (connect: 0.00s, validation: 0.00s, handshake: 0.12s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-sssre-6000.3.11-notifications" at "2026-06-14T20:29:06.5767529Z"
-[Licensing::Module] Licensing Background thread has ended after 1.15s
+  Session Id:              4f564c76d4464edd8cb0a5677dbe36cf
+  Correlation Id:          765219c7f3c7b94a2dfc69e061062825
+  External correlation Id: 861893624321618741
+  Machine Id:              blq3SyQP2YCluHmOrvbO5USdb0w=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-kamil546-6000.3.11" (connect: 0.16s, validation: 0.31s, handshake: 2.94s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-kamil546-6000.3.11-notifications" at "2026-07-27T19:44:56.8932117Z"
+[Licensing::Module] Licensing Background thread has ended after 9.82s
+[Licensing::Module] Licensing is initialized (took 0.61s).
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 7972536305137-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+Register platform support module: D:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+[Licensing::Client] Successfully resolved entitlement details
+Register platform support module: D:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Registered in 0.758034 seconds.
+- Loaded All Assemblies, in  5.583 seconds
+Native extension for Android target not found
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.410 seconds
-Domain Reload Profiling: 861ms
-	BeginReloadAssembly (151ms)
+- Finished resetting the current domain, in  0.918 seconds
+Domain Reload Profiling: 6502ms
+	BeginReloadAssembly (3467ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (41ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (57ms)
-	LoadAllAssembliesAndSetupDomain (191ms)
-		LoadAssemblies (146ms)
+		CreateAndSetChildDomain (8ms)
+	RebuildCommonClasses (285ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (1012ms)
+	LoadAllAssembliesAndSetupDomain (799ms)
+		LoadAssemblies (3492ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (188ms)
-			TypeCache.Refresh (186ms)
-				TypeCache.ScanAssembly (169ms)
+		AnalyzeDomain (732ms)
+			TypeCache.Refresh (730ms)
+				TypeCache.ScanAssembly (697ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (411ms)
+	FinalizeReload (919ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (361ms)
+		SetupLoadedEditorAssemblies (804ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (49ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (87ms)
-			ProcessInitializeOnLoadAttributes (140ms)
-			ProcessInitializeOnLoadMethodAttributes (80ms)
+			InitializePlatformSupportModulesInManaged (259ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (113ms)
+			ProcessInitializeOnLoadAttributes (172ms)
+			ProcessInitializeOnLoadMethodAttributes (255ms)
 			AfterProcessingInitializeOnLoad (0ms)
-			EditorAssembliesLoaded (0ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
 ========================================================================
@@ -166,14 +185,12 @@ Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
 [Licensing::Client] Successfully resolved entitlement details
-[Licensing::Module] License group:
-  Id: 20067565519666-UnityPersXXXX
-  Product: Unity Personal
-  Type: Assigned
-  Expiration: Unlimited
-- Loaded All Assemblies, in  0.834 seconds
-Refreshing native plugins compatible for Editor in 7.75 ms, found 10 plugins.
+- Loaded All Assemblies, in  5.009 seconds
+Refreshing native plugins compatible for Editor in 37.20 ms, found 11 plugins.
+Native extension for Android target not found
+Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
@@ -209,565 +226,1160 @@ Mono: successfully reloaded assembly
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.108 seconds
-Domain Reload Profiling: 1939ms
-	BeginReloadAssembly (187ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (23ms)
-	RebuildCommonClasses (40ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (39ms)
-	LoadAllAssembliesAndSetupDomain (550ms)
-		LoadAssemblies (360ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (296ms)
-			TypeCache.Refresh (203ms)
-				TypeCache.ScanAssembly (186ms)
-			BuildScriptInfoCaches (71ms)
-			ResolveRequiredComponents (16ms)
-	FinalizeReload (1109ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (897ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (151ms)
-			ProcessInitializeOnLoadAttributes (366ms)
-			ProcessInitializeOnLoadMethodAttributes (365ms)
-			AfterProcessingInitializeOnLoad (6ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 6.25 ms, found 10 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7306 unused Assets / (5.6 MB). Loaded Objects now: 8135.
-Memory consumption went from 196.5 MB to 190.8 MB.
-Total: 8.959300 ms (FindLiveObjects: 0.508600 ms CreateObjectMapping: 0.564800 ms MarkObjects: 5.017300 ms  DeleteObjects: 2.867800 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 29742.417938 seconds.
-  path: Assets/Scripts/EnemyPreset.cs
-  artifactKey: Guid(60c2738dd3d9d2b448daf98c375fbde7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/EnemyPreset.cs using Guid(60c2738dd3d9d2b448daf98c375fbde7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c95579dd88ae59afcd5d87938b2ba638') in 0.0046806 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-[Licensing::Client] Successfully resolved entitlement details
-- Loaded All Assemblies, in  0.795 seconds
-Refreshing native plugins compatible for Editor in 6.75 ms, found 10 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[MODES] ModeService[none].Initialize
-[MODES] ModeService[none].LoadModes
-Found 0 scene poses
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-Autohand.AutoHandUpdateDataWizard:FindScenePoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:244)
-Autohand.AutoHandUpdateDataWizard:CheckSceneForOldPoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:54)
-System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
-System.Reflection.MethodBase:Invoke (object,object[])
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-(Filename: Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs Line: 244)
-
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.165 seconds
-Domain Reload Profiling: 1960ms
-	BeginReloadAssembly (235ms)
+- Finished resetting the current domain, in  3.342 seconds
+Domain Reload Profiling: 8348ms
+	BeginReloadAssembly (1943ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (8ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (51ms)
-	RebuildCommonClasses (40ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (31ms)
-	LoadAllAssembliesAndSetupDomain (476ms)
-		LoadAssemblies (351ms)
+		CreateAndSetChildDomain (41ms)
+	RebuildCommonClasses (72ms)
+	RebuildNativeTypeToScriptingClass (25ms)
+	initialDomainReloadingComplete (61ms)
+	LoadAllAssembliesAndSetupDomain (2905ms)
+		LoadAssemblies (3786ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (225ms)
-			TypeCache.Refresh (6ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (197ms)
-			ResolveRequiredComponents (15ms)
-	FinalizeReload (1165ms)
+		AnalyzeDomain (953ms)
+			TypeCache.Refresh (678ms)
+				TypeCache.ScanAssembly (643ms)
+			BuildScriptInfoCaches (241ms)
+			ResolveRequiredComponents (27ms)
+	FinalizeReload (3343ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (957ms)
+		SetupLoadedEditorAssemblies (2686ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (153ms)
-			ProcessInitializeOnLoadAttributes (432ms)
-			ProcessInitializeOnLoadMethodAttributes (358ms)
-			AfterProcessingInitializeOnLoad (6ms)
+			InitializePlatformSupportModulesInManaged (80ms)
+			SetLoadedEditorAssemblies (11ms)
+			BeforeProcessingInitializeOnLoad (300ms)
+			ProcessInitializeOnLoadAttributes (924ms)
+			ProcessInitializeOnLoadMethodAttributes (1367ms)
+			AfterProcessingInitializeOnLoad (4ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (25ms)
-Refreshing native plugins compatible for Editor in 7.91 ms, found 10 plugins.
+		AwakeInstancesAfterBackupRestoration (11ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.31 seconds
+Refreshing native plugins compatible for Editor in 41.29 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7302 unused Assets / (5.0 MB). Loaded Objects now: 8153.
-Memory consumption went from 205.5 MB to 200.5 MB.
-Total: 9.955500 ms (FindLiveObjects: 0.591000 ms CreateObjectMapping: 0.618600 ms MarkObjects: 6.097500 ms  DeleteObjects: 2.646900 ms)
+Unloading 7320 unused Assets / (5.0 MB). Loaded Objects now: 8220.
+Memory consumption went from 199.7 MB to 194.7 MB.
+Total: 29.998300 ms (FindLiveObjects: 2.045100 ms CreateObjectMapping: 2.204100 ms MarkObjects: 21.420000 ms  DeleteObjects: 4.327300 ms)
 
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-[Licensing::Client] Successfully resolved entitlement details
-- Loaded All Assemblies, in  0.781 seconds
-Refreshing native plugins compatible for Editor in 7.04 ms, found 10 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[MODES] ModeService[none].Initialize
-[MODES] ModeService[none].LoadModes
-Found 0 scene poses
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-Autohand.AutoHandUpdateDataWizard:FindScenePoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:244)
-Autohand.AutoHandUpdateDataWizard:CheckSceneForOldPoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:54)
-System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
-System.Reflection.MethodBase:Invoke (object,object[])
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-(Filename: Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs Line: 244)
-
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.122 seconds
-Domain Reload Profiling: 1903ms
-	BeginReloadAssembly (230ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (52ms)
-	RebuildCommonClasses (41ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (33ms)
-	LoadAllAssembliesAndSetupDomain (465ms)
-		LoadAssemblies (335ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (228ms)
-			TypeCache.Refresh (7ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (205ms)
-			ResolveRequiredComponents (12ms)
-	FinalizeReload (1122ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (911ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (149ms)
-			ProcessInitializeOnLoadAttributes (417ms)
-			ProcessInitializeOnLoadMethodAttributes (328ms)
-			AfterProcessingInitializeOnLoad (8ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (25ms)
-Refreshing native plugins compatible for Editor in 6.07 ms, found 10 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7302 unused Assets / (4.3 MB). Loaded Objects now: 8156.
-Memory consumption went from 217.7 MB to 213.4 MB.
-Total: 7.945900 ms (FindLiveObjects: 0.568500 ms CreateObjectMapping: 0.561600 ms MarkObjects: 4.969700 ms  DeleteObjects: 1.844500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 7.35 ms, found 10 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7262 unused Assets / (5.0 MB). Loaded Objects now: 8145.
-Memory consumption went from 217.5 MB to 212.5 MB.
-Total: 9.839200 ms (FindLiveObjects: 0.624900 ms CreateObjectMapping: 0.685300 ms MarkObjects: 5.549000 ms  DeleteObjects: 2.979100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-[Licensing::Client] Successfully resolved entitlement details
-- Loaded All Assemblies, in  0.813 seconds
-Refreshing native plugins compatible for Editor in 8.08 ms, found 10 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[MODES] ModeService[none].Initialize
-[MODES] ModeService[none].LoadModes
-Found 0 scene poses
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-Autohand.AutoHandUpdateDataWizard:FindScenePoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:244)
-Autohand.AutoHandUpdateDataWizard:CheckSceneForOldPoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:54)
-System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
-System.Reflection.MethodBase:Invoke (object,object[])
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-(Filename: Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs Line: 244)
-
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.166 seconds
-Domain Reload Profiling: 1978ms
-	BeginReloadAssembly (245ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (54ms)
-	RebuildCommonClasses (47ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (29ms)
-	LoadAllAssembliesAndSetupDomain (479ms)
-		LoadAssemblies (357ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (233ms)
-			TypeCache.Refresh (10ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (202ms)
-			ResolveRequiredComponents (15ms)
-	FinalizeReload (1166ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (961ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (7ms)
-			BeforeProcessingInitializeOnLoad (154ms)
-			ProcessInitializeOnLoadAttributes (445ms)
-			ProcessInitializeOnLoadMethodAttributes (347ms)
-			AfterProcessingInitializeOnLoad (7ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (25ms)
-Refreshing native plugins compatible for Editor in 8.19 ms, found 10 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7303 unused Assets / (4.6 MB). Loaded Objects now: 8160.
-Memory consumption went from 217.8 MB to 213.1 MB.
-Total: 9.979800 ms (FindLiveObjects: 0.594800 ms CreateObjectMapping: 0.563400 ms MarkObjects: 5.944300 ms  DeleteObjects: 2.875600 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 1575.798695 seconds.
-  path: Assets/Scripts v2/EnemyPool.cs
-  artifactKey: Guid(580f928e653255f4cb6f520c6ff03b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts v2/EnemyPool.cs using Guid(580f928e653255f4cb6f520c6ff03b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0319141 seconds
-Import Error Code:(4)
-Message: Build asset version error: assets/scripts v2/enemypool.cs in SourceAssetDB has modification time of '2026-06-14T20:55:10.5109594Z' while content on disk has modification time of '2026-06-14T20:55:18.2832487Z'
-  ERROR: Build asset version error: assets/scripts v2/enemypool.cs in SourceAssetDB has modification time of '2026-06-14T20:55:10.5109594Z' while content on disk has modification time of '2026-06-14T20:55:18.2832487Z'
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 851985.879197 seconds.
+  path: Assets/Models/final_scene/textures/Metal025/Metal025_2K-PNG_Displacement.png
+  artifactKey: Guid(f6fbc987580e5054a8c65b7a2148cfa6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/Metal025/Metal025_2K-PNG_Displacement.png using Guid(f6fbc987580e5054a8c65b7a2148cfa6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fe6fdd49d655f2e5fa29ab75a7d642e8') in 0.3843806 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.904 seconds
-Refreshing native plugins compatible for Editor in 5.17 ms, found 10 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[MODES] ModeService[none].Initialize
-[MODES] ModeService[none].LoadModes
-Found 0 scene poses
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-Autohand.AutoHandUpdateDataWizard:FindScenePoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:244)
-Autohand.AutoHandUpdateDataWizard:CheckSceneForOldPoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:54)
-System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
-System.Reflection.MethodBase:Invoke (object,object[])
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-(Filename: Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs Line: 244)
-
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.124 seconds
-Domain Reload Profiling: 2029ms
-	BeginReloadAssembly (261ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (61ms)
-	RebuildCommonClasses (44ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (35ms)
-	LoadAllAssembliesAndSetupDomain (550ms)
-		LoadAssemblies (387ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (282ms)
-			TypeCache.Refresh (13ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (251ms)
-			ResolveRequiredComponents (13ms)
-	FinalizeReload (1125ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (925ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (144ms)
-			ProcessInitializeOnLoadAttributes (431ms)
-			ProcessInitializeOnLoadMethodAttributes (334ms)
-			AfterProcessingInitializeOnLoad (9ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (24ms)
-Refreshing native plugins compatible for Editor in 7.84 ms, found 10 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7303 unused Assets / (4.4 MB). Loaded Objects now: 8163.
-Memory consumption went from 217.8 MB to 213.5 MB.
-Total: 10.742700 ms (FindLiveObjects: 0.583200 ms CreateObjectMapping: 0.687600 ms MarkObjects: 6.359100 ms  DeleteObjects: 3.111600 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 15.036928 seconds.
-  path: Assets/Scripts v2/EnemyPool.cs
-  artifactKey: Guid(580f928e653255f4cb6f520c6ff03b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts v2/EnemyPool.cs using Guid(580f928e653255f4cb6f520c6ff03b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a687b9646dbd9717983c0d7f7671bf0c') in 0.0087936 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 0.000044 seconds.
+  path: Assets/Models/final_scene/textures/forest_leaves_04
+  artifactKey: Guid(de0f2a4d1d10d854abbc22a924f9b224) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/forest_leaves_04 using Guid(de0f2a4d1d10d854abbc22a924f9b224) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dd09faada922a3520b9959f78f3c2f02') in 0.0278078 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 9.43 ms, found 10 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7263 unused Assets / (4.5 MB). Loaded Objects now: 8152.
-Memory consumption went from 217.6 MB to 213.1 MB.
-Total: 9.073100 ms (FindLiveObjects: 0.606000 ms CreateObjectMapping: 0.749600 ms MarkObjects: 5.465400 ms  DeleteObjects: 2.250800 ms)
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Models/final_scene/textures/glass_frosted/frozen_glass_43_98_diffuse.jpg
+  artifactKey: Guid(9e5c2dd59f85ff248a1b7394d5573637) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/glass_frosted/frozen_glass_43_98_diffuse.jpg using Guid(9e5c2dd59f85ff248a1b7394d5573637) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b9eeb4c6f3ac13105a228e5b16ddd2bb') in 0.1298244 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.970 seconds
-Refreshing native plugins compatible for Editor in 7.44 ms, found 10 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[MODES] ModeService[none].Initialize
-[MODES] ModeService[none].LoadModes
-Found 0 scene poses
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-Autohand.AutoHandUpdateDataWizard:FindScenePoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:244)
-Autohand.AutoHandUpdateDataWizard:CheckSceneForOldPoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:54)
-System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
-System.Reflection.MethodBase:Invoke (object,object[])
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/final_scene/textures/dark_wooden_planks/dark_wooden_planks_nor_dx_2k.exr
+  artifactKey: Guid(ecd2972e0271def49a717a7ce84f7c4d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/dark_wooden_planks/dark_wooden_planks_nor_dx_2k.exr using Guid(ecd2972e0271def49a717a7ce84f7c4d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '02ff838179cad0209db606c222d44ce8') in 0.0925234 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
-(Filename: Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs Line: 244)
-
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.372 seconds
-Domain Reload Profiling: 2344ms
-	BeginReloadAssembly (247ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (54ms)
-	RebuildCommonClasses (50ms)
-	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (36ms)
-	LoadAllAssembliesAndSetupDomain (621ms)
-		LoadAssemblies (435ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (302ms)
-			TypeCache.Refresh (13ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (268ms)
-			ResolveRequiredComponents (15ms)
-	FinalizeReload (1373ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1112ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (8ms)
-			BeforeProcessingInitializeOnLoad (158ms)
-			ProcessInitializeOnLoadAttributes (504ms)
-			ProcessInitializeOnLoadMethodAttributes (432ms)
-			AfterProcessingInitializeOnLoad (7ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (28ms)
-Refreshing native plugins compatible for Editor in 9.99 ms, found 10 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7304 unused Assets / (5.1 MB). Loaded Objects now: 8167.
-Memory consumption went from 217.9 MB to 212.8 MB.
-Total: 11.279400 ms (FindLiveObjects: 0.595000 ms CreateObjectMapping: 0.481100 ms MarkObjects: 7.091300 ms  DeleteObjects: 3.110900 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 9.55 ms, found 10 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7263 unused Assets / (3.4 MB). Loaded Objects now: 8155.
-Memory consumption went from 217.7 MB to 214.3 MB.
-Total: 11.292900 ms (FindLiveObjects: 0.580300 ms CreateObjectMapping: 0.818300 ms MarkObjects: 6.990700 ms  DeleteObjects: 2.902200 ms)
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/drzwi_wewnetrzne/export
+  artifactKey: Guid(abb2cf49c6cc69a4d86dfd39a3b8524c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/drzwi_wewnetrzne/export using Guid(abb2cf49c6cc69a4d86dfd39a3b8524c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '42f732fdae2d9b517f983b3dbca25f1e') in 0.0186915 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 6.04 ms, found 10 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7262 unused Assets / (4.6 MB). Loaded Objects now: 8154.
-Memory consumption went from 217.6 MB to 213.1 MB.
-Total: 9.345500 ms (FindLiveObjects: 0.568200 ms CreateObjectMapping: 0.638200 ms MarkObjects: 5.918100 ms  DeleteObjects: 2.219500 ms)
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Models/final_scene/textures/dull-brass-bl/dull-brass_preview.jpg
+  artifactKey: Guid(cb764e77b2e678a429d074b5e76a82cf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/dull-brass-bl/dull-brass_preview.jpg using Guid(cb764e77b2e678a429d074b5e76a82cf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7b8f53d4a68bd35d8dce8bb6b8c3acad') in 0.0760242 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-[Licensing::Client] Successfully resolved entitlement details
-- Loaded All Assemblies, in  0.861 seconds
-Refreshing native plugins compatible for Editor in 6.95 ms, found 10 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[MODES] ModeService[none].Initialize
-[MODES] ModeService[none].LoadModes
-Found 0 scene poses
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-Autohand.AutoHandUpdateDataWizard:FindScenePoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:244)
-Autohand.AutoHandUpdateDataWizard:CheckSceneForOldPoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:54)
-System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
-System.Reflection.MethodBase:Invoke (object,object[])
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/final_scene/textures/dirty_old_wood7152/dirty_old_wood_71_52_height.tif
+  artifactKey: Guid(85470ad83e2df754bbcce89e2aa44a58) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/dirty_old_wood7152/dirty_old_wood_71_52_height.tif using Guid(85470ad83e2df754bbcce89e2aa44a58) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8a5e3c177a24b3ca645e35cf9d272da5') in 0.118616 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
-(Filename: Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs Line: 244)
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/lozko2
+  artifactKey: Guid(3cf3ac3508b923d4095ed88fa686ab65) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/lozko2 using Guid(3cf3ac3508b923d4095ed88fa686ab65) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '98e908f58e49dddd759fb09ea74dbfd2') in 0.0219452 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.171 seconds
-Domain Reload Profiling: 2033ms
-	BeginReloadAssembly (246ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (48ms)
-	RebuildCommonClasses (45ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (34ms)
-	LoadAllAssembliesAndSetupDomain (519ms)
-		LoadAssemblies (377ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (250ms)
-			TypeCache.Refresh (12ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (220ms)
-			ResolveRequiredComponents (14ms)
-	FinalizeReload (1172ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (971ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (7ms)
-			BeforeProcessingInitializeOnLoad (159ms)
-			ProcessInitializeOnLoadAttributes (477ms)
-			ProcessInitializeOnLoadMethodAttributes (321ms)
-			AfterProcessingInitializeOnLoad (5ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (22ms)
-Refreshing native plugins compatible for Editor in 5.86 ms, found 10 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7303 unused Assets / (4.1 MB). Loaded Objects now: 8169.
-Memory consumption went from 217.9 MB to 213.8 MB.
-Total: 9.724700 ms (FindLiveObjects: 0.641500 ms CreateObjectMapping: 0.612700 ms MarkObjects: 6.418300 ms  DeleteObjects: 2.051000 ms)
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/slupek_plotu1/export/slupek_plotu1/slupek_plotu.fbx
+  artifactKey: Guid(0475f9cbafdde7641a07061993e85692) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/slupek_plotu1/export/slupek_plotu1/slupek_plotu.fbx using Guid(0475f9cbafdde7641a07061993e85692) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2bbda1cbb19d4f04678c41ef5b4da288') in 0.213383 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
 
-Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/latarnia2/export/latarnia2/latarnia2_Roughness.png
+  artifactKey: Guid(228e0d04777ae9948bf9cb14e130a84b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/latarnia2/export/latarnia2/latarnia2_Roughness.png using Guid(228e0d04777ae9948bf9cb14e130a84b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f0b103b3024736817bf45430bf38ded0') in 0.1327637 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Models/final_scene/textures/black_painted_old_brushed_steel_70_80_4K/black_painted_old_brushed_steel_70_80_reflection.png
+  artifactKey: Guid(2d13fcbcf7fd5f945811400237e6b190) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/black_painted_old_brushed_steel_70_80_4K/black_painted_old_brushed_steel_70_80_reflection.png using Guid(2d13fcbcf7fd5f945811400237e6b190) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '411b231c16c59ed96e802030dc91c186') in 0.2008251 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/zawias_drzwi_wewnetrznych/export/zawias_drzwi_wewnetrznych/zawias_drzwi_wewnetrznych_Normal.png
+  artifactKey: Guid(f2632c5ad0f20f942a93cc3a7fbb4a72) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/zawias_drzwi_wewnetrznych/export/zawias_drzwi_wewnetrznych/zawias_drzwi_wewnetrznych_Normal.png using Guid(f2632c5ad0f20f942a93cc3a7fbb4a72) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0e8debf8afcf1bb4fbcfdb2e7fdf3ff8') in 0.137596 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/pochodnia1/export/pochodnia1/pochodnia1_Roughness.png
+  artifactKey: Guid(ad26f09eb038d88498aa2115358d1a67) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/pochodnia1/export/pochodnia1/pochodnia1_Roughness.png using Guid(ad26f09eb038d88498aa2115358d1a67) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '49d6a081bf8e6672dd548c531f7a80a8') in 0.1322969 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/zawias_drzwi_wewnetrznych/zawias_drzwi_zewnetrznych.fbx
+  artifactKey: Guid(3413d2685cf2e88429bb3d52268a4160) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/zawias_drzwi_wewnetrznych/zawias_drzwi_zewnetrznych.fbx using Guid(3413d2685cf2e88429bb3d52268a4160) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f53fff2096c94055e7a83f23e3c786f7') in 0.0678179 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/balkon/deska1/export/deska_balkonowa1/deska_balkonowa1_Normal.png
+  artifactKey: Guid(262857b647ed8a24fb5f14ad34707113) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/balkon/deska1/export/deska_balkonowa1/deska_balkonowa1_Normal.png using Guid(262857b647ed8a24fb5f14ad34707113) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'becffe38bb0d35768a37a0893c81e2ab') in 0.1319556 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/znaki/znak_info/idmap_znak_info.png
+  artifactKey: Guid(71b7ad09692fa7c42b96d13abb75b518) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/znaki/znak_info/idmap_znak_info.png using Guid(71b7ad09692fa7c42b96d13abb75b518) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '863202ff8c8b3247b94cdd229013abfb') in 0.1887618 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/pochodnia1/export/pochodnia1/pochodnia1_Normal.png
+  artifactKey: Guid(579e2cd67815d644e9408e7e97f25e36) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/pochodnia1/export/pochodnia1/pochodnia1_Normal.png using Guid(579e2cd67815d644e9408e7e97f25e36) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f4040601ce390f7807b263da08ccf0f7') in 0.1294378 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/balkon/deska1/export
+  artifactKey: Guid(1c08da944cf217b418b3966880a40442) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/balkon/deska1/export using Guid(1c08da944cf217b418b3966880a40442) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5dc92fd19ae49d2c8dfac28b0842715b') in 0.0619451 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Models/final_scene/textures/dirty_old_wood7152
+  artifactKey: Guid(c7b1b8a9164cd8243a07e6a467497083) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/dirty_old_wood7152 using Guid(c7b1b8a9164cd8243a07e6a467497083) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f62ac80e4bb48c80887f18b6b56d40ac') in 0.0656886 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/przepustka/export/przepustka_zamku_2
+  artifactKey: Guid(91c30840022d7b144840c952557b10f0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/przepustka/export/przepustka_zamku_2 using Guid(91c30840022d7b144840c952557b10f0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7e9f96d2d2293ab895d29dd0d43d5f01') in 0.0246669 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/old/zapomniane wzgorze/krag_megalityczny/tekstury/marble_stone1/marble_rock_01_nor_gl_2k.exr
+  artifactKey: Guid(ca174112e2b1d1042a2f5323032f30e8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/old/zapomniane wzgorze/krag_megalityczny/tekstury/marble_stone1/marble_rock_01_nor_gl_2k.exr using Guid(ca174112e2b1d1042a2f5323032f30e8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '19354af0d29fb5409345b48a435c974f') in 0.15206 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/przepustka/tekstury/alp/tabliczka_tekst.png
+  artifactKey: Guid(599a4512a6a31e042aa07640d28fbb8f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/przepustka/tekstury/alp/tabliczka_tekst.png using Guid(599a4512a6a31e042aa07640d28fbb8f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b37b384881a514cda84cf43a5251a149') in 0.1295551 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/old/stol_drewniany/export/stol_drewniany/stol_drewniany_Metalness.png
+  artifactKey: Guid(c956808424b716e47b1cea6734124f00) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/old/stol_drewniany/export/stol_drewniany/stol_drewniany_Metalness.png using Guid(c956808424b716e47b1cea6734124f00) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'eb4c6db8852c1084324356950f9e87f6') in 0.1468658 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Models/final_scene/textures/dark_wooden_planks/dark_wooden_planks_diff_2k.jpg
+  artifactKey: Guid(b9668c13df6c2a0498b1199bf60bd900) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/dark_wooden_planks/dark_wooden_planks_diff_2k.jpg using Guid(b9668c13df6c2a0498b1199bf60bd900) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ddd58e906a96c2617bd19c1e623a2c2a') in 0.0600435 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/latarnia2/idmap_latarnia2.png
+  artifactKey: Guid(ed3342af6842f734a897ab0f0001ba7d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/latarnia2/idmap_latarnia2.png using Guid(ed3342af6842f734a897ab0f0001ba7d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5b7a76ca7e8f6b1ca3f8b074e1fe6aa4') in 0.1712038 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/final_scene/textures/marble_cliff_02
+  artifactKey: Guid(63852a87b390d1440b585c40f3d53965) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/marble_cliff_02 using Guid(63852a87b390d1440b585c40f3d53965) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0a1de12d8fe0807cfc89530a117d3144') in 0.0624484 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/pochodnia1/export/pochodnia1/pochodnia1.fbx
+  artifactKey: Guid(b1f538e6d34499d4ba145b5050ef2ffc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/pochodnia1/export/pochodnia1/pochodnia1.fbx using Guid(b1f538e6d34499d4ba145b5050ef2ffc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '717c68e89c934742866a8402451b07f0') in 0.1128569 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/zawias_drzwi_wewnetrznych/idmap_zawias_drzwi_wewnetrznych.png
+  artifactKey: Guid(09bf4253d86bc9f41a2ee9b78603ca46) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/zawias_drzwi_wewnetrznych/idmap_zawias_drzwi_wewnetrznych.png using Guid(09bf4253d86bc9f41a2ee9b78603ca46) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b6c9dc83be4c324836d2275852d77949') in 0.1923017 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/old/szafa_na_dokumenty/szafa2/export/szafa_na_dokumenty2
+  artifactKey: Guid(469312fe39fa4b847904e338d61df3c5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/old/szafa_na_dokumenty/szafa2/export/szafa_na_dokumenty2 using Guid(469312fe39fa4b847904e338d61df3c5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cb336a1492ba4ea0c24feca729656c29') in 0.018457 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/final_scene/textures/black_painted_old_brushed_steel_70_80_4K/black_painted_old_brushed_steel_70_80_roughness.png
+  artifactKey: Guid(f1b480e2db502bb4fb972122da0a1be4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/black_painted_old_brushed_steel_70_80_4K/black_painted_old_brushed_steel_70_80_roughness.png using Guid(f1b480e2db502bb4fb972122da0a1be4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9dee486cb6f3eecbd83af524ea64214f') in 0.169763 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Models/final_scene/textures/dirty_old_wood7152/dirty_old_wood_71_52_normal_opengl.png
+  artifactKey: Guid(4ecf5ae095847b34db0c6ea7a395f7a3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/dirty_old_wood7152/dirty_old_wood_71_52_normal_opengl.png using Guid(4ecf5ae095847b34db0c6ea7a395f7a3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f0481dece5d62adc324cdf5b70f89aef') in 0.210873 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/znaki/drogowskaz1/export/drogowskaz1/drogowskaz1_Albedo.png
+  artifactKey: Guid(a07f5e78c42bf7f4887b239b39287453) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/znaki/drogowskaz1/export/drogowskaz1/drogowskaz1_Albedo.png using Guid(a07f5e78c42bf7f4887b239b39287453) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '87daa68184dfe96d6c2beff52df929d7') in 0.3127873 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/dzwonek_alarmowy/dzwonek/export/dzwonek_alarmowy/dzwonek_alarmowy_Normal.png
+  artifactKey: Guid(377e36314e1a3ac40a5413e060d79ad5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/dzwonek_alarmowy/dzwonek/export/dzwonek_alarmowy/dzwonek_alarmowy_Normal.png using Guid(377e36314e1a3ac40a5413e060d79ad5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0046b674203c98595333971ab79221a7') in 0.1918425 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/pochodnia1/pochodnia1.fbx
+  artifactKey: Guid(2bb7462657d306a42a4f04616b47ad44) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/pochodnia1/pochodnia1.fbx using Guid(2bb7462657d306a42a4f04616b47ad44) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd088f051ead7bba35e4f81b16e2e9d88') in 0.0590455 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/final_scene/textures/brass_metal_70_01
+  artifactKey: Guid(7d224470c4074944a82ad21206f1d510) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/brass_metal_70_01 using Guid(7d224470c4074944a82ad21206f1d510) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bc2dc8f8229b38cfa4b90ad43c92a152') in 0.1189266 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/balkon/slupek/idmap_slupek.png
+  artifactKey: Guid(5ec09d37f7c8bd344a598eb05d205c47) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/balkon/slupek/idmap_slupek.png using Guid(5ec09d37f7c8bd344a598eb05d205c47) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a0baa7e0c5e37cbd301718f1087b7b1c') in 0.2464568 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/znaki/znak_info/export/znak_info/znak_info_Roughness.png
+  artifactKey: Guid(3fbdc871463c4f94992b1aff89774a32) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/znaki/znak_info/export/znak_info/znak_info_Roughness.png using Guid(3fbdc871463c4f94992b1aff89774a32) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd85402a9682873998b73274256414168') in 0.0853043 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/przepustka/export/przepustka_zamku_2/przepustka_zamku_2_Roughness.png
+  artifactKey: Guid(53c4ce38cdf2b9043a364ec524f2110b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/przepustka/export/przepustka_zamku_2/przepustka_zamku_2_Roughness.png using Guid(53c4ce38cdf2b9043a364ec524f2110b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4671ff45c06a491ed30efd566b055f09') in 0.4641384 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/old/szafa_na_dokumenty/szafa2/szafa_na_dokumenty2.fbx
+  artifactKey: Guid(6055b697f7c1b6e44af846e5e0249ff4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/old/szafa_na_dokumenty/szafa2/szafa_na_dokumenty2.fbx using Guid(6055b697f7c1b6e44af846e5e0249ff4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b9dca498c40646088d088f1fda08eef7') in 0.2701337 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/balkon/deska2/idmap_deska2.png
+  artifactKey: Guid(98a5261f88ceb6647867d1e17935cd31) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/balkon/deska2/idmap_deska2.png using Guid(98a5261f88ceb6647867d1e17935cd31) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7f103650e50fdbe35542cbf0e1f875b7') in 0.2482828 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/final_scene/textures/black_painted_old_brushed_steel_70_80_4K/black_painted_old_brushed_steel_70_80_ao.png
+  artifactKey: Guid(3892d921a9eea4e44b372ec5d4fb37ed) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/black_painted_old_brushed_steel_70_80_4K/black_painted_old_brushed_steel_70_80_ao.png using Guid(3892d921a9eea4e44b372ec5d4fb37ed) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ac5f1efa2a5a48ab0d251df111262bf8') in 0.3548706 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/lozko2/export/lozko2/lozko2_Roughness.png
+  artifactKey: Guid(c18366c9f04eeb74e870e0a11772bc2d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/lozko2/export/lozko2/lozko2_Roughness.png using Guid(c18366c9f04eeb74e870e0a11772bc2d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5a1f431860c5f650ad347dbb42e1dead') in 0.3361056 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/final_scene/textures/dull-brass-bl/dull-brass_roughness.png
+  artifactKey: Guid(e2cc457633c96c94db0da53a505c1719) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/dull-brass-bl/dull-brass_roughness.png using Guid(e2cc457633c96c94db0da53a505c1719) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e7b88e3820182194ba7fd712309aa6a8') in 0.180535 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/drzwi_wewnetrzne/export/drzwi_wewnetrzne
+  artifactKey: Guid(75715ff204d83554fa6ba9a47a08cc8e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/drzwi_wewnetrzne/export/drzwi_wewnetrzne using Guid(75715ff204d83554fa6ba9a47a08cc8e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ac73dd9924c4c57328898e3701d742da') in 0.0129971 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Models/final_scene/textures/concrete_wall_006/concrete_wall_006_nor_dx_2k.exr
+  artifactKey: Guid(d475db29ff9a04742b0240a0a25e8073) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/concrete_wall_006/concrete_wall_006_nor_dx_2k.exr using Guid(d475db29ff9a04742b0240a0a25e8073) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fb57947369f76a721179be8e21b31a2a') in 0.2720169 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/zamek/przelacznik_bramy/export/przelacznik_bramy/przelacznik_bramy_Roughness.png
+  artifactKey: Guid(80b8249b4b1f9414d9fc134eef032385) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/zamek/przelacznik_bramy/export/przelacznik_bramy/przelacznik_bramy_Roughness.png using Guid(80b8249b4b1f9414d9fc134eef032385) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '682384ef68054df28af935433675ac13') in 0.2967088 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/zawias_drzwi_wewnetrznych/export
+  artifactKey: Guid(4018b2e3299ead54f88c64771a9482be) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/zawias_drzwi_wewnetrznych/export using Guid(4018b2e3299ead54f88c64771a9482be) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0c0cd50f9c9b543956579d6623e87787') in 0.2212025 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/old/stol_drewniany/export
+  artifactKey: Guid(6927f35364de6c443bb1e156f9541f66) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/old/stol_drewniany/export using Guid(6927f35364de6c443bb1e156f9541f66) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2d53d681625af8a178d4dcd2f405cff3') in 0.0416683 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/balkon/deska2/export/deska_balkonowa2/deska_balkonowa2_Normal.png
+  artifactKey: Guid(2853f5982dffc704d8adeb8ebfb1fc9d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/balkon/deska2/export/deska_balkonowa2/deska_balkonowa2_Normal.png using Guid(2853f5982dffc704d8adeb8ebfb1fc9d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ec254051925fda0a1623fe58579fbe77') in 0.1728737 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Models/final_scene/textures/curly_teddy_natural/curly_teddy_natural_diff_2k.jpg
+  artifactKey: Guid(0a71c35a90e06ea4abc3403a1714f371) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/curly_teddy_natural/curly_teddy_natural_diff_2k.jpg using Guid(0a71c35a90e06ea4abc3403a1714f371) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bacc3c99f58c66c1a5e804df85cfeec6') in 0.469395 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/zamek/przelacznik_bramy/export/przelacznik_bramy/przelacznik_bramy_Metalness.png
+  artifactKey: Guid(2bba5bb82ae86154e9ff7036730e6a9e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/zamek/przelacznik_bramy/export/przelacznik_bramy/przelacznik_bramy_Metalness.png using Guid(2bba5bb82ae86154e9ff7036730e6a9e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4cd489a0b638c3acdb8ef13ed72824f0') in 0.5869419 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/wieszak_na_ubrania/export/wieszak_na_ubrania/wieszak_na_ubrania_Roughness.png
+  artifactKey: Guid(482e186138b0ddd469fbf7fec412e4a7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/wieszak_na_ubrania/export/wieszak_na_ubrania/wieszak_na_ubrania_Roughness.png using Guid(482e186138b0ddd469fbf7fec412e4a7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '88b5014b9a30bc4fc1de7e4eee3bf1bf') in 0.1693185 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/znaki/drogowskaz2/export
+  artifactKey: Guid(2773fd36c41349e429c84372faf62ea2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/znaki/drogowskaz2/export using Guid(2773fd36c41349e429c84372faf62ea2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3c04b5c42dba3694ae08a3aaa190ad34') in 0.1413068 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/old/latarnia/export/latarnia1/latarnia1_Metalness.png
+  artifactKey: Guid(4858426b899fdd54395ad70e6a995d1f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/old/latarnia/export/latarnia1/latarnia1_Metalness.png using Guid(4858426b899fdd54395ad70e6a995d1f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e568a537058daaab610fe97b509f78f7') in 0.2707133 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/old/szafa_na_dokumenty_podreczne/export/szafa_na_dokumenty_podreczne/szafa_na_dokumenty_podreczne.fbx
+  artifactKey: Guid(1c5fa0f59dd75a14ba9f04d4c12e97f1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/old/szafa_na_dokumenty_podreczne/export/szafa_na_dokumenty_podreczne/szafa_na_dokumenty_podreczne.fbx using Guid(1c5fa0f59dd75a14ba9f04d4c12e97f1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3a4073665b64e94a31fbb8adab6314c9') in 0.1030181 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/old/zapomniane wzgorze/krag_megalityczny/tekstury
+  artifactKey: Guid(30559e733d3b7de4e9840285f9e55522) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/old/zapomniane wzgorze/krag_megalityczny/tekstury using Guid(30559e733d3b7de4e9840285f9e55522) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ff3969030aa4435e357a0407cb6f22d0') in 0.1744228 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/znaki/drogowskaz2/idmap_drogowskaz2.png
+  artifactKey: Guid(fd82fc6208c289947b0f7545dc62d3dc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/znaki/drogowskaz2/idmap_drogowskaz2.png using Guid(fd82fc6208c289947b0f7545dc62d3dc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '52dd46f35119087c3e8c78ba5714a13d') in 0.4317191 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/lozko2/export/lozko2
+  artifactKey: Guid(0389d5a7159795f4a9845f65fbfeba58) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/lozko2/export/lozko2 using Guid(0389d5a7159795f4a9845f65fbfeba58) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9c477c716e45442efde73772bcde6483') in 0.3900654 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/balkon/deska2/export/deska_balkonowa2/deska_balkonowa2_Metalness.png
+  artifactKey: Guid(1cb9803d68cfc5340af39e147d2a510d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/balkon/deska2/export/deska_balkonowa2/deska_balkonowa2_Metalness.png using Guid(1cb9803d68cfc5340af39e147d2a510d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'daeeecfd4da175902fa351948f3d56a7') in 0.4835986 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/balkon/deska1/export/deska_balkonowa1/deska1.fbx
+  artifactKey: Guid(d23548d6d937eea409f150dec6e1ee29) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/balkon/deska1/export/deska_balkonowa1/deska1.fbx using Guid(d23548d6d937eea409f150dec6e1ee29) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7b26ee082428c0e1e430d10c14e2fcf5') in 0.2438773 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/balkon/deska2/export/deska_balkonowa2/deska_balkonowa2.fbx
+  artifactKey: Guid(c4f371642a5230a46ba2b3134c5e82e4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/balkon/deska2/export/deska_balkonowa2/deska_balkonowa2.fbx using Guid(c4f371642a5230a46ba2b3134c5e82e4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '85ff3d649985559a6eaafcbd4bd2d75a') in 1.6559482 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Models/final_scene/textures/black_painted_old_brushed_steel_70_80_4K/black_painted_old_brushed_steel_70_80_height.tif
+  artifactKey: Guid(51cd87d7213cd0946b87b2197c0d0ae7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/black_painted_old_brushed_steel_70_80_4K/black_painted_old_brushed_steel_70_80_height.tif using Guid(51cd87d7213cd0946b87b2197c0d0ae7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cd78b42c5f01beb98c9e28439a88b76d') in 0.5627385 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/lawka/idmap_lawka.png
+  artifactKey: Guid(4c3d3fd8236abc0429c9578176dea2b6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/lawka/idmap_lawka.png using Guid(4c3d3fd8236abc0429c9578176dea2b6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c9e24d5d7509b88b5db565cf1a33ba74') in 1.516519 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/old/szafa_na_dokumenty_podreczne/export/szafa_na_dokumenty_podreczne/szafa_na_dokumenty_podreczne_Metalness.png
+  artifactKey: Guid(f31719f774ca88f49831585d3e9e2630) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/old/szafa_na_dokumenty_podreczne/export/szafa_na_dokumenty_podreczne/szafa_na_dokumenty_podreczne_Metalness.png using Guid(f31719f774ca88f49831585d3e9e2630) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6e9de299f988e8066d7c30e83fbdc759') in 0.2415521 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/pochodnia1/idmap_pochodnia1.png
+  artifactKey: Guid(4271d079a6dcad14a826df9462af6a52) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/pochodnia1/idmap_pochodnia1.png using Guid(4271d079a6dcad14a826df9462af6a52) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '74e88a8258164830cb5de99f04053fb7') in 0.3039111 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/old/szafa_na_dokumenty/szafa/export/szafa_na_dokumenty/szafa_na_dokumenty_Metalness.png
+  artifactKey: Guid(29c5540cca57e0a4886d336d67290387) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/old/szafa_na_dokumenty/szafa/export/szafa_na_dokumenty/szafa_na_dokumenty_Metalness.png using Guid(29c5540cca57e0a4886d336d67290387) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0e9e7f78a52f2361f80348a8ecd487db') in 1.0455442 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/dzwonek_alarmowy/dzwonek/export/dzwonek_alarmowy/dzwonek_alarmowy_Albedo.png
+  artifactKey: Guid(d258aa05814b55d40bda25cdbe2e0d2c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/dzwonek_alarmowy/dzwonek/export/dzwonek_alarmowy/dzwonek_alarmowy_Albedo.png using Guid(d258aa05814b55d40bda25cdbe2e0d2c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c510cd55b40b1c73ede4af972bc32e5e') in 0.2262841 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/balkon/deska2/export/deska_balkonowa2/deska2.fbx
+  artifactKey: Guid(7e6511dcd0b8d0b48844657b6dc7ae99) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/balkon/deska2/export/deska_balkonowa2/deska2.fbx using Guid(7e6511dcd0b8d0b48844657b6dc7ae99) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '155ae25c1d0708907b1a2476c806ab3e') in 0.2225423 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/old/zapomniane wzgorze/krag_megalityczny/krag_megalityczny.fbx
+  artifactKey: Guid(03a0ddc969a09d3409a19c97c42ee9c6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/old/zapomniane wzgorze/krag_megalityczny/krag_megalityczny.fbx using Guid(03a0ddc969a09d3409a19c97c42ee9c6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b879f65adf6cb3b9e9e16b373f4c2e97') in 1.6420668 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/old/szafa_na_dokumenty/szuflada_mala/export/szuflada_mala/szuflada_mala_Albedo.png
+  artifactKey: Guid(63a4182bdfeb08341a839fdd8154eee2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/old/szafa_na_dokumenty/szuflada_mala/export/szuflada_mala/szuflada_mala_Albedo.png using Guid(63a4182bdfeb08341a839fdd8154eee2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f19f114ee42dfed96e21f89477f5db6c') in 0.4893161 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/drzwi_wewnetrzne/drzwi_wewnetrzne.fbx
+  artifactKey: Guid(8398872fecc56f843bd52df27789ea71) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/drzwi_wewnetrzne/drzwi_wewnetrzne.fbx using Guid(8398872fecc56f843bd52df27789ea71) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'de9502a1a7b51402afaa026c026889cf') in 0.8617116 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Models/final_scene/textures/black_painted_metal_75_40/black_painted_metal_75_40_normal.png
+  artifactKey: Guid(dcf266bca8d642b4d8bc8372ae3ef1ec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/black_painted_metal_75_40/black_painted_metal_75_40_normal.png using Guid(dcf266bca8d642b4d8bc8372ae3ef1ec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e405f439a949276d383ba9af8d371d7b') in 0.8286343 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/lozko2/export/lozko2/lozko2.fbx
+  artifactKey: Guid(1d9d3e1f97887aa4cbf0eaf65504a7ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/lozko2/export/lozko2/lozko2.fbx using Guid(1d9d3e1f97887aa4cbf0eaf65504a7ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6630b5c549626cbb8f082aa375245cf7') in 0.419737 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Models/final_scene/textures/black_painted_metal_75_40/black_painted_metal_75_40_basecolor.png
+  artifactKey: Guid(a4210a5b91b20e94ab206cf3ed00dcc1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/black_painted_metal_75_40/black_painted_metal_75_40_basecolor.png using Guid(a4210a5b91b20e94ab206cf3ed00dcc1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f6e43c8b5ff995a166e0d1936bd18632') in 0.632534 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/drzwi_wewnetrzne/export/drzwi_wewnetrzne/drzwi_wewnetrzne_Normal.png
+  artifactKey: Guid(47143efc28179d443b96dd2a03357c20) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/drzwi_wewnetrzne/export/drzwi_wewnetrzne/drzwi_wewnetrzne_Normal.png using Guid(47143efc28179d443b96dd2a03357c20) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b8fda8646ec313b3dfdf83159076a0da') in 0.2384801 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/old/szafa_na_dokumenty/szuflada_mala
+  artifactKey: Guid(571ecd7b120720a40a31297baa6de2a3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/old/szafa_na_dokumenty/szuflada_mala using Guid(571ecd7b120720a40a31297baa6de2a3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4c3e6c8596f7801bd06c820d8c39af9d') in 0.1109156 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/plot/export/plot_drewniany/plot_drewniany.fbx
+  artifactKey: Guid(746dbeaa63ecd6f4784b5351de6805e1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/plot/export/plot_drewniany/plot_drewniany.fbx using Guid(746dbeaa63ecd6f4784b5351de6805e1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '86012e02380f60a37b699e3820fa4dd5') in 0.0939412 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Models/final_scene/textures/Metal025/Metal025_2K-PNG_Metalness.png
+  artifactKey: Guid(2c0670aac56a0cc4c86f0b54c5d449ce) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/Metal025/Metal025_2K-PNG_Metalness.png using Guid(2c0670aac56a0cc4c86f0b54c5d449ce) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'caa396fb8b514ae968901878120e5bbb') in 0.3845886 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/final_scene/textures/forest_ground_04_nor_gl_4k.exr
+  artifactKey: Guid(b05d06d53a747bb4798fb25f9694798f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/forest_ground_04_nor_gl_4k.exr using Guid(b05d06d53a747bb4798fb25f9694798f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '40eed946cdaeef02e1ea0a4d3728d1ec') in 0.3372088 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/plot/idmap_lawka.png
+  artifactKey: Guid(32f85678a6f69e74082b9491da905bf2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/plot/idmap_lawka.png using Guid(32f85678a6f69e74082b9491da905bf2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '72f3bd8928e8fdd404048d8bbbea64c6') in 0.4098718 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/drzwi_wewnetrzne
+  artifactKey: Guid(ef4cac9ce93bb9b4ebf1f0b274c01395) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/drzwi_wewnetrzne using Guid(ef4cac9ce93bb9b4ebf1f0b274c01395) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9442a012fb2d61d25edaf6bb33a96a5f') in 0.0407703 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/final_scene/textures/dark_old_metal_76_03_4K/dark_old_metal_76_03_reflection.png
+  artifactKey: Guid(76817015898e1b0489e1b4eb854c8f87) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/dark_old_metal_76_03_4K/dark_old_metal_76_03_reflection.png using Guid(76817015898e1b0489e1b4eb854c8f87) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8afbdf04ae52a8a658eb2ffb93685b7a') in 0.4160323 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/old/szafa_na_dokumenty/szafa/export/szafa_na_dokumenty/szafa_na_dokumenty_Albedo.png
+  artifactKey: Guid(d45108edff8791541b0d2815d748540c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/old/szafa_na_dokumenty/szafa/export/szafa_na_dokumenty/szafa_na_dokumenty_Albedo.png using Guid(d45108edff8791541b0d2815d748540c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4373b296065d0170c5ae5f19ab582ec9') in 2.3554898 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/dzwonek_alarmowy/mloteczek/mloteczek.fbx
+  artifactKey: Guid(4513d5f28de76c8408cfa604022a162d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/dzwonek_alarmowy/mloteczek/mloteczek.fbx using Guid(4513d5f28de76c8408cfa604022a162d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd537141542dad225c0685b0869b3e46e') in 0.995672 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/old/latarnia/tekstury/black_rusted_metal/black_painted_rusty_metal_75_41_normal.png
+  artifactKey: Guid(44732a9a699487242bd1caf843d36c62) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/old/latarnia/tekstury/black_rusted_metal/black_painted_rusty_metal_75_41_normal.png using Guid(44732a9a699487242bd1caf843d36c62) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '88a65c97e084953dae889578eb066bb1') in 0.8352967 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/final_scene/textures/forest_leaves_04/forest_leaves_04_diff_2k.jpg
+  artifactKey: Guid(a9bd449dc4f08d149805be75e7572233) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/forest_leaves_04/forest_leaves_04_diff_2k.jpg using Guid(a9bd449dc4f08d149805be75e7572233) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5912f97f9d46154ab1f82b154da1d41f') in 0.9840396 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Models/final_scene/textures/dirty_old_wood7152/dirty_old_wood_71_52_specular.png
+  artifactKey: Guid(d2bb9d9e67700654691e09c02aabb880) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/dirty_old_wood7152/dirty_old_wood_71_52_specular.png using Guid(d2bb9d9e67700654691e09c02aabb880) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c62b8bbb72a6f31835c653716fe44da8') in 0.639286 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/final_scene/textures/black_painted_metal_75_40
+  artifactKey: Guid(15ba3e408a4458542bab7b020018431d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/black_painted_metal_75_40 using Guid(15ba3e408a4458542bab7b020018431d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7bd879384bd50dc208e23880092292e3') in 1.5146695 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Models/final_scene/textures/dull-brass-bl/dull-brass_ao.png
+  artifactKey: Guid(e4465f9a01353ff48ac7eb35ed1d00cf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/dull-brass-bl/dull-brass_ao.png using Guid(e4465f9a01353ff48ac7eb35ed1d00cf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '27f5635a5127fc6e4f4d8ab63d389134') in 0.329689 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/final_scene/textures/black_painted_old_brushed_steel_70_80_4K/black_painted_old_brushed_steel_70_80_metallic.png
+  artifactKey: Guid(47b347634fed7e546acf9691af869bc0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/black_painted_old_brushed_steel_70_80_4K/black_painted_old_brushed_steel_70_80_metallic.png using Guid(47b347634fed7e546acf9691af869bc0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd9dcfd7a67d1e7e0a803d17269be5776') in 0.1252756 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Models/final_scene/textures/brass_metal_70_01/brass_metal_70_01_normal_opengl.png
+  artifactKey: Guid(32bedefd9cd48d4478a2a06622f74aa3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/brass_metal_70_01/brass_metal_70_01_normal_opengl.png using Guid(32bedefd9cd48d4478a2a06622f74aa3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4e535faa1db6ab1f7296d97f48ef6b37') in 0.8743744 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/znaki/drogowskaz1/export/drogowskaz1/drogowskaz1.fbx
+  artifactKey: Guid(c1b0aa5f3be222e4d94c67e6486579d2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/znaki/drogowskaz1/export/drogowskaz1/drogowskaz1.fbx using Guid(c1b0aa5f3be222e4d94c67e6486579d2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bd3bf1ef31dc9d9fbdfd7aed2c621e7d') in 0.5219367 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/final_scene/textures/glass_frosted/frozen_glass_43_98_roughness.jpg
+  artifactKey: Guid(f2d1223032776f9458ac2037c019f697) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/glass_frosted/frozen_glass_43_98_roughness.jpg using Guid(f2d1223032776f9458ac2037c019f697) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4c0d12f67b3b5767a17e7e36896f9450') in 0.5958796 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/final_scene/textures/brass_metal_70_01/brass_metal_70_01_roughness.png
+  artifactKey: Guid(12fe6cbf5e6430d4093158fce43acca1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/brass_metal_70_01/brass_metal_70_01_roughness.png using Guid(12fe6cbf5e6430d4093158fce43acca1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '29f0720a42a86a7d69af24f175d311a1') in 0.1555456 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Models/final_scene/textures/brass_metal_70_01/brass_metal_70_01_ao.png
+  artifactKey: Guid(85a0f36f7c1fd094fb3d0f57fec0aaf8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/brass_metal_70_01/brass_metal_70_01_ao.png using Guid(85a0f36f7c1fd094fb3d0f57fec0aaf8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f12476df8d982be3bb4d92f1018ca82a') in 1.0438635 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/znaki/znak_info/export/znak_info/znak_info.fbx
+  artifactKey: Guid(9e19b9bdc99bc404c82687031ee529e7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/znaki/znak_info/export/znak_info/znak_info.fbx using Guid(9e19b9bdc99bc404c82687031ee529e7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e72a78427953a8c18cfaaf6a800c7ffa') in 0.1417905 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/wieszak_na_ubrania/export/wieszak_na_ubrania/wieszak_na_ubrania_Albedo.png
+  artifactKey: Guid(3dd79a35098fca44d86715d1756f5288) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/wieszak_na_ubrania/export/wieszak_na_ubrania/wieszak_na_ubrania_Albedo.png using Guid(3dd79a35098fca44d86715d1756f5288) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '92254957526f13362daac9369f096aad') in 0.0743093 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/final_scene/textures/dark_old_metal_76_03_4K/dark_old_metal_76_03_roughness.png
+  artifactKey: Guid(2d7d2789fab6505469a0e2b3cc733734) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/dark_old_metal_76_03_4K/dark_old_metal_76_03_roughness.png using Guid(2d7d2789fab6505469a0e2b3cc733734) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ca63c6deb380477fd4baefd7ea7597bf') in 0.2714596 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/drzwi_wewnetrzne/export/drzwi_wewnetrzne/drzwi_wewnetrzne_Displacement.exr
+  artifactKey: Guid(94ec2cb71e1959046866af3a43478163) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/drzwi_wewnetrzne/export/drzwi_wewnetrzne/drzwi_wewnetrzne_Displacement.exr using Guid(94ec2cb71e1959046866af3a43478163) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '190758da0704f7f08f6538b8d211a76c') in 0.3801029 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/dzwonek_alarmowy/mloteczek/idmap_mloteczek.png
+  artifactKey: Guid(71faf417090651b48b1a71e3faa24cf1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/dzwonek_alarmowy/mloteczek/idmap_mloteczek.png using Guid(71faf417090651b48b1a71e3faa24cf1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3c6272c7a3c671fae74eb7c84d267594') in 0.5040088 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/dzwonek_alarmowy/dzwonek/idmap_dzwonek.png
+  artifactKey: Guid(473e585e021abe440a77eadccc380ce0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/dzwonek_alarmowy/dzwonek/idmap_dzwonek.png using Guid(473e585e021abe440a77eadccc380ce0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '15116073a75ab5fac60574dee9a641a9') in 1.3371324 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/old/zapomniane wzgorze/krag_megalityczny/export/krag_megalityczny/krag_megalityczny_Albedo.png
+  artifactKey: Guid(ed375c3eab5021944bfc5d0dcb98b1a3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/old/zapomniane wzgorze/krag_megalityczny/export/krag_megalityczny/krag_megalityczny_Albedo.png using Guid(ed375c3eab5021944bfc5d0dcb98b1a3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1c8e4a5ec7570811ade4a4e9bf482d96') in 0.3517147 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/old/szafa_na_dokumenty/szuflada_mala/export/szuflada_mala/szuflada_mala_Roughness.png
+  artifactKey: Guid(b9bf33fdbf52e2a41a32302e30c4a201) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/old/szafa_na_dokumenty/szuflada_mala/export/szuflada_mala/szuflada_mala_Roughness.png using Guid(b9bf33fdbf52e2a41a32302e30c4a201) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '527797b1960e3c3e2eb700e5fd6970bc') in 0.8715003 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/old/zapomniane wzgorze/krag_megalityczny/export
+  artifactKey: Guid(f943a721abbad454184d4ec9aa45a3f2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/old/zapomniane wzgorze/krag_megalityczny/export using Guid(f943a721abbad454184d4ec9aa45a3f2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a5454a3b6a298acf8e6be83703d145a3') in 0.1349675 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/final_scene/textures/Metal025
+  artifactKey: Guid(effedeae1a420fa46b6ae10d22843a2b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/Metal025 using Guid(effedeae1a420fa46b6ae10d22843a2b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a293a583505fe12c98f1d70635d2b6fb') in 0.4281514 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/plot
+  artifactKey: Guid(2df91c53497161b43a1d044cdafc4044) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/plot using Guid(2df91c53497161b43a1d044cdafc4044) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '99783b8c392260a56345be5badb39f77') in 0.1299646 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/balkon/slupek/export/slupek_blakonu/slupek_blakonu_Albedo.png
+  artifactKey: Guid(e2beb0a312287fd4ea8a361694b8fe1f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/balkon/slupek/export/slupek_blakonu/slupek_blakonu_Albedo.png using Guid(e2beb0a312287fd4ea8a361694b8fe1f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '131b1604a02ae7cc749bb528597eebb7') in 0.58193 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Models/final_scene/textures/forest_ground_04/forest_ground_04_diff_4k.jpg
+  artifactKey: Guid(40ae707ea480ada4a98a71659481af24) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/forest_ground_04/forest_ground_04_diff_4k.jpg using Guid(40ae707ea480ada4a98a71659481af24) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '59ed11291f0a1cf9ede497328a78435b') in 0.6142284 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Models/final_scene/textures/brass_metal_70_01/brass_metal_70_01_diffuse.png
+  artifactKey: Guid(6ac4eb9369af4194fb08e180df511def) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/brass_metal_70_01/brass_metal_70_01_diffuse.png using Guid(6ac4eb9369af4194fb08e180df511def) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'aae04b93a3657e77983db1f8e98beff6') in 0.3617361 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/zawias_drzwi_wewnetrznych/export/zawias_drzwi_wewnetrznych/zawias_drzwi_wewnetrznych_Albedo.png
+  artifactKey: Guid(0a55edefff827ca488404b9bbb9eeaca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/zawias_drzwi_wewnetrznych/export/zawias_drzwi_wewnetrznych/zawias_drzwi_wewnetrznych_Albedo.png using Guid(0a55edefff827ca488404b9bbb9eeaca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f4a994dadba7df3ac51eb38414e0f804') in 0.2061115 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Models/final_scene/textures/glass_frosted/frozen_glass_43_98_refraction.jpg
+  artifactKey: Guid(cdf7147d589488b459429d6e99d4f9a6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/glass_frosted/frozen_glass_43_98_refraction.jpg using Guid(cdf7147d589488b459429d6e99d4f9a6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '802f02acbe5a85f6a50152f56cf44fd1') in 0.215306 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Models/final_scene/textures/glass_frosted/frozen_glass_43_98_refraction_glossiness.jpg
+  artifactKey: Guid(79ee3a264802d0e4c87ae9cc573e38f9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/glass_frosted/frozen_glass_43_98_refraction_glossiness.jpg using Guid(79ee3a264802d0e4c87ae9cc573e38f9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0537e26b3950406bfd7f4b5cb368f8ef') in 0.6751462 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/dzwonek_alarmowy/mloteczek/export/mloteczek_dzwonka_alarmowego/mloteczek.fbx
+  artifactKey: Guid(73a04ec5d1732b14cafc20d66a1f651e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/dzwonek_alarmowy/mloteczek/export/mloteczek_dzwonka_alarmowego/mloteczek.fbx using Guid(73a04ec5d1732b14cafc20d66a1f651e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2def7dc88b361be64e35eedab924d826') in 1.1632701 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/old/zapomniane wzgorze/krag_megalityczny/idmap.png
+  artifactKey: Guid(1b62b2a70da76c2488cc6ea7677c365b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/old/zapomniane wzgorze/krag_megalityczny/idmap.png using Guid(1b62b2a70da76c2488cc6ea7677c365b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '37e9c74135e584bd77d8fdbc5c28eed7') in 1.5196612 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/old/szafa_na_dokumenty/szafa/export/szafa_na_dokumenty/szafa_na_dokumenty_Normal.png
+  artifactKey: Guid(aa0e057fd488ece4395a2f876e0f8982) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/old/szafa_na_dokumenty/szafa/export/szafa_na_dokumenty/szafa_na_dokumenty_Normal.png using Guid(aa0e057fd488ece4395a2f876e0f8982) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4dbd0406cd4d51ae9b19aebcd831adbf') in 0.4399316 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/zawias_drzwi_wewnetrznych
+  artifactKey: Guid(26687d16d674e9646a86e2c4bf5dc725) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/zawias_drzwi_wewnetrznych using Guid(26687d16d674e9646a86e2c4bf5dc725) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '47e345a0cd45153be3b9e7e225453871') in 0.0438495 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/old/szafa_na_dokumenty/szuflada_mala/export
+  artifactKey: Guid(4f0d2fb7cde7c994d8468f4d1b8c6a7a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/old/szafa_na_dokumenty/szuflada_mala/export using Guid(4f0d2fb7cde7c994d8468f4d1b8c6a7a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '99f912a541a08580e1bc0b1da9f846ba') in 0.0688944 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/balkon/deska1/export/deska_balkonowa1/deska_balkonowa1_Roughness.png
+  artifactKey: Guid(601949b1c033ce146a381101d8db251d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/balkon/deska1/export/deska_balkonowa1/deska_balkonowa1_Roughness.png using Guid(601949b1c033ce146a381101d8db251d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd70c33f3ed66c9d7b4207a71c4260c63') in 1.7355092 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/przepustka/export/przepustka_zamku_2/przepustka_zamku_2_Albedo.png
+  artifactKey: Guid(54d2058cdf61e9446b2ff166c3d094ad) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/przepustka/export/przepustka_zamku_2/przepustka_zamku_2_Albedo.png using Guid(54d2058cdf61e9446b2ff166c3d094ad) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8a7829296b3e390ee9bf9822747d7107') in 0.4289193 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/final_scene/textures/dark_old_metal_76_03_4K/dark_old_metal_76_03_specular.png
+  artifactKey: Guid(c1f739afc52e5f04aafcd4832bfb4e50) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/dark_old_metal_76_03_4K/dark_old_metal_76_03_specular.png using Guid(c1f739afc52e5f04aafcd4832bfb4e50) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3def807ab2516424d38891e598482712') in 1.1441139 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/final_scene/textures/curly_teddy_natural/curly_teddy_natural_disp_2k.png
+  artifactKey: Guid(39e00da11ed856a4c97999ddbeb8bc81) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/curly_teddy_natural/curly_teddy_natural_disp_2k.png using Guid(39e00da11ed856a4c97999ddbeb8bc81) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4f21a749577227c60797994c2ff9d673') in 0.3905009 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/lozko2/export
+  artifactKey: Guid(23ad43c371747654cb9c4193e3298603) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/lozko2/export using Guid(23ad43c371747654cb9c4193e3298603) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '85655dad6a8da9ff9ba29a59b48f42fc') in 0.3179119 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/final_scene/textures/concrete_wall_006
+  artifactKey: Guid(6eca8ec52bc6a724d827026253641294) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/concrete_wall_006 using Guid(6eca8ec52bc6a724d827026253641294) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a03d6cb16fcc7fdcb7db98f7ff0e3897') in 0.4034423 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/zawias_drzwi_wewnetrznych/export/zawias_drzwi_wewnetrznych
+  artifactKey: Guid(e3e9786555e3d764792d76414282687f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/zawias_drzwi_wewnetrznych/export/zawias_drzwi_wewnetrznych using Guid(e3e9786555e3d764792d76414282687f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0257b0e5d8694c8c3f085dfdc6874b51') in 0.269716 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/znaki/znak_info/export
+  artifactKey: Guid(c9d4cc4725484cd4fb8124f60ffe4a4c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/znaki/znak_info/export using Guid(c9d4cc4725484cd4fb8124f60ffe4a4c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8023d44092ab53e8d092ee66edecb74c') in 0.3054384 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/balkon/deska2/export/deska_balkonowa2
+  artifactKey: Guid(8df26040130692747aa7e10d8c1e35a1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/balkon/deska2/export/deska_balkonowa2 using Guid(8df26040130692747aa7e10d8c1e35a1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '08cfea9e463edc53bda9b79e81d61e44') in 0.0738988 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/kwatera/drzwi_wewnetrzne/export/drzwi_wewnetrzne/drzwi_wewnetrzne_AO.png
+  artifactKey: Guid(fede4eeabb88e474f979c04463288c71) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/kwatera/drzwi_wewnetrzne/export/drzwi_wewnetrzne/drzwi_wewnetrzne_AO.png using Guid(fede4eeabb88e474f979c04463288c71) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3f4b0faa9925d0e64021492749096258') in 0.6919077 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/final_scene/textures/dirty_old_wood7152/dirty_old_wood_71_52_ior.png
+  artifactKey: Guid(ef89718ebd790294cba88e5c30c4473b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/dirty_old_wood7152/dirty_old_wood_71_52_ior.png using Guid(ef89718ebd790294cba88e5c30c4473b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd08834b3bb96f258270e29dee8b9a1d7') in 0.857727 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/znaki/znak_info/export/znak_info/znak_info_Metalness.png
+  artifactKey: Guid(8195eacbaa7df4a48a5c0fdfae855ef7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/znaki/znak_info/export/znak_info/znak_info_Metalness.png using Guid(8195eacbaa7df4a48a5c0fdfae855ef7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2076a630a24e5d7e50f578787578e48e') in 0.856305 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/final_scene/textures/glass_frosted/frozen_glass_43_98_opacity.jpg
+  artifactKey: Guid(8033f677de7aaae4f819965d03b04893) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/glass_frosted/frozen_glass_43_98_opacity.jpg using Guid(8033f677de7aaae4f819965d03b04893) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c797613fa052efbef290de9a49adf305') in 0.147952 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Models/final_scene/textures/dark_old_metal_76_03_4K/dark_old_metal_76_03_normal_opengl.png
+  artifactKey: Guid(82d8106ea37d8da4094d669d08862fd6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/dark_old_metal_76_03_4K/dark_old_metal_76_03_normal_opengl.png using Guid(82d8106ea37d8da4094d669d08862fd6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '73e794b5729c6e18a7d6da5cdad08704') in 0.5214281 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/final_scene/textures/dark_wooden_planks
+  artifactKey: Guid(182083e0eb9d7764db81230fcf99e685) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/dark_wooden_planks using Guid(182083e0eb9d7764db81230fcf99e685) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '03680495ebf2bea11e1e62487e49bb92') in 0.2607508 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/przepustka/tekstury
+  artifactKey: Guid(2f2ccb851d36aca42a6eec60cd19fc5e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/przepustka/tekstury using Guid(2f2ccb851d36aca42a6eec60cd19fc5e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a50568423022394bc5194237d5c85263') in 0.1105222 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/final_scene/textures/dark_old_metal_76_03_4K/dark_old_metal_76_03_metallic.png
+  artifactKey: Guid(0c936fe3871215746b43c147caf3c272) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/dark_old_metal_76_03_4K/dark_old_metal_76_03_metallic.png using Guid(0c936fe3871215746b43c147caf3c272) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3711377d7cf683ddb90b528317f36095') in 0.7858764 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/plot/plot.fbx
+  artifactKey: Guid(6321921c686719e4da4c2867a0852078) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/plot/plot.fbx using Guid(6321921c686719e4da4c2867a0852078) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5e88d341b4cee11d9fb476097ae60dc4') in 2.252443 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/old/latarnia/tekstury/black_rusted_metal/black_painted_rusty_metal_75_41_roughness.png
+  artifactKey: Guid(02a46102521c400408ed7b5c6cc6ca16) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/old/latarnia/tekstury/black_rusted_metal/black_painted_rusty_metal_75_41_roughness.png using Guid(02a46102521c400408ed7b5c6cc6ca16) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '22e8bc4b54ba5612c70148993c1f512c') in 2.0936435 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/env/old/latarnia/tekstury/black_rusted_metal/black_painted_rusty_metal_75_41_diffuse.png
+  artifactKey: Guid(1d2c323815ac28941945bf54b470c3f1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/env/old/latarnia/tekstury/black_rusted_metal/black_painted_rusty_metal_75_41_diffuse.png using Guid(1d2c323815ac28941945bf54b470c3f1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '89d1257d2aeb0e823c9ec141756decee') in 0.5621611 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Models/final_scene/gotowe_modele/zamek/przelacznik_bramy/export/przelacznik_bramy/przelacznik_bramy.fbx
+  artifactKey: Guid(1e165715dd16ddf4c8e9b5ebbcabede5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/gotowe_modele/zamek/przelacznik_bramy/export/przelacznik_bramy/przelacznik_bramy.fbx using Guid(1e165715dd16ddf4c8e9b5ebbcabede5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1269a13bf6488321883cd1be74c3300c') in 1.8879646 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Models/final_scene/textures/dirty_old_wood7152/dirty_old_wood_71_52_normal.png
+  artifactKey: Guid(398651b3a8bf2d848ae50669c0b889db) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/final_scene/textures/dirty_old_wood7152/dirty_old_wood_71_52_normal.png using Guid(398651b3a8bf2d848ae50669c0b889db) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5bce3df3de0e18e208c4da255b1465eb') in 0.9899652 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

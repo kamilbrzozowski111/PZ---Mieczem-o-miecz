@@ -1,0 +1,1314 @@
+{
+    "materials": {
+        "2-1.001": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/2-1.001_Albedo.png",
+                "roughness": "Assets/Textures/2-1.001_Roughness.png",
+                "normal": "Assets/Textures/2-1.001_Normal.png",
+                "metallic": "Assets/Textures/2-1.001_Metallic.png"
+            }
+        },
+        "Birch Leaf": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/Birch Leaf_Albedo.png",
+                "roughness": "Assets/Textures/Birch Leaf_Roughness.png",
+                "normal": "Assets/Textures/Birch Leaf_Normal.png",
+                "metallic": "Assets/Textures/Birch Leaf_Metallic.png"
+            }
+        },
+        "Birch_Bark": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/Birch_Bark_Albedo.png",
+                "roughness": "Assets/Textures/Birch_Bark_Roughness.png",
+                "normal": "Assets/Textures/Birch_Bark_Normal.png",
+                "metallic": "Assets/Textures/Birch_Bark_Metallic.png"
+            }
+        },
+        "brass_metal_70_01": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/brass_metal_70_01_Albedo.png",
+                "roughness": "Assets/Textures/brass_metal_70_01_Roughness.png",
+                "normal": "Assets/Textures/brass_metal_70_01_Normal.png",
+                "metallic": "Assets/Textures/brass_metal_70_01_Metallic.png"
+            }
+        },
+        "concrete_wall_006": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/concrete_wall_006_Albedo.png",
+                "roughness": "Assets/Textures/concrete_wall_006_Roughness.png",
+                "normal": "Assets/Textures/concrete_wall_006_Normal.png",
+                "metallic": "Assets/Textures/concrete_wall_006_Metallic.png"
+            }
+        },
+        "dark_old_metal_76_03": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/dark_old_metal_76_03_Albedo.png",
+                "metallic": "Assets/Textures/dark_old_metal_76_03_Metallic.png",
+                "roughness": "Assets/Textures/dark_old_metal_76_03_Roughness.png",
+                "normal": "Assets/Textures/dark_old_metal_76_03_Normal.png"
+            }
+        },
+        "dark_wooden_planks": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/dark_wooden_planks_Albedo.png",
+                "roughness": "Assets/Textures/dark_wooden_planks_Roughness.png",
+                "normal": "Assets/Textures/dark_wooden_planks_Normal.png",
+                "metallic": "Assets/Textures/dark_wooden_planks_Metallic.png"
+            }
+        },
+        "dark_wooden_planks_rz90": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/dark_wooden_planks_rz90_Albedo.png",
+                "roughness": "Assets/Textures/dark_wooden_planks_rz90_Roughness.png",
+                "normal": "Assets/Textures/dark_wooden_planks_rz90_Normal.png",
+                "metallic": "Assets/Textures/dark_wooden_planks_rz90_Metallic.png"
+            }
+        },
+        "dirty_old_wood7152_1_dark": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/dirty_old_wood7152_1_dark_Albedo.png",
+                "roughness": "Assets/Textures/dirty_old_wood7152_1_dark_Roughness.png",
+                "normal": "Assets/Textures/dirty_old_wood7152_1_dark_Normal.png",
+                "metallic": "Assets/Textures/dirty_old_wood7152_1_dark_Metallic.png"
+            }
+        },
+        "dirty_old_wood7152_1_light": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/dirty_old_wood7152_1_light_Albedo.png",
+                "roughness": "Assets/Textures/dirty_old_wood7152_1_light_Roughness.png",
+                "normal": "Assets/Textures/dirty_old_wood7152_1_light_Normal.png",
+                "metallic": "Assets/Textures/dirty_old_wood7152_1_light_Metallic.png"
+            }
+        },
+        "dirty_old_wood7152_dark": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/dirty_old_wood7152_dark_Albedo.png",
+                "roughness": "Assets/Textures/dirty_old_wood7152_dark_Roughness.png",
+                "normal": "Assets/Textures/dirty_old_wood7152_dark_Normal.png",
+                "metallic": "Assets/Textures/dirty_old_wood7152_dark_Metallic.png"
+            }
+        },
+        "dirty_old_wood7152_dark_rz90": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/dirty_old_wood7152_dark_rz90_Albedo.png",
+                "roughness": "Assets/Textures/dirty_old_wood7152_dark_rz90_Roughness.png",
+                "normal": "Assets/Textures/dirty_old_wood7152_dark_rz90_Normal.png",
+                "metallic": "Assets/Textures/dirty_old_wood7152_dark_rz90_Metallic.png"
+            }
+        },
+        "dirty_old_wood7152_light": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/dirty_old_wood7152_light_Albedo.png",
+                "roughness": "Assets/Textures/dirty_old_wood7152_light_Roughness.png",
+                "normal": "Assets/Textures/dirty_old_wood7152_light_Normal.png",
+                "metallic": "Assets/Textures/dirty_old_wood7152_light_Metallic.png"
+            }
+        },
+        "dirty_old_wood7152_light_rz90": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/dirty_old_wood7152_light_rz90_Albedo.png",
+                "roughness": "Assets/Textures/dirty_old_wood7152_light_rz90_Roughness.png",
+                "normal": "Assets/Textures/dirty_old_wood7152_light_rz90_Normal.png",
+                "metallic": "Assets/Textures/dirty_old_wood7152_light_rz90_Metallic.png"
+            }
+        },
+        "forest_ground_04": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/forest_ground_04_Albedo.png",
+                "roughness": "Assets/Textures/forest_ground_04_Roughness.png",
+                "normal": "Assets/Textures/forest_ground_04_Normal.png"
+            }
+        },
+        "forest_leaves_04": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/forest_leaves_04_Albedo.png",
+                "roughness": "Assets/Textures/forest_leaves_04_Roughness.png",
+                "normal": "Assets/Textures/forest_leaves_04_Normal.png"
+            }
+        },
+        "ID1": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/latarnia2_Albedo.png",
+                "metallic": "Assets/Textures/latarnia2_Metalness.png",
+                "roughness": "Assets/Textures/latarnia2_Roughness.png",
+                "normal": "Assets/Textures/latarnia2_Normal.png"
+            }
+        },
+        "ID1.002": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/pochodnia1_Albedo.png",
+                "roughness": "Assets/Textures/pochodnia1_Roughness.png",
+                "normal": "Assets/Textures/pochodnia1_Normal.png"
+            }
+        },
+        "ID2": {
+            "mapping_type": "UV",
+            "textures": {}
+        },
+        "ID2.002": {
+            "mapping_type": "UV",
+            "textures": {}
+        },
+        "ID2V": {
+            "mapping_type": "UV",
+            "textures": {}
+        },
+        "ID3": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/latarnia2_Albedo.png",
+                "metallic": "Assets/Textures/latarnia2_Metalness.png",
+                "roughness": "Assets/Textures/latarnia2_Roughness.png",
+                "normal": "Assets/Textures/latarnia2_Normal.png"
+            }
+        },
+        "ID4": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/latarnia2_Albedo.png",
+                "metallic": "Assets/Textures/latarnia2_Metalness.png",
+                "roughness": "Assets/Textures/latarnia2_Roughness.png",
+                "normal": "Assets/Textures/latarnia2_Normal.png"
+            }
+        },
+        "m_river": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/m_river_Albedo.png",
+                "roughness": "Assets/Textures/m_river_Roughness.png",
+                "normal": "Assets/Textures/m_river_Normal.png",
+                "metallic": "Assets/Textures/m_river_Metallic.png"
+            }
+        },
+        "M_Terrain": {
+            "mapping_type": "UV",
+            "textures": {}
+        },
+        "m_water": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/m_water_Albedo.png",
+                "roughness": "Assets/Textures/m_water_Roughness.png",
+                "normal": "Assets/Textures/m_water_Normal.png",
+                "metallic": "Assets/Textures/m_water_Metallic.png"
+            }
+        },
+        "Main": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/slupek_plotu1_Albedo.png",
+                "roughness": "Assets/Textures/slupek_plotu1_Roughness.png",
+                "normal": "Assets/Textures/slupek_plotu1_Normal.png"
+            }
+        },
+        "main.001": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/przepustka_zamku_2_Albedo.png",
+                "metallic": "Assets/Textures/przepustka_zamku_2_Metalness.png",
+                "roughness": "Assets/Textures/przepustka_zamku_2_Roughness.png",
+                "normal": "Assets/Textures/przepustka_zamku_2_Normal.png"
+            }
+        },
+        "Main.001": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/slupek_plotu1_Albedo.png",
+                "roughness": "Assets/Textures/slupek_plotu1_Roughness.png",
+                "normal": "Assets/Textures/slupek_plotu1_Normal.png"
+            }
+        },
+        "Main.002": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lawka_Albedo.png",
+                "roughness": "Assets/Textures/lawka_Roughness.png",
+                "normal": "Assets/Textures/lawka_Normal.png"
+            }
+        },
+        "Main.003": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/slupek_plotu1_Albedo.png",
+                "roughness": "Assets/Textures/slupek_plotu1_Roughness.png",
+                "normal": "Assets/Textures/slupek_plotu1_Normal.png"
+            }
+        },
+        "Main.004": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/slupek_plotu1_Albedo.png",
+                "roughness": "Assets/Textures/slupek_plotu1_Roughness.png",
+                "normal": "Assets/Textures/slupek_plotu1_Normal.png"
+            }
+        },
+        "Main.005": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/slupek_plotu1_Albedo.png",
+                "roughness": "Assets/Textures/slupek_plotu1_Roughness.png",
+                "normal": "Assets/Textures/slupek_plotu1_Normal.png"
+            }
+        },
+        "Main.006": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/plot_drewniany_Albedo.png",
+                "roughness": "Assets/Textures/plot_drewniany_Roughness.png",
+                "normal": "Assets/Textures/plot_drewniany_Normal.png"
+            }
+        },
+        "Main.007": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/plot_drewniany_Albedo.png",
+                "roughness": "Assets/Textures/plot_drewniany_Roughness.png",
+                "normal": "Assets/Textures/plot_drewniany_Normal.png"
+            }
+        },
+        "Main.008": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/plot_drewniany_Albedo.png",
+                "roughness": "Assets/Textures/plot_drewniany_Roughness.png",
+                "normal": "Assets/Textures/plot_drewniany_Normal.png"
+            }
+        },
+        "Main.009": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/plot_drewniany_Albedo.png",
+                "roughness": "Assets/Textures/plot_drewniany_Roughness.png",
+                "normal": "Assets/Textures/plot_drewniany_Normal.png"
+            }
+        },
+        "Main.010": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/plot_drewniany_Albedo.png",
+                "roughness": "Assets/Textures/plot_drewniany_Roughness.png",
+                "normal": "Assets/Textures/plot_drewniany_Normal.png"
+            }
+        },
+        "Main.011": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/plot_drewniany_Albedo.png",
+                "roughness": "Assets/Textures/plot_drewniany_Roughness.png",
+                "normal": "Assets/Textures/plot_drewniany_Normal.png"
+            }
+        },
+        "Main.012": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/plot_drewniany_Albedo.png",
+                "roughness": "Assets/Textures/plot_drewniany_Roughness.png",
+                "normal": "Assets/Textures/plot_drewniany_Normal.png"
+            }
+        },
+        "Main.013": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/plot_drewniany_Albedo.png",
+                "roughness": "Assets/Textures/plot_drewniany_Roughness.png",
+                "normal": "Assets/Textures/plot_drewniany_Normal.png"
+            }
+        },
+        "Main.014": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/plot_drewniany_Albedo.png",
+                "roughness": "Assets/Textures/plot_drewniany_Roughness.png",
+                "normal": "Assets/Textures/plot_drewniany_Normal.png"
+            }
+        },
+        "Main.015": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/plot_drewniany_Albedo.png",
+                "roughness": "Assets/Textures/plot_drewniany_Roughness.png",
+                "normal": "Assets/Textures/plot_drewniany_Normal.png"
+            }
+        },
+        "Main.016": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/plot_drewniany_Albedo.png",
+                "roughness": "Assets/Textures/plot_drewniany_Roughness.png",
+                "normal": "Assets/Textures/plot_drewniany_Normal.png"
+            }
+        },
+        "Main.017": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/plot_drewniany_Albedo.png",
+                "roughness": "Assets/Textures/plot_drewniany_Roughness.png",
+                "normal": "Assets/Textures/plot_drewniany_Normal.png"
+            }
+        },
+        "Main.018": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/plot_drewniany_Albedo.png",
+                "roughness": "Assets/Textures/plot_drewniany_Roughness.png",
+                "normal": "Assets/Textures/plot_drewniany_Normal.png"
+            }
+        },
+        "Main.019": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/plot_drewniany_Albedo.png",
+                "roughness": "Assets/Textures/plot_drewniany_Roughness.png",
+                "normal": "Assets/Textures/plot_drewniany_Normal.png"
+            }
+        },
+        "Main.020": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/plot_drewniany_Albedo.png",
+                "roughness": "Assets/Textures/plot_drewniany_Roughness.png",
+                "normal": "Assets/Textures/plot_drewniany_Normal.png"
+            }
+        },
+        "Main.021": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/plot_drewniany_Albedo.png",
+                "roughness": "Assets/Textures/plot_drewniany_Roughness.png",
+                "normal": "Assets/Textures/plot_drewniany_Normal.png"
+            }
+        },
+        "Main.022": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/plot_drewniany_Albedo.png",
+                "roughness": "Assets/Textures/plot_drewniany_Roughness.png",
+                "normal": "Assets/Textures/plot_drewniany_Normal.png"
+            }
+        },
+        "Main.023": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/plot_drewniany_Albedo.png",
+                "roughness": "Assets/Textures/plot_drewniany_Roughness.png",
+                "normal": "Assets/Textures/plot_drewniany_Normal.png"
+            }
+        },
+        "Main.024": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/plot_drewniany_Albedo.png",
+                "roughness": "Assets/Textures/plot_drewniany_Roughness.png",
+                "normal": "Assets/Textures/plot_drewniany_Normal.png"
+            }
+        },
+        "Main.025": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/plot_drewniany_Albedo.png",
+                "roughness": "Assets/Textures/plot_drewniany_Roughness.png",
+                "normal": "Assets/Textures/plot_drewniany_Normal.png"
+            }
+        },
+        "Main.026": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/plot_drewniany_Albedo.png",
+                "roughness": "Assets/Textures/plot_drewniany_Roughness.png",
+                "normal": "Assets/Textures/plot_drewniany_Normal.png"
+            }
+        },
+        "Main.027": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/plot_drewniany_Albedo.png",
+                "roughness": "Assets/Textures/plot_drewniany_Roughness.png",
+                "normal": "Assets/Textures/plot_drewniany_Normal.png"
+            }
+        },
+        "Main.028": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/plot_drewniany_Albedo.png",
+                "roughness": "Assets/Textures/plot_drewniany_Roughness.png",
+                "normal": "Assets/Textures/plot_drewniany_Normal.png"
+            }
+        },
+        "Main.029": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/plot_drewniany_Albedo.png",
+                "roughness": "Assets/Textures/plot_drewniany_Roughness.png",
+                "normal": "Assets/Textures/plot_drewniany_Normal.png"
+            }
+        },
+        "Main.030": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/plot_drewniany_Albedo.png",
+                "roughness": "Assets/Textures/plot_drewniany_Roughness.png",
+                "normal": "Assets/Textures/plot_drewniany_Normal.png"
+            }
+        },
+        "Main.031": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/plot_drewniany_Albedo.png",
+                "roughness": "Assets/Textures/plot_drewniany_Roughness.png",
+                "normal": "Assets/Textures/plot_drewniany_Normal.png"
+            }
+        },
+        "Main.032": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/plot_drewniany_Albedo.png",
+                "roughness": "Assets/Textures/plot_drewniany_Roughness.png",
+                "normal": "Assets/Textures/plot_drewniany_Normal.png"
+            }
+        },
+        "Main.033": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/plot_drewniany_Albedo.png",
+                "roughness": "Assets/Textures/plot_drewniany_Roughness.png",
+                "normal": "Assets/Textures/plot_drewniany_Normal.png"
+            }
+        },
+        "Main.034": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/plot_drewniany_Albedo.png",
+                "roughness": "Assets/Textures/plot_drewniany_Roughness.png",
+                "normal": "Assets/Textures/plot_drewniany_Normal.png"
+            }
+        },
+        "Main.035": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/plot_drewniany_Albedo.png",
+                "roughness": "Assets/Textures/plot_drewniany_Roughness.png",
+                "normal": "Assets/Textures/plot_drewniany_Normal.png"
+            }
+        },
+        "Main.036": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/plot_drewniany_Albedo.png",
+                "roughness": "Assets/Textures/plot_drewniany_Roughness.png",
+                "normal": "Assets/Textures/plot_drewniany_Normal.png"
+            }
+        },
+        "Main.037": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/plot_drewniany_Albedo.png",
+                "roughness": "Assets/Textures/plot_drewniany_Roughness.png",
+                "normal": "Assets/Textures/plot_drewniany_Normal.png"
+            }
+        },
+        "Main.038": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/plot_drewniany_Albedo.png",
+                "roughness": "Assets/Textures/plot_drewniany_Roughness.png",
+                "normal": "Assets/Textures/plot_drewniany_Normal.png"
+            }
+        },
+        "Main.039": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/slupek_plotu1_Albedo.png",
+                "roughness": "Assets/Textures/slupek_plotu1_Roughness.png",
+                "normal": "Assets/Textures/slupek_plotu1_Normal.png"
+            }
+        },
+        "Main.040": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/slupek_plotu1_Albedo.png",
+                "roughness": "Assets/Textures/slupek_plotu1_Roughness.png",
+                "normal": "Assets/Textures/slupek_plotu1_Normal.png"
+            }
+        },
+        "Main.041": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/slupek_plotu1_Albedo.png",
+                "roughness": "Assets/Textures/slupek_plotu1_Roughness.png",
+                "normal": "Assets/Textures/slupek_plotu1_Normal.png"
+            }
+        },
+        "Main.042": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/slupek_plotu1_Albedo.png",
+                "roughness": "Assets/Textures/slupek_plotu1_Roughness.png",
+                "normal": "Assets/Textures/slupek_plotu1_Normal.png"
+            }
+        },
+        "Main.043": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/slupek_plotu1_Albedo.png",
+                "roughness": "Assets/Textures/slupek_plotu1_Roughness.png",
+                "normal": "Assets/Textures/slupek_plotu1_Normal.png"
+            }
+        },
+        "Main.044": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/slupek_plotu1_Albedo.png",
+                "roughness": "Assets/Textures/slupek_plotu1_Roughness.png",
+                "normal": "Assets/Textures/slupek_plotu1_Normal.png"
+            }
+        },
+        "Main.045": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/slupek_plotu1_Albedo.png",
+                "roughness": "Assets/Textures/slupek_plotu1_Roughness.png",
+                "normal": "Assets/Textures/slupek_plotu1_Normal.png"
+            }
+        },
+        "Main.046": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/slupek_plotu1_Albedo.png",
+                "roughness": "Assets/Textures/slupek_plotu1_Roughness.png",
+                "normal": "Assets/Textures/slupek_plotu1_Normal.png"
+            }
+        },
+        "Main.047": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/wieszak_na_ubrania_Albedo.png",
+                "roughness": "Assets/Textures/wieszak_na_ubrania_Roughness.png",
+                "normal": "Assets/Textures/wieszak_na_ubrania_Normal.png"
+            }
+        },
+        "Main.049": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/znak_info_Albedo.png",
+                "metallic": "Assets/Textures/znak_info_Metalness.png",
+                "roughness": "Assets/Textures/znak_info_Roughness.png",
+                "normal": "Assets/Textures/znak_info_Normal.png"
+            }
+        },
+        "Main.052": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/drzwi_wewnetrzne_Albedo.png",
+                "metallic": "Assets/Textures/drzwi_wewnetrzne_Metalness.png",
+                "roughness": "Assets/Textures/drzwi_wewnetrzne_Roughness.png",
+                "normal": "Assets/Textures/drzwi_wewnetrzne_Normal.png"
+            }
+        },
+        "Main.053": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.054": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.055": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.056": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.057": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.058": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.059": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.060": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.061": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.062": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.063": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.064": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.065": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/dzwonek_alarmowy_Albedo.png",
+                "metallic": "Assets/Textures/dzwonek_alarmowy_Metalness.png",
+                "roughness": "Assets/Textures/dzwonek_alarmowy_Roughness.png",
+                "normal": "Assets/Textures/dzwonek_alarmowy_Normal.png"
+            }
+        },
+        "Main.066": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.067": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.068": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.069": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.070": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.071": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.072": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.073": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.074": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.075": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.076": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.077": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.078": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.079": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.080": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.081": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.082": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.083": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.084": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.085": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.086": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.087": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.088": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.089": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.090": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.091": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.092": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.093": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.094": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.095": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.096": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/lozko2_Albedo.png",
+                "metallic": "Assets/Textures/lozko2_Metalness.png",
+                "roughness": "Assets/Textures/lozko2_Roughness.png",
+                "normal": "Assets/Textures/lozko2_Normal.png"
+            }
+        },
+        "Main.097": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/mloteczek_dzwonka_alarmowego_Albedo.png",
+                "metallic": "Assets/Textures/mloteczek_dzwonka_alarmowego_Metalness.png",
+                "roughness": "Assets/Textures/mloteczek_dzwonka_alarmowego_Roughness.png",
+                "normal": "Assets/Textures/mloteczek_dzwonka_alarmowego_Normal.png"
+            }
+        },
+        "Main.098": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/drogowskaz1_Albedo.png",
+                "metallic": "Assets/Textures/drogowskaz1_Metalness.png",
+                "roughness": "Assets/Textures/drogowskaz1_Roughness.png",
+                "normal": "Assets/Textures/drogowskaz1_Normal.png"
+            }
+        },
+        "Main.099": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/zawias_drzwi_wewnetrznych_Albedo.png",
+                "metallic": "Assets/Textures/zawias_drzwi_wewnetrznych_Metalness.png",
+                "roughness": "Assets/Textures/zawias_drzwi_wewnetrznych_Roughness.png",
+                "normal": "Assets/Textures/zawias_drzwi_wewnetrznych_Normal.png"
+            }
+        },
+        "Main.100": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/drogowskaz2_Albedo.png",
+                "metallic": "Assets/Textures/drogowskaz2_Metalness.png",
+                "roughness": "Assets/Textures/drogowskaz2_Roughness.png",
+                "normal": "Assets/Textures/drogowskaz2_Normal.png"
+            }
+        },
+        "Main.101": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/zawias_drzwi_wewnetrznych_Albedo.png",
+                "metallic": "Assets/Textures/zawias_drzwi_wewnetrznych_Metalness.png",
+                "roughness": "Assets/Textures/zawias_drzwi_wewnetrznych_Roughness.png",
+                "normal": "Assets/Textures/zawias_drzwi_wewnetrznych_Normal.png"
+            }
+        },
+        "marble_cliff_02": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/marble_cliff_02_Albedo.png",
+                "roughness": "Assets/Textures/marble_cliff_02_Roughness.png",
+                "normal": "Assets/Textures/marble_cliff_02_Normal.png"
+            }
+        },
+        "MarbleRock01": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/MarbleRock01_Albedo.png",
+                "roughness": "Assets/Textures/MarbleRock01_Roughness.png",
+                "normal": "Assets/Textures/MarbleRock01_Normal.png",
+                "metallic": "Assets/Textures/MarbleRock01_Metallic.png"
+            }
+        },
+        "MarbleRock01_light": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/MarbleRock01_light_Albedo.png",
+                "roughness": "Assets/Textures/MarbleRock01_light_Roughness.png",
+                "normal": "Assets/Textures/MarbleRock01_light_Normal.png",
+                "metallic": "Assets/Textures/MarbleRock01_light_Metallic.png"
+            }
+        },
+        "Material_2_Mat": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/Material_2_Mat_Albedo.png",
+                "roughness": "Assets/Textures/Material_2_Mat_Roughness.png",
+                "normal": "Assets/Textures/Material_2_Mat_Normal.png",
+                "metallic": "Assets/Textures/Material_2_Mat_Metallic.png"
+            }
+        },
+        "Metal025": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/Metal025_Albedo.png",
+                "roughness": "Assets/Textures/Metal025_Roughness.png",
+                "normal": "Assets/Textures/Metal025_Normal.png",
+                "metallic": "Assets/Textures/Metal025_Metallic.png"
+            }
+        },
+        "old-sheet-metal": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/old-sheet-metal_Albedo.png",
+                "metallic": "Assets/Textures/old-sheet-metal_Metallic.png",
+                "normal": "Assets/Textures/old-sheet-metal_Normal.png"
+            }
+        },
+        "old_stone_wall": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/old_stone_wall_Albedo.png",
+                "roughness": "Assets/Textures/old_stone_wall_Roughness.png",
+                "normal": "Assets/Textures/old_stone_wall_Normal.png",
+                "metallic": "Assets/Textures/old_stone_wall_Metallic.png"
+            }
+        },
+        "old_stone_wall_02": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/old_stone_wall_02_Albedo.png",
+                "roughness": "Assets/Textures/old_stone_wall_02_Roughness.png",
+                "normal": "Assets/Textures/old_stone_wall_02_Normal.png",
+                "metallic": "Assets/Textures/old_stone_wall_02_Metallic.png"
+            }
+        },
+        "PaintedWood005": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/PaintedWood005_Albedo.png",
+                "roughness": "Assets/Textures/PaintedWood005_Roughness.png",
+                "normal": "Assets/Textures/PaintedWood005_Normal.png",
+                "metallic": "Assets/Textures/PaintedWood005_Metallic.png"
+            }
+        },
+        "PaintedWood005_dark": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/PaintedWood005_dark_Albedo.png",
+                "roughness": "Assets/Textures/PaintedWood005_dark_Roughness.png",
+                "normal": "Assets/Textures/PaintedWood005_dark_Normal.png",
+                "metallic": "Assets/Textures/PaintedWood005_dark_Metallic.png"
+            }
+        },
+        "przelacznik_bramy": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/przelacznik_bramy_Albedo.png",
+                "metallic": "Assets/Textures/przelacznik_bramy_Metalness.png",
+                "roughness": "Assets/Textures/przelacznik_bramy_Roughness.png",
+                "normal": "Assets/Textures/przelacznik_bramy_Normal.png"
+            }
+        },
+        "Rock 01": {
+            "mapping_type": "UV",
+            "textures": {}
+        },
+        "rock01": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/rock01_Albedo.png",
+                "roughness": "Assets/Textures/rock01_Roughness.png",
+                "normal": "Assets/Textures/rock01_Normal.png",
+                "metallic": "Assets/Textures/rock01_Metallic.png"
+            }
+        },
+        "rock_face_03": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/rock_face_03_Albedo.png",
+                "roughness": "Assets/Textures/rock_face_03_Roughness.png",
+                "normal": "Assets/Textures/rock_face_03_Normal.png",
+                "metallic": "Assets/Textures/rock_face_03_Metallic.png"
+            }
+        },
+        "rocky_trail_02": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/rocky_trail_02_Albedo.png",
+                "roughness": "Assets/Textures/rocky_trail_02_Roughness.png",
+                "normal": "Assets/Textures/rocky_trail_02_Normal.png",
+                "metallic": "Assets/Textures/rocky_trail_02_Metallic.png"
+            }
+        },
+        "roof_slates_02": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/roof_slates_02_Albedo.png",
+                "roughness": "Assets/Textures/roof_slates_02_Roughness.png",
+                "normal": "Assets/Textures/roof_slates_02_Normal.png",
+                "metallic": "Assets/Textures/roof_slates_02_Metallic.png"
+            }
+        },
+        "stick.001": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/stick.001_Albedo.png",
+                "roughness": "Assets/Textures/stick.001_Roughness.png",
+                "normal": "Assets/Textures/stick.001_Normal.png",
+                "metallic": "Assets/Textures/stick.001_Metallic.png"
+            }
+        },
+        "trawa1": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/trawa1_Albedo.png",
+                "roughness": "Assets/Textures/trawa1_Roughness.png",
+                "normal": "Assets/Textures/trawa1_Normal.png",
+                "metallic": "Assets/Textures/trawa1_Metallic.png"
+            }
+        },
+        "Tree Bark": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/tree_bark_19_color.jpg"
+            }
+        },
+        "Tree Bark.001": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/Tree Bark.001_Albedo.png",
+                "roughness": "Assets/Textures/Tree Bark.001_Roughness.png",
+                "normal": "Assets/Textures/Tree Bark.001_Normal.png",
+                "metallic": "Assets/Textures/Tree Bark.001_Metallic.png"
+            }
+        },
+        "Tree Bark.002": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/Tree Bark.002_Albedo.png",
+                "roughness": "Assets/Textures/Tree Bark.002_Roughness.png",
+                "normal": "Assets/Textures/Tree Bark.002_Normal.png",
+                "metallic": "Assets/Textures/Tree Bark.002_Metallic.png"
+            }
+        },
+        "Tree Bark.003": {
+            "mapping_type": "UV",
+            "textures": {
+                "albedo": "Assets/Textures/tree_bark_19_color.jpg"
+            }
+        },
+        "violet_crystal": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/violet_crystal_43_63_diffuse.jpg",
+                "metallic": "Assets/Textures/violet_crystal_43_63_metallic.jpg",
+                "roughness": "Assets/Textures/violet_crystal_43_63_roughness.jpg"
+            }
+        },
+        "wood_planks_grey": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/wood_planks_grey_Albedo.png",
+                "roughness": "Assets/Textures/wood_planks_grey_Roughness.png",
+                "normal": "Assets/Textures/wood_planks_grey_Normal.png",
+                "metallic": "Assets/Textures/wood_planks_grey_Metallic.png"
+            }
+        },
+        "wood_planks_grey_1_dark": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/wood_planks_grey_1_dark_Albedo.png",
+                "roughness": "Assets/Textures/wood_planks_grey_1_dark_Roughness.png",
+                "normal": "Assets/Textures/wood_planks_grey_1_dark_Normal.png",
+                "metallic": "Assets/Textures/wood_planks_grey_1_dark_Metallic.png"
+            }
+        },
+        "wood_planks_grey_1_dark_r90": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/wood_planks_grey_1_dark_r90_Albedo.png",
+                "roughness": "Assets/Textures/wood_planks_grey_1_dark_r90_Roughness.png",
+                "normal": "Assets/Textures/wood_planks_grey_1_dark_r90_Normal.png",
+                "metallic": "Assets/Textures/wood_planks_grey_1_dark_r90_Metallic.png"
+            }
+        },
+        "yellow_stone_wall": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/yellow_stone_wall_Albedo.png",
+                "roughness": "Assets/Textures/yellow_stone_wall_Roughness.png",
+                "normal": "Assets/Textures/yellow_stone_wall_Normal.png",
+                "metallic": "Assets/Textures/yellow_stone_wall_Metallic.png"
+            }
+        },
+        "yellow_stone_wall_1": {
+            "mapping_type": "TRIPLANAR",
+            "textures": {
+                "albedo": "Assets/Textures/yellow_stone_wall_1_Albedo.png",
+                "roughness": "Assets/Textures/yellow_stone_wall_1_Roughness.png",
+                "normal": "Assets/Textures/yellow_stone_wall_1_Normal.png",
+                "metallic": "Assets/Textures/yellow_stone_wall_1_Metallic.png"
+            }
+        }
+    },
+    "terrain_info": {
+        "material_name": "M_Terrain",
+        "attribute_name": "Color",
+        "sub_materials": [
+            "forest_ground_04",
+            "forest_leaves_04",
+            "marble_cliff_02"
+        ]
+    }
+}

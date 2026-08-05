@@ -1,0 +1,2657 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.3/staging' branch; Version is '6000.3.11f1 (3000ef702840) revision 3145967'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-admin" at "2026-08-04T10:01:10.8469537Z"
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'pl' Physical Memory: 12067 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-08-04T10:01:10Z
+
+COMMAND LINE ARGUMENTS:
+F:\PROGRAMY\UH\editor\6000.3.11f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+F:/PROJEKTY/UNITY3D/mom/PZ---Mieczem-o-miecz
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+60921
+-licensingIpc
+LicenseClient-admin
+-job-worker-count
+3
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: F:/PROJEKTY/UNITY3D/mom/PZ---Mieczem-o-miecz
+F:/PROJEKTY/UNITY3D/mom/PZ---Mieczem-o-miecz
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+Player connection [12888]  Target information:
+
+Player connection [12888]  * "[IP] 192.168.149.245 [Port] 0 [Flags] 2 [Guid] 1571375358 [EditorId] 1571375358 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CA8F1UO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [12888] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [12888] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 3
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 3102.88 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.11f1 (3000ef702840)
+[Subsystems] Discovering subsystems at path F:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path F:/PROJEKTY/UNITY3D/mom/PZ---Mieczem-o-miecz/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) Iris(R) Xe Graphics (ID=0x9a49)
+    Vendor:   Intel
+    VRAM:     6033 MB
+    Driver:   30.0.101.1404
+Initialize mono
+Mono path[0] = 'F:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/Managed'
+Mono path[1] = 'F:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'F:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56428
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.18.0'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-admin"
+[Licensing::IpcConnector] LicenseClient-admin channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-admin-6000.3.11" at "2026-08-04T10:01:44.7376053Z"
+Registering precompiled unity dll's ...
+Register platform support module: F:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: F:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.0+23225a6
+  Session Id:              6b6b1189eaac4f8d8391846c507f8ff2
+  Correlation Id:          fa1759abe6cf8f2480578c132f539ec5
+  External correlation Id: 2140171520872723769
+  Machine Id:              LQ6p1xkmfwnr1UFtBDHsvoheTGg=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-admin-6000.3.11" (connect: 0.00s, validation: 0.02s, handshake: 4.93s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-admin-6000.3.11-notifications" at "2026-08-04T10:01:49.6865406Z"
+[Licensing::Module] Licensing Background thread has ended after 38.84s
+[Licensing::Module] Licensing is initialized (took 4.64s).
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 7972536305137-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+Register platform support module: F:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 4.899799 seconds.
+- Loaded All Assemblies, in 17.246 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  6.095 seconds
+Domain Reload Profiling: 23341ms
+	BeginReloadAssembly (10376ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (157ms)
+	RebuildCommonClasses (693ms)
+	RebuildNativeTypeToScriptingClass (25ms)
+	initialDomainReloadingComplete (5113ms)
+	LoadAllAssembliesAndSetupDomain (1038ms)
+		LoadAssemblies (10254ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (902ms)
+			TypeCache.Refresh (900ms)
+				TypeCache.ScanAssembly (768ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (6095ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (6028ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (1077ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (89ms)
+			ProcessInitializeOnLoadAttributes (1529ms)
+			ProcessInitializeOnLoadMethodAttributes (3329ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  3.935 seconds
+Refreshing native plugins compatible for Editor in 8.72 ms, found 11 plugins.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-VR_MoM
+<RI> Initializing input.
+Using Windows.Gaming.Input
+<RI> Input initialized.
+Found 0 scene poses
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Autohand.AutoHandUpdateDataWizard:FindScenePoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:244)
+Autohand.AutoHandUpdateDataWizard:CheckSceneForOldPoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:54)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs Line: 244)
+
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.686 seconds
+Domain Reload Profiling: 5472ms
+	BeginReloadAssembly (263ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (27ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (85ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (3432ms)
+		LoadAssemblies (2997ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (527ms)
+			TypeCache.Refresh (380ms)
+				TypeCache.ScanAssembly (364ms)
+			BuildScriptInfoCaches (120ms)
+			ResolveRequiredComponents (21ms)
+	FinalizeReload (1686ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1209ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (11ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (152ms)
+			ProcessInitializeOnLoadAttributes (627ms)
+			ProcessInitializeOnLoadMethodAttributes (414ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 6.88 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 18 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7636 unused Assets / (4.9 MB). Loaded Objects now: 8541.
+Memory consumption went from 199.7 MB to 194.8 MB.
+Total: 9.944200 ms (FindLiveObjects: 1.482800 ms CreateObjectMapping: 0.704300 ms MarkObjects: 5.185100 ms  DeleteObjects: 2.571200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1433072.135308 seconds.
+  path: Assets/Textures/Baked_Textures/Birch Leaf_Normal.png
+  artifactKey: Guid(19167dbe51817b34fbad90e8ce5fadc9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/Baked_Textures/Birch Leaf_Normal.png using Guid(19167dbe51817b34fbad90e8ce5fadc9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter)[Licensing::Client] Successfully resolved entitlement details
+ -> (artifact id: '68c60874f7a68584c927e75f15a464d2') in 3.0916599 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/Textures/Baked_Textures/dirty_old_wood7152_1_dark_Normal.png
+  artifactKey: Guid(2758a0ae637b8dd47b6a4a564b1bfe90) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/Baked_Textures/dirty_old_wood7152_1_dark_Normal.png using Guid(2758a0ae637b8dd47b6a4a564b1bfe90) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c53286fe428d762422ce5ac60697b145') in 0.0387437 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Textures/Baked_Textures/violet_crystal_43_63_normal.jpg
+  artifactKey: Guid(d08e43e800a8c4f4aa71bd7915c35959) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/Baked_Textures/violet_crystal_43_63_normal.jpg using Guid(d08e43e800a8c4f4aa71bd7915c35959) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '69f110f62b024d76cb067a66965a2e0f') in 0.0761275 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Textures/gotowe_modele/kwatera/old/szafa_na_dokumenty/szafa2/export/szafa_na_dokumenty2/szafa_na_dokumenty2_Normal.png
+  artifactKey: Guid(2cef28ba75e476548bcad678dcc2a925) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/gotowe_modele/kwatera/old/szafa_na_dokumenty/szafa2/export/szafa_na_dokumenty2/szafa_na_dokumenty2_Normal.png using Guid(2cef28ba75e476548bcad678dcc2a925) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0cf5a95e3b0ba0752a20bd13bdf6ca46') in 0.0326063 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Textures/gotowe_modele/env/pochodnia1/export/pochodnia1/pochodnia1_Normal.png
+  artifactKey: Guid(ed694bdf3f80ee247847e98797d59ca8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/gotowe_modele/env/pochodnia1/export/pochodnia1/pochodnia1_Normal.png using Guid(ed694bdf3f80ee247847e98797d59ca8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f906effafc9dafddde4ac22fb4bd337f') in 0.0279861 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Textures/gotowe_modele/env/latarnia2/export/latarnia2/latarnia2_Normal.png
+  artifactKey: Guid(0d8c3f421fdcc8b4a9c3bad4f331db3a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/gotowe_modele/env/latarnia2/export/latarnia2/latarnia2_Normal.png using Guid(0d8c3f421fdcc8b4a9c3bad4f331db3a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f6d84b07f45b6f74c344bd4daecd959c') in 0.0281249 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Textures/Baked_Textures/dirty_old_wood7152_1_light_Normal.png
+  artifactKey: Guid(4abfdf843d0b8664ebf151f37442f0c5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/Baked_Textures/dirty_old_wood7152_1_light_Normal.png using Guid(4abfdf843d0b8664ebf151f37442f0c5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '627c22a4b91f7ec9b7fe793e943c4b2e') in 0.0956849 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Textures/gotowe_modele/kwatera/wieszak_na_ubrania/export/wieszak_na_ubrania/wieszak_na_ubrania_Normal.png
+  artifactKey: Guid(f0264b6ee4601b94f8cfef3830c7deca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/gotowe_modele/kwatera/wieszak_na_ubrania/export/wieszak_na_ubrania/wieszak_na_ubrania_Normal.png using Guid(f0264b6ee4601b94f8cfef3830c7deca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '335f6ec213aab79fbf541366fb12331a') in 0.0455757 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Textures/Baked_Textures/dirty_old_wood7152_dark_rz90_Normal.png
+  artifactKey: Guid(d83c8d63db591434796c447e8bec3b21) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/Baked_Textures/dirty_old_wood7152_dark_rz90_Normal.png using Guid(d83c8d63db591434796c447e8bec3b21) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e03fb787e02d6c3ac3b42cb55be27394') in 0.0277821 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Textures/Baked_Textures/PaintedWood005_Normal.png
+  artifactKey: Guid(66a63a552dd03d048acd4c66b99da24a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/Baked_Textures/PaintedWood005_Normal.png using Guid(66a63a552dd03d048acd4c66b99da24a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cb8d70b51570af5c0f470c903fa69db6') in 0.2019947 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Textures/Baked_Textures/m_river_Normal.png
+  artifactKey: Guid(e6914a451b44fcd488c630c0a397c489) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/Baked_Textures/m_river_Normal.png using Guid(e6914a451b44fcd488c630c0a397c489) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a59d2c8051944ccd3487ca67bafe0bd8') in 0.129024 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Textures/gotowe_modele/kwatera/old/szafa_na_dokumenty_podreczne/export/szafa_na_dokumenty_podreczne/szafa_na_dokumenty_podreczne_Normal.png
+  artifactKey: Guid(8549743dc2847b04ba010a60f418a0c7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/gotowe_modele/kwatera/old/szafa_na_dokumenty_podreczne/export/szafa_na_dokumenty_podreczne/szafa_na_dokumenty_podreczne_Normal.png using Guid(8549743dc2847b04ba010a60f418a0c7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b0a0148c4b7b6a3a9f4377721f58d6d0') in 0.0251846 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Textures/Baked_Textures/MarbleRock01_light_Normal.png
+  artifactKey: Guid(36fb9d58d842fe2488851c1518928878) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/Baked_Textures/MarbleRock01_light_Normal.png using Guid(36fb9d58d842fe2488851c1518928878) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5166c8b23c4867faf184e94c4eb48776') in 0.0973759 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/CurvedSword/CurvedSword.mat
+  artifactKey: Guid(73a3f1a450996a044aa59f7c275c6038) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/CurvedSword/CurvedSword.mat using Guid(73a3f1a450996a044aa59f7c275c6038) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2ff803c0d589c04b22fa1096473af785') in 0.1370852 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Textures/Baked_Textures/trawa1_Normal.png
+  artifactKey: Guid(c2a5fdbe7a602134883b1b148f5ae0bc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/Baked_Textures/trawa1_Normal.png using Guid(c2a5fdbe7a602134883b1b148f5ae0bc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '476bd447bc547031edef2959d3b7ffb4') in 0.1457677 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Textures/gotowe_modele/env/lawka/export/lawka/lawka_Normal.png
+  artifactKey: Guid(d47761d5b68b3b146a1d2beaa733f9e3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/gotowe_modele/env/lawka/export/lawka/lawka_Normal.png using Guid(d47761d5b68b3b146a1d2beaa733f9e3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '71c49f81a9129d1e7e5f48eecffdb201') in 0.0250055 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Textures/Baked_Textures/Material.001_Normal.png
+  artifactKey: Guid(4cee68fe62a0a444092baa39049cbadc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/Baked_Textures/Material.001_Normal.png using Guid(4cee68fe62a0a444092baa39049cbadc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1f2d3801b4ba99758ebcd3637ed03e57') in 0.1619064 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Textures/gotowe_modele/kwatera/zawias_drzwi_wewnetrznych/export/zawias_drzwi_wewnetrznych/zawias_drzwi_wewnetrznych_Normal.png
+  artifactKey: Guid(8f493d91cce982541b6ab0fde8afc6e7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/gotowe_modele/kwatera/zawias_drzwi_wewnetrznych/export/zawias_drzwi_wewnetrznych/zawias_drzwi_wewnetrznych_Normal.png using Guid(8f493d91cce982541b6ab0fde8afc6e7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5ab04fa39818ae218ebd2b0cc05a0a68') in 0.0216234 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Textures/gotowe_modele/env/plot/export/plot_drewniany/plot_drewniany_Normal.png
+  artifactKey: Guid(d902bccd5d7fd6f459f50c84ba8ae197) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/gotowe_modele/env/plot/export/plot_drewniany/plot_drewniany_Normal.png using Guid(d902bccd5d7fd6f459f50c84ba8ae197) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '518969ef3d5cd97c949bdbd9316c4f14') in 0.0834832 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Textures/Baked_Textures/dark_wooden_planks_Normal.png
+  artifactKey: Guid(c344456aa5d008b4f81fbae20109119c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/Baked_Textures/dark_wooden_planks_Normal.png using Guid(c344456aa5d008b4f81fbae20109119c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8f54d43c12f7c2b2512ff0c85c247f26') in 0.1648145 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Textures/Baked_Textures/old-sheet-metal_Normal.png
+  artifactKey: Guid(a4bf96a8149d2194c98eeaddc7b9f825) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/Baked_Textures/old-sheet-metal_Normal.png using Guid(a4bf96a8149d2194c98eeaddc7b9f825) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7ba335714d11be6b605bbc13b538f21f') in 0.2159696 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Textures/gotowe_modele/env/balkon/slupek/export/slupek_blakonu/slupek_blakonu_Normal.png
+  artifactKey: Guid(1f1b2ea014933664ebff209653dead89) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/gotowe_modele/env/balkon/slupek/export/slupek_blakonu/slupek_blakonu_Normal.png using Guid(1f1b2ea014933664ebff209653dead89) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '108de7487a113a9beac6f9562dfaef27') in 0.1653941 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Textures/Baked_Textures/forest_leaves_04_Normal.png
+  artifactKey: Guid(27d610945e8846547ab83aaa01664ee9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/Baked_Textures/forest_leaves_04_Normal.png using Guid(27d610945e8846547ab83aaa01664ee9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6713298366e414f8637c5879e74cbd98') in 0.2848273 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Textures/gotowe_modele/env/balkon/deska1/export/deska_balkonowa1/deska_balkonowa1_Normal.png
+  artifactKey: Guid(8ed480c7c5735d542b1d3c80d34ad761) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/gotowe_modele/env/balkon/deska1/export/deska_balkonowa1/deska_balkonowa1_Normal.png using Guid(8ed480c7c5735d542b1d3c80d34ad761) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f30fa8a6ea43dfeec7972dfab6cc4eaf') in 0.1442556 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Textures/Baked_Textures/dark_wooden_planks_rz90_Normal.png
+  artifactKey: Guid(b7aac4ef213ae1d4789c0b7de9df3989) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/Baked_Textures/dark_wooden_planks_rz90_Normal.png using Guid(b7aac4ef213ae1d4789c0b7de9df3989) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '66371a4d53d814f6abaf1130bfc0ea60') in 0.23133 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Textures/gotowe_modele/kwatera/old/szafa_na_dokumenty/szafa/export/szafa_na_dokumenty/szafa_na_dokumenty_Normal.png
+  artifactKey: Guid(a9c565778517ed1488b1f6ad28581620) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/gotowe_modele/kwatera/old/szafa_na_dokumenty/szafa/export/szafa_na_dokumenty/szafa_na_dokumenty_Normal.png using Guid(a9c565778517ed1488b1f6ad28581620) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '348bd086183c52903fecc1f10afdd515') in 0.0165099 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Textures/Baked_Textures/rock_face_03_Normal.png
+  artifactKey: Guid(f087fe70eaa53c948909332186ccbf8d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/Baked_Textures/rock_face_03_Normal.png using Guid(f087fe70eaa53c948909332186ccbf8d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '861d2d6a6a16265e54174a694593e724') in 0.1307474 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Textures/Baked_Textures/MarbleRock01_Normal.png
+  artifactKey: Guid(e244cf8785ced064981c0df5fd7ae699) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/Baked_Textures/MarbleRock01_Normal.png using Guid(e244cf8785ced064981c0df5fd7ae699) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dc53ba2437f63fcbba5bb272e7d68273') in 0.084316 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Textures/gotowe_modele/env/old/latarnia/export/latarnia1/latarnia1_Normal.png
+  artifactKey: Guid(a1761ec584b7d9e40993566912fc6de7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/gotowe_modele/env/old/latarnia/export/latarnia1/latarnia1_Normal.png using Guid(a1761ec584b7d9e40993566912fc6de7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '588f01232c818ccf4f12dc585536259d') in 0.214149 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Textures/gotowe_modele/kwatera/dzwonek_alarmowy/dzwonek/export/dzwonek_alarmowy/dzwonek_alarmowy_Normal.png
+  artifactKey: Guid(8775144eb6da8af45a82c9e4b2ead7ac) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/gotowe_modele/kwatera/dzwonek_alarmowy/dzwonek/export/dzwonek_alarmowy/dzwonek_alarmowy_Normal.png using Guid(8775144eb6da8af45a82c9e4b2ead7ac) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '365d40c8226f241f96dfde12e11bcde3') in 0.1765723 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Textures/gotowe_modele/zamek/przelacznik_bramy/export/przelacznik_bramy/przelacznik_bramy_Normal.png
+  artifactKey: Guid(006ba7934595c8f459863b0b0ef855a2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/gotowe_modele/zamek/przelacznik_bramy/export/przelacznik_bramy/przelacznik_bramy_Normal.png using Guid(006ba7934595c8f459863b0b0ef855a2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '590d1d19bfa6eff8a7c712bd5899e5dc') in 0.0505244 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Textures/gotowe_modele/env/balkon/deska2/export/deska_balkonowa2/deska_balkonowa2_Normal.png
+  artifactKey: Guid(e2c47fa7e0db53b4398824cea490dc59) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/gotowe_modele/env/balkon/deska2/export/deska_balkonowa2/deska_balkonowa2_Normal.png using Guid(e2c47fa7e0db53b4398824cea490dc59) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4096598accd1e7277e0177724c1f234b') in 0.1432722 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Textures/Baked_Textures/m_water_Normal.png
+  artifactKey: Guid(6c1704f15d0fd7f42aa465aae006fda4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/Baked_Textures/m_water_Normal.png using Guid(6c1704f15d0fd7f42aa465aae006fda4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '548fa9f1964d65b6ad1131e00f91afac') in 0.0413855 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Models/Islands/Materials/Grass.mat
+  artifactKey: Guid(8cd65b9605c84534bb005fa447f9227d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/Islands/Materials/Grass.mat using Guid(8cd65b9605c84534bb005fa447f9227d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e46bb415e25ecec39a8337acce6c86a5') in 0.0191495 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/Islands/Materials/Grass_Plane.mat
+  artifactKey: Guid(91658a03e47bb1b498877c0b01267cca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/Islands/Materials/Grass_Plane.mat using Guid(91658a03e47bb1b498877c0b01267cca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '63eec2f66055e3b5fd48ff119db7c8ae') in 0.1725531 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Textures/Baked_Textures/wood_planks_grey_1_dark_Normal.png
+  artifactKey: Guid(868a44c55f8396848aee6e7cbd14d2ea) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/Baked_Textures/wood_planks_grey_1_dark_Normal.png using Guid(868a44c55f8396848aee6e7cbd14d2ea) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2eb9ac0a49062cc2770085a1a033ecd4') in 0.1090462 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Textures/Baked_Textures/marble_cliff_02_Normal.png
+  artifactKey: Guid(8adc77363134e6245b7b382d56b2fdbd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/Baked_Textures/marble_cliff_02_Normal.png using Guid(8adc77363134e6245b7b382d56b2fdbd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '887e2a236f70dc88af585d3b0845c47a') in 0.2138314 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Textures/Baked_Textures/rocky_trail_02_Normal.png
+  artifactKey: Guid(965a9ed997209f14a8cf142b4bd85de1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/Baked_Textures/rocky_trail_02_Normal.png using Guid(965a9ed997209f14a8cf142b4bd85de1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'be734c2369ce12153f8a835d1adf29e1') in 0.1225673 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Textures/Baked_Textures/old_stone_wall_02_Normal.png
+  artifactKey: Guid(6316ef85811534a4db81408cd89ccbd9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/Baked_Textures/old_stone_wall_02_Normal.png using Guid(6316ef85811534a4db81408cd89ccbd9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '508d662eda735988d3aabc78729b978a') in 0.1827349 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Textures/Baked_Textures/roof_slates_02_Normal.png
+  artifactKey: Guid(c9e9b01b061dd164aaf956d380d579df) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/Baked_Textures/roof_slates_02_Normal.png using Guid(c9e9b01b061dd164aaf956d380d579df) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '335a7ee915fd04becab36c6df6bbbd48') in 0.260648 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 483.831710 seconds.
+  path: Assets/Textures/Baked_Textures/2-1.001_Metallic.png
+  artifactKey: Guid(5531577b8b57a294e949d2c950b4df7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Baked_Textures/2-1.001_Metallic.png using Guid(5531577b8b57a294e949d2c950b4df7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '40944e522033192969bad2e87b74f994') in 0.2070707 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/SteamVR/Icon/_steamvr.png
+  artifactKey: Guid(200a36575873a1d40baa790e18dafe5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SteamVR/Icon/_steamvr.png using Guid(200a36575873a1d40baa790e18dafe5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd0442e57c8a20041e10c1e90c25b9b61') in 0.1448138 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Textures/Baked_Textures/2-1.001_Roughness.png
+  artifactKey: Guid(9ddc96ab25a76fb4c96ec03e408ee47d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Baked_Textures/2-1.001_Roughness.png using Guid(9ddc96ab25a76fb4c96ec03e408ee47d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'adc1132c218f726cd1ba9522471429e5') in 0.060042 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/SteamVR/Models/Materials/AlienHand_AlbedoTransparency.png
+  artifactKey: Guid(c7d922ead57c2c34ea7da4ad4c05bd61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SteamVR/Models/Materials/AlienHand_AlbedoTransparency.png using Guid(c7d922ead57c2c34ea7da4ad4c05bd61) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '702996344e0bbed84c414adc749b93aa') in 0.2793963 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/SteamVR/InteractionSystem/Longbow/Textures/ArrowAlbedoTransparency.png
+  artifactKey: Guid(0f09256f7da973b45a660eefd832b56b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SteamVR/InteractionSystem/Longbow/Textures/ArrowAlbedoTransparency.png using Guid(0f09256f7da973b45a660eefd832b56b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9717307364aec450c64cdb45bb5cd307') in 0.0826382 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/SteamVR/InteractionSystem/Longbow/Textures/ArrowAmbientOcclusion.png
+  artifactKey: Guid(27df4f73a506cc94d99cc2e0c71966a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SteamVR/InteractionSystem/Longbow/Textures/ArrowAmbientOcclusion.png using Guid(27df4f73a506cc94d99cc2e0c71966a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9abed67a643d1a96f02045bce15e08eb') in 0.0612522 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/SteamVR/InteractionSystem/Longbow/Textures/ArrowMetallicSmoothness.png
+  artifactKey: Guid(90891b0a7924dee4a87b2a107431c9f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SteamVR/InteractionSystem/Longbow/Textures/ArrowMetallicSmoothness.png using Guid(90891b0a7924dee4a87b2a107431c9f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '145bc3b849aa79304b825ce04ed6d33f') in 0.0652083 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/AutoHand/Scripts/Editor/AutoHandEditorEmbelm.png
+  artifactKey: Guid(9e5ddae6cdf805f418500df42b49b793) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AutoHand/Scripts/Editor/AutoHandEditorEmbelm.png using Guid(9e5ddae6cdf805f418500df42b49b793) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7bb615548926bf926d90f5d87404f5d9') in 0.0237767 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/SteamVR/InteractionSystem/Longbow/Textures/ArrowNormal.png
+  artifactKey: Guid(5d44bb3b4714e2b4da3b93d3c921a1e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SteamVR/InteractionSystem/Longbow/Textures/ArrowNormal.png using Guid(5d44bb3b4714e2b4da3b93d3c921a1e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1d00657d0224ca7279b156b61e3d007b') in 0.2206767 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/AutoHand/Resources/AutoHandLogo.png
+  artifactKey: Guid(4aa0097bb740ce149bfa63066595d275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AutoHand/Resources/AutoHandLogo.png using Guid(4aa0097bb740ce149bfa63066595d275) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ba00b87e87b9624751b99d852c38801b') in 0.3742416 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Textures/Baked_Textures/Birch Leaf_Normal.png
+  artifactKey: Guid(19167dbe51817b34fbad90e8ce5fadc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Baked_Textures/Birch Leaf_Normal.png using Guid(19167dbe51817b34fbad90e8ce5fadc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00dfc66cea9427cbdf496b038aae4a3d') in 0.4060734 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/SteamVR/InteractionSystem/Longbow/Textures/BalloonPopLine.png
+  artifactKey: Guid(427c3f6e73f47194b8f02cdf53023b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SteamVR/InteractionSystem/Longbow/Textures/BalloonPopLine.png using Guid(427c3f6e73f47194b8f02cdf53023b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dd0ab3ec64d9792f9225a77e4c73e212') in 0.0150369 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Models/Tree/Materials/bark-4_normal.jpg
+  artifactKey: Guid(8d770c6ccce799a4899f32da7062f0b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Tree/Materials/bark-4_normal.jpg using Guid(8d770c6ccce799a4899f32da7062f0b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f78ff77c71a589367572fbc8a4f500cd') in 0.028812 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Textures/Baked_Textures/Birch_Bark_Albedo.png
+  artifactKey: Guid(c671de40a3db9fc419c0f17b43019495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Baked_Textures/Birch_Bark_Albedo.png using Guid(c671de40a3db9fc419c0f17b43019495) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '42cefb9c15b3e5f73ddba3b9c09773e8') in 0.6163352 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/SteamVR/InteractionSystem/Samples/Models/black_floor_metal_MET.png
+  artifactKey: Guid(566dfbaf1df81b340b9dc831f02883c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SteamVR/InteractionSystem/Samples/Models/black_floor_metal_MET.png using Guid(566dfbaf1df81b340b9dc831f02883c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '69901e2b146faba3d0ca1922db22ac7d') in 0.164204 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Textures/Baked_Textures/Birch_Bark_Metallic.png
+  artifactKey: Guid(8c85ef0fbb9c681439747aee5ca0951e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Baked_Textures/Birch_Bark_Metallic.png using Guid(8c85ef0fbb9c681439747aee5ca0951e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '97b00b118589d4899955dd5ccd6983f8') in 0.3403135 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Models/Tree/Materials/bark-4_smoothness.jpg
+  artifactKey: Guid(5c4cdd41e00c98b46bd1136f2b38fd6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Tree/Materials/bark-4_smoothness.jpg using Guid(5c4cdd41e00c98b46bd1136f2b38fd6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '544914c3cad94d976ae7d1e47c8bbb4d') in 0.0603575 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/AutoHand/Resources/AutoHandLogo 1.png
+  artifactKey: Guid(a5f827826cfb4b1408e1fd42d14f2277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AutoHand/Resources/AutoHandLogo 1.png using Guid(a5f827826cfb4b1408e1fd42d14f2277) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4567a51a9e659266d26a6a2955c7b804') in 0.2191539 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Textures/Baked_Textures/Birch Leaf_Roughness.png
+  artifactKey: Guid(f1f31cb7094413f4196a0474c581a629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Baked_Textures/Birch Leaf_Roughness.png using Guid(f1f31cb7094413f4196a0474c581a629) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd22d49d5498155d0dd1766d70f361676') in 0.2402416 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Textures/Baked_Textures/Birch_Bark_Normal.png
+  artifactKey: Guid(1686f739f19a11748bbb538f6e58c85f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Baked_Textures/Birch_Bark_Normal.png using Guid(1686f739f19a11748bbb538f6e58c85f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0e491ca14a0cc247bdf44adacccb6d5f') in 0.1620333 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Textures/Baked_Textures/Birch Leaf_Metallic.png
+  artifactKey: Guid(9015d810e620587438b10975a5ed7989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Baked_Textures/Birch Leaf_Metallic.png using Guid(9015d810e620587438b10975a5ed7989) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cf9146673da45002cefa7c891fbd99ef') in 0.2309078 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  3.943 seconds
+Refreshing native plugins compatible for Editor in 8.09 ms, found 11 plugins.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Scanning for USB devices : 11.634ms
+Scanning for USB devices : 7.183ms
+Scanning for USB devices : 6.702ms
+Scanning for USB devices : 7.925ms
+Scanning for USB devices : 8.083ms
+Scanning for USB devices : 6.839ms
+Scanning for USB devices : 7.181ms
+Scanning for USB devices : 6.742ms
+Scanning for USB devices : 6.807ms
+Scanning for USB devices : 6.489ms
+Scanning for USB devices : 6.896ms
+Scanning for USB devices : 7.571ms
+Scanning for USB devices : 3.678ms
+Found 0 scene poses
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Autohand.AutoHandUpdateDataWizard:FindScenePoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:244)
+Autohand.AutoHandUpdateDataWizard:CheckSceneForOldPoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:54)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs Line: 244)
+
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  2.563 seconds
+Domain Reload Profiling: 6512ms
+	BeginReloadAssembly (518ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (86ms)
+	RebuildCommonClasses (57ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (36ms)
+	LoadAllAssembliesAndSetupDomain (3317ms)
+		LoadAssemblies (3296ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (352ms)
+			TypeCache.Refresh (12ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (308ms)
+			ResolveRequiredComponents (23ms)
+	FinalizeReload (2564ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2022ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (287ms)
+			ProcessInitializeOnLoadAttributes (1004ms)
+			ProcessInitializeOnLoadMethodAttributes (701ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (33ms)
+Refreshing native plugins compatible for Editor in 14.11 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 18 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7633 unused Assets / (3.7 MB). Loaded Objects now: 8567.
+Memory consumption went from 208.9 MB to 205.2 MB.
+Total: 16.880800 ms (FindLiveObjects: 1.640200 ms CreateObjectMapping: 0.689500 ms MarkObjects: 10.935900 ms  DeleteObjects: 3.612900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  2.460 seconds
+Refreshing native plugins compatible for Editor in 10.72 ms, found 11 plugins.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Found 0 scene poses
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Autohand.AutoHandUpdateDataWizard:FindScenePoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:244)
+Autohand.AutoHandUpdateDataWizard:CheckSceneForOldPoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:54)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs Line: 244)
+
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.439 seconds
+Domain Reload Profiling: 3902ms
+	BeginReloadAssembly (448ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (15ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (102ms)
+	RebuildCommonClasses (68ms)
+	RebuildNativeTypeToScriptingClass (31ms)
+	initialDomainReloadingComplete (49ms)
+	LoadAllAssembliesAndSetupDomain (1867ms)
+		LoadAssemblies (1562ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (513ms)
+			TypeCache.Refresh (30ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (453ms)
+			ResolveRequiredComponents (23ms)
+	FinalizeReload (1439ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1181ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (200ms)
+			ProcessInitializeOnLoadAttributes (520ms)
+			ProcessInitializeOnLoadMethodAttributes (431ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (28ms)
+Refreshing native plugins compatible for Editor in 8.47 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7629 unused Assets / (4.7 MB). Loaded Objects now: 8569.
+Memory consumption went from 236.0 MB to 231.3 MB.
+Total: 13.748000 ms (FindLiveObjects: 0.943300 ms CreateObjectMapping: 0.772400 ms MarkObjects: 7.487500 ms  DeleteObjects: 4.543400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 7.93 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7589 unused Assets / (3.5 MB). Loaded Objects now: 8551.
+Memory consumption went from 235.8 MB to 232.4 MB.
+Total: 322.790900 ms (FindLiveObjects: 3.260400 ms CreateObjectMapping: 0.786500 ms MarkObjects: 315.660600 ms  DeleteObjects: 3.082000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 7.41 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7589 unused Assets / (4.3 MB). Loaded Objects now: 8551.
+Memory consumption went from 235.7 MB to 231.5 MB.
+Total: 17.141400 ms (FindLiveObjects: 0.894100 ms CreateObjectMapping: 0.719600 ms MarkObjects: 11.428100 ms  DeleteObjects: 4.098300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 9.63 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7589 unused Assets / (4.5 MB). Loaded Objects now: 8551.
+Memory consumption went from 235.7 MB to 231.2 MB.
+Total: 11.662900 ms (FindLiveObjects: 0.761700 ms CreateObjectMapping: 0.707500 ms MarkObjects: 6.725300 ms  DeleteObjects: 3.467000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  6.463 seconds
+Refreshing native plugins compatible for Editor in 11.64 ms, found 11 plugins.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Scanning for USB devices : 19.086ms
+Scanning for USB devices : 6.206ms
+Scanning for USB devices : 5.509ms
+Scanning for USB devices : 7.293ms
+Scanning for USB devices : 6.533ms
+Scanning for USB devices : 6.218ms
+Scanning for USB devices : 6.164ms
+Scanning for USB devices : 6.282ms
+Scanning for USB devices : 3.895ms
+Scanning for USB devices : 5.780ms
+Scanning for USB devices : 5.571ms
+Scanning for USB devices : 6.231ms
+Scanning for USB devices : 6.418ms
+Scanning for USB devices : 5.502ms
+Scanning for USB devices : 5.621ms
+Scanning for USB devices : 8.258ms
+Scanning for USB devices : 6.694ms
+Scanning for USB devices : 6.520ms
+Scanning for USB devices : 6.500ms
+Scanning for USB devices : 6.689ms
+Scanning for USB devices : 6.217ms
+Scanning for USB devices : 6.687ms
+Scanning for USB devices : 6.197ms
+Scanning for USB devices : 5.587ms
+Scanning for USB devices : 5.918ms
+Scanning for USB devices : 5.556ms
+Scanning for USB devices : 6.088ms
+Scanning for USB devices : 6.408ms
+Scanning for USB devices : 5.925ms
+Scanning for USB devices : 6.622ms
+Scanning for USB devices : 6.201ms
+Scanning for USB devices : 5.853ms
+Scanning for USB devices : 7.094ms
+Scanning for USB devices : 5.886ms
+Scanning for USB devices : 3.197ms
+Scanning for USB devices : 5.676ms
+Scanning for USB devices : 6.151ms
+Scanning for USB devices : 8.563ms
+Scanning for USB devices : 6.609ms
+Scanning for USB devices : 3.824ms
+Scanning for USB devices : 5.547ms
+Scanning for USB devices : 6.065ms
+Found 0 scene poses
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Autohand.AutoHandUpdateDataWizard:FindScenePoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:244)
+Autohand.AutoHandUpdateDataWizard:CheckSceneForOldPoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:54)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs Line: 244)
+
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  2.390 seconds
+Domain Reload Profiling: 8860ms
+	BeginReloadAssembly (1810ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (73ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (3ms)
+		CreateAndSetChildDomain (942ms)
+	RebuildCommonClasses (76ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (69ms)
+	LoadAllAssembliesAndSetupDomain (4494ms)
+		LoadAssemblies (4279ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (590ms)
+			TypeCache.Refresh (79ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (392ms)
+			ResolveRequiredComponents (26ms)
+	FinalizeReload (2390ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2099ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (23ms)
+			SetLoadedEditorAssemblies (13ms)
+			BeforeProcessingInitializeOnLoad (247ms)
+			ProcessInitializeOnLoadAttributes (696ms)
+			ProcessInitializeOnLoadMethodAttributes (1114ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (31ms)
+Refreshing native plugins compatible for Editor in 7.87 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7631 unused Assets / (4.1 MB). Loaded Objects now: 8574.
+Memory consumption went from 236.0 MB to 232.0 MB.
+Total: 12.093500 ms (FindLiveObjects: 0.750300 ms CreateObjectMapping: 0.794500 ms MarkObjects: 7.484800 ms  DeleteObjects: 3.062000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  2.040 seconds
+Refreshing native plugins compatible for Editor in 12.94 ms, found 11 plugins.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Found 0 scene poses
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Autohand.AutoHandUpdateDataWizard:FindScenePoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:244)
+Autohand.AutoHandUpdateDataWizard:CheckSceneForOldPoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:54)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs Line: 244)
+
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.462 seconds
+Domain Reload Profiling: 3505ms
+	BeginReloadAssembly (459ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (15ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (99ms)
+	RebuildCommonClasses (73ms)
+	RebuildNativeTypeToScriptingClass (32ms)
+	initialDomainReloadingComplete (45ms)
+	LoadAllAssembliesAndSetupDomain (1433ms)
+		LoadAssemblies (1222ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (427ms)
+			TypeCache.Refresh (21ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (374ms)
+			ResolveRequiredComponents (24ms)
+	FinalizeReload (1462ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1171ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (256ms)
+			ProcessInitializeOnLoadAttributes (493ms)
+			ProcessInitializeOnLoadMethodAttributes (394ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (27ms)
+Refreshing native plugins compatible for Editor in 10.42 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 18 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7633 unused Assets / (4.8 MB). Loaded Objects now: 8577.
+Memory consumption went from 236.8 MB to 232.0 MB.
+Total: 12.239400 ms (FindLiveObjects: 0.884400 ms CreateObjectMapping: 0.831600 ms MarkObjects: 7.052300 ms  DeleteObjects: 3.469700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 13576.632712 seconds.
+  path: Assets/Textures/m_river_Normal.png
+  artifactKey: Guid(6c4e3ea78a3b68d4db17d2388c818a57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/m_river_Normal.png using Guid(6c4e3ea78a3b68d4db17d2388c818a57) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0238da36081e1ec989ae41d3cd4f239b') in 0.690801 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  2.580 seconds
+Refreshing native plugins compatible for Editor in 8.69 ms, found 11 plugins.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Found 0 scene poses
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Autohand.AutoHandUpdateDataWizard:FindScenePoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:244)
+Autohand.AutoHandUpdateDataWizard:CheckSceneForOldPoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:54)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs Line: 244)
+
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.608 seconds
+Domain Reload Profiling: 4204ms
+	BeginReloadAssembly (931ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (35ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (3ms)
+		CreateAndSetChildDomain (421ms)
+	RebuildCommonClasses (47ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (1558ms)
+		LoadAssemblies (1299ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (527ms)
+			TypeCache.Refresh (65ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (383ms)
+			ResolveRequiredComponents (22ms)
+	FinalizeReload (1609ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1314ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (206ms)
+			ProcessInitializeOnLoadAttributes (570ms)
+			ProcessInitializeOnLoadMethodAttributes (512ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (21ms)
+Refreshing native plugins compatible for Editor in 8.63 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 18 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7633 unused Assets / (4.1 MB). Loaded Objects now: 8580.
+Memory consumption went from 236.9 MB to 232.8 MB.
+Total: 12.399100 ms (FindLiveObjects: 0.830100 ms CreateObjectMapping: 0.718000 ms MarkObjects: 7.502700 ms  DeleteObjects: 3.347200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 502.431426 seconds.
+  path: Assets/Textures/forest_ground_04_Normal.png
+  artifactKey: Guid(60b0476ee4627cc41b970359c2507e18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/forest_ground_04_Normal.png using Guid(60b0476ee4627cc41b970359c2507e18) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '086e1348f42bf0591efaeed8ff12a194') in 0.4188302 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Textures/forest_leaves_04_Normal.png
+  artifactKey: Guid(b5a47f9e5720a6b4dae6e146b1335fda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/forest_leaves_04_Normal.png using Guid(b5a47f9e5720a6b4dae6e146b1335fda) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd7dbf2326d2ff70ba434917b45359d0e') in 0.1176274 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Textures/forest_leaves_04_Albedo.png
+  artifactKey: Guid(3f81a24a610b28547ab8a11f587688c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/forest_leaves_04_Albedo.png using Guid(3f81a24a610b28547ab8a11f587688c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ebdaa0baea24a084c151667d137dc328') in 0.2881143 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Textures/marble_cliff_02_Normal.png
+  artifactKey: Guid(c2beb890f07a7d04895cf15cfc2cc69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/marble_cliff_02_Normal.png using Guid(c2beb890f07a7d04895cf15cfc2cc69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eda6fe07d0d658677f8dcf01d56fa8fa') in 0.1378163 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  9.407 seconds
+Refreshing native plugins compatible for Editor in 7.22 ms, found 11 plugins.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Found 0 scene poses
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Autohand.AutoHandUpdateDataWizard:FindScenePoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:244)
+Autohand.AutoHandUpdateDataWizard:CheckSceneForOldPoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:54)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs Line: 244)
+
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  4.000 seconds
+Domain Reload Profiling: 13439ms
+	BeginReloadAssembly (4196ms)
+		ExecutionOrderSort (3ms)
+		DisableScriptedObjects (267ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (9ms)
+		CreateAndSetChildDomain (1810ms)
+	RebuildCommonClasses (122ms)
+	RebuildNativeTypeToScriptingClass (24ms)
+	initialDomainReloadingComplete (99ms)
+	LoadAllAssembliesAndSetupDomain (4997ms)
+		LoadAssemblies (4757ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (1186ms)
+			TypeCache.Refresh (208ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (860ms)
+			ResolveRequiredComponents (48ms)
+	FinalizeReload (4001ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (3546ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (39ms)
+			SetLoadedEditorAssemblies (12ms)
+			BeforeProcessingInitializeOnLoad (337ms)
+			ProcessInitializeOnLoadAttributes (1459ms)
+			ProcessInitializeOnLoadMethodAttributes (1692ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (2ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (54ms)
+Refreshing native plugins compatible for Editor in 7.60 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 18 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7633 unused Assets / (3.2 MB). Loaded Objects now: 8583.
+Memory consumption went from 236.9 MB to 233.7 MB.
+Total: 15.814200 ms (FindLiveObjects: 1.102400 ms CreateObjectMapping: 0.634000 ms MarkObjects: 10.720300 ms  DeleteObjects: 3.355900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  2.693 seconds
+Refreshing native plugins compatible for Editor in 10.37 ms, found 11 plugins.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Found 0 scene poses
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Autohand.AutoHandUpdateDataWizard:FindScenePoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:244)
+Autohand.AutoHandUpdateDataWizard:CheckSceneForOldPoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:54)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs Line: 244)
+
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.330 seconds
+Domain Reload Profiling: 4027ms
+	BeginReloadAssembly (372ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (14ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (72ms)
+	RebuildCommonClasses (61ms)
+	RebuildNativeTypeToScriptingClass (28ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (2194ms)
+		LoadAssemblies (2054ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (299ms)
+			TypeCache.Refresh (13ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (262ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (1331ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1073ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (10ms)
+			BeforeProcessingInitializeOnLoad (197ms)
+			ProcessInitializeOnLoadAttributes (436ms)
+			ProcessInitializeOnLoadMethodAttributes (411ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (32ms)
+Refreshing native plugins compatible for Editor in 13.64 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 18 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7633 unused Assets / (4.8 MB). Loaded Objects now: 8586.
+Memory consumption went from 237.0 MB to 232.1 MB.
+Total: 9.328600 ms (FindLiveObjects: 0.699900 ms CreateObjectMapping: 0.667300 ms MarkObjects: 5.108000 ms  DeleteObjects: 2.852100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  3.421 seconds
+Refreshing native plugins compatible for Editor in 12.42 ms, found 11 plugins.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Scanning for USB devices : 5.371ms
+Scanning for USB devices : 8.215ms
+Scanning for USB devices : 6.536ms
+Scanning for USB devices : 4.113ms
+Scanning for USB devices : 5.713ms
+Scanning for USB devices : 5.783ms
+Scanning for USB devices : 5.700ms
+Scanning for USB devices : 5.406ms
+Scanning for USB devices : 6.013ms
+Scanning for USB devices : 5.913ms
+Scanning for USB devices : 6.081ms
+Scanning for USB devices : 5.617ms
+Scanning for USB devices : 5.966ms
+Scanning for USB devices : 6.017ms
+Scanning for USB devices : 5.746ms
+Scanning for USB devices : 8.334ms
+Scanning for USB devices : 6.660ms
+Scanning for USB devices : 3.351ms
+Scanning for USB devices : 3.292ms
+Scanning for USB devices : 3.152ms
+Scanning for USB devices : 3.540ms
+Scanning for USB devices : 4.258ms
+Scanning for USB devices : 3.889ms
+Scanning for USB devices : 4.087ms
+Scanning for USB devices : 4.348ms
+Scanning for USB devices : 3.997ms
+Scanning for USB devices : 4.284ms
+Scanning for USB devices : 3.922ms
+Scanning for USB devices : 3.830ms
+Scanning for USB devices : 3.854ms
+Scanning for USB devices : 4.535ms
+Scanning for USB devices : 4.408ms
+Scanning for USB devices : 4.291ms
+Scanning for USB devices : 4.342ms
+Scanning for USB devices : 4.289ms
+Scanning for USB devices : 3.994ms
+Scanning for USB devices : 4.688ms
+Scanning for USB devices : 4.681ms
+Scanning for USB devices : 4.413ms
+Scanning for USB devices : 4.332ms
+Scanning for USB devices : 4.574ms
+Scanning for USB devices : 4.007ms
+Scanning for USB devices : 3.257ms
+Scanning for USB devices : 3.445ms
+Scanning for USB devices : 3.250ms
+Scanning for USB devices : 3.071ms
+Scanning for USB devices : 3.128ms
+Scanning for USB devices : 3.899ms
+Scanning for USB devices : 3.534ms
+Scanning for USB devices : 3.654ms
+Scanning for USB devices : 3.488ms
+Scanning for USB devices : 4.309ms
+Scanning for USB devices : 3.719ms
+Scanning for USB devices : 4.468ms
+Scanning for USB devices : 3.917ms
+Scanning for USB devices : 4.157ms
+Scanning for USB devices : 3.899ms
+Scanning for USB devices : 3.955ms
+Scanning for USB devices : 4.792ms
+Scanning for USB devices : 4.846ms
+Scanning for USB devices : 4.551ms
+Scanning for USB devices : 4.651ms
+Scanning for USB devices : 4.304ms
+Scanning for USB devices : 4.992ms
+Scanning for USB devices : 4.596ms
+Scanning for USB devices : 4.080ms
+Scanning for USB devices : 4.611ms
+Scanning for USB devices : 4.834ms
+Scanning for USB devices : 4.792ms
+Scanning for USB devices : 3.865ms
+Scanning for USB devices : 3.583ms
+Scanning for USB devices : 3.364ms
+Scanning for USB devices : 4.021ms
+Scanning for USB devices : 3.282ms
+Scanning for USB devices : 3.724ms
+Scanning for USB devices : 3.284ms
+Scanning for USB devices : 3.964ms
+Scanning for USB devices : 3.204ms
+Scanning for USB devices : 4.080ms
+Scanning for USB devices : 3.184ms
+Scanning for USB devices : 3.861ms
+Scanning for USB devices : 3.508ms
+Scanning for USB devices : 3.879ms
+Scanning for USB devices : 3.490ms
+Scanning for USB devices : 4.034ms
+Scanning for USB devices : 3.278ms
+Scanning for USB devices : 3.614ms
+Scanning for USB devices : 3.123ms
+Scanning for USB devices : 3.497ms
+Scanning for USB devices : 3.278ms
+Scanning for USB devices : 3.218ms
+Scanning for USB devices : 3.726ms
+Scanning for USB devices : 3.677ms
+Scanning for USB devices : 3.983ms
+Scanning for USB devices : 3.680ms
+Scanning for USB devices : 4.336ms
+Scanning for USB devices : 3.724ms
+Scanning for USB devices : 4.358ms
+Scanning for USB devices : 3.601ms
+Scanning for USB devices : 4.189ms
+Scanning for USB devices : 5.032ms
+Scanning for USB devices : 5.066ms
+Scanning for USB devices : 4.270ms
+Scanning for USB devices : 3.959ms
+Scanning for USB devices : 3.860ms
+Scanning for USB devices : 3.826ms
+Scanning for USB devices : 3.890ms
+Scanning for USB devices : 3.857ms
+Scanning for USB devices : 3.968ms
+Scanning for USB devices : 4.782ms
+Scanning for USB devices : 3.915ms
+Scanning for USB devices : 4.095ms
+Found 0 scene poses
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Autohand.AutoHandUpdateDataWizard:FindScenePoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:244)
+Autohand.AutoHandUpdateDataWizard:CheckSceneForOldPoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:54)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs Line: 244)
+
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  2.103 seconds
+Domain Reload Profiling: 5527ms
+	BeginReloadAssembly (343ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (77ms)
+	RebuildCommonClasses (69ms)
+	RebuildNativeTypeToScriptingClass (35ms)
+	initialDomainReloadingComplete (44ms)
+	LoadAllAssembliesAndSetupDomain (2933ms)
+		LoadAssemblies (2700ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (370ms)
+			TypeCache.Refresh (13ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (321ms)
+			ResolveRequiredComponents (29ms)
+	FinalizeReload (2104ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1758ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (217ms)
+			ProcessInitializeOnLoadAttributes (534ms)
+			ProcessInitializeOnLoadMethodAttributes (982ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (34ms)
+Refreshing native plugins compatible for Editor in 10.09 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 18 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7633 unused Assets / (4.6 MB). Loaded Objects now: 8589.
+Memory consumption went from 237.0 MB to 232.4 MB.
+Total: 9.386600 ms (FindLiveObjects: 0.759300 ms CreateObjectMapping: 0.623100 ms MarkObjects: 5.233000 ms  DeleteObjects: 2.770200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 2179.937083 seconds.
+  path: Assets/Textures/rock_face_03_Albedo.png
+  artifactKey: Guid(ec528cdbfea2e874ca23dab8e7c722b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/rock_face_03_Albedo.png using Guid(ec528cdbfea2e874ca23dab8e7c722b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'da428114f14978f86ddc55d2181dd856') in 0.643901 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Textures/rock_face_03_Roughness.png
+  artifactKey: Guid(0f612f747d5c57741bb97bf8f6cdbd1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/rock_face_03_Roughness.png using Guid(0f612f747d5c57741bb97bf8f6cdbd1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a229c43f59d52c7cf95ce8183b899384') in 0.2464274 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 71.217795 seconds.
+  path: Assets/Textures/MarbleRock01_Albedo.png
+  artifactKey: Guid(8fb934ac25d77f042bebea0477df2c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/MarbleRock01_Albedo.png using Guid(8fb934ac25d77f042bebea0477df2c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ba975387d79f50e6c1e0f1b4990638c4') in 0.3161347 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Textures/MarbleRock01_Metallic.png
+  artifactKey: Guid(cc982698fb85c754580e10813f73f28f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/MarbleRock01_Metallic.png using Guid(cc982698fb85c754580e10813f73f28f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cf911f04a87a6bbb74722a9e307e0490') in 0.2711017 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.700611 seconds.
+  path: Assets/Textures/MarbleRock01_light_Albedo.png
+  artifactKey: Guid(92c68e9b0117a8542a25e54f0b834612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/MarbleRock01_light_Albedo.png using Guid(92c68e9b0117a8542a25e54f0b834612) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0baa961e06a09d85c394678a922466dc') in 0.3599961 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Textures/MarbleRock01_light_Metallic.png
+  artifactKey: Guid(0f3b479ad031aa049bd58768722cb2fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/MarbleRock01_light_Metallic.png using Guid(0f3b479ad031aa049bd58768722cb2fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a14d63dcb310c6628a8cc8a542404941') in 0.2860893 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  1.904 seconds
+Refreshing native plugins compatible for Editor in 9.48 ms, found 11 plugins.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Found 0 scene poses
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Autohand.AutoHandUpdateDataWizard:FindScenePoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:244)
+Autohand.AutoHandUpdateDataWizard:CheckSceneForOldPoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:54)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs Line: 244)
+
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.401 seconds
+Domain Reload Profiling: 3309ms
+	BeginReloadAssembly (300ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (71ms)
+	RebuildCommonClasses (53ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (1498ms)
+		LoadAssemblies (1326ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (303ms)
+			TypeCache.Refresh (15ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (260ms)
+			ResolveRequiredComponents (21ms)
+	FinalizeReload (1402ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1168ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (195ms)
+			ProcessInitializeOnLoadAttributes (459ms)
+			ProcessInitializeOnLoadMethodAttributes (491ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (22ms)
+Refreshing native plugins compatible for Editor in 6.45 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 18 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7633 unused Assets / (4.2 MB). Loaded Objects now: 8592.
+Memory consumption went from 237.1 MB to 232.8 MB.
+Total: 9.539600 ms (FindLiveObjects: 0.709100 ms CreateObjectMapping: 0.672000 ms MarkObjects: 5.407300 ms  DeleteObjects: 2.750200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 695.795518 seconds.
+  path: Assets/Textures/wood_planks_grey_1_dark_Albedo.png
+  artifactKey: Guid(fc3a84560fb4f08468b664617ed604fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/wood_planks_grey_1_dark_Albedo.png using Guid(fc3a84560fb4f08468b664617ed604fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3bb38a1e578d04b219411d034c0a98ae') in 0.3175647 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Textures/wood_planks_grey_1_dark_Metallic.png
+  artifactKey: Guid(0141bbcecf2293f4d8921427fe4164fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/wood_planks_grey_1_dark_Metallic.png using Guid(0141bbcecf2293f4d8921427fe4164fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4fc943995407b6f67ad0311b84c7d43a') in 0.2068821 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 90.523705 seconds.
+  path: Assets/Textures/Metal025_Albedo.png
+  artifactKey: Guid(8a9d1fefa07b2f149aa09caae776d7a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Metal025_Albedo.png using Guid(8a9d1fefa07b2f149aa09caae776d7a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '86e8d2fac1bdebe8410e953f73014939') in 0.2793005 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Textures/Metal025_Metallic.png
+  artifactKey: Guid(394d4375eb7e5c84ab6aab6cb7c46dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Metal025_Metallic.png using Guid(394d4375eb7e5c84ab6aab6cb7c46dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7b041f2273a29fd32f02faed366e9db0') in 0.1551692 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 47.115504 seconds.
+  path: Assets/Textures/wood_planks_grey_1_dark_r90_Albedo.png
+  artifactKey: Guid(d2a49d1da638cfb4f8c5cd19dbcc7330) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/wood_planks_grey_1_dark_r90_Albedo.png using Guid(d2a49d1da638cfb4f8c5cd19dbcc7330) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fb5ddd7368fe6b4fe076c1ebdf1b9359') in 0.2753021 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Textures/wood_planks_grey_1_dark_r90_Metallic.png
+  artifactKey: Guid(99b513fd8c54ac5459748ea977989f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/wood_planks_grey_1_dark_r90_Metallic.png using Guid(99b513fd8c54ac5459748ea977989f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cef9a9ef25f8c846b410ca14632ab30f') in 0.1669129 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  1.665 seconds
+Refreshing native plugins compatible for Editor in 7.51 ms, found 11 plugins.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Found 0 scene poses
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Autohand.AutoHandUpdateDataWizard:FindScenePoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:244)
+Autohand.AutoHandUpdateDataWizard:CheckSceneForOldPoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:54)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs Line: 244)
+
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.378 seconds
+Domain Reload Profiling: 3045ms
+	BeginReloadAssembly (349ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (64ms)
+	RebuildCommonClasses (63ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (44ms)
+	LoadAllAssembliesAndSetupDomain (1188ms)
+		LoadAssemblies (1091ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (290ms)
+			TypeCache.Refresh (13ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (253ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (1379ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1122ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (181ms)
+			ProcessInitializeOnLoadAttributes (489ms)
+			ProcessInitializeOnLoadMethodAttributes (428ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (33ms)
+Refreshing native plugins compatible for Editor in 6.53 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 18 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7633 unused Assets / (6.5 MB). Loaded Objects now: 8595.
+Memory consumption went from 237.1 MB to 230.7 MB.
+Total: 13.897200 ms (FindLiveObjects: 0.843300 ms CreateObjectMapping: 0.790800 ms MarkObjects: 6.409800 ms  DeleteObjects: 5.851400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  1.898 seconds
+Refreshing native plugins compatible for Editor in 7.96 ms, found 11 plugins.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Scanning for USB devices : 6.204ms
+Scanning for USB devices : 8.698ms
+Scanning for USB devices : 5.946ms
+Scanning for USB devices : 6.027ms
+Scanning for USB devices : 6.009ms
+Scanning for USB devices : 5.903ms
+Scanning for USB devices : 6.219ms
+Scanning for USB devices : 5.781ms
+Scanning for USB devices : 5.682ms
+Scanning for USB devices : 6.084ms
+Scanning for USB devices : 5.860ms
+Scanning for USB devices : 5.696ms
+Scanning for USB devices : 8.374ms
+Scanning for USB devices : 6.112ms
+Scanning for USB devices : 5.926ms
+Scanning for USB devices : 6.521ms
+Scanning for USB devices : 6.086ms
+Scanning for USB devices : 6.040ms
+Scanning for USB devices : 6.253ms
+Scanning for USB devices : 6.139ms
+Scanning for USB devices : 6.563ms
+Scanning for USB devices : 6.506ms
+Scanning for USB devices : 6.197ms
+Scanning for USB devices : 6.261ms
+Scanning for USB devices : 6.545ms
+Scanning for USB devices : 6.314ms
+Scanning for USB devices : 6.594ms
+Scanning for USB devices : 5.574ms
+Scanning for USB devices : 5.618ms
+Scanning for USB devices : 6.019ms
+Scanning for USB devices : 6.417ms
+Scanning for USB devices : 6.426ms
+Scanning for USB devices : 6.375ms
+Scanning for USB devices : 6.281ms
+Scanning for USB devices : 6.296ms
+Scanning for USB devices : 6.330ms
+Scanning for USB devices : 6.270ms
+Scanning for USB devices : 6.500ms
+Scanning for USB devices : 6.340ms
+Scanning for USB devices : 6.486ms
+Scanning for USB devices : 6.143ms
+Scanning for USB devices : 6.522ms
+Scanning for USB devices : 6.113ms
+Scanning for USB devices : 6.267ms
+Scanning for USB devices : 6.402ms
+Scanning for USB devices : 3.610ms
+Scanning for USB devices : 5.896ms
+Scanning for USB devices : 6.568ms
+Scanning for USB devices : 6.233ms
+Scanning for USB devices : 6.500ms
+Scanning for USB devices : 6.832ms
+Scanning for USB devices : 6.284ms
+Scanning for USB devices : 6.176ms
+Scanning for USB devices : 6.501ms
+Scanning for USB devices : 6.529ms
+Scanning for USB devices : 3.617ms
+Scanning for USB devices : 5.836ms
+Scanning for USB devices : 5.516ms
+Scanning for USB devices : 5.851ms
+Scanning for USB devices : 5.976ms
+Scanning for USB devices : 8.361ms
+Scanning for USB devices : 6.458ms
+Scanning for USB devices : 6.215ms
+Scanning for USB devices : 6.478ms
+Scanning for USB devices : 5.645ms
+Scanning for USB devices : 5.612ms
+Scanning for USB devices : 5.689ms
+Scanning for USB devices : 5.550ms
+Scanning for USB devices : 5.595ms
+Scanning for USB devices : 3.576ms
+Scanning for USB devices : 3.446ms
+Scanning for USB devices : 3.647ms
+Scanning for USB devices : 3.929ms
+Scanning for USB devices : 3.996ms
+Scanning for USB devices : 3.312ms
+Scanning for USB devices : 3.359ms
+Scanning for USB devices : 3.317ms
+Scanning for USB devices : 3.547ms
+Scanning for USB devices : 3.453ms
+Scanning for USB devices : 3.356ms
+Scanning for USB devices : 3.452ms
+Scanning for USB devices : 3.402ms
+Scanning for USB devices : 3.340ms
+Scanning for USB devices : 3.464ms
+Scanning for USB devices : 3.187ms
+Scanning for USB devices : 3.434ms
+Scanning for USB devices : 3.501ms
+Scanning for USB devices : 3.318ms
+Scanning for USB devices : 3.333ms
+Scanning for USB devices : 3.429ms
+Scanning for USB devices : 3.406ms
+Scanning for USB devices : 3.354ms
+Scanning for USB devices : 3.330ms
+Scanning for USB devices : 3.124ms
+Scanning for USB devices : 3.466ms
+Scanning for USB devices : 3.310ms
+Scanning for USB devices : 3.417ms
+Scanning for USB devices : 3.139ms
+Scanning for USB devices : 3.290ms
+Scanning for USB devices : 3.419ms
+Scanning for USB devices : 3.428ms
+Scanning for USB devices : 3.343ms
+Scanning for USB devices : 3.105ms
+Scanning for USB devices : 3.359ms
+Scanning for USB devices : 3.118ms
+Scanning for USB devices : 3.505ms
+Scanning for USB devices : 3.275ms
+Scanning for USB devices : 3.452ms
+Scanning for USB devices : 3.305ms
+Scanning for USB devices : 3.300ms
+Scanning for USB devices : 3.325ms
+Scanning for USB devices : 3.694ms
+Scanning for USB devices : 3.220ms
+Scanning for USB devices : 3.459ms
+Scanning for USB devices : 3.238ms
+Scanning for USB devices : 3.325ms
+Scanning for USB devices : 3.168ms
+Scanning for USB devices : 3.163ms
+Scanning for USB devices : 3.247ms
+Scanning for USB devices : 3.294ms
+Scanning for USB devices : 3.446ms
+Scanning for USB devices : 3.314ms
+Scanning for USB devices : 3.364ms
+Scanning for USB devices : 3.424ms
+Scanning for USB devices : 3.361ms
+Scanning for USB devices : 3.372ms
+Scanning for USB devices : 3.389ms
+Scanning for USB devices : 3.341ms
+Scanning for USB devices : 3.234ms
+Scanning for USB devices : 3.469ms
+Scanning for USB devices : 3.457ms
+Scanning for USB devices : 3.281ms
+Found 0 scene poses
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Autohand.AutoHandUpdateDataWizard:FindScenePoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:244)
+Autohand.AutoHandUpdateDataWizard:CheckSceneForOldPoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:54)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs Line: 244)
+
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.965 seconds
+Domain Reload Profiling: 3868ms
+	BeginReloadAssembly (315ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (13ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (83ms)
+	RebuildCommonClasses (59ms)
+	RebuildNativeTypeToScriptingClass (24ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (1467ms)
+		LoadAssemblies (1291ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (306ms)
+			TypeCache.Refresh (15ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (263ms)
+			ResolveRequiredComponents (22ms)
+	FinalizeReload (1966ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1716ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (184ms)
+			ProcessInitializeOnLoadAttributes (462ms)
+			ProcessInitializeOnLoadMethodAttributes (1047ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (20ms)
+Refreshing native plugins compatible for Editor in 9.06 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 18 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7633 unused Assets / (5.2 MB). Loaded Objects now: 8598.
+Memory consumption went from 237.2 MB to 232.0 MB.
+Total: 12.072700 ms (FindLiveObjects: 0.796100 ms CreateObjectMapping: 0.722700 ms MarkObjects: 6.716800 ms  DeleteObjects: 3.835900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 1752.315734 seconds.
+  path: Assets/Textures/rocky_trail_02_Albedo.png
+  artifactKey: Guid(725d42f9bd9c21042877239c9b1d1cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/rocky_trail_02_Albedo.png using Guid(725d42f9bd9c21042877239c9b1d1cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7b6df6ddd1015f7d585f7d97eb65b4f4') in 0.2172257 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Textures/rocky_trail_02_Roughness.png
+  artifactKey: Guid(41ecd67329d64004ba5171e6655a47ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/rocky_trail_02_Roughness.png using Guid(41ecd67329d64004ba5171e6655a47ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '95cf9cb029a78b9439e94f3bf4d9ea4c') in 0.3082334 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 228.624323 seconds.
+  path: Assets/Textures/yellow_stone_wall_Albedo.png
+  artifactKey: Guid(2306609ac4d8398438dad2adac88be74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/yellow_stone_wall_Albedo.png using Guid(2306609ac4d8398438dad2adac88be74) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '93bf80632ea1950c2b68fe51b60fdc12') in 0.2947441 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Textures/yellow_stone_wall_Roughness.png
+  artifactKey: Guid(adbebfa062082a54692d23e02aa74709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/yellow_stone_wall_Roughness.png using Guid(adbebfa062082a54692d23e02aa74709) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '33aad7cff4c9c444d150c77e3c6d4d4b') in 0.1963918 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 113.488784 seconds.
+  path: Assets/Textures/rock01_Albedo.png
+  artifactKey: Guid(97cd428259e2afb448b150a315147121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/rock01_Albedo.png using Guid(97cd428259e2afb448b150a315147121) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '43d9e87a36364863504df104c8d6aab1') in 0.2688546 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Textures/rock01_Roughness.png
+  artifactKey: Guid(ac6bce5eec7d9354480c6527b4d48624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/rock01_Roughness.png using Guid(ac6bce5eec7d9354480c6527b4d48624) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '93fd13cae6b739dbfe02982005280b25') in 0.155592 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 260.315214 seconds.
+  path: Assets/Textures/yellow_stone_wall_1_Albedo.png
+  artifactKey: Guid(d8ee144b1e1d24f46980ed48af5cb4b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/yellow_stone_wall_1_Albedo.png using Guid(d8ee144b1e1d24f46980ed48af5cb4b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '68098c81d2028fe9e2b22cabf90d3609') in 0.2979449 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 235.547936 seconds.
+  path: Assets/Textures/m_water_Albedo.png
+  artifactKey: Guid(bb5956f25414ca14daf3fc120531a107) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/m_water_Albedo.png using Guid(bb5956f25414ca14daf3fc120531a107) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4136f79dfcea03418e3ddf3501295bff') in 0.2923662 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Textures/m_water_Roughness.png
+  artifactKey: Guid(e4a10f3accb69be49855579100458744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/m_water_Roughness.png using Guid(e4a10f3accb69be49855579100458744) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7ead9315a528cb595d3838e18d2ec81b') in 0.1819963 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 161.413322 seconds.
+  path: Assets/Textures/violet_crystal_43_63_diffuse.jpg
+  artifactKey: Guid(674fc2989e979e2449d92cabaa5febf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/violet_crystal_43_63_diffuse.jpg using Guid(674fc2989e979e2449d92cabaa5febf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1420a7b41a63bf8b2625d2ffca82a88e') in 0.1921092 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Textures/violet_crystal_43_63_metallic.jpg
+  artifactKey: Guid(36874f4a0f9f1f84cb498e51121708d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/violet_crystal_43_63_metallic.jpg using Guid(36874f4a0f9f1f84cb498e51121708d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0ed69f9fb28f960029b6a38b93ef97d5') in 0.1572746 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 64.586683 seconds.
+  path: Assets/Textures/Birch_Bark_Albedo.png
+  artifactKey: Guid(d76ca83b2c172d449b4a44c3d60b52dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Birch_Bark_Albedo.png using Guid(d76ca83b2c172d449b4a44c3d60b52dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f4ddd0bfcd4e5d499b7b260c02b36dca') in 0.2539482 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Textures/Birch_Bark_Roughness.png
+  artifactKey: Guid(33557c31ae4b69b46a56630a8eb95cd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Birch_Bark_Roughness.png using Guid(33557c31ae4b69b46a56630a8eb95cd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '72c4d60d6db25fd7e3ed2f114d352664') in 0.1342824 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.819350 seconds.
+  path: Assets/Textures/Birch Leaf_Albedo.png
+  artifactKey: Guid(7d4c1efa28a79de4a9f27e0349cea4a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Birch Leaf_Albedo.png using Guid(7d4c1efa28a79de4a9f27e0349cea4a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0eae523ad44d3e45cdfac92f708a92db') in 0.384139 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 57.347509 seconds.
+  path: Assets/Textures/roof_slates_02_Albedo.png
+  artifactKey: Guid(f38645e4b5565ed488f064e47a09e712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/roof_slates_02_Albedo.png using Guid(f38645e4b5565ed488f064e47a09e712) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ac257ea4f7a853dd955b78bcb7446103') in 0.2059743 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Textures/roof_slates_02_Metallic.png
+  artifactKey: Guid(0301fc88db765174cb0106f2cdc21756) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/roof_slates_02_Metallic.png using Guid(0301fc88db765174cb0106f2cdc21756) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '236b96cdab8656ea810eb54a58fd3d7c') in 0.2258094 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 71.392180 seconds.
+  path: Assets/Textures/dark_old_metal_76_03_Albedo.png
+  artifactKey: Guid(9a4bbf0c7caf1e24c8c98cb657184d65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/dark_old_metal_76_03_Albedo.png using Guid(9a4bbf0c7caf1e24c8c98cb657184d65) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8462b9c7d67abac01a67cbe1a81cb24e') in 0.1659963 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Textures/dark_old_metal_76_03_Metallic.png
+  artifactKey: Guid(06ae5a60269eac24eb0ba0bcc2e7b88e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/dark_old_metal_76_03_Metallic.png using Guid(06ae5a60269eac24eb0ba0bcc2e7b88e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0864e051a6ba82db71c4b9a9d5dd5ffe') in 0.3454821 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.800980 seconds.
+  path: Assets/Textures/concrete_wall_006_Albedo.png
+  artifactKey: Guid(7a6913d86b019a644a0ac6fb187386ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/concrete_wall_006_Albedo.png using Guid(7a6913d86b019a644a0ac6fb187386ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0ff58221e7b5215906a7752f14ebe330') in 0.157836 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Textures/concrete_wall_006_Roughness.png
+  artifactKey: Guid(f869dacdfe7c8b947acaa0b10f1f5829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/concrete_wall_006_Roughness.png using Guid(f869dacdfe7c8b947acaa0b10f1f5829) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2bf0a65560f71c7ec19320073556b4bc') in 0.1339835 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Textures/concrete_wall_006_Metallic.png
+  artifactKey: Guid(781015fc1b9c42d4e856866c8bdc1259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/concrete_wall_006_Metallic.png using Guid(781015fc1b9c42d4e856866c8bdc1259) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0a41b324c84ebeb764e040fe2ee75bdb') in 0.1175393 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 143.309062 seconds.
+  path: Assets/Textures/old_stone_wall_02_Albedo.png
+  artifactKey: Guid(aee3f53787f16054da2ac51be69c2593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/old_stone_wall_02_Albedo.png using Guid(aee3f53787f16054da2ac51be69c2593) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '46f19028ff1451a7e26a8449e01c6af9') in 0.1994672 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Textures/old_stone_wall_02_Metallic.png
+  artifactKey: Guid(413868bc144f5d54eb8ee845b6d237af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/old_stone_wall_02_Metallic.png using Guid(413868bc144f5d54eb8ee845b6d237af) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c7759f4d4c41383fa84073f544a30a65') in 0.0974794 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 78.152938 seconds.
+  path: Assets/Textures/old_stone_wall_Albedo.png
+  artifactKey: Guid(aa4e7831a5cc8a243bc3412c325a294a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/old_stone_wall_Albedo.png using Guid(aa4e7831a5cc8a243bc3412c325a294a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f0bfb3e39cfa67985e3c51cea852b3df') in 0.3199858 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Textures/old_stone_wall_Metallic.png
+  artifactKey: Guid(9d185b460eb70cb448dda5c3e4ff2215) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/old_stone_wall_Metallic.png using Guid(9d185b460eb70cb448dda5c3e4ff2215) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '14ce0ec21923964d7480988566e77bc4') in 0.0900929 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 80.228988 seconds.
+  path: Assets/Textures/dark_wooden_planks_Albedo.png
+  artifactKey: Guid(eae44ce54e0d62c40bb6d24a6e82b5ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/dark_wooden_planks_Albedo.png using Guid(eae44ce54e0d62c40bb6d24a6e82b5ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'db152bf83e75d5107c764ed1760ba489') in 0.1566736 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Textures/dark_wooden_planks_Metallic.png
+  artifactKey: Guid(2a81d95692dec3f4898084f1e8557a94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/dark_wooden_planks_Metallic.png using Guid(2a81d95692dec3f4898084f1e8557a94) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4f3a18ca79a41107dd12e04c2e0ceb5e') in 0.1507235 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 77.829990 seconds.
+  path: Assets/Textures/dark_wooden_planks_rz90_Albedo.png
+  artifactKey: Guid(e1b468287541f2546b5274a1dda641df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/dark_wooden_planks_rz90_Albedo.png using Guid(e1b468287541f2546b5274a1dda641df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a9aeb40cc307ae8b4e016a030cdaa823') in 0.1793217 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/Textures/dark_wooden_planks_rz90_Roughness.png
+  artifactKey: Guid(6c57d67213c03f24a97b38a42f38dfb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/dark_wooden_planks_rz90_Roughness.png using Guid(6c57d67213c03f24a97b38a42f38dfb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '57befd6010a0e1202ad15c32133a2fc8') in 0.1578342 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 126.803432 seconds.
+  path: Assets/Textures/wood_planks_grey_Albedo.png
+  artifactKey: Guid(12cd779267d6dcd45acd46b47249a1f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/wood_planks_grey_Albedo.png using Guid(12cd779267d6dcd45acd46b47249a1f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8ff3b2ce9c67f4e2344a059238a99338') in 0.2943183 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Textures/wood_planks_grey_Roughness.png
+  artifactKey: Guid(fb4d7137912cc5e4fbbfb6208cd393dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/wood_planks_grey_Roughness.png using Guid(fb4d7137912cc5e4fbbfb6208cd393dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e8edb299371d478de392897c16c6eff2') in 0.1491218 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 94.010331 seconds.
+  path: Assets/Textures/PaintedWood005_Albedo.png
+  artifactKey: Guid(7bc5b8f67e4d55c40835567b1f0b6aff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/PaintedWood005_Albedo.png using Guid(7bc5b8f67e4d55c40835567b1f0b6aff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'db16c5a867275eedd21f08cc178fab92') in 0.2721585 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Textures/PaintedWood005_Roughness.png
+  artifactKey: Guid(53e0f3abcc07b094c92468eb22129577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/PaintedWood005_Roughness.png using Guid(53e0f3abcc07b094c92468eb22129577) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5e80d0db79f4d08589f6e6dc3066e582') in 0.3315325 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 58.602818 seconds.
+  path: Assets/Textures/PaintedWood005_dark_Albedo.png
+  artifactKey: Guid(d8a1f56bb6542f642b03276f65b3d3da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/PaintedWood005_dark_Albedo.png using Guid(d8a1f56bb6542f642b03276f65b3d3da) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a72cd2f6f8aa582d1a56b0a9eb2aaf30') in 0.3505661 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.228785 seconds.
+  path: Assets/Textures/dirty_old_wood7152_dark_Albedo.png
+  artifactKey: Guid(37be75374f1c4b24f95dab44989f08f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/dirty_old_wood7152_dark_Albedo.png using Guid(37be75374f1c4b24f95dab44989f08f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4cdcb5326a230ed01c7adbab0d93d0cb') in 0.1912653 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Textures/dirty_old_wood7152_dark_Metallic.png
+  artifactKey: Guid(4c64c970582dc80488ee512d255e67d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/dirty_old_wood7152_dark_Metallic.png using Guid(4c64c970582dc80488ee512d255e67d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ac2d11d81db362aaef98093333a2f2b2') in 0.1648927 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.836125 seconds.
+  path: Assets/Textures/dirty_old_wood7152_light_Albedo.png
+  artifactKey: Guid(cfbc67a7541a8d94caa61342e0521d99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/dirty_old_wood7152_light_Albedo.png using Guid(cfbc67a7541a8d94caa61342e0521d99) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '28348373979946cd7b0c98b11e342ca0') in 0.1805048 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Textures/dirty_old_wood7152_light_Metallic.png
+  artifactKey: Guid(43ad4bf7eeebd4f4682b35d428f16084) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/dirty_old_wood7152_light_Metallic.png using Guid(43ad4bf7eeebd4f4682b35d428f16084) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '451304991ffa5dc07773abf7a4e51264') in 0.1976914 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 76.631606 seconds.
+  path: Assets/Textures/brass_metal_70_01_Albedo.png
+  artifactKey: Guid(6feb0661ffd98d3408eea5474999ffc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/brass_metal_70_01_Albedo.png using Guid(6feb0661ffd98d3408eea5474999ffc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a88df81fc9ad3786d122d31f43601767') in 0.3259887 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 122.287399 seconds.
+  path: Assets/Textures/brass_metal_70_01_Albedo.png
+  artifactKey: Guid(6feb0661ffd98d3408eea5474999ffc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/brass_metal_70_01_Albedo.png using Guid(6feb0661ffd98d3408eea5474999ffc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4b993fd6b7f02d4a5131db469f07f13d') in 0.0568974 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 71.170830 seconds.
+  path: Assets/Textures/dirty_old_wood7152_1_dark_Albedo.png
+  artifactKey: Guid(08410b8f8c3e5fa468a56a0caf8d43b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/dirty_old_wood7152_1_dark_Albedo.png using Guid(08410b8f8c3e5fa468a56a0caf8d43b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c1b509c0721b73cb794ae82daa1aea50') in 0.2669021 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Textures/dirty_old_wood7152_1_dark_Roughness.png
+  artifactKey: Guid(8b921c375570d3645a399b029e790b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/dirty_old_wood7152_1_dark_Roughness.png using Guid(8b921c375570d3645a399b029e790b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dcb8fed5b9fc61b4419403533e86e41b') in 0.1468282 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 85.347051 seconds.
+  path: Assets/Textures/dirty_old_wood7152_1_light_Albedo.png
+  artifactKey: Guid(c1dccd48611bf984a9986788eeb42aa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/dirty_old_wood7152_1_light_Albedo.png using Guid(c1dccd48611bf984a9986788eeb42aa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b96d4537eff41782b0585681476e638d') in 0.1772431 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Textures/dirty_old_wood7152_1_light_Metallic.png
+  artifactKey: Guid(1c1f68bf43c07ff429de3d032e8d41dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/dirty_old_wood7152_1_light_Metallic.png using Guid(1c1f68bf43c07ff429de3d032e8d41dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b6ac5a1951a10cb964f34b8637514452') in 0.1498557 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 170.924151 seconds.
+  path: Assets/Textures/2-1.001_Albedo.png
+  artifactKey: Guid(f78768f3d59d3c64fbbf36f416048af4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/2-1.001_Albedo.png using Guid(f78768f3d59d3c64fbbf36f416048af4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f82824be82706ad8f670bd790206042a') in 0.1299138 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Textures/2-1.001_Roughness.png
+  artifactKey: Guid(ea988ac4b596c184e9c4a0eceb30855a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/2-1.001_Roughness.png using Guid(ea988ac4b596c184e9c4a0eceb30855a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8c8b83066a5685be38fa4b1cb0894e8f') in 0.0895614 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.120830 seconds.
+  path: Assets/SteamVR/InteractionSystem/Samples/Models/black_floor_metal_NRM.jpg
+  artifactKey: Guid(35f6da91b7f761e45b32d5f613a851cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SteamVR/InteractionSystem/Samples/Models/black_floor_metal_NRM.jpg using Guid(35f6da91b7f761e45b32d5f613a851cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b8bc8a92db98e80d0fc24514b591b79b') in 0.1227108 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.639428 seconds.
+  path: Assets/SteamVR/Input/Editor/Resources/Icons/BlenderBehaviour_Analog_Icon.png
+  artifactKey: Guid(aa701b1f3ae438e469d0ad4f122a0633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SteamVR/Input/Editor/Resources/Icons/BlenderBehaviour_Analog_Icon.png using Guid(aa701b1f3ae438e469d0ad4f122a0633) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4bf2895717303e5a00fb3f3fc68f4d3f') in 0.0166256 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/SteamVR/Input/Editor/Resources/Icons/BlenderBehaviour_Manual_Icon.png
+  artifactKey: Guid(426d721c1fc5bfa418c79dc808856464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SteamVR/Input/Editor/Resources/Icons/BlenderBehaviour_Manual_Icon.png using Guid(426d721c1fc5bfa418c79dc808856464) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8eebdbedbe26f9c2817e7b417875d05b') in 0.0723193 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/AutoHand/Examples/Textures/block-color.jpg
+  artifactKey: Guid(d73b762684892a343a0dae62d5651841) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AutoHand/Examples/Textures/block-color.jpg using Guid(d73b762684892a343a0dae62d5651841) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f22054a42b1865882dad37862f250d53') in 0.0557346 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/AutoHand/Examples/Mesh/Gloves/textures/Boxing-Glove.png
+  artifactKey: Guid(daad5495d770cb8429b4b0234ef636e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AutoHand/Examples/Mesh/Gloves/textures/Boxing-Glove.png using Guid(daad5495d770cb8429b4b0234ef636e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '94c39b4b45a467baf84b66f504e448c9') in 0.1181414 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/AutoHand/Examples/Mesh/Gloves/source/Boxing Glove/Boxing-Glove.png
+  artifactKey: Guid(c3fa82dd60be07548a39dcbef05c70e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AutoHand/Examples/Mesh/Gloves/source/Boxing Glove/Boxing-Glove.png using Guid(c3fa82dd60be07548a39dcbef05c70e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5453128cc3baba4d8b7e25fd4f7106ac') in 0.0066971 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Stone Bricks Material/BricksWall_basecolor.jpg
+  artifactKey: Guid(d1fa728595f272543b060fa7787242f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stone Bricks Material/BricksWall_basecolor.jpg using Guid(d1fa728595f272543b060fa7787242f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '40104f82a49d36888a022cc009c8c1d1') in 0.1146199 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Stone Bricks Material/BricksWall_height.jpg
+  artifactKey: Guid(65af2f093cd079942b1c190f6feee863) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stone Bricks Material/BricksWall_height.jpg using Guid(65af2f093cd079942b1c190f6feee863) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3746d1688ba9d99ce4a9413444755d07') in 0.1494337 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Stone Bricks Material/BricksWall_roughness.jpg
+  artifactKey: Guid(8598f17b21d118e4a87d0e9bbd7157c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stone Bricks Material/BricksWall_roughness.jpg using Guid(8598f17b21d118e4a87d0e9bbd7157c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'aa4a14b9afcf469cccbec3c4cdc017cc') in 0.1025101 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Textures/Buggy_LO_Buggy_MetallicSmoothness.png
+  artifactKey: Guid(a918aa40491fd4848ad52fc1accf4a80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Textures/Buggy_LO_Buggy_MetallicSmoothness.png using Guid(a918aa40491fd4848ad52fc1accf4a80) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '81ac2265f4df30dc0736caa74811cdc6') in 0.1286398 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Textures/Buggy_LO_Buggy_Normal.png
+  artifactKey: Guid(1c038cbe6dac00648b2b243005d40029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Textures/Buggy_LO_Buggy_Normal.png using Guid(1c038cbe6dac00648b2b243005d40029) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b27d87f7945bc50bcbd29b04f06f192b') in 0.1550861 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.254310 seconds.
+  path: Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Textures/controlerbuggy_LO_BuggyController_AlbedoTransparency.png
+  artifactKey: Guid(e97f03e3f9d4c584f991530c7bff882b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Textures/controlerbuggy_LO_BuggyController_AlbedoTransparency.png using Guid(e97f03e3f9d4c584f991530c7bff882b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8f8a68e1c3eefeccd0995e252d9a0280') in 0.0633179 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.033047 seconds.
+  path: Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Textures/controlerbuggy_LO_BuggyController_MetallicSmoothness.png
+  artifactKey: Guid(f953b4ec1bb0a834cadc594cf2a5bca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Textures/controlerbuggy_LO_BuggyController_MetallicSmoothness.png using Guid(f953b4ec1bb0a834cadc594cf2a5bca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1fadfe8ab3171b5e54a2152c5faaff15') in 0.1272613 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/CurvedSword/cube_roughness.png
+  artifactKey: Guid(d5065ac405ad4b641a372011c40edcce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/CurvedSword/cube_roughness.png using Guid(d5065ac405ad4b641a372011c40edcce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1edea650baff0a79b986c3fb16394fc9') in 0.1850218 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Textures/dirty_old_wood7152_dark_rz90_Roughness.png
+  artifactKey: Guid(4c5d6c6cd2032d84c95ced30b87fd189) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/dirty_old_wood7152_dark_rz90_Roughness.png using Guid(4c5d6c6cd2032d84c95ced30b87fd189) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '25914a248ad4023c2f16916336ba90e2') in 0.1544668 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.370821 seconds.
+  path: Assets/Textures/dirty_old_wood7152_light_rz90_Roughness.png
+  artifactKey: Guid(fbe28a89e49a2594b9955ad1493f43ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/dirty_old_wood7152_light_rz90_Roughness.png using Guid(fbe28a89e49a2594b9955ad1493f43ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '76fc643205e6dced0f471160a4d90597') in 0.0836463 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Textures/drogowskaz2_Metalness.png
+  artifactKey: Guid(75123d444141f5f469e960963d42adb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/drogowskaz2_Metalness.png using Guid(75123d444141f5f469e960963d42adb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd0947f7c5c504b88963a025580fdb180') in 0.4087558 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Textures/dzwonek_alarmowy_Roughness.png
+  artifactKey: Guid(99648a4ccabe4c14b903e4875b779bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/dzwonek_alarmowy_Roughness.png using Guid(99648a4ccabe4c14b903e4875b779bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b30750db801adbf26f439574f8d1dc58') in 0.5332698 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Models/Islands/Materials/rock_04_roughness.jpg
+  artifactKey: Guid(ec841709adce3004fba10ecd84e41735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Islands/Materials/rock_04_roughness.jpg using Guid(ec841709adce3004fba10ecd84e41735) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '85425b6b16daa99881a0d4a551c0f407') in 0.4930696 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Textures/drzwi_wewnetrzne_Roughness.png
+  artifactKey: Guid(35f0aaae6062aee4cb1dda4998dbe333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/drzwi_wewnetrzne_Roughness.png using Guid(35f0aaae6062aee4cb1dda4998dbe333) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e3bf6b1adc2f881951ed21e836a11ca9') in 0.505297 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Textures/drogowskaz1_Albedo.png
+  artifactKey: Guid(e3fe852c8ce6f924bba79ad4249cb635) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/drogowskaz1_Albedo.png using Guid(e3fe852c8ce6f924bba79ad4249cb635) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '30c7da12f085c681a6acb97ef9e28af0') in 0.2762562 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Textures/drogowskaz1_Roughness.png
+  artifactKey: Guid(762a4be9fed8e9345866628df806c56c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/drogowskaz1_Roughness.png using Guid(762a4be9fed8e9345866628df806c56c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a1ba67af1ce1ef277fa21e5236e24c87') in 0.4136999 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

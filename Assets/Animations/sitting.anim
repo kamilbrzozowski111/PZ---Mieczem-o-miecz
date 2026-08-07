@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: bench1
+  m_Name: sitting
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -46898,8 +46898,8 @@ AnimationClip:
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
     m_StopTime: 15.900001
-    m_OrientationOffsetY: 0
-    m_Level: 0
+    m_OrientationOffsetY: 180
+    m_Level: 0.01
     m_CycleOffset: 0
     m_HasAdditiveReferencePose: 0
     m_LoopTime: 1

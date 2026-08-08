@@ -1,0 +1,903 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.3/staging' branch; Version is '6000.3.11f1 (3000ef702840) revision 3145967'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'pl' Physical Memory: 12067 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-08-07T18:33:03Z
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-admin" at "2026-08-07T18:33:03.2741455Z"
+
+COMMAND LINE ARGUMENTS:
+F:\PROGRAMY\UH\editor\6000.3.11f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker4
+-projectPath
+F:/PROJEKTY/UNITY3D/mom/PZ---Mieczem-o-miecz
+-logFile
+Logs/AssetImportWorker4.log
+-srvPort
+59226
+-licensingIpc
+LicenseClient-admin
+-job-worker-count
+3
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: F:/PROJEKTY/UNITY3D/mom/PZ---Mieczem-o-miecz
+F:/PROJEKTY/UNITY3D/mom/PZ---Mieczem-o-miecz
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+Player connection [21596]  Target information:
+
+Player connection [21596]  * "[IP] 192.168.149.245 [Port] 0 [Flags] 2 [Guid] 949329615 [EditorId] 949329615 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CA8F1UO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [21596] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [21596] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 3
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 6487.36 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.11f1 (3000ef702840)
+[Subsystems] Discovering subsystems at path F:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path F:/PROJEKTY/UNITY3D/mom/PZ---Mieczem-o-miecz/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) Iris(R) Xe Graphics (ID=0x9a49)
+    Vendor:   Intel
+    VRAM:     6033 MB
+    Driver:   30.0.101.1404
+Initialize mono
+Mono path[0] = 'F:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/Managed'
+Mono path[1] = 'F:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'F:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56072
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: F:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: F:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.18.0'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-admin"
+[Licensing::IpcConnector] LicenseClient-admin channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-admin-6000.3.11" at "2026-08-07T18:33:46.6498782Z"
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.0+23225a6
+  Session Id:              6c32d145aae54d3aaad71c2057d2682e
+  Correlation Id:          a49655881638af96cfe0a89d01133a23
+  External correlation Id: 6107191685240957191
+  Machine Id:              LQ6p1xkmfwnr1UFtBDHsvoheTGg=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-admin-6000.3.11" (connect: 0.00s, validation: 0.04s, handshake: 13.16s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-admin-6000.3.11-notifications" at "2026-08-07T18:33:59.8497405Z"
+[Licensing::Module] Licensing Background thread has ended after 56.60s
+[Licensing::Module] Licensing is initialized (took 21.98s).
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 7972536305137-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+Register platform support module: F:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 22.371748 seconds.
+- Loaded All Assemblies, in 33.327 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.497 seconds
+Domain Reload Profiling: 34831ms
+	BeginReloadAssembly (8162ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (1322ms)
+	RebuildNativeTypeToScriptingClass (29ms)
+	initialDomainReloadingComplete (22773ms)
+	LoadAllAssembliesAndSetupDomain (1041ms)
+		LoadAssemblies (8199ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (999ms)
+			TypeCache.Refresh (991ms)
+				TypeCache.ScanAssembly (742ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1504ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1444ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (394ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (86ms)
+			ProcessInitializeOnLoadAttributes (200ms)
+			ProcessInitializeOnLoadMethodAttributes (760ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  4.548 seconds
+Refreshing native plugins compatible for Editor in 7.14 ms, found 11 plugins.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-VR_MoM
+<RI> Initializing input.
+Using Windows.Gaming.Input
+<RI> Input initialized.
+Found 0 scene poses
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Autohand.AutoHandUpdateDataWizard:FindScenePoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:244)
+Autohand.AutoHandUpdateDataWizard:CheckSceneForOldPoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:54)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs Line: 244)
+
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  2.710 seconds
+Domain Reload Profiling: 7051ms
+	BeginReloadAssembly (242ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (61ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (61ms)
+	LoadAllAssembliesAndSetupDomain (3961ms)
+		LoadAssemblies (3691ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (422ms)
+			TypeCache.Refresh (304ms)
+				TypeCache.ScanAssembly (283ms)
+			BuildScriptInfoCaches (94ms)
+			ResolveRequiredComponents (16ms)
+	FinalizeReload (2710ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2218ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (183ms)
+			ProcessInitializeOnLoadAttributes (695ms)
+			ProcessInitializeOnLoadMethodAttributes (1315ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.14 seconds
+Refreshing native plugins compatible for Editor in 7.44 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7634 unused Assets / (4.6 MB). Loaded Objects now: 8550.
+Memory consumption went from 199.4 MB to 194.8 MB.
+Total: 8.646000 ms (FindLiveObjects: 0.699800 ms CreateObjectMapping: 0.574700 ms MarkObjects: 4.929100 ms  DeleteObjects: 2.440900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1723050.554896 seconds.
+  path: Assets/Animations/going_to_bed.anim
+  artifactKey: Guid(e96fe90ba636ef5449b7ccf20485cfb6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/going_to_bed.anim using Guid(e96fe90ba636ef5449b7ccf20485cfb6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '882893dd514bd4e6a8399f5ca17c7909') in 0.358355 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.337082 seconds.
+  path: Assets/Animations/going_to_bed.anim
+  artifactKey: Guid(e96fe90ba636ef5449b7ccf20485cfb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/going_to_bed.anim using Guid(e96fe90ba636ef5449b7ccf20485cfb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '26af82ab210d9d94554a0b4e3cbf2f0d') in 0.044213 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.256809 seconds.
+  path: Assets/Animations/sleeping.controller
+  artifactKey: Guid(a9dd79eeec77bf4428d22a90f0fd2336) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/sleeping.controller using Guid(a9dd79eeec77bf4428d22a90f0fd2336) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '93fff5ad972f953f8339f875770e19e9') in 0.0329464 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.632693 seconds.
+  path: Assets/Animations/sleeping 1.anim
+  artifactKey: Guid(04de6168fc757bd47aeb7d4491966c71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/sleeping 1.anim using Guid(04de6168fc757bd47aeb7d4491966c71) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7a892e1ac89f7b2af5ede77925ee8b71') in 0.0401411 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.813428 seconds.
+  path: Assets/Animations/sleeping.controller
+  artifactKey: Guid(a9dd79eeec77bf4428d22a90f0fd2336) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/sleeping.controller using Guid(a9dd79eeec77bf4428d22a90f0fd2336) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '268099e439ba10c67c1810e07f00a29c') in 0.0184822 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.279621 seconds.
+  path: Assets/Animations/sleeping_pose.anim
+  artifactKey: Guid(04de6168fc757bd47aeb7d4491966c71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/sleeping_pose.anim using Guid(04de6168fc757bd47aeb7d4491966c71) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd247bfb6a91dbda641208d29b41b3b14') in 0.0409179 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.875099 seconds.
+  path: Assets/Animations/sleeping_pose.anim
+  artifactKey: Guid(04de6168fc757bd47aeb7d4491966c71) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/sleeping_pose.anim using Guid(04de6168fc757bd47aeb7d4491966c71) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6469a920e0ec14525abd7e4ff61230bc') in 0.0677502 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 618.145391 seconds.
+  path: Assets/Animations/sleeping 1.anim
+  artifactKey: Guid(a85b36cd5d058a64889348543ff8c033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/sleeping 1.anim using Guid(a85b36cd5d058a64889348543ff8c033) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '26209d30333bcfa95c923798961db0b0') in 0.0406506 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.828163 seconds.
+  path: Assets/Animations/sleeping.controller
+  artifactKey: Guid(a9dd79eeec77bf4428d22a90f0fd2336) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/sleeping.controller using Guid(a9dd79eeec77bf4428d22a90f0fd2336) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b63112abd2efcddc491949e46c7295e3') in 0.1241747 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.203715 seconds.
+  path: Assets/Animations/sleeping_pose.anim
+  artifactKey: Guid(a85b36cd5d058a64889348543ff8c033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/sleeping_pose.anim using Guid(a85b36cd5d058a64889348543ff8c033) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '345d1bc5d6bbd2b041b12f42b99928cd') in 0.0430588 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.832152 seconds.
+  path: Assets/Animations/sleeping_pose.anim
+  artifactKey: Guid(a85b36cd5d058a64889348543ff8c033) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/sleeping_pose.anim using Guid(a85b36cd5d058a64889348543ff8c033) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '03ae979f9b11b6ac1ad0c2277ca88e50') in 0.0624325 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.827647 seconds.
+  path: Assets/Animations/sleeping.controller
+  artifactKey: Guid(a9dd79eeec77bf4428d22a90f0fd2336) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/sleeping.controller using Guid(a9dd79eeec77bf4428d22a90f0fd2336) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '095a110b1a619e142f183301cbd0bed9') in 0.0014128 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 59.908897 seconds.
+  path: Assets/Animations/sleeping.controller
+  artifactKey: Guid(a9dd79eeec77bf4428d22a90f0fd2336) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/sleeping.controller using Guid(a9dd79eeec77bf4428d22a90f0fd2336) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '092dda7770a53c61bea60fbd21c48425') in 0.1076317 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 15038.037292 seconds.
+  path: Assets/Animations/sleeping.controller
+  artifactKey: Guid(a9dd79eeec77bf4428d22a90f0fd2336) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/sleeping.controller using Guid(a9dd79eeec77bf4428d22a90f0fd2336) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '87c0bd9c623ddf9a4b9776b23cf14814') in 0.1712381 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 667.704499 seconds.
+  path: Assets/Animations/sleeping 1.anim
+  artifactKey: Guid(2101dedcdaf6f8d4eb9b0eccae45d9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/sleeping 1.anim using Guid(2101dedcdaf6f8d4eb9b0eccae45d9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '922eec124553fef17d538b60f4489be4') in 0.0488751 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.536283 seconds.
+  path: Assets/Animations/sleeping.controller
+  artifactKey: Guid(a9dd79eeec77bf4428d22a90f0fd2336) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/sleeping.controller using Guid(a9dd79eeec77bf4428d22a90f0fd2336) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f12283b50b81e4b6b7eb734a755f3162') in 0.1759303 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.330946 seconds.
+  path: Assets/Animations/sleeping_pose.anim
+  artifactKey: Guid(2101dedcdaf6f8d4eb9b0eccae45d9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/sleeping_pose.anim using Guid(2101dedcdaf6f8d4eb9b0eccae45d9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '16f395e9a29e7bee9764fb549b4796cb') in 0.0440144 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.818759 seconds.
+  path: Assets/Animations/sleeping_pose.anim
+  artifactKey: Guid(2101dedcdaf6f8d4eb9b0eccae45d9df) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/sleeping_pose.anim using Guid(2101dedcdaf6f8d4eb9b0eccae45d9df) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3535de7f1d241f5baa43480a76751b02') in 0.1390425 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 686.456453 seconds.
+  path: Assets/Animations/guard_laydown.anim
+  artifactKey: Guid(e96fe90ba636ef5449b7ccf20485cfb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/guard_laydown.anim using Guid(e96fe90ba636ef5449b7ccf20485cfb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f8bb3d77b3ce44cfca0949430cb7d799') in 0.0361688 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.831952 seconds.
+  path: Assets/Animations/guard_laydown.anim
+  artifactKey: Guid(e96fe90ba636ef5449b7ccf20485cfb6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/guard_laydown.anim using Guid(e96fe90ba636ef5449b7ccf20485cfb6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e3d9e1c5427597429c2095a6fbd447c6') in 0.1190143 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 36.018982 seconds.
+  path: Assets/Animations/guard_sleeping_loop.anim
+  artifactKey: Guid(2101dedcdaf6f8d4eb9b0eccae45d9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/guard_sleeping_loop.anim using Guid(2101dedcdaf6f8d4eb9b0eccae45d9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f55aa6fbbae77a762589c70bfc95dc03') in 0.00465 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.883139 seconds.
+  path: Assets/Animations/guard_sleeping_loop.anim
+  artifactKey: Guid(2101dedcdaf6f8d4eb9b0eccae45d9df) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/guard_sleeping_loop.anim using Guid(2101dedcdaf6f8d4eb9b0eccae45d9df) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a26d4407896ccc9f8d868f5c47fed8d8') in 0.0812541 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 53.473594 seconds.
+  path: Assets/Animations/guard_sleeping.anim
+  artifactKey: Guid(976e8d2bee01bc0419da0c03b219e83c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/guard_sleeping.anim using Guid(976e8d2bee01bc0419da0c03b219e83c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7e392d4e4d0479980c238bcaa7e99a7a') in 0.0487662 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.823022 seconds.
+  path: Assets/Animations/guard_sleeping.anim
+  artifactKey: Guid(976e8d2bee01bc0419da0c03b219e83c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/guard_sleeping.anim using Guid(976e8d2bee01bc0419da0c03b219e83c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '523e1638e44ef9aa204efa9ea85132d5') in 0.0653522 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.149216 seconds.
+  path: Assets/Animations/guard_sleeping 1.anim
+  artifactKey: Guid(5b8e8c3e2c16c60499745e47f90c17ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/guard_sleeping 1.anim using Guid(5b8e8c3e2c16c60499745e47f90c17ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '913e5f71d7a7c9aef4f5e7b7d04dfe59') in 0.041725 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.807458 seconds.
+  path: Assets/Animations/guard_laydown.anim
+  artifactKey: Guid(e96fe90ba636ef5449b7ccf20485cfb6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/guard_laydown.anim using Guid(e96fe90ba636ef5449b7ccf20485cfb6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '70ef491ee89fe217ed1db197f18dc003') in 0.3491199 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.614446 seconds.
+  path: Assets/Animations/guard_standup.anim
+  artifactKey: Guid(5b8e8c3e2c16c60499745e47f90c17ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/guard_standup.anim using Guid(5b8e8c3e2c16c60499745e47f90c17ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'aea3f7033642992302cbde9a5a162aed') in 0.0423367 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.862502 seconds.
+  path: Assets/Animations/guard_standup.anim
+  artifactKey: Guid(5b8e8c3e2c16c60499745e47f90c17ac) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/guard_standup.anim using Guid(5b8e8c3e2c16c60499745e47f90c17ac) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'eb20e3c39076ad8e3032af08bf0e3ca1') in 0.0703882 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.295252 seconds.
+  path: Assets/Animations/sleeping.controller
+  artifactKey: Guid(a9dd79eeec77bf4428d22a90f0fd2336) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/sleeping.controller using Guid(a9dd79eeec77bf4428d22a90f0fd2336) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2ac2ee9ba67cbc85a23df5203e0073d6') in 0.0397184 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 157.300998 seconds.
+  path: Assets/Animations/guard_laydown.anim
+  artifactKey: Guid(e96fe90ba636ef5449b7ccf20485cfb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/guard_laydown.anim using Guid(e96fe90ba636ef5449b7ccf20485cfb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7ab271ced2a6a5f73cec39765fd9c2f6') in 0.0380046 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 67.045393 seconds.
+  path: Assets/Animations/guard_sitting.anim
+  artifactKey: Guid(6817920a377c6164797d1cc2a644562a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/guard_sitting.anim using Guid(6817920a377c6164797d1cc2a644562a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'edc9a301db7edb2aede527b25992fc65') in 0.0359256 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.845247 seconds.
+  path: Assets/Animations/guard_sitting.anim
+  artifactKey: Guid(6817920a377c6164797d1cc2a644562a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/guard_sitting.anim using Guid(6817920a377c6164797d1cc2a644562a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4f64e8338bd59f73c86d012c67ec912f') in 0.1076419 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  5.450 seconds
+Refreshing native plugins compatible for Editor in 8.22 ms, found 11 plugins.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Scanning for USB devices : 2.916ms
+Scanning for USB devices : 3.633ms
+Scanning for USB devices : 3.001ms
+Scanning for USB devices : 2.197ms
+Scanning for USB devices : 2.668ms
+Scanning for USB devices : 2.472ms
+Scanning for USB devices : 2.262ms
+Scanning for USB devices : 2.174ms
+Scanning for USB devices : 2.392ms
+Scanning for USB devices : 2.342ms
+Scanning for USB devices : 2.239ms
+Scanning for USB devices : 2.591ms
+Scanning for USB devices : 2.819ms
+Scanning for USB devices : 3.222ms
+Scanning for USB devices : 3.006ms
+Scanning for USB devices : 3.086ms
+Found 0 scene poses
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Autohand.AutoHandUpdateDataWizard:FindScenePoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:244)
+Autohand.AutoHandUpdateDataWizard:CheckSceneForOldPoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:54)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs Line: 244)
+
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.909 seconds
+Domain Reload Profiling: 7366ms
+	BeginReloadAssembly (1043ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (11ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (122ms)
+	RebuildCommonClasses (907ms)
+	RebuildNativeTypeToScriptingClass (29ms)
+	initialDomainReloadingComplete (47ms)
+	LoadAllAssembliesAndSetupDomain (3430ms)
+		LoadAssemblies (3554ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (636ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (595ms)
+			ResolveRequiredComponents (24ms)
+	FinalizeReload (1910ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1427ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (25ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (239ms)
+			ProcessInitializeOnLoadAttributes (638ms)
+			ProcessInitializeOnLoadMethodAttributes (514ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (30ms)
+Refreshing native plugins compatible for Editor in 14.23 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7632 unused Assets / (4.0 MB). Loaded Objects now: 8569.
+Memory consumption went from 208.2 MB to 204.2 MB.
+Total: 16.858600 ms (FindLiveObjects: 1.229300 ms CreateObjectMapping: 1.085100 ms MarkObjects: 10.074700 ms  DeleteObjects: 4.466800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 193.195450 seconds.
+  path: Assets/Animations/guard_sitting 1.anim
+  artifactKey: Guid(456df5efd5ef2ce43a3fbdb6a80a851e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/guard_sitting 1.anim using Guid(456df5efd5ef2ce43a3fbdb6a80a851e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '04a5b4c5ebc607f268260d3aafa85916') in 0.0648745 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.604501 seconds.
+  path: Assets/Animations/guard_standup.anim
+  artifactKey: Guid(5b8e8c3e2c16c60499745e47f90c17ac) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/guard_standup.anim using Guid(5b8e8c3e2c16c60499745e47f90c17ac) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b07e6dfe7da7fd10016ee31d9ac2b389') in 0.346519 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Animations/sitting.controller
+  artifactKey: Guid(8abed96da0afd7d4ba8c8e68fa5097df) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/sitting.controller using Guid(8abed96da0afd7d4ba8c8e68fa5097df) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '61c03d78c4fcdcb338870d7237a550a9') in 0.030796 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 94.723980 seconds.
+  path: Assets/Animations/guard_sitdown.anim
+  artifactKey: Guid(456df5efd5ef2ce43a3fbdb6a80a851e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/guard_sitdown.anim using Guid(456df5efd5ef2ce43a3fbdb6a80a851e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ebc9e237f2b97fd43101a40926f9b79b') in 0.0409544 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.829702 seconds.
+  path: Assets/Animations/guard_sitdown.anim
+  artifactKey: Guid(456df5efd5ef2ce43a3fbdb6a80a851e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/guard_sitdown.anim using Guid(456df5efd5ef2ce43a3fbdb6a80a851e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '96282ca7649b6e55765b94502f03f7b0') in 0.1343553 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 235.588184 seconds.
+  path: Assets/Animations/guard_sitdown.anim
+  artifactKey: Guid(456df5efd5ef2ce43a3fbdb6a80a851e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/guard_sitdown.anim using Guid(456df5efd5ef2ce43a3fbdb6a80a851e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5c3cc6e73462bd05a51ead04a4858ba7') in 0.052914 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Scenes/final_scene.unity
+  artifactKey: Guid(f58a90d311d9c3943923ed2aba3263af) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b)
+Start importing Assets/Scenes/final_scene.unity using Guid(f58a90d311d9c3943923ed2aba3263af) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b) (ScriptedImporter)Opening scene 'Assets/Scenes/final_scene.unity additively'
+Source mesh has over 2,097,152 triangles in it, and is using the Fast Midphase option. This might cause certain collisions to not be detected correctly due to an issue in the physics engine. If you observe that in your project, a workaround could be to turn off the Fast Midphase option for this particular mesh. Source mesh name: teren
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:OpenScene (string,UnityEditor.SceneManagement.OpenSceneMode)
+UnityEditor.Search.AssetIndexer:IndexScene (string,bool)
+UnityEditor.Search.AssetIndexer:IndexSceneDocument (string,bool)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexArtifactImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Modules\Physics\CollisionMeshCooking.cpp line 162]
+
+Loaded scene 'Assets/Scenes/final_scene.unity'
+	Deserialize:            20.735 ms
+	Integration:            11079.385 ms
+	Integration of assets:  0.060 ms
+	Thread Wait Time:       0.097 ms
+	Total Operation Time:   11100.277 ms
+ -> (artifact id: 'e1bd5e710e9907a23f71155a79e30d9c') in 20.1557571 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3365
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001027 seconds.
+  path: Assets/Animations/guard_sitting_loop.anim
+  artifactKey: Guid(de4b8963911dc9e43a58ccf051c3bff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/guard_sitting_loop.anim using Guid(de4b8963911dc9e43a58ccf051c3bff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '862bb772207b35862b39dcdfe62eb938') in 0.0778308 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Scenes/final_scene.unity
+  artifactKey: Guid(f58a90d311d9c3943923ed2aba3263af) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b)
+Start importing Assets/Scenes/final_scene.unity using Guid(f58a90d311d9c3943923ed2aba3263af) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b) (ScriptedImporter)Opening scene 'Assets/Scenes/final_scene.unity additively'
+Source mesh has over 2,097,152 triangles in it, and is using the Fast Midphase option. This might cause certain collisions to not be detected correctly due to an issue in the physics engine. If you observe that in your project, a workaround could be to turn off the Fast Midphase option for this particular mesh. Source mesh name: teren
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:OpenScene (string,UnityEditor.SceneManagement.OpenSceneMode)
+UnityEditor.Search.AssetIndexer:IndexScene (string,bool)
+UnityEditor.Search.AssetIndexer:IndexSceneDocument (string,bool)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexArtifactImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Modules\Physics\CollisionMeshCooking.cpp line 162]
+
+Loaded scene 'Assets/Scenes/final_scene.unity'
+	Deserialize:            9.519 ms
+	Integration:            3330.778 ms
+	Integration of assets:  1.377 ms
+	Thread Wait Time:       0.014 ms
+	Total Operation Time:   3341.688 ms
+ -> (artifact id: 'd7636a3a1800d2ed276acaa14c7172f6') in 5.4446462 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3365
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.124306 seconds.
+  path: Assets/Animations/guard_sitting_loop.anim
+  artifactKey: Guid(de4b8963911dc9e43a58ccf051c3bff0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/guard_sitting_loop.anim using Guid(de4b8963911dc9e43a58ccf051c3bff0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c46d838cc038a2c1590bd7fd70907d78') in 0.0603624 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.600433 seconds.
+  path: Assets/Animations/guard_sitdown.anim
+  artifactKey: Guid(456df5efd5ef2ce43a3fbdb6a80a851e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/guard_sitdown.anim using Guid(456df5efd5ef2ce43a3fbdb6a80a851e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ca4c814c5ce272ccb96d422a9c35ab54') in 0.0267082 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 741.992789 seconds.
+  path: Assets/Animations/guard_standup.anim
+  artifactKey: Guid(5b8e8c3e2c16c60499745e47f90c17ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/guard_standup.anim using Guid(5b8e8c3e2c16c60499745e47f90c17ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9f37b4b7d5e7cde2c33c6abb98b5b274') in 0.3073467 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 126.742255 seconds.
+  path: Assets/Animations/guard_sitting 1.anim
+  artifactKey: Guid(522ce3668b8765e4e9b20ede5af0441a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/guard_sitting 1.anim using Guid(522ce3668b8765e4e9b20ede5af0441a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '744054ac8b6207394d4fc1de505d0510') in 0.0341181 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.801140 seconds.
+  path: Assets/Animations/guard_sitting 1.anim
+  artifactKey: Guid(522ce3668b8765e4e9b20ede5af0441a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/guard_sitting 1.anim using Guid(522ce3668b8765e4e9b20ede5af0441a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '949872ef28015f3d6b81a744f8ed90f5') in 0.1190734 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.464478 seconds.
+  path: Assets/Animations/guard_sitting_loop.anim
+  artifactKey: Guid(522ce3668b8765e4e9b20ede5af0441a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/guard_sitting_loop.anim using Guid(522ce3668b8765e4e9b20ede5af0441a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '978db9fb876949673b593cec679aa20d') in 0.0378359 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.824359 seconds.
+  path: Assets/Animations/guard_sitting_loop.anim
+  artifactKey: Guid(522ce3668b8765e4e9b20ede5af0441a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/guard_sitting_loop.anim using Guid(522ce3668b8765e4e9b20ede5af0441a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '589acf1dab2d2b837ae1ebe23e6241be') in 0.0597227 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 1231.560046 seconds.
+  path: Assets/Animations/sitting.controller
+  artifactKey: Guid(8abed96da0afd7d4ba8c8e68fa5097df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/sitting.controller using Guid(8abed96da0afd7d4ba8c8e68fa5097df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '998c25c81d5273ff5af86a9f25da52c5') in 0.0041695 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 200.711874 seconds.
+  path: Assets/Animations/guard_sitting 1.anim
+  artifactKey: Guid(9955312eee34bb3449469af1c327d3bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/guard_sitting 1.anim using Guid(9955312eee34bb3449469af1c327d3bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6640c63b878208da9163d7d92934a4b0') in 0.0374253 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.800864 seconds.
+  path: Assets/Animations/guard_sitting_loop.anim
+  artifactKey: Guid(522ce3668b8765e4e9b20ede5af0441a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/guard_sitting_loop.anim using Guid(522ce3668b8765e4e9b20ede5af0441a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bc94d3d0f11de3272f0ae98bd2bfff7c') in 0.1021188 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 77.362876 seconds.
+  path: Assets/Animations/guard_standup1.anim
+  artifactKey: Guid(9955312eee34bb3449469af1c327d3bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/guard_standup1.anim using Guid(9955312eee34bb3449469af1c327d3bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dbb5c4e697861f484159d67e0ac1c9db') in 0.0363178 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.846107 seconds.
+  path: Assets/Animations/guard_standup1.anim
+  artifactKey: Guid(9955312eee34bb3449469af1c327d3bd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/guard_standup1.anim using Guid(9955312eee34bb3449469af1c327d3bd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4d3713b22bd6696078b5ad91ae040af8') in 0.0619929 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 326.657920 seconds.
+  path: Assets/Animations/guard_sitting_loop.anim
+  artifactKey: Guid(522ce3668b8765e4e9b20ede5af0441a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/guard_sitting_loop.anim using Guid(522ce3668b8765e4e9b20ede5af0441a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f90773322f7eec86c8c7ec5cd1f83929') in 0.0074481 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 364.807211 seconds.
+  path: Assets/Animations/sitting.controller
+  artifactKey: Guid(8abed96da0afd7d4ba8c8e68fa5097df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/sitting.controller using Guid(8abed96da0afd7d4ba8c8e68fa5097df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6145cc75afc877920de995bae7618c5b') in 0.0365263 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.532636 seconds.
+  path: Assets/Animations/guard_sitting 1.anim
+  artifactKey: Guid(e77528970af5719478ee74c790d11f35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/guard_sitting 1.anim using Guid(e77528970af5719478ee74c790d11f35) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '797b46224f21260fc051ea89ecc0f76b') in 0.0391697 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.814215 seconds.
+  path: Assets/Animations/guard_sitting 1.anim
+  artifactKey: Guid(e77528970af5719478ee74c790d11f35) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/guard_sitting 1.anim using Guid(e77528970af5719478ee74c790d11f35) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '801248a77f228db96d329baf26f67592') in 0.0521298 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.955335 seconds.
+  path: Assets/Animations/guard_standup1.anim
+  artifactKey: Guid(e77528970af5719478ee74c790d11f35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/guard_standup1.anim using Guid(e77528970af5719478ee74c790d11f35) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'de241073e6c3681ad8fb623692ea307b') in 0.0372634 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.835346 seconds.
+  path: Assets/Animations/guard_standup1.anim
+  artifactKey: Guid(e77528970af5719478ee74c790d11f35) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/guard_standup1.anim using Guid(e77528970af5719478ee74c790d11f35) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '192b7679929870842b7dea3739caa675') in 0.0597906 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 77.807352 seconds.
+  path: Assets/Animations/sleeping.controller
+  artifactKey: Guid(a9dd79eeec77bf4428d22a90f0fd2336) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/sleeping.controller using Guid(a9dd79eeec77bf4428d22a90f0fd2336) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b448803fa911c09c4bde4585fc559f00') in 0.0425295 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 738.563614 seconds.
+  path: Assets/Animations/btn_pushing_fixed.anim
+  artifactKey: Guid(c0f713c4ab7eeb14294a030d200d1a07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/btn_pushing_fixed.anim using Guid(c0f713c4ab7eeb14294a030d200d1a07) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ae3b50aef7d9850f59e8a74f17470e64') in 0.044019 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 89.847179 seconds.
+  path: Assets/Animations/guard_standup1.anim
+  artifactKey: Guid(e77528970af5719478ee74c790d11f35) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/guard_standup1.anim using Guid(e77528970af5719478ee74c790d11f35) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a21e5e6828cb06ed7845a85b2eecd974') in 0.1221577 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Animations/btn_pushing_fixed.anim
+  artifactKey: Guid(c0f713c4ab7eeb14294a030d200d1a07) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/btn_pushing_fixed.anim using Guid(c0f713c4ab7eeb14294a030d200d1a07) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6d67fd65470b6a182618d9023c794485') in 0.3239498 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+

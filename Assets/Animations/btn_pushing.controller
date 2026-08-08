@@ -10,8 +10,8 @@ AnimatorStateMachine:
   m_Name: Base Layer
   m_ChildStates:
   - serializedVersion: 1
-    m_State: {fileID: 1807432234639191743}
-    m_Position: {x: 365.86386, y: 69.51904, z: 0}
+    m_State: {fileID: 2329069502357096753}
+    m_Position: {x: 440.05966, y: 20.76889, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -21,7 +21,7 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 1807432234639191743}
+  m_DefaultState: {fileID: 2329069502357096753}
 --- !u!91 &9100000
 AnimatorController:
   m_ObjectHideFlags: 0
@@ -44,14 +44,14 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
---- !u!1102 &1807432234639191743
+--- !u!1102 &2329069502357096753
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: press_btn
+  m_Name: btn_pushing_fixed
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -64,7 +64,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 3de0d73733a622b48a73a29e15ead7f0, type: 2}
+  m_Motion: {fileID: 7400000, guid: c0f713c4ab7eeb14294a030d200d1a07, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

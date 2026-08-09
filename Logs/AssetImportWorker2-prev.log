@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.3/staging' branch; Version is '6000.3.11f1 (3000ef702840) revision 3145967'; Using compiler version '194234433'; Build Type 'Release'
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-kamil546" at "2026-08-08T11:48:17.0247682Z"
 OS: 'Windows 11  (10.0.26200) Professional' Language: 'pl' Physical Memory: 16322 MB
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-kamil546" at "2026-08-09T20:37:31.7927819Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-08-08T11:48:17Z
+Date: 2026-08-09T20:37:31Z
 
 COMMAND LINE ARGUMENTS:
 D:\PROGRAMY\UH\editor\6000.3.11f1\Editor\Unity.exe
@@ -19,7 +19,7 @@ D:/PROJEKTY/UNITY3D/mom/PZ---Mieczem-o-miecz
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-49621
+55043
 -licensingIpc
 LicenseClient-kamil546
 -job-worker-count
@@ -67,16 +67,16 @@ D:/PROJEKTY/UNITY3D/mom/PZ---Mieczem-o-miecz
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [2128]  Target information:
+Player connection [18676]  Target information:
 
-Player connection [2128]  * "[IP] 192.168.1.143 [Port] 0 [Flags] 2 [Guid] 2364865270 [EditorId] 2364865270 [Version] 1048832 [Id] WindowsEditor(7,kamil546_main) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [18676]  * "[IP] 192.168.1.143 [Port] 0 [Flags] 2 [Guid] 1643860530 [EditorId] 1643860530 [Version] 1048832 [Id] WindowsEditor(7,kamil546_main) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [2128]  * "[IP] 192.168.124.1 [Port] 0 [Flags] 2 [Guid] 2364865270 [EditorId] 2364865270 [Version] 1048832 [Id] WindowsEditor(7,kamil546_main) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [18676]  * "[IP] 192.168.124.1 [Port] 0 [Flags] 2 [Guid] 1643860530 [EditorId] 1643860530 [Version] 1048832 [Id] WindowsEditor(7,kamil546_main) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [2128]  * "[IP] 192.168.211.1 [Port] 0 [Flags] 2 [Guid] 2364865270 [EditorId] 2364865270 [Version] 1048832 [Id] WindowsEditor(7,kamil546_main) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [18676]  * "[IP] 192.168.211.1 [Port] 0 [Flags] 2 [Guid] 1643860530 [EditorId] 1643860530 [Version] 1048832 [Id] WindowsEditor(7,kamil546_main) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [2128] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [2128] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [18676] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [18676] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -88,7 +88,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 21.34 ms, found 11 plugins.
+Refreshing native plugins compatible for Editor in 22.44 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.11f1 (3000ef702840)
 [Subsystems] Discovering subsystems at path D:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/Resources/UnitySubsystems
@@ -104,7 +104,7 @@ Initialize mono
 Mono path[0] = 'D:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/Managed'
 Mono path[1] = 'D:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56416
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56140
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
@@ -115,17 +115,17 @@ Register platform support module: D:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/
 	ResponseStatus: Unsupported protocol version '1.18.0'.
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-kamil546"
 [Licensing::IpcConnector] LicenseClient-kamil546 channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-kamil546-6000.3.11" at "2026-08-08T11:48:18.3102962Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-kamil546-6000.3.11" at "2026-08-09T20:37:33.1319199Z"
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.18.0+23225a6
-  Session Id:              71f2b06be2a14fd8a2df54d39de4577f
-  Correlation Id:          25728f446ba0725f188fd8b63d8d4868
-  External correlation Id: 6215030704461821212
+  Session Id:              17e1d1f39a3b4a87bd4754bd70ba359a
+  Correlation Id:          143a2168a4a504c364600a615d72b209
+  External correlation Id: 8764552170142616107
   Machine Id:              blq3SyQP2YCluHmOrvbO5USdb0w=
 [Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-kamil546-6000.3.11" (connect: 0.00s, validation: 0.00s, handshake: 0.32s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-kamil546-6000.3.11-notifications" at "2026-08-08T11:48:18.6348347Z"
-[Licensing::Module] Licensing Background thread has ended after 1.61s
-[Licensing::Module] Licensing is initialized (took 0.91s).
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-kamil546-6000.3.11-notifications" at "2026-08-09T20:37:33.4524643Z"
+[Licensing::Module] Licensing Background thread has ended after 1.66s
+[Licensing::Module] Licensing is initialized (took 0.75s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 7972536305137-UnityPersXXXX
@@ -135,8 +135,8 @@ Register platform support module: D:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/
 Register platform support module: D:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
 [Licensing::Client] Successfully resolved entitlement details
 Register platform support module: D:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.912316 seconds.
-- Loaded All Assemblies, in  1.387 seconds
+Registered in 0.755958 seconds.
+- Loaded All Assemblies, in  1.222 seconds
 Native extension for Android target not found
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
@@ -147,34 +147,34 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.472 seconds
-Domain Reload Profiling: 1858ms
-	BeginReloadAssembly (143ms)
+- Finished resetting the current domain, in  0.480 seconds
+Domain Reload Profiling: 1701ms
+	BeginReloadAssembly (140ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (47ms)
-	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (963ms)
-	LoadAllAssembliesAndSetupDomain (215ms)
-		LoadAssemblies (143ms)
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (803ms)
+	LoadAllAssembliesAndSetupDomain (218ms)
+		LoadAssemblies (140ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (211ms)
-			TypeCache.Refresh (209ms)
-				TypeCache.ScanAssembly (192ms)
+		AnalyzeDomain (214ms)
+			TypeCache.Refresh (212ms)
+				TypeCache.ScanAssembly (196ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (472ms)
+	FinalizeReload (480ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (412ms)
+		SetupLoadedEditorAssemblies (419ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (102ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (95ms)
-			ProcessInitializeOnLoadAttributes (152ms)
+			InitializePlatformSupportModulesInManaged (106ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (102ms)
+			ProcessInitializeOnLoadAttributes (148ms)
 			ProcessInitializeOnLoadMethodAttributes (58ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
@@ -185,8 +185,8 @@ Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
 [Licensing::Client] Successfully resolved entitlement details
-- Loaded All Assemblies, in  0.923 seconds
-Refreshing native plugins compatible for Editor in 8.77 ms, found 11 plugins.
+- Loaded All Assemblies, in  0.959 seconds
+Refreshing native plugins compatible for Editor in 8.26 ms, found 11 plugins.
 Native extension for Android target not found
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
@@ -229,63 +229,45 @@ Mono: successfully reloaded assembly
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.235 seconds
-Domain Reload Profiling: 2156ms
-	BeginReloadAssembly (195ms)
+- Finished resetting the current domain, in  1.196 seconds
+Domain Reload Profiling: 2154ms
+	BeginReloadAssembly (213ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
+		DisableScriptedObjects (10ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (30ms)
-	RebuildCommonClasses (43ms)
+		CreateAndSetChildDomain (29ms)
+	RebuildCommonClasses (42ms)
 	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (40ms)
-	LoadAllAssembliesAndSetupDomain (627ms)
-		LoadAssemblies (357ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (648ms)
+		LoadAssemblies (401ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (373ms)
-			TypeCache.Refresh (258ms)
-				TypeCache.ScanAssembly (238ms)
-			BuildScriptInfoCaches (92ms)
+		AnalyzeDomain (368ms)
+			TypeCache.Refresh (250ms)
+				TypeCache.ScanAssembly (229ms)
+			BuildScriptInfoCaches (97ms)
 			ResolveRequiredComponents (17ms)
-	FinalizeReload (1235ms)
+	FinalizeReload (1197ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1002ms)
+		SetupLoadedEditorAssemblies (976ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (22ms)
+			InitializePlatformSupportModulesInManaged (20ms)
 			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (175ms)
-			ProcessInitializeOnLoadAttributes (382ms)
-			ProcessInitializeOnLoadMethodAttributes (414ms)
+			BeforeProcessingInitializeOnLoad (176ms)
+			ProcessInitializeOnLoadAttributes (376ms)
+			ProcessInitializeOnLoadMethodAttributes (396ms)
 			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (6ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
-Refreshing native plugins compatible for Editor in 8.77 ms, found 11 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 8.18 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7634 unused Assets / (5.3 MB). Loaded Objects now: 8550.
-Memory consumption went from 206.1 MB to 200.8 MB.
-Total: 10.526200 ms (FindLiveObjects: 0.932600 ms CreateObjectMapping: 1.399200 ms MarkObjects: 5.378700 ms  DeleteObjects: 2.815000 ms)
-
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 10.37 ms, found 11 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7591 unused Assets / (4.8 MB). Loaded Objects now: 8531.
-Memory consumption went from 204.4 MB to 199.6 MB.
-Total: 13.377900 ms (FindLiveObjects: 0.999900 ms CreateObjectMapping: 1.754200 ms MarkObjects: 6.625100 ms  DeleteObjects: 3.997700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 1860198.561522 seconds.
-  path: Assets/Scripts/GuardPost.cs
-  artifactKey: Guid(fec8d37b559848444840526f548fe742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/GuardPost.cs using Guid(fec8d37b559848444840526f548fe742) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dc0a46b4d755bee28608e07a97bf8722') in 0.0045079 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+Unloading 7638 unused Assets / (5.2 MB). Loaded Objects now: 8554.
+Memory consumption went from 206.0 MB to 200.8 MB.
+Total: 10.966200 ms (FindLiveObjects: 0.826300 ms CreateObjectMapping: 1.357700 ms MarkObjects: 6.019300 ms  DeleteObjects: 2.762100 ms)
 
 AssetImportWorkerClient::OnTransportError - code=10054 error=Istniej¹ce po³¹czenie zosta³o gwa³townie zamkniête przez zdalnego hosta.

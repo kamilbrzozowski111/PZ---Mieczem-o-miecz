@@ -7,8 +7,8 @@ public class CastleShiftManager : MonoBehaviour
 {
     [Header("Ustawienia")]
     [SerializeField] private GuardAI guardPrefab;
-    [SerializeField] private int totalGuards = 20;
-    [SerializeField] private float shiftInterval = 20f;
+    [SerializeField] private int totalGuards = 40;
+    [SerializeField] private float shiftInterval = 12f;
     [SerializeField] private float handoverTriggerDistance = 30f;
 
     [Header("Infrastruktura")]
@@ -73,7 +73,7 @@ public class CastleShiftManager : MonoBehaviour
             {
                 GuardAI newGuard = sleepingGuards[Random.Range(0, sleepingGuards.Count)];
 
-                //Zapobiega wysłaniu kolejnego strażnika na ten sam posterunek!
+                // REZERWACJA POSTERUNKU: Zapobiega wysłaniu kolejnego strażnika na ten sam posterunek!
                 postToChange.incomingGuard = newGuard; 
                 
                 newGuard.WakeUpAndGoToPost(postToChange, handoverTriggerDistance);

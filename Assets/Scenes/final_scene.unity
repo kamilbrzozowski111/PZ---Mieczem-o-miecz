@@ -946,6 +946,22 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8007136306691656845, guid: e63c3816eadd215428c5033dafbbd27b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8007136306691656845, guid: e63c3816eadd215428c5033dafbbd27b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8007136306691656845, guid: e63c3816eadd215428c5033dafbbd27b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8007136306691656845, guid: e63c3816eadd215428c5033dafbbd27b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
     - target: {fileID: 8701149537595071907, guid: e63c3816eadd215428c5033dafbbd27b, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -4343,7 +4359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CastleShiftManager
   guardPrefab: {fileID: 1548629468983754814, guid: 1ac4a419c21083d44aed2bb810c7d425, type: 3}
-  totalGuards: 38
+  totalGuards: 40
   shiftInterval: 12
   handoverTriggerDistance: 30
   posts:

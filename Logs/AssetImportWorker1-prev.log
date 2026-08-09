@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.3/staging' branch; Version is '6000.3.11f1 (3000ef702840) revision 3145967'; Using compiler version '194234433'; Build Type 'Release'
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-kamil546" at "2026-08-08T11:48:03.0897069Z"
 OS: 'Windows 11  (10.0.26200) Professional' Language: 'pl' Physical Memory: 16322 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-kamil546" at "2026-08-09T19:20:40.0462491Z"
 System  architecture: x64
 Process architecture: x64
-Date: 2026-08-08T11:48:03Z
+Date: 2026-08-09T19:20:40Z
 
 COMMAND LINE ARGUMENTS:
 D:\PROGRAMY\UH\editor\6000.3.11f1\Editor\Unity.exe
@@ -19,7 +19,7 @@ D:/PROJEKTY/UNITY3D/mom/PZ---Mieczem-o-miecz
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-49621
+55043
 -licensingIpc
 LicenseClient-kamil546
 -job-worker-count
@@ -67,16 +67,16 @@ D:/PROJEKTY/UNITY3D/mom/PZ---Mieczem-o-miecz
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [19864]  Target information:
+Player connection [8300]  Target information:
 
-Player connection [19864]  * "[IP] 192.168.1.143 [Port] 0 [Flags] 2 [Guid] 1433804768 [EditorId] 1433804768 [Version] 1048832 [Id] WindowsEditor(7,kamil546_main) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [8300]  * "[IP] 192.168.1.143 [Port] 0 [Flags] 2 [Guid] 404419225 [EditorId] 404419225 [Version] 1048832 [Id] WindowsEditor(7,kamil546_main) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [19864]  * "[IP] 192.168.124.1 [Port] 0 [Flags] 2 [Guid] 1433804768 [EditorId] 1433804768 [Version] 1048832 [Id] WindowsEditor(7,kamil546_main) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [8300]  * "[IP] 192.168.124.1 [Port] 0 [Flags] 2 [Guid] 404419225 [EditorId] 404419225 [Version] 1048832 [Id] WindowsEditor(7,kamil546_main) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [19864]  * "[IP] 192.168.211.1 [Port] 0 [Flags] 2 [Guid] 1433804768 [EditorId] 1433804768 [Version] 1048832 [Id] WindowsEditor(7,kamil546_main) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [8300]  * "[IP] 192.168.211.1 [Port] 0 [Flags] 2 [Guid] 404419225 [EditorId] 404419225 [Version] 1048832 [Id] WindowsEditor(7,kamil546_main) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [19864] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [19864] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [8300] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [8300] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -88,7 +88,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 24.58 ms, found 11 plugins.
+Refreshing native plugins compatible for Editor in 29.93 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.11f1 (3000ef702840)
 [Subsystems] Discovering subsystems at path D:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/Resources/UnitySubsystems
@@ -104,7 +104,7 @@ Initialize mono
 Mono path[0] = 'D:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/Managed'
 Mono path[1] = 'D:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56796
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56872
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
@@ -115,17 +115,17 @@ Register platform support module: D:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/
 	ResponseStatus: Unsupported protocol version '1.18.0'.
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-kamil546"
 [Licensing::IpcConnector] LicenseClient-kamil546 channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-kamil546-6000.3.11" at "2026-08-08T11:48:04.5063354Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-kamil546-6000.3.11" at "2026-08-09T19:20:41.5067812Z"
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.18.0+23225a6
-  Session Id:              eaedd511362a409c8fe10864358132bd
-  Correlation Id:          25728f446ba0725f188fd8b63d8d4868
-  External correlation Id: 2091785213038485899
+  Session Id:              59543c9db0ca417fa1ee2809692d6062
+  Correlation Id:          143a2168a4a504c364600a615d72b209
+  External correlation Id: 6637934889724843626
   Machine Id:              blq3SyQP2YCluHmOrvbO5USdb0w=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-kamil546-6000.3.11" (connect: 0.00s, validation: 0.00s, handshake: 0.32s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-kamil546-6000.3.11-notifications" at "2026-08-08T11:48:04.8310026Z"
-[Licensing::Module] Licensing Background thread has ended after 1.74s
-[Licensing::Module] Licensing is initialized (took 0.94s).
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-kamil546-6000.3.11" (connect: 0.00s, validation: 0.00s, handshake: 0.35s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-kamil546-6000.3.11-notifications" at "2026-08-09T19:20:41.863027Z"
+[Licensing::Module] Licensing Background thread has ended after 1.82s
+[Licensing::Module] Licensing is initialized (took 1.01s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 7972536305137-UnityPersXXXX
@@ -135,8 +135,8 @@ Register platform support module: D:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/
 Register platform support module: D:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
 [Licensing::Client] Successfully resolved entitlement details
 Register platform support module: D:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.947129 seconds.
-- Loaded All Assemblies, in  1.453 seconds
+Registered in 1.017955 seconds.
+- Loaded All Assemblies, in  1.550 seconds
 Native extension for Android target not found
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
@@ -147,35 +147,35 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.491 seconds
-Domain Reload Profiling: 1944ms
-	BeginReloadAssembly (156ms)
+- Finished resetting the current domain, in  0.527 seconds
+Domain Reload Profiling: 2077ms
+	BeginReloadAssembly (162ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (47ms)
-	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (999ms)
-	LoadAllAssembliesAndSetupDomain (233ms)
-		LoadAssemblies (156ms)
+	RebuildCommonClasses (51ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (1076ms)
+	LoadAllAssembliesAndSetupDomain (238ms)
+		LoadAssemblies (162ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (229ms)
-			TypeCache.Refresh (226ms)
-				TypeCache.ScanAssembly (209ms)
+		AnalyzeDomain (233ms)
+			TypeCache.Refresh (231ms)
+				TypeCache.ScanAssembly (213ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (491ms)
+	FinalizeReload (528ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (428ms)
+		SetupLoadedEditorAssemblies (461ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (105ms)
+			InitializePlatformSupportModulesInManaged (114ms)
 			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (101ms)
-			ProcessInitializeOnLoadAttributes (153ms)
-			ProcessInitializeOnLoadMethodAttributes (64ms)
+			BeforeProcessingInitializeOnLoad (109ms)
+			ProcessInitializeOnLoadAttributes (168ms)
+			ProcessInitializeOnLoadMethodAttributes (66ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -185,8 +185,8 @@ Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
 [Licensing::Client] Successfully resolved entitlement details
-- Loaded All Assemblies, in  0.975 seconds
-Refreshing native plugins compatible for Editor in 8.34 ms, found 11 plugins.
+- Loaded All Assemblies, in  1.066 seconds
+Refreshing native plugins compatible for Editor in 8.22 ms, found 11 plugins.
 Native extension for Android target not found
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
@@ -229,146 +229,879 @@ Mono: successfully reloaded assembly
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.859 seconds
-Domain Reload Profiling: 2832ms
-	BeginReloadAssembly (195ms)
+- Finished resetting the current domain, in  1.235 seconds
+Domain Reload Profiling: 2299ms
+	BeginReloadAssembly (214ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (51ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (735ms)
+		LoadAssemblies (436ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (415ms)
+			TypeCache.Refresh (285ms)
+				TypeCache.ScanAssembly (261ms)
+			BuildScriptInfoCaches (103ms)
+			ResolveRequiredComponents (20ms)
+	FinalizeReload (1236ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1011ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (22ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (182ms)
+			ProcessInitializeOnLoadAttributes (383ms)
+			ProcessInitializeOnLoadMethodAttributes (413ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 8.28 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7638 unused Assets / (5.4 MB). Loaded Objects now: 8554.
+Memory consumption went from 206.1 MB to 200.7 MB.
+Total: 11.966700 ms (FindLiveObjects: 0.928300 ms CreateObjectMapping: 1.401200 ms MarkObjects: 6.352300 ms  DeleteObjects: 3.283700 ms)
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  0.919 seconds
+Refreshing native plugins compatible for Editor in 9.97 ms, found 11 plugins.
+Native extension for Android target not found
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Found 0 scene poses
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Autohand.AutoHandUpdateDataWizard:FindScenePoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:244)
+Autohand.AutoHandUpdateDataWizard:CheckSceneForOldPoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:54)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs Line: 244)
+
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.278 seconds
+Domain Reload Profiling: 2200ms
+	BeginReloadAssembly (255ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (32ms)
-	RebuildCommonClasses (45ms)
-	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (44ms)
-	LoadAllAssembliesAndSetupDomain (671ms)
-		LoadAssemblies (419ms)
+		CreateAndSetChildDomain (67ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (577ms)
+		LoadAssemblies (392ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (359ms)
-			TypeCache.Refresh (243ms)
-				TypeCache.ScanAssembly (223ms)
-			BuildScriptInfoCaches (94ms)
+		AnalyzeDomain (293ms)
+			TypeCache.Refresh (12ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (258ms)
 			ResolveRequiredComponents (17ms)
-	FinalizeReload (1860ms)
+	FinalizeReload (1279ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1638ms)
+		SetupLoadedEditorAssemblies (1031ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (679ms)
+			InitializePlatformSupportModulesInManaged (23ms)
 			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (178ms)
-			ProcessInitializeOnLoadAttributes (372ms)
-			ProcessInitializeOnLoadMethodAttributes (402ms)
+			BeforeProcessingInitializeOnLoad (176ms)
+			ProcessInitializeOnLoadAttributes (454ms)
+			ProcessInitializeOnLoadMethodAttributes (370ms)
 			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 7.96 ms, found 11 plugins.
+		AwakeInstancesAfterBackupRestoration (23ms)
+Refreshing native plugins compatible for Editor in 9.94 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7634 unused Assets / (5.2 MB). Loaded Objects now: 8550.
-Memory consumption went from 206.0 MB to 200.9 MB.
-Total: 11.343700 ms (FindLiveObjects: 0.898200 ms CreateObjectMapping: 1.409400 ms MarkObjects: 6.382800 ms  DeleteObjects: 2.652400 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 1860185.553309 seconds.
-  path: Assets/Animations/guard_sleeping.anim
-  artifactKey: Guid(976e8d2bee01bc0419da0c03b219e83c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Animations/guard_sleeping.anim using Guid(976e8d2bee01bc0419da0c03b219e83c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f515fa8daa52f98870498a5b4ebe957f') in 0.1954821 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Animations/guard_sitting.anim
-  artifactKey: Guid(6817920a377c6164797d1cc2a644562a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Animations/guard_sitting.anim using Guid(6817920a377c6164797d1cc2a644562a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd3bb5ff2d345e48150a063c46abe62dd') in 0.0471677 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Animations/guard_sitting_loop.anim
-  artifactKey: Guid(522ce3668b8765e4e9b20ede5af0441a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Animations/guard_sitting_loop.anim using Guid(522ce3668b8765e4e9b20ede5af0441a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '93c56cd6ab93546892130b47ef3a1e82') in 0.0205961 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Animations/Locomotion.controller
-  artifactKey: Guid(fe767105741e6d54fa80f306a55629a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Animations/Locomotion.controller using Guid(fe767105741e6d54fa80f306a55629a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1cde49a5fdfb60a3140c0b3be848c42b') in 0.1806612 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 30
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Animations/Idle.anim
-  artifactKey: Guid(a8231c2e03d99f34f80623dad1fa914b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Animations/Idle.anim using Guid(a8231c2e03d99f34f80623dad1fa914b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4f7d6b15d194d815b395a3f7c9ad03a6') in 0.0800445 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Animations/guard_sleeping_loop.anim
-  artifactKey: Guid(2101dedcdaf6f8d4eb9b0eccae45d9df) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Animations/guard_sleeping_loop.anim using Guid(2101dedcdaf6f8d4eb9b0eccae45d9df) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7b409a0bf23b4ec8082e7c1daa5b6143') in 0.0135126 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Animations/source_fbx/straznik_zamku301@Cross Punch.fbx
-  artifactKey: Guid(3b1d2554c40282c4a83d8990a62c7b9a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Animations/source_fbx/straznik_zamku301@Cross Punch.fbx using Guid(3b1d2554c40282c4a83d8990a62c7b9a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0334b63ae1fd9a777969c9e1c1fa06e6') in 0.0556128 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 137
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Animations/sitting.controller
-  artifactKey: Guid(8abed96da0afd7d4ba8c8e68fa5097df) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Animations/sitting.controller using Guid(8abed96da0afd7d4ba8c8e68fa5097df) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f1add70dd164b1398c077cc24ed9b847') in 0.0465948 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Scenes/final_scene.unity
-  artifactKey: Guid(f58a90d311d9c3943923ed2aba3263af) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b)
-Start importing Assets/Scenes/final_scene.unity using Guid(f58a90d311d9c3943923ed2aba3263af) Importer(2089858483,e11c23a36db5f54750b8cd40eac0985b) (ScriptedImporter)Opening scene 'Assets/Scenes/final_scene.unity additively'
-Source mesh has over 2,097,152 triangles in it, and is using the Fast Midphase option. This might cause certain collisions to not be detected correctly due to an issue in the physics engine. If you observe that in your project, a workaround could be to turn off the Fast Midphase option for this particular mesh. Source mesh name: teren
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.SceneManagement.EditorSceneManager:OpenScene (string,UnityEditor.SceneManagement.OpenSceneMode)
-UnityEditor.Search.AssetIndexer:IndexScene (string,bool)
-UnityEditor.Search.AssetIndexer:IndexSceneDocument (string,bool)
-UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
-UnityEditor.Search.SearchIndexArtifactImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
-UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
-
-[C:\build\output\unity\unity\Modules\Physics\CollisionMeshCooking.cpp line 162]
-
-Loaded scene 'Assets/Scenes/final_scene.unity'
-	Deserialize:            4.377 ms
-	Integration:            2569.285 ms
-	Integration of assets:  0.065 ms
-	Thread Wait Time:       0.051 ms
-	Total Operation Time:   2573.778 ms
- -> (artifact id: 'fb3de0ea091c141bf13eb7e315c0a3c6') in 4.3623857 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3367
-
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 9.61 ms, found 11 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7591 unused Assets / (4.7 MB). Loaded Objects now: 8533.
-Memory consumption went from 207.0 MB to 202.3 MB.
-Total: 14.614200 ms (FindLiveObjects: 0.973600 ms CreateObjectMapping: 1.743600 ms MarkObjects: 8.336700 ms  DeleteObjects: 3.559100 ms)
+Unloading 7636 unused Assets / (5.1 MB). Loaded Objects now: 8570.
+Memory consumption went from 214.0 MB to 208.9 MB.
+Total: 12.089600 ms (FindLiveObjects: 0.879800 ms CreateObjectMapping: 1.683300 ms MarkObjects: 6.368500 ms  DeleteObjects: 3.157000 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  0.965 seconds
+Refreshing native plugins compatible for Editor in 8.96 ms, found 11 plugins.
+Native extension for Android target not found
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Found 0 scene poses
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Autohand.AutoHandUpdateDataWizard:FindScenePoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:244)
+Autohand.AutoHandUpdateDataWizard:CheckSceneForOldPoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:54)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs Line: 244)
+
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.293 seconds
+Domain Reload Profiling: 2261ms
+	BeginReloadAssembly (272ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (72ms)
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (607ms)
+		LoadAssemblies (434ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (289ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (249ms)
+			ResolveRequiredComponents (23ms)
+	FinalizeReload (1293ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1041ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (23ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (188ms)
+			ProcessInitializeOnLoadAttributes (443ms)
+			ProcessInitializeOnLoadMethodAttributes (378ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (25ms)
+Refreshing native plugins compatible for Editor in 8.30 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7636 unused Assets / (5.4 MB). Loaded Objects now: 8573.
+Memory consumption went from 217.9 MB to 212.5 MB.
+Total: 13.630100 ms (FindLiveObjects: 0.841400 ms CreateObjectMapping: 1.250000 ms MarkObjects: 6.865100 ms  DeleteObjects: 4.672300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  0.909 seconds
+Refreshing native plugins compatible for Editor in 11.21 ms, found 11 plugins.
+Native extension for Android target not found
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Found 0 scene poses
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Autohand.AutoHandUpdateDataWizard:FindScenePoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:244)
+Autohand.AutoHandUpdateDataWizard:CheckSceneForOldPoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:54)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs Line: 244)
+
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.281 seconds
+Domain Reload Profiling: 2195ms
+	BeginReloadAssembly (258ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (70ms)
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (565ms)
+		LoadAssemblies (380ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (288ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (254ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (1281ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1031ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (21ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (178ms)
+			ProcessInitializeOnLoadAttributes (455ms)
+			ProcessInitializeOnLoadMethodAttributes (367ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (24ms)
+Refreshing native plugins compatible for Editor in 9.56 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7636 unused Assets / (4.9 MB). Loaded Objects now: 8576.
+Memory consumption went from 217.9 MB to 213.1 MB.
+Total: 13.111800 ms (FindLiveObjects: 1.284900 ms CreateObjectMapping: 2.052300 ms MarkObjects: 6.505400 ms  DeleteObjects: 3.268000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  0.907 seconds
+Refreshing native plugins compatible for Editor in 10.26 ms, found 11 plugins.
+Native extension for Android target not found
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Found 0 scene poses
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Autohand.AutoHandUpdateDataWizard:FindScenePoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:244)
+Autohand.AutoHandUpdateDataWizard:CheckSceneForOldPoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:54)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs Line: 244)
+
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.272 seconds
+Domain Reload Profiling: 2183ms
+	BeginReloadAssembly (264ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (65ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (557ms)
+		LoadAssemblies (389ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (279ms)
+			TypeCache.Refresh (13ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (240ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (1273ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1041ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (21ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (182ms)
+			ProcessInitializeOnLoadAttributes (431ms)
+			ProcessInitializeOnLoadMethodAttributes (396ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (23ms)
+Refreshing native plugins compatible for Editor in 8.07 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7636 unused Assets / (4.9 MB). Loaded Objects now: 8579.
+Memory consumption went from 218.0 MB to 213.0 MB.
+Total: 11.461500 ms (FindLiveObjects: 0.899000 ms CreateObjectMapping: 1.332200 ms MarkObjects: 6.348100 ms  DeleteObjects: 2.881200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.882 seconds
+Refreshing native plugins compatible for Editor in 9.43 ms, found 11 plugins.
+Native extension for Android target not found
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Found 0 scene poses
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Autohand.AutoHandUpdateDataWizard:FindScenePoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:244)
+Autohand.AutoHandUpdateDataWizard:CheckSceneForOldPoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:54)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs Line: 244)
+
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.249 seconds
+Domain Reload Profiling: 2134ms
+	BeginReloadAssembly (242ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (55ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (553ms)
+		LoadAssemblies (379ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (277ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (243ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (1249ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1000ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (21ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (177ms)
+			ProcessInitializeOnLoadAttributes (425ms)
+			ProcessInitializeOnLoadMethodAttributes (367ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (26ms)
+Refreshing native plugins compatible for Editor in 8.27 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7636 unused Assets / (5.0 MB). Loaded Objects now: 8582.
+Memory consumption went from 218.0 MB to 213.1 MB.
+Total: 11.269600 ms (FindLiveObjects: 0.915000 ms CreateObjectMapping: 1.464900 ms MarkObjects: 6.133400 ms  DeleteObjects: 2.755300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  0.880 seconds
+Refreshing native plugins compatible for Editor in 12.60 ms, found 11 plugins.
+Native extension for Android target not found
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Found 0 scene poses
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Autohand.AutoHandUpdateDataWizard:FindScenePoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:244)
+Autohand.AutoHandUpdateDataWizard:CheckSceneForOldPoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:54)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs Line: 244)
+
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.251 seconds
+Domain Reload Profiling: 2135ms
+	BeginReloadAssembly (258ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (63ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (536ms)
+		LoadAssemblies (365ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (274ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (238ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (1252ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1003ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (21ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (182ms)
+			ProcessInitializeOnLoadAttributes (421ms)
+			ProcessInitializeOnLoadMethodAttributes (366ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (26ms)
+Refreshing native plugins compatible for Editor in 7.98 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7636 unused Assets / (5.0 MB). Loaded Objects now: 8585.
+Memory consumption went from 218.1 MB to 213.1 MB.
+Total: 13.844500 ms (FindLiveObjects: 0.867800 ms CreateObjectMapping: 1.332600 ms MarkObjects: 7.961500 ms  DeleteObjects: 3.681300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  0.913 seconds
+Refreshing native plugins compatible for Editor in 10.32 ms, found 11 plugins.
+Native extension for Android target not found
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Found 0 scene poses
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Autohand.AutoHandUpdateDataWizard:FindScenePoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:244)
+Autohand.AutoHandUpdateDataWizard:CheckSceneForOldPoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:54)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs Line: 244)
+
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.246 seconds
+Domain Reload Profiling: 2162ms
+	BeginReloadAssembly (255ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (63ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (574ms)
+		LoadAssemblies (398ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (282ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (247ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (1247ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1004ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (21ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (181ms)
+			ProcessInitializeOnLoadAttributes (430ms)
+			ProcessInitializeOnLoadMethodAttributes (362ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (25ms)
+Refreshing native plugins compatible for Editor in 8.48 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7636 unused Assets / (5.0 MB). Loaded Objects now: 8588.
+Memory consumption went from 218.1 MB to 213.1 MB.
+Total: 11.559800 ms (FindLiveObjects: 0.919600 ms CreateObjectMapping: 1.480000 ms MarkObjects: 6.126100 ms  DeleteObjects: 3.032800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.878 seconds
+Refreshing native plugins compatible for Editor in 8.77 ms, found 11 plugins.
+Native extension for Android target not found
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Found 0 scene poses
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Autohand.AutoHandUpdateDataWizard:FindScenePoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:244)
+Autohand.AutoHandUpdateDataWizard:CheckSceneForOldPoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:54)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs Line: 244)
+
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.256 seconds
+Domain Reload Profiling: 2139ms
+	BeginReloadAssembly (245ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (58ms)
+	RebuildCommonClasses (47ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (542ms)
+		LoadAssemblies (377ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (272ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (240ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (1257ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (996ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (22ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (178ms)
+			ProcessInitializeOnLoadAttributes (425ms)
+			ProcessInitializeOnLoadMethodAttributes (361ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (30ms)
+Refreshing native plugins compatible for Editor in 8.18 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7636 unused Assets / (5.1 MB). Loaded Objects now: 8591.
+Memory consumption went from 218.2 MB to 213.1 MB.
+Total: 13.729500 ms (FindLiveObjects: 0.852400 ms CreateObjectMapping: 1.407000 ms MarkObjects: 8.444100 ms  DeleteObjects: 3.025000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  1.096 seconds
+Refreshing native plugins compatible for Editor in 9.14 ms, found 11 plugins.
+Native extension for Android target not found
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Found 0 scene poses
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Autohand.AutoHandUpdateDataWizard:FindScenePoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:244)
+Autohand.AutoHandUpdateDataWizard:CheckSceneForOldPoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:54)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs Line: 244)
+
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.259 seconds
+Domain Reload Profiling: 2359ms
+	BeginReloadAssembly (291ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (80ms)
+	RebuildCommonClasses (46ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (31ms)
+	LoadAllAssembliesAndSetupDomain (713ms)
+		LoadAssemblies (498ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (331ms)
+			TypeCache.Refresh (12ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (294ms)
+			ResolveRequiredComponents (19ms)
+	FinalizeReload (1260ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1008ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (21ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (190ms)
+			ProcessInitializeOnLoadAttributes (425ms)
+			ProcessInitializeOnLoadMethodAttributes (362ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (30ms)
+Refreshing native plugins compatible for Editor in 10.12 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7636 unused Assets / (4.9 MB). Loaded Objects now: 8594.
+Memory consumption went from 218.2 MB to 213.3 MB.
+Total: 11.530200 ms (FindLiveObjects: 0.874100 ms CreateObjectMapping: 1.387400 ms MarkObjects: 6.211800 ms  DeleteObjects: 3.055700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  0.900 seconds
+Refreshing native plugins compatible for Editor in 8.88 ms, found 11 plugins.
+Native extension for Android target not found
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Found 0 scene poses
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Autohand.AutoHandUpdateDataWizard:FindScenePoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:244)
+Autohand.AutoHandUpdateDataWizard:CheckSceneForOldPoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:54)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs Line: 244)
+
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.302 seconds
+Domain Reload Profiling: 2205ms
+	BeginReloadAssembly (255ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (63ms)
+	RebuildCommonClasses (45ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (556ms)
+		LoadAssemblies (389ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (278ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (245ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (1303ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1041ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (22ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (209ms)
+			ProcessInitializeOnLoadAttributes (440ms)
+			ProcessInitializeOnLoadMethodAttributes (359ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (26ms)
+Refreshing native plugins compatible for Editor in 10.77 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7636 unused Assets / (5.0 MB). Loaded Objects now: 8597.
+Memory consumption went from 218.3 MB to 213.3 MB.
+Total: 11.748700 ms (FindLiveObjects: 0.889200 ms CreateObjectMapping: 1.340700 ms MarkObjects: 6.476300 ms  DeleteObjects: 3.041100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 1978342.419793 seconds.
+  path: Assets/Animations/Idle.anim
+  artifactKey: Guid(a8231c2e03d99f34f80623dad1fa914b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/Idle.anim using Guid(a8231c2e03d99f34f80623dad1fa914b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f3b0dc0fbd2bbe971b390d11738f8913') in 0.2743904 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Scripts/CastleShiftManager.cs
+  artifactKey: Guid(d7f1cd8134d50904fb9dab9c01343cb9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scripts/CastleShiftManager.cs using Guid(d7f1cd8134d50904fb9dab9c01343cb9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6788ce16047bf92345996d5cdc58a9ce') in 0.0175389 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
 AssetImportWorkerClient::OnTransportError - code=10054 error=Istniej¹ce po³¹czenie zosta³o gwa³townie zamkniête przez zdalnego hosta.

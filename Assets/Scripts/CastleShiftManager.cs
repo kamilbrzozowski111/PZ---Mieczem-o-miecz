@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Splines;
 
 public class CastleShiftManager : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class CastleShiftManager : MonoBehaviour
     [SerializeField] private List<Bed> beds;
 
     private List<GuardAI> guards = new List<GuardAI>();
+    [SerializeField] private SplineContainer sharedMainPath;
+    public SplineContainer SharedMainPath => sharedMainPath;
 
     private void Start()
     {

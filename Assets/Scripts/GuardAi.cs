@@ -1,6 +1,8 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Splines;
 
 public enum GuardState { Sleeping, WalkingToPost, OnDuty, WalkingToQuarters }
 
@@ -9,6 +11,11 @@ public class GuardAI : MonoBehaviour
     [Header("Komponenty")]
     [SerializeField] private NavMeshAgent agent;
     [SerializeField] private Animator animator;
+    [SerializeField] private float pathOffsetRange = 1.6f;
+
+    [Header("Ustawienia Magistrali")]
+    [Tooltip("Gęstość punktów na trasie Spline. Większa wartość = dokładniejsze zakręty.")]
+    [SerializeField] private int pathResolution = 50;
 
     public GuardState CurrentState { get; private set; } = GuardState.Sleeping;
 
@@ -32,10 +39,10 @@ public class GuardAI : MonoBehaviour
         CurrentState = GuardState.OnDuty;
 
         transform.SetPositionAndRotation(post.Position.position, post.Position.rotation);
-        if (agent) 
-        { 
-            agent.enabled = true; 
-            agent.isStopped = true; 
+        if (agent)
+        {
+            agent.enabled = true;
+            agent.isStopped = true;
         }
         SetAnimSpeed(0f);
     }
@@ -47,7 +54,6 @@ public class GuardAI : MonoBehaviour
         currentBed.IsOccupied = true;
         CurrentState = GuardState.Sleeping;
 
-        // Czysta pozycja i rotacja dokładnie z punktu sleepAnchor
         transform.SetPositionAndRotation(bed.sleepAnchor.position, bed.sleepAnchor.rotation);
         if (agent) agent.enabled = false;
 
@@ -64,13 +70,6 @@ public class GuardAI : MonoBehaviour
 
     public void WakeUpAndGoToPost(GuardPost targetPost, float triggerDistance)
     {
-        if (currentBed)
-        {
-            currentBed.IsOccupied = false;
-            currentBed.IsReserved = false;
-            currentBed = null;
-        }
-
         assignedPost = targetPost;
         CurrentState = GuardState.WalkingToPost;
 
@@ -79,79 +78,117 @@ public class GuardAI : MonoBehaviour
     }
 
     private IEnumerator WakeUpAndGoRoutine(float triggerDistance)
-{
-    // Pozycja i rotacja łóżka przed wyzerowaniem pola currentBed
-    Vector3 bedPos = currentBed ? currentBed.sleepAnchor.position : transform.position;
-    Quaternion bedRot = currentBed ? currentBed.sleepAnchor.rotation : transform.rotation;
-
-    if (currentBed)
     {
-        currentBed.IsOccupied = false;
-        currentBed.IsReserved = false;
-        currentBed = null;
-    }
+        Vector3 bedPos = currentBed ? currentBed.sleepAnchor.position : transform.position;
+        Quaternion bedRot = currentBed ? currentBed.sleepAnchor.rotation : transform.rotation;
 
-    //Start animacji wstawania
-    if (animator) animator.SetBool("isSleeping", false);
-
-    // KROK A
-    while (animator != null && (animator.IsInTransition(0) || !animator.GetCurrentAnimatorStateInfo(0).IsName("guard_standup")))
-    {
-        yield return null;
-    }
-
-    // KROK B
-    while (animator != null && animator.GetCurrentAnimatorStateInfo(0).IsName("guard_standup"))
-    {
-        yield return null;
-    }
-
-    // Ustawienie pozycji na kotwicy łóżka i obrot fizyczny Transform o 180° na zewnątrz
-    transform.SetPositionAndRotation(bedPos, bedRot * Quaternion.Euler(0f, 180f, 0f));
-
-    if (agent) 
-    { 
-        agent.enabled = true; 
-        agent.isStopped = false; 
-    }
-
-    Vector3 targetPos = assignedPost.Position.position;
-    agent.SetDestination(targetPos);
-
-    bool oldGuardRelieved = false;
-    GuardAI oldGuard = assignedPost.currentGuard;
-
-    while (true)
-    {
-        UpdateAnimSpeed();
-
-        float distToTarget = Vector3.Distance(transform.position, targetPos);
-
-        if (!oldGuardRelieved && distToTarget <= triggerDistance)
+        if (currentBed)
         {
-            oldGuardRelieved = true;
-            if (oldGuard != null && oldGuard.CurrentState == GuardState.OnDuty)
+            currentBed.IsOccupied = false;
+            currentBed.IsReserved = false;
+            currentBed = null;
+        }
+
+        // Start animacji wstawania
+        if (animator) animator.SetBool("isSleeping", false);
+
+        // KROK A: Czekanie na przejście do animacji wstawania
+        while (animator != null && (animator.IsInTransition(0) || !animator.GetCurrentAnimatorStateInfo(0).IsName("guard_standup")))
+        {
+            yield return null;
+        }
+
+        // KROK B: Czekanie na zakończenie animacji wstawania
+        while (animator != null && animator.GetCurrentAnimatorStateInfo(0).IsName("guard_standup"))
+        {
+            yield return null;
+        }
+
+        // Ustawienie pozycji na kotwicy łóżka i obrót fizyczny Transform o 180° na zewnątrz
+        transform.SetPositionAndRotation(bedPos, bedRot * Quaternion.Euler(0f, 180f, 0f));
+
+        if (agent)
+        {
+            agent.enabled = true;
+            agent.isStopped = false;
+        }
+
+        Vector3 startBedPos = transform.position;
+        Vector3 finalPostPos = assignedPost.Position.position;
+
+        // 1. Punkty magistrali na odcinku od Kwatery do Posterunku
+        List<Vector3> splinePoints = GetSplinePathSegment(manager != null ? manager.SharedMainPath : null, startBedPos, finalPostPos, pathResolution);
+
+        bool oldGuardRelieved = false;
+        GuardAI oldGuard = assignedPost.currentGuard;
+
+        // 2. FAZA MARSZU PO MAGISTRALI (Spline)
+        for (int i = 0; i < splinePoints.Count; i++)
+        {
+            agent.SetDestination(splinePoints[i]);
+
+            while (true)
             {
-                oldGuard.ReturnToQuarters();
+                UpdateAnimSpeed();
+
+                // Przekazanie warty gdy jesteśmy blisko
+                float distToFinalPost = Vector3.Distance(transform.position, finalPostPos);
+                if (!oldGuardRelieved && distToFinalPost <= triggerDistance)
+                {
+                    oldGuardRelieved = true;
+                    if (oldGuard != null && oldGuard.CurrentState == GuardState.OnDuty)
+                    {
+                        oldGuard.ReturnToQuarters();
+                    }
+                }
+
+                // Osłona przejścia do kolejnego punktu na Splinie
+                Vector3 flatAgentPos = new Vector3(transform.position.x, 0f, transform.position.z);
+                Vector3 flatTargetPos = new Vector3(splinePoints[i].x, 0f, splinePoints[i].z);
+
+                if (!agent.pathPending && Vector3.Distance(flatAgentPos, flatTargetPos) <= 0.6f)
+                {
+                    break;
+                }
+
+                yield return null;
             }
         }
 
-        if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance + 0.3f && distToTarget <= 1.5f)
+        // 3. FAZA ZJAZDU ZE SPLINE
+        agent.SetDestination(finalPostPos);
+
+        while (true)
         {
-            break;
+            UpdateAnimSpeed();
+
+            float distToFinalPost = Vector3.Distance(transform.position, finalPostPos);
+
+            if (!oldGuardRelieved && distToFinalPost <= triggerDistance)
+            {
+                oldGuardRelieved = true;
+                if (oldGuard != null && oldGuard.CurrentState == GuardState.OnDuty)
+                {
+                    oldGuard.ReturnToQuarters();
+                }
+            }
+
+            if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance + 0.3f && distToFinalPost <= 1.5f)
+            {
+                break;
+            }
+
+            yield return null;
         }
 
-        yield return null;
+        assignedPost.currentGuard = this;
+        assignedPost.incomingGuard = null;
+        CurrentState = GuardState.OnDuty;
+
+        if (agent) agent.isStopped = true;
+        transform.SetPositionAndRotation(finalPostPos, assignedPost.Position.rotation);
+        SetAnimSpeed(0f);
     }
-
-    assignedPost.currentGuard = this;
-    assignedPost.incomingGuard = null;
-    CurrentState = GuardState.OnDuty;
-
-    if (agent) agent.isStopped = true;
-    transform.SetPositionAndRotation(targetPos, assignedPost.Position.rotation);
-    SetAnimSpeed(0f);
-}
 
     // --- SEKWENCJA POWROTU DO KWATERY I ZAŚNIĘCIA ---
 
@@ -162,10 +199,10 @@ public class GuardAI : MonoBehaviour
 
         CurrentState = GuardState.WalkingToQuarters;
 
-        if (agent) 
-        { 
-            agent.enabled = true; 
-            agent.isStopped = false; 
+        if (agent)
+        {
+            agent.enabled = true;
+            agent.isStopped = false;
         }
 
         StopAllCoroutines();
@@ -174,7 +211,34 @@ public class GuardAI : MonoBehaviour
 
     private IEnumerator ReturnToQuartersRoutine()
     {
+        Vector3 startPostPos = transform.position;
         Vector3 bedPos = currentBed.sleepAnchor.position;
+
+        // 1. Punkty magistrali na odcinku od Posterunku do Łóżka w Kwaterze
+        List<Vector3> splinePoints = GetSplinePathSegment(manager != null ? manager.SharedMainPath : null, startPostPos, bedPos, pathResolution);
+
+        // 2. FAZA MARSZU PO MAGISTRALI
+        for (int i = 0; i < splinePoints.Count; i++)
+        {
+            agent.SetDestination(splinePoints[i]);
+
+            while (true)
+            {
+                UpdateAnimSpeed();
+
+                Vector3 flatAgentPos = new Vector3(transform.position.x, 0f, transform.position.z);
+                Vector3 flatTargetPos = new Vector3(splinePoints[i].x, 0f, splinePoints[i].z);
+
+                if (!agent.pathPending && Vector3.Distance(flatAgentPos, flatTargetPos) <= 0.6f)
+                {
+                    break;
+                }
+
+                yield return null;
+            }
+        }
+
+        // 3. FAZA ZJAZDU Z MAGISTRALI DO ŁÓŻKA
         agent.SetDestination(bedPos);
 
         while (true)
@@ -191,13 +255,13 @@ public class GuardAI : MonoBehaviour
             yield return null;
         }
 
-        if (agent) 
-        { 
-            agent.isStopped = true; 
-            agent.enabled = false; 
+        // 4. WEJŚCIE DO ŁÓŻKA I ZAŚNIĘCIE
+        if (agent)
+        {
+            agent.isStopped = true;
+            agent.enabled = false;
         }
 
-        //oryginalny układ łóżka
         transform.SetPositionAndRotation(bedPos, currentBed.sleepAnchor.rotation);
 
         currentBed.IsOccupied = true;
@@ -207,6 +271,137 @@ public class GuardAI : MonoBehaviour
         SetAnimSpeed(0f);
         if (animator) animator.SetBool("isSleeping", true);
     }
+
+    // --- METODA POMOCNICZA DLA MAGISTRALI (SPLINE) ---
+
+   private List<Vector3> GetSplinePathSegment(SplineContainer spline, Vector3 startPos, Vector3 endPos, int resolution = 50)
+{
+    List<Vector3> rawPoints = new List<Vector3>();
+
+    if (spline == null || spline.Spline == null || spline.Spline.Count == 0) 
+        return rawPoints;
+
+    Spline mainSpline = spline.Spline;
+    int knotCount = mainSpline.Count;
+
+    // 1. KNOT WEJŚCIOWY (NAJBLIŻSZY POZYCJI STARTOWEJ)
+    int startKnotIndex = 0;
+    float minStartKnotDist = float.MaxValue;
+    Vector3 startKnotWorldPos = Vector3.zero;
+
+    for (int k = 0; k < knotCount; k++)
+    {
+        Vector3 knotWorldPos = spline.transform.TransformPoint((Vector3)mainSpline[k].Position);
+        float dist = Vector3.Distance(startPos, knotWorldPos);
+
+        if (dist < minStartKnotDist)
+        {
+            minStartKnotDist = dist;
+            startKnotIndex = k;
+            startKnotWorldPos = knotWorldPos;
+        }
+    }
+
+    // 2. KNOT WYJŚCIOWY (NAJBLIŻSZY POZYCJI KOŃCOWEJ)
+    int endKnotIndex = 0;
+    float minEndKnotDist = float.MaxValue;
+    Vector3 endKnotWorldPos = Vector3.zero;
+
+    for (int k = 0; k < knotCount; k++)
+    {
+        Vector3 knotWorldPos = spline.transform.TransformPoint((Vector3)mainSpline[k].Position);
+        float dist = Vector3.Distance(endPos, knotWorldPos);
+
+        if (dist < minEndKnotDist)
+        {
+            minEndKnotDist = dist;
+            endKnotIndex = k;
+            endKnotWorldPos = knotWorldPos;
+        }
+    }
+
+    // 3. MAPOWANIE KNOTOW NA PUNKTY PRÓBKOWANIA SPLINE'A
+    int startIndex = 0;
+    int endIndex = 0;
+    float minDistStartKnot = float.MaxValue;
+    float minDistEndKnot = float.MaxValue;
+
+    for (int i = 0; i < resolution; i++)
+    {
+        float t = (float)i / (resolution - 1);
+        Vector3 worldPos = spline.EvaluatePosition(t);
+
+        // Najbliższy punkt próbkowania dla Knota Wejściowego
+        float distToStartKnot = Vector3.Distance(startKnotWorldPos, worldPos);
+        if (distToStartKnot < minDistStartKnot)
+        {
+            minDistStartKnot = distToStartKnot;
+            startIndex = i;
+        }
+
+        // Najbliższy punkt próbkowania dla Knota Wyjściowego
+        float distToEndKnot = Vector3.Distance(endKnotWorldPos, worldPos);
+        if (distToEndKnot < minDistEndKnot)
+        {
+            minDistEndKnot = distToEndKnot;
+            endIndex = i;
+        }
+    }
+
+    // 4. PUNKTY TRASY OD KNOTA WEJŚCIOWEGO DO KNOTA WYJŚCIOWEGO
+    int step = (startIndex <= endIndex) ? 1 : -1;
+    int currentIndex = startIndex;
+
+    while (true)
+    {
+        float t = (float)currentIndex / (resolution - 1);
+        rawPoints.Add(spline.EvaluatePosition(t));
+
+        if (currentIndex == endIndex) break;
+        currentIndex += step;
+    }
+
+    if (rawPoints.Count > 0)
+    {
+        rawPoints[0] = startKnotWorldPos;
+        rawPoints[rawPoints.Count - 1] = endKnotWorldPos;
+    }
+
+    // 5. BOCZNY OFFSET (Z WYGASZANIEM NA WEJŚCIU I WYJŚCIU)
+    List<Vector3> offsetPoints = new List<Vector3>();
+    float guardSideOffset = Random.Range(-pathOffsetRange, pathOffsetRange);
+
+    int count = rawPoints.Count;
+    for (int i = 0; i < count; i++)
+    {
+        Vector3 current = rawPoints[i];
+
+        float blendFactor = 1f;
+        if (count > 2)
+        {
+            float progress = (float)i / (count - 1);
+            blendFactor = Mathf.Sin(progress * Mathf.PI); 
+        }
+
+        Vector3 forward = Vector3.zero;
+        if (i < count - 1)
+            forward = rawPoints[i + 1] - current;
+        else if (i > 0)
+            forward = current - rawPoints[i - 1];
+
+        forward.y = 0f;
+
+        if (forward.sqrMagnitude > 0.001f)
+        {
+            Vector3 sideDirection = Vector3.Cross(forward.normalized, Vector3.up).normalized;
+            current += sideDirection * (guardSideOffset * blendFactor);
+        }
+
+        offsetPoints.Add(current);
+    }
+
+    return offsetPoints;
+}
 
     // --- FUNKCJE POMOCNICZE ---
 

@@ -202,3 +202,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GuardAI
   agent: {fileID: 9044568814661258640}
   animator: {fileID: 3183924935287784216}
+  pathOffsetRange: 1.6
+  pathResolution: 50

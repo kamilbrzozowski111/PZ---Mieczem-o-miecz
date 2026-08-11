@@ -58,7 +58,9 @@
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\CastleShiftManager.cs" />
     <Compile Include="Assets\Scripts\GuardPost.cs" />
+    <Compile Include="Assets\Scripts\IDamageable.cs" />
     <Compile Include="Assets\Scripts\EnemySpawner.cs" />
+    <Compile Include="Assets\Scripts\VRSword.cs" />
     <Compile Include="Assets\AutoHand\Examples\Scenes\Desktop\HandDesktopControllerLink.cs" />
     <Compile Include="Assets\Animations\GuardAnimator.cs" />
   </ItemGroup>

@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Splines;
 
-public enum GuardState { Sleeping, WalkingToPost, OnDuty, WalkingToQuarters }
+public enum GuardState { Sleeping, WalkingToPost, OnDuty, WalkingToQuarters, Alerted, Chasing }
 
-public class GuardAI : MonoBehaviour
+public class GuardAI : MonoBehaviour, IDamageable
 {
     [Header("Komponenty")]
     [SerializeField] private NavMeshAgent agent;
@@ -17,17 +17,216 @@ public class GuardAI : MonoBehaviour
     [Tooltip("Gęstość punktów na trasie Spline. Większa wartość = dokładniejsze zakręty.")]
     [SerializeField] private int pathResolution = 50;
 
+    [Header("Walka i Atak")]
+    [SerializeField] private float attackRange = 3.5f;       // Zasięg ataku
+    [SerializeField] private float attackCooldown = 2.0f;    // Czas (w sekundach) między uderzeniami
+    private float lastAttackTime;
+
+    [SerializeField] private float health = 100f;
+
     public GuardState CurrentState { get; private set; } = GuardState.Sleeping;
 
     private CastleShiftManager manager;
     private GuardPost assignedPost;
     private Bed currentBed;
 
+    public void TakeDamage(float damage, Vector3 hitPoint, Vector3 hitNormal)
+    {
+        health -= damage;
+        Debug.Log($"Strażnik otrzymał {damage} obrażeń! Pozostało HP: {health}");
+
+        // Powrót do kamery jako celu
+        Transform player = Camera.main != null ? Camera.main.transform : null;
+
+        if (player != null)
+        {
+            AlertGuard(player);
+            AlertAllGuardsOnScene(player);
+        }
+
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void AlertAllGuardsOnScene(Transform playerTransform)
+    {
+        // Znajduje wszystkich strażników na scenie i wysyła im sygnał alarmowy
+        GuardAI[] allGuards = FindObjectsOfType<GuardAI>();
+        foreach (GuardAI guard in allGuards)
+        {
+            guard.AlertGuard(playerTransform);
+        }
+    }
+
+    private void Die()
+    {
+        Destroy(gameObject);
+    }
+
     private void Awake()
     {
         if (!agent) agent = GetComponent<NavMeshAgent>();
         if (!animator) animator = GetComponent<Animator>();
     }
+    
+    public void AlertGuard(Transform target)
+    {
+        if (CurrentState == GuardState.Chasing || target == null) return;
+
+        bool wasSleeping = (CurrentState == GuardState.Sleeping);
+
+        if (!wasSleeping && currentBed != null)
+        {
+            currentBed.IsOccupied = false;
+            currentBed.IsReserved = false;
+            currentBed = null;
+        }
+
+        StopAllCoroutines();
+        CurrentState = GuardState.Chasing;
+
+        if (wasSleeping)
+        {
+            StartCoroutine(WakeUpAndChaseRoutine(target));
+        }
+        else
+        {
+            if (agent)
+            {
+                agent.enabled = true;
+                agent.Warp(transform.position); 
+                agent.isStopped = false;
+            }
+
+            StartCoroutine(ChaseRoutine(target));
+        }
+    }
+
+    private IEnumerator WakeUpAndChaseRoutine(Transform target)
+{
+    Vector3 bedPos = currentBed ? currentBed.sleepAnchor.position : transform.position;
+    Quaternion bedRot = currentBed ? currentBed.sleepAnchor.rotation : transform.rotation;
+
+    // Zwalniamy łóżko
+    if (currentBed)
+    {
+        currentBed.IsOccupied = false;
+        currentBed.IsReserved = false;
+        currentBed = null;
+    }
+
+    // Start animacji wstawania
+    if (animator) animator.SetBool("isSleeping", false);
+
+    // KROK A: Czekanie na przejście do animacji wstawania
+    while (animator != null && (animator.IsInTransition(0) || !animator.GetCurrentAnimatorStateInfo(0).IsName("guard_standup")))
+    {
+        yield return null;
+    }
+
+    // KROK B: Czekanie na zakończenie animacji wstawania
+    while (animator != null && animator.GetCurrentAnimatorStateInfo(0).IsName("guard_standup"))
+    {
+        yield return null;
+    }
+
+    // Ustawienie pozycji na kotwicy łóżka i obrót o 180° na zewnątrz
+    transform.SetPositionAndRotation(bedPos, bedRot * Quaternion.Euler(0f, 180f, 0f));
+
+    // Włączamy agenta i bezpiecznie przyklejamy go do NavMesh pod łóżkiem
+    if (agent)
+    {
+        agent.enabled = true;
+        if (NavMesh.SamplePosition(bedPos, out NavMeshHit bedHit, 10f, NavMesh.AllAreas))
+        {
+            agent.Warp(bedHit.position);
+        }
+        else
+        {
+            agent.Warp(transform.position);
+        }
+        agent.isStopped = false;
+    }
+
+    // Przechodzimy do pościgu
+    yield return StartCoroutine(ChaseRoutine(target));
+}
+
+private IEnumerator ChaseRoutine(Transform target)
+{
+    if (agent) agent.stoppingDistance = attackRange - 0.5f;
+
+    while (CurrentState == GuardState.Chasing && target != null)
+    {
+        Vector3 cameraPos = target.position;
+        Vector3 feetPos = cameraPos;
+
+        // 1. ZJADAMY WYSKOŚĆ DOWOLNEJ KAMERY DOCIĄGAJĄC JĄ W DÓŁ DO PODŁOGI
+        // Strzelamy promieniem z kamery pionowo w dół, aby znaleźć ziemię/podłogę
+        if (Physics.Raycast(cameraPos, Vector3.down, out RaycastHit hit, 20f))
+        {
+            feetPos = hit.point;
+        }
+
+        // 2. SZUKAMY NAJBLIŻSZEGO PUNKTU NAVMESH DLA STÓP (A NIE KAMERY)
+        Vector3 targetNavMeshPos = feetPos;
+        if (NavMesh.SamplePosition(feetPos, out NavMeshHit navHit, 5f, NavMesh.AllAreas))
+        {
+            targetNavMeshPos = navHit.position;
+        }
+
+        float distanceToPlayer = Vector3.Distance(transform.position, targetNavMeshPos);
+
+        // 3. SPRAWDZENIE ZASIĘGU ATAKU I LOGIKA POŚCIGU
+        if (distanceToPlayer <= attackRange)
+        {
+            // === STRAŻNIK JEST W ZASIĘGU ATAKU ===
+            if (agent && agent.enabled)
+            {
+                agent.isStopped = true;
+            }
+
+            SetAnimSpeed(0f);
+
+            // Obracamy strażnika płynnie w stronę stóp gracza
+            Vector3 lookDir = targetNavMeshPos - transform.position;
+            lookDir.y = 0f;
+            if (lookDir != Vector3.zero)
+            {
+                transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(lookDir), Time.deltaTime * 10f);
+            }
+
+            // Wykonanie ataku
+            if (Time.time >= lastAttackTime + attackCooldown)
+            {
+                lastAttackTime = Time.time;
+                PerformAttack();
+            }
+        }
+        else
+        {
+            // === STRAŻNIK GONI GRACZA ===
+            if (agent && agent.enabled)
+            {
+                agent.isStopped = false;
+                agent.SetDestination(targetNavMeshPos);
+                UpdateAnimSpeed();
+            }
+        }
+
+        yield return null;
+    }
+}
+
+private void PerformAttack()
+{
+    Debug.Log("⚔️ Strażnik zadaje cios graczowi!");
+
+    if (animator) animator.SetTrigger("Attack");
+
+}
 
     // --- INICJALIZACJA ---
 
@@ -70,6 +269,7 @@ public class GuardAI : MonoBehaviour
 
     public void WakeUpAndGoToPost(GuardPost targetPost, float triggerDistance)
     {
+        if (CurrentState == GuardState.Chasing || CurrentState == GuardState.Alerted) return;
         assignedPost = targetPost;
         CurrentState = GuardState.WalkingToPost;
 
@@ -194,6 +394,7 @@ public class GuardAI : MonoBehaviour
 
     public void ReturnToQuarters()
     {
+        if (CurrentState == GuardState.Chasing || CurrentState == GuardState.Alerted) return;
         currentBed = manager.GetAndReserveFreeBed();
         if (currentBed == null) return;
 

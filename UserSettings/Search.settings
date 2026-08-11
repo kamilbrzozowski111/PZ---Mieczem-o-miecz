@@ -89,6 +89,7 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	"h: l:Default"
 ]
 searchItemFavorites = [
 ]

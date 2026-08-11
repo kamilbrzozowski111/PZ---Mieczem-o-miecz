@@ -52,6 +52,7 @@
     <Compile Include="Assets\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
     <Compile Include="Assets\Editor\BatchMeshCollider.cs" />
     <Compile Include="Assets\Editor\AutomatedImporter.cs" />
+    <Compile Include="Assets\Editor\NavMeshFixer.cs" />
     <Compile Include="Assets\Editor\ShaderAutoGenerator.cs" />
   </ItemGroup>
   <ItemGroup>

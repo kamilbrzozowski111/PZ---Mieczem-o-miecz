@@ -22,6 +22,7 @@ public class CastleShiftManager : MonoBehaviour
 
     private void Start()
     {
+        GuardAI.hasNotifiedAllAlerted = false;
         SpawnGuards();
         StartCoroutine(ShiftLoop());
     }
@@ -61,22 +62,22 @@ public class CastleShiftManager : MonoBehaviour
 
             if (posts.Count == 0) continue;
 
-            // 1. Filtrujemy tylko te posterunki, na które NIKT AKTUALNIE NIE IDZIE
+            // 1. Filtracja tylko tych posterunków, na które nikt aktualnie nie idzie
             var availablePosts = posts.Where(p => p.currentGuard != null && !p.IsTargeted).ToList();
 
             if (availablePosts.Count == 0) continue;
 
-            // 2. Wybieramy losowy dostępny posterunek
+            // 2. Wybieranie losowego dostępnego posteruneku
             GuardPost postToChange = availablePosts[Random.Range(0, availablePosts.Count)];
 
-            // 3. Losujemy śpiącego strażnika
+            // 3. Losowanie śpiącego strażnika
             var sleepingGuards = guards.Where(g => g.CurrentState == GuardState.Sleeping).ToList();
 
             if (sleepingGuards.Count > 0)
             {
                 GuardAI newGuard = sleepingGuards[Random.Range(0, sleepingGuards.Count)];
 
-                // REZERWACJA POSTERUNKU: Zapobiega wysłaniu kolejnego strażnika na ten sam posterunek!
+                // REZERWACJA POSTERUNKU
                 postToChange.incomingGuard = newGuard; 
                 
                 newGuard.WakeUpAndGoToPost(postToChange, handoverTriggerDistance);
@@ -93,7 +94,7 @@ public class CastleShiftManager : MonoBehaviour
             return freeBed;
         }
 
-        //zabezpieczenie: jeśli z jakiegoś powodu brakuje wolnych rezerwacji
+        //zabezpieczenie: jeśli brakuje wolnych rezerwacji
         Bed fallbackBed = beds.FirstOrDefault(b => !b.IsOccupied);
         if (fallbackBed != null)
         {

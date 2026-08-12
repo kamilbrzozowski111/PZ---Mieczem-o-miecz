@@ -9,7 +9,7 @@ public class GuardPost : MonoBehaviour
     public SplineContainer PathFromQuarters => pathFromQuarters;
     
     [HideInInspector] public GuardAI currentGuard;  // Strażnik stojący na posterunku
-    [HideInInspector] public GuardAI incomingGuard; // Strażnik będący W DRODZE na ten posterunek
+    [HideInInspector] public GuardAI incomingGuard; // Strażnik będący w drodze na ten posterunek
 
     // Posterunek jest zablokowany dla nowych zmian, jeśli ktoś już na niego idzie
     public bool IsTargeted => incomingGuard != null;

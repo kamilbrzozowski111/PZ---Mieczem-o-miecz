@@ -13,6 +13,9 @@ public class GuardAI : MonoBehaviour, IDamageable
     [SerializeField] private Animator animator;
     [SerializeField] private float pathOffsetRange = 1.6f;
 
+    [Header("Komponenty Walki")]
+    [SerializeField] private EnemyHitbox weaponHitbox;
+
     [Header("Ustawienia Magistrali")]
     [Tooltip("Gęstość punktów na trasie Spline. Większa wartość = dokładniejsze zakręty.")]
     [SerializeField] private int pathResolution = 50;
@@ -20,6 +23,33 @@ public class GuardAI : MonoBehaviour, IDamageable
     [Header("Walka i Atak")]
     [SerializeField] private float attackRange = 3.5f;       // Zasięg ataku
     [SerializeField] private float attackCooldown = 2.0f;    // Czas (w sekundach) między uderzeniami
+    [SerializeField] private float waitingRange = 8.0f;      // Dystans oczekiwania dla reszty armii
+
+
+    [Header("Typ Przeciwnika i Obrażenia")]
+    [SerializeField] private EnemyType enemyType = EnemyType.Guard;
+    [SerializeField] private float minDamage = 2f;
+    [SerializeField] private float maxDamage = 10f;
+
+    private void OnValidate()
+    {
+        switch (enemyType)
+        {
+            case EnemyType.Guard:
+                minDamage = 2f;
+                maxDamage = 10f;
+                break;
+            case EnemyType.Dogman:
+                minDamage = 5f;
+                maxDamage = 15f;
+                break;
+            case EnemyType.DarkMage:
+                minDamage = 15f;
+                maxDamage = 20f;
+                break;
+        }
+    }
+
     private float lastAttackTime;
 
     [SerializeField] private float health = 100f;
@@ -30,8 +60,12 @@ public class GuardAI : MonoBehaviour, IDamageable
     private GuardPost assignedPost;
     private Bed currentBed;
 
+
+    private bool isDead = false;
     public void TakeDamage(float damage, Vector3 hitPoint, Vector3 hitNormal)
     {
+        if (isDead) return;
+
         health -= damage;
         Debug.Log($"Strażnik otrzymał {damage} obrażeń! Pozostało HP: {health}");
 
@@ -50,19 +84,46 @@ public class GuardAI : MonoBehaviour, IDamageable
         }
     }
 
+    public static bool hasNotifiedAllAlerted = false;
+
     private void AlertAllGuardsOnScene(Transform playerTransform)
     {
-        // Znajduje wszystkich strażników na scenie i wysyła im sygnał alarmowy
-        GuardAI[] allGuards = FindObjectsOfType<GuardAI>();
+        GuardAI[] allGuards = FindObjectsByType<GuardAI>(FindObjectsSortMode.None);
         foreach (GuardAI guard in allGuards)
         {
             guard.AlertGuard(playerTransform);
+        }
+
+        if (!hasNotifiedAllAlerted)
+        {
+            hasNotifiedAllAlerted = true;
+            NotificationManager.Show("Wszyscy strażnicy zostali zaalarmowani!", NotificationType.Danger);
         }
     }
 
     private void Die()
     {
-        Destroy(gameObject);
+        if (isDead) return;
+        isDead = true;
+
+        // 1. Wyłączenie logiki AI
+        StopAllCoroutines();
+
+        // 2. Wyłączenie poruszania się i walki
+        if (agent != null) agent.enabled = false;
+        if (weaponHitbox != null) weaponHitbox.DisableHitbox();
+
+        // 3. Wyłączenie wszystkich colliderow
+        foreach (Collider c in GetComponentsInChildren<Collider>())
+        {
+            c.enabled = false;
+        }
+
+        // 4. Uruchomienie animacji
+        if (animator != null) animator.SetTrigger("Die");
+
+        // 5. Usuwanie ciała ze sceny po 6 sekundach
+        Destroy(gameObject, 6.0f);
     }
 
     private void Awake()
@@ -109,7 +170,6 @@ public class GuardAI : MonoBehaviour, IDamageable
     Vector3 bedPos = currentBed ? currentBed.sleepAnchor.position : transform.position;
     Quaternion bedRot = currentBed ? currentBed.sleepAnchor.rotation : transform.rotation;
 
-    // Zwalniamy łóżko
     if (currentBed)
     {
         currentBed.IsOccupied = false;
@@ -135,7 +195,6 @@ public class GuardAI : MonoBehaviour, IDamageable
     // Ustawienie pozycji na kotwicy łóżka i obrót o 180° na zewnątrz
     transform.SetPositionAndRotation(bedPos, bedRot * Quaternion.Euler(0f, 180f, 0f));
 
-    // Włączamy agenta i bezpiecznie przyklejamy go do NavMesh pod łóżkiem
     if (agent)
     {
         agent.enabled = true;
@@ -150,39 +209,40 @@ public class GuardAI : MonoBehaviour, IDamageable
         agent.isStopped = false;
     }
 
-    // Przechodzimy do pościgu
     yield return StartCoroutine(ChaseRoutine(target));
 }
 
 private IEnumerator ChaseRoutine(Transform target)
 {
-    if (agent) agent.stoppingDistance = attackRange - 0.5f;
-
     while (CurrentState == GuardState.Chasing && target != null)
     {
         Vector3 cameraPos = target.position;
         Vector3 feetPos = cameraPos;
 
-        // 1. ZJADAMY WYSKOŚĆ DOWOLNEJ KAMERY DOCIĄGAJĄC JĄ W DÓŁ DO PODŁOGI
-        // Strzelamy promieniem z kamery pionowo w dół, aby znaleźć ziemię/podłogę
+        // 1. Dociągnięcie pozycji gracza do podłogi
         if (Physics.Raycast(cameraPos, Vector3.down, out RaycastHit hit, 20f))
         {
             feetPos = hit.point;
         }
 
-        // 2. SZUKAMY NAJBLIŻSZEGO PUNKTU NAVMESH DLA STÓP (A NIE KAMERY)
         Vector3 targetNavMeshPos = feetPos;
         if (NavMesh.SamplePosition(feetPos, out NavMeshHit navHit, 5f, NavMesh.AllAreas))
         {
             targetNavMeshPos = navHit.position;
         }
 
+        bool isPrimaryAttacker = IsClosestChasingGuard(targetNavMeshPos);
+        
+        float currentTargetRange = isPrimaryAttacker ? attackRange : waitingRange;
+
+        if (agent) agent.stoppingDistance = currentTargetRange - 0.5f;
+
         float distanceToPlayer = Vector3.Distance(transform.position, targetNavMeshPos);
 
-        // 3. SPRAWDZENIE ZASIĘGU ATAKU I LOGIKA POŚCIGU
-        if (distanceToPlayer <= attackRange)
+        // 2. LOGIKA RUCHU I ATAKU / GOTOWOŚCI
+        if (distanceToPlayer <= currentTargetRange)
         {
-            // === STRAŻNIK JEST W ZASIĘGU ATAKU ===
+            // Osiągnięto docelową pozycję
             if (agent && agent.enabled)
             {
                 agent.isStopped = true;
@@ -190,7 +250,7 @@ private IEnumerator ChaseRoutine(Transform target)
 
             SetAnimSpeed(0f);
 
-            // Obracamy strażnika płynnie w stronę stóp gracza
+            // Każdy strażnik w zasięgu zawsze patrzy na gracza
             Vector3 lookDir = targetNavMeshPos - transform.position;
             lookDir.y = 0f;
             if (lookDir != Vector3.zero)
@@ -198,16 +258,19 @@ private IEnumerator ChaseRoutine(Transform target)
                 transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(lookDir), Time.deltaTime * 10f);
             }
 
-            // Wykonanie ataku
-            if (Time.time >= lastAttackTime + attackCooldown)
+            // Atakuje jedynie główny napastnik, tylko gdy jest w ścisłym zasięgu ataku
+            if (isPrimaryAttacker && distanceToPlayer <= attackRange)
             {
-                lastAttackTime = Time.time;
-                PerformAttack();
+                if (Time.time >= lastAttackTime + attackCooldown)
+                {
+                    lastAttackTime = Time.time;
+                    PerformAttack(target);
+                }
             }
         }
         else
         {
-            // === STRAŻNIK GONI GRACZA ===
+            // Podchodzenie (atakujący do 3.5m, reszta 7m)
             if (agent && agent.enabled)
             {
                 agent.isStopped = false;
@@ -216,16 +279,55 @@ private IEnumerator ChaseRoutine(Transform target)
             }
         }
 
-        yield return null;
+        yield return new WaitForSeconds(0.1f);
     }
 }
 
-private void PerformAttack()
+private bool IsClosestChasingGuard(Vector3 targetPos)
 {
-    Debug.Log("⚔️ Strażnik zadaje cios graczowi!");
+    GuardAI[] allGuards = FindObjectsByType<GuardAI>(FindObjectsSortMode.None);
+    float myDistSqr = (transform.position - targetPos).sqrMagnitude;
+
+    foreach (GuardAI guard in allGuards)
+    {
+        if (guard != this && guard.CurrentState == GuardState.Chasing)
+        {
+            float otherDistSqr = (guard.transform.position - targetPos).sqrMagnitude;
+            if (otherDistSqr < myDistSqr)
+            {
+                return false;
+            }
+        }
+    }
+
+    return true;
+}
+
+private void PerformAttack(Transform target)
+{
 
     if (animator) animator.SetTrigger("Attack");
 
+    StartCoroutine(AttackHitboxRoutine());
+}
+
+private IEnumerator AttackHitboxRoutine()
+{
+    float calculatedDamage = Random.Range(minDamage, maxDamage);
+
+    yield return new WaitForSeconds(0.1f);
+
+    if (weaponHitbox != null)
+    {
+        weaponHitbox.EnableHitbox(calculatedDamage);
+    }
+
+    yield return new WaitForSeconds(1.4f);
+
+    if (weaponHitbox != null)
+    {
+        weaponHitbox.DisableHitbox();
+    }
 }
 
     // --- INICJALIZACJA ---
@@ -331,7 +433,7 @@ private void PerformAttack()
             {
                 UpdateAnimSpeed();
 
-                // Przekazanie warty gdy jesteśmy blisko
+                // Przekazanie warty
                 float distToFinalPost = Vector3.Distance(transform.position, finalPostPos);
                 if (!oldGuardRelieved && distToFinalPost <= triggerDistance)
                 {

@@ -7,8 +7,9 @@ public class VRSword : MonoBehaviour
 {
     [Header("Ustawienia Walki")]
     [SerializeField] private float baseDamage = 20f;
-    [SerializeField] private float minSwingVelocity = 1.8f; // Minimalna prędkość zamachu
-    [SerializeField] private float hitCooldown = 0.2f;       // Czas odnowienia między uderzeniami
+    [SerializeField] private float maxDamage = 40f;
+    [SerializeField] private float minSwingVelocity = 1.8f;
+    [SerializeField] private float hitCooldown = 0.5f;
 
     [Header("Efekty (Opcjonalnie)")]
     [SerializeField] private AudioSource audioSource;
@@ -26,12 +27,13 @@ public class VRSword : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        // 1. Ochrona przed wielokrotnym trafieniem w jednym zamachu
         if (Time.time < lastHitTime + hitCooldown) return;
 
-        // Sprawdzamy prędkość fizyczną samego miecza
+        // Sprawdzenie prędkości fizycznej samego miecza
         float swingSpeed = rb.linearVelocity.magnitude;
 
-        // Jeśli miecz jest trzymany, sprawdzamy też prędkość Rigidbody dłoni
+        // Jeśli miecz jest trzymany, sprawdzana też jest prędkość Rigidbody dłoni
         if (grabbable != null && grabbable.IsHeld())
         {
             foreach (var hand in grabbable.heldBy)
@@ -48,15 +50,18 @@ public class VRSword : MonoBehaviour
             }
         }
 
+
         // Jeśli prędkość zamachu przekracza próg minimalny
         if (swingSpeed >= minSwingVelocity)
         {
             IDamageable target = collision.gameObject.GetComponentInParent<IDamageable>();
-            if (target != null)
+
+            if (target != null && !(target is PlayerHealth))
             {
                 ContactPoint contact = collision.contacts[0];
-                float damageMultiplier = Mathf.Clamp(swingSpeed / minSwingVelocity, 1f, 2.5f);
-                float finalDamage = baseDamage * damageMultiplier;
+                float damageMultiplier = Mathf.Clamp(swingSpeed / minSwingVelocity, 1f, 1.5f);
+                float calculatedDamage = baseDamage * damageMultiplier;
+                float finalDamage = Mathf.Min(calculatedDamage, maxDamage);
 
                 target.TakeDamage(finalDamage, contact.point, contact.normal);
                 lastHitTime = Time.time;

@@ -1,0 +1,630 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.3/staging' branch; Version is '6000.3.11f1 (3000ef702840) revision 3145967'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'pl' Physical Memory: 16322 MB
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-kamil546" at "2026-08-12T22:19:14.9277441Z"
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-08-12T22:19:14Z
+
+COMMAND LINE ARGUMENTS:
+D:\PROGRAMY\UH\editor\6000.3.11f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker8
+-projectPath
+D:/PROJEKTY/UNITY3D/mom/PZ---Mieczem-o-miecz
+-logFile
+Logs/AssetImportWorker8.log
+-srvPort
+54947
+-licensingIpc
+LicenseClient-kamil546
+-job-worker-count
+5
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: D:/PROJEKTY/UNITY3D/mom/PZ---Mieczem-o-miecz
+D:/PROJEKTY/UNITY3D/mom/PZ---Mieczem-o-miecz
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+Player connection [14524]  Target information:
+
+Player connection [14524]  * "[IP] 192.168.1.143 [Port] 0 [Flags] 2 [Guid] 697000670 [EditorId] 697000670 [Version] 1048832 [Id] WindowsEditor(7,kamil546_main) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [14524]  * "[IP] 192.168.124.1 [Port] 0 [Flags] 2 [Guid] 697000670 [EditorId] 697000670 [Version] 1048832 [Id] WindowsEditor(7,kamil546_main) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [14524]  * "[IP] 192.168.211.1 [Port] 0 [Flags] 2 [Guid] 697000670 [EditorId] 697000670 [Version] 1048832 [Id] WindowsEditor(7,kamil546_main) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [14524] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [14524] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 5
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 20.66 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.11f1 (3000ef702840)
+[Subsystems] Discovering subsystems at path D:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/PROJEKTY/UNITY3D/mom/PZ---Mieczem-o-miecz/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon R9 200 Series (ID=0x679a)
+    Vendor:   ATI
+    VRAM:     3051 MB
+    Driver:   27.20.20913.2000
+Initialize mono
+Mono path[0] = 'D:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/Managed'
+Mono path[1] = 'D:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56164
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.18.0'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-kamil546"
+[Licensing::IpcConnector] LicenseClient-kamil546 channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-kamil546-6000.3.11" at "2026-08-12T22:19:16.216856Z"
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.0+23225a6
+  Session Id:              2bd449cbf7604f41a235a9964e7302db
+  Correlation Id:          98a62af49e45bca74c04813e86ef8a5f
+  External correlation Id: 1700391450115169229
+  Machine Id:              blq3SyQP2YCluHmOrvbO5USdb0w=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-kamil546-6000.3.11" (connect: 0.00s, validation: 0.00s, handshake: 0.32s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-kamil546-6000.3.11-notifications" at "2026-08-12T22:19:16.5354574Z"
+[Licensing::Module] Licensing Background thread has ended after 1.61s
+[Licensing::Module] Licensing is initialized (took 0.81s).
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 7972536305137-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+Register platform support module: D:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+[Licensing::Client] Successfully resolved entitlement details
+Register platform support module: D:/PROGRAMY/UH/editor/6000.3.11f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Registered in 0.819133 seconds.
+- Loaded All Assemblies, in  1.277 seconds
+Native extension for Android target not found
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.460 seconds
+Domain Reload Profiling: 1736ms
+	BeginReloadAssembly (147ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (865ms)
+	LoadAllAssembliesAndSetupDomain (206ms)
+		LoadAssemblies (146ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (202ms)
+			TypeCache.Refresh (200ms)
+				TypeCache.ScanAssembly (184ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (460ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (402ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (99ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (95ms)
+			ProcessInitializeOnLoadAttributes (146ms)
+			ProcessInitializeOnLoadMethodAttributes (57ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  0.896 seconds
+Refreshing native plugins compatible for Editor in 8.16 ms, found 11 plugins.
+Native extension for Android target not found
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-VR_MoM
+<RI> Initializing input.
+Using Windows.Gaming.Input
+<RI> Input initialized.
+Found 0 scene poses
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Autohand.AutoHandUpdateDataWizard:FindScenePoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:244)
+Autohand.AutoHandUpdateDataWizard:CheckSceneForOldPoses () (at Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs:54)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AutoHand/Scripts/Editor/AutoHandUpdateDataWizard.cs Line: 244)
+
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.203 seconds
+Domain Reload Profiling: 2097ms
+	BeginReloadAssembly (189ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (607ms)
+		LoadAssemblies (359ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (355ms)
+			TypeCache.Refresh (238ms)
+				TypeCache.ScanAssembly (220ms)
+			BuildScriptInfoCaches (94ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (1203ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (988ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (20ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (184ms)
+			ProcessInitializeOnLoadAttributes (373ms)
+			ProcessInitializeOnLoadMethodAttributes (402ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 8.81 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7779 unused Assets / (4.9 MB). Loaded Objects now: 8697.
+Memory consumption went from 206.8 MB to 201.9 MB.
+Total: 10.417300 ms (FindLiveObjects: 0.891000 ms CreateObjectMapping: 1.285200 ms MarkObjects: 5.497000 ms  DeleteObjects: 2.743100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2243668.075832 seconds.
+  path: Assets/Models/Dogman2/Materials/Human.donitz_monk_robe.mat
+  artifactKey: Guid(f1e695d5e221f184db45b52f3f96d98a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/Dogman2/Materials/Human.donitz_monk_robe.mat using Guid(f1e695d5e221f184db45b52f3f96d98a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2cec7f2eb2c9779e1eeeeb6cd93b3a95') in 0.1256714 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.357926 seconds.
+  path: Assets/Models/Dogman2/Materials/human_eyebrow001_diffuse.mat
+  artifactKey: Guid(dd513e718615234428529c9915fedf7b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/Dogman2/Materials/human_eyebrow001_diffuse.mat using Guid(dd513e718615234428529c9915fedf7b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5dafbb29cd9792e543dcfa6e52eccdc8') in 0.0148696 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.394236 seconds.
+  path: Assets/Models/Dogman2/Materials/Human.donitz_monk_robe.mat
+  artifactKey: Guid(f1e695d5e221f184db45b52f3f96d98a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Dogman2/Materials/Human.donitz_monk_robe.mat using Guid(f1e695d5e221f184db45b52f3f96d98a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a5f7bf3fa24363debf908db2923fdb19') in 0.525526 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 325.005583 seconds.
+  path: Assets/Textures/znak_info_Metalness.png
+  artifactKey: Guid(e2ff9229b95dbce42aaf2558f5552579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/znak_info_Metalness.png using Guid(e2ff9229b95dbce42aaf2558f5552579) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Client] Successfully resolved entitlement details
+ -> (artifact id: 'bf52b0cd8edcff4c2d6b6f1c2a7960db') in 0.141069 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Textures/znak_info_Normal.png
+  artifactKey: Guid(dd9ebce8e4daa8c42ba0a2fdb07500a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/znak_info_Normal.png using Guid(dd9ebce8e4daa8c42ba0a2fdb07500a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c031f4e1fa2ddce8af8ee96d8d752979') in 0.1790099 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.977493 seconds.
+  path: Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Textures/dusty/wg_dust_particles_11.png
+  artifactKey: Guid(a742eafd25923234ca4d16db1a12aec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Textures/dusty/wg_dust_particles_11.png using Guid(a742eafd25923234ca4d16db1a12aec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e4fa32878d22f7b8452dc8926e74db40') in 0.0364752 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.714917 seconds.
+  path: Assets/SteamVR/InteractionSystem/Core/Icons/vr_interaction_system_feet.png
+  artifactKey: Guid(032fb1710098a1d47ad34d72e90f714a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SteamVR/InteractionSystem/Core/Icons/vr_interaction_system_feet.png using Guid(032fb1710098a1d47ad34d72e90f714a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7f7437160ca15f61ccf5fe68d7ec5195') in 0.0126251 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.432063 seconds.
+  path: Assets/SteamVR/InteractionSystem/Core/Icons/vr_interaction_system_right_hand.png
+  artifactKey: Guid(1acda2a2584a8fb4683ea56799b27fa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SteamVR/InteractionSystem/Core/Icons/vr_interaction_system_right_hand.png using Guid(1acda2a2584a8fb4683ea56799b27fa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '27b31fed6889392b8a17b4c5e3b2d2c2') in 0.0122449 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.024226 seconds.
+  path: Assets/Textures/dark_wooden_planks_Normal.png
+  artifactKey: Guid(bed28dc52844f0d4ca4d61f13c25526e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/dark_wooden_planks_Normal.png using Guid(bed28dc52844f0d4ca4d61f13c25526e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5ba100813059cb28a40462cf20602c08') in 0.1223943 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Textures/dark_wooden_planks_rz90_Normal.png
+  artifactKey: Guid(54ceb5baacdd0464ab43a3359622aa77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/dark_wooden_planks_rz90_Normal.png using Guid(54ceb5baacdd0464ab43a3359622aa77) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b275d961da5cb72c10ade8af48ae335d') in 0.1783581 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000104 seconds.
+  path: Assets/Textures/dirty_old_wood7152_dark_Metallic.png
+  artifactKey: Guid(4c64c970582dc80488ee512d255e67d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/dirty_old_wood7152_dark_Metallic.png using Guid(4c64c970582dc80488ee512d255e67d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f146280693a4ffe38f91e0f68adce72e') in 0.4508342 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Textures/dirty_old_wood7152_light_rz90_Metallic.png
+  artifactKey: Guid(61febde9d4c2d8243b6a6010a3bfe47d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/dirty_old_wood7152_light_rz90_Metallic.png using Guid(61febde9d4c2d8243b6a6010a3bfe47d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c4e23805f949693ca88f8d4ecc507244') in 0.1437747 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Textures/drogowskaz1_Roughness.png
+  artifactKey: Guid(762a4be9fed8e9345866628df806c56c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/drogowskaz1_Roughness.png using Guid(762a4be9fed8e9345866628df806c56c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3bcb8567cb374d3ecbe911963417c661') in 0.4730071 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Textures/2-1.001_Metallic.png
+  artifactKey: Guid(4b8fbd679a6f6ff4c9c6750309fd0a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/2-1.001_Metallic.png using Guid(4b8fbd679a6f6ff4c9c6750309fd0a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7a558f303c50c6dd042f5acb978f1775') in 0.2582287 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Textures/dirty_old_wood7152_1_dark_Normal.png
+  artifactKey: Guid(61fa06580584f724f95458d83427f550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/dirty_old_wood7152_1_dark_Normal.png using Guid(61fa06580584f724f95458d83427f550) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '27f2a7c3af2c221a98b58794957f36e2') in 0.1614047 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Textures/2-1.001_Normal.png
+  artifactKey: Guid(39071990e173e9942b2ba3ecac5ff4f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/2-1.001_Normal.png using Guid(39071990e173e9942b2ba3ecac5ff4f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8e952bc3b91eacffc783c731dbef15d0') in 0.4678061 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Textures/dirty_old_wood7152_1_dark_Albedo.png
+  artifactKey: Guid(08410b8f8c3e5fa468a56a0caf8d43b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/dirty_old_wood7152_1_dark_Albedo.png using Guid(08410b8f8c3e5fa468a56a0caf8d43b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '995ba275ef4d6a5873ce9cdd07ffb6fa') in 0.3606261 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Textures/dirty_old_wood7152_light_Albedo.png
+  artifactKey: Guid(cfbc67a7541a8d94caa61342e0521d99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/dirty_old_wood7152_light_Albedo.png using Guid(cfbc67a7541a8d94caa61342e0521d99) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9a37bc77f56b3741159d1c7243bc299b') in 0.3073747 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Textures/dirty_old_wood7152_dark_Roughness.png
+  artifactKey: Guid(01098ffa61e2d024e8518d2a799d867a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/dirty_old_wood7152_dark_Roughness.png using Guid(01098ffa61e2d024e8518d2a799d867a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '47eda8cda5595902bc20ba919dda7618') in 0.5332001 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Textures/dirty_old_wood7152_light_Metallic.png
+  artifactKey: Guid(43ad4bf7eeebd4f4682b35d428f16084) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/dirty_old_wood7152_light_Metallic.png using Guid(43ad4bf7eeebd4f4682b35d428f16084) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7222bf55420a265bd9ed184ad8c851a4') in 0.5492413 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Textures/drogowskaz1_Metalness.png
+  artifactKey: Guid(4ac2b8ced6cc3404cadf08c1fee0bc25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/drogowskaz1_Metalness.png using Guid(4ac2b8ced6cc3404cadf08c1fee0bc25) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '21b6dc0a6a0ccc383a4b58996cc321bd') in 0.0721943 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Textures/dirty_old_wood7152_light_Normal.png
+  artifactKey: Guid(24c59dcf4bcea4341ad64f1d555f69cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/dirty_old_wood7152_light_Normal.png using Guid(24c59dcf4bcea4341ad64f1d555f69cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b65dfbf94292505ff8957876596517b3') in 0.6459636 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Textures/dirty_old_wood7152_dark_rz90_Metallic.png
+  artifactKey: Guid(71d076c59a160a04b95fced97df05005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/dirty_old_wood7152_dark_rz90_Metallic.png using Guid(71d076c59a160a04b95fced97df05005) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4f601023631a5660903ed754b5c8b9bc') in 0.3596098 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Textures/2-1.001_Roughness.png
+  artifactKey: Guid(ea988ac4b596c184e9c4a0eceb30855a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/2-1.001_Roughness.png using Guid(ea988ac4b596c184e9c4a0eceb30855a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6f7802669d1fa0b038b3fc301e1e6659') in 0.9587539 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Textures/dirty_old_wood7152_light_Roughness.png
+  artifactKey: Guid(4ac5d6c21caff144ebd63def4f7887fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/dirty_old_wood7152_light_Roughness.png using Guid(4ac5d6c21caff144ebd63def4f7887fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6b867a02ef214a48db4c5aecaaf3dcf9') in 0.2399354 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 195.420102 seconds.
+  path: Assets/Models/Dogman2/Materials/Human.donitz_monk_robe.mat
+  artifactKey: Guid(f1e695d5e221f184db45b52f3f96d98a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/Dogman2/Materials/Human.donitz_monk_robe.mat using Guid(f1e695d5e221f184db45b52f3f96d98a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '04a234ab2d87e3e2feebf8ae3e79fa9c') in 0.0122089 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Models/Dogman2/Materials/makeskinmaterial.002.mat
+  artifactKey: Guid(e349dfe4eb3d7a844958bfb318f9bea4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/Dogman2/Materials/makeskinmaterial.002.mat using Guid(e349dfe4eb3d7a844958bfb318f9bea4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b0d5f7990080b28624f5dbef7a2bd88d') in 0.0122418 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.374879 seconds.
+  path: Assets/Models/Dogman2/Materials/Human.donitz_monk_robe.mat
+  artifactKey: Guid(f1e695d5e221f184db45b52f3f96d98a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Dogman2/Materials/Human.donitz_monk_robe.mat using Guid(f1e695d5e221f184db45b52f3f96d98a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e2231661f7f81950056f2e73fbcde156') in 0.0184056 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/Dogman2/Materials/Human.eyebrow001.mat
+  artifactKey: Guid(13ef6baf11443b24d9a5507bd37eaeac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Dogman2/Materials/Human.eyebrow001.mat using Guid(13ef6baf11443b24d9a5507bd37eaeac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1b2a4c503163e17c3fbfb7ef000844e5') in 0.0154451 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 59.336991 seconds.
+  path: Assets/Models/Dogman2/Materials/Animal fur.001.mat
+  artifactKey: Guid(59da6981e538e5246b67376f4e1ccb4c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/Dogman2/Materials/Animal fur.001.mat using Guid(59da6981e538e5246b67376f4e1ccb4c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cbd21bb352322f79c242fb97ca81bf85') in 0.013515 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Models/Dogman2/Materials/human_donitz_monk_robe_diffuse4k.mat
+  artifactKey: Guid(2e24c27336eb17f41a1d133d67168465) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/Dogman2/Materials/human_donitz_monk_robe_diffuse4k.mat using Guid(2e24c27336eb17f41a1d133d67168465) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b7a2dd40f62dc72df114125859e29d89') in 0.0132657 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Models/Dogman2/Materials/human_eyebrow001_diffuse.mat
+  artifactKey: Guid(dd513e718615234428529c9915fedf7b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/Dogman2/Materials/human_eyebrow001_diffuse.mat using Guid(dd513e718615234428529c9915fedf7b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7c8f83f7426e497a1c3cf55b3d44624f') in 0.0121832 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.440716 seconds.
+  path: Assets/Models/Dogman2/Materials/Human.donitz_monk_robe.mat
+  artifactKey: Guid(f1e695d5e221f184db45b52f3f96d98a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/Dogman2/Materials/Human.donitz_monk_robe.mat using Guid(f1e695d5e221f184db45b52f3f96d98a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1c7cb55717a7150e91df4bcc14b3f3d6') in 0.018468 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.602234 seconds.
+  path: Assets/Models/Dogman2/Materials/Dogman2-Human.eyebrow001.mat
+  artifactKey: Guid(c800392ed6ea96d47a7240b06e9a9ba5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/Dogman2/Materials/Dogman2-Human.eyebrow001.mat using Guid(c800392ed6ea96d47a7240b06e9a9ba5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd3b7531e94188e5b8dacf146c4ad3dcf') in 0.0127971 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Models/Dogman2/Materials/Dogman2-Animal fur.001.mat
+  artifactKey: Guid(d4bbcc8f66bec7640b6dd152d43594b8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/Dogman2/Materials/Dogman2-Animal fur.001.mat using Guid(d4bbcc8f66bec7640b6dd152d43594b8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '73c0f8a69aa05c52330b015c9fc5aa8d') in 0.0108085 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 69.968212 seconds.
+  path: Assets/Models/Dogman2/Textures
+  artifactKey: Guid(6455d9983c78781408509a7d34d76c18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Dogman2/Textures using Guid(6455d9983c78781408509a7d34d76c18) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '64b42b5de8d4f27c301c5f202dc740fa') in 0.0004757 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.746220 seconds.
+  path: Assets/Models/Dogman2/Textures/Eyebrows.mat
+  artifactKey: Guid(52b68e45aea9bb546bac75d9adffe0ba) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/Dogman2/Textures/Eyebrows.mat using Guid(52b68e45aea9bb546bac75d9adffe0ba) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd6d3d4d58ad20ae03aa15117d04df094') in 0.0124592 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Models/Dogman2/Textures/human_eyebrow001_diffuse.png
+  artifactKey: Guid(8db8267f4d24ed040b6ac8e715a819e4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/Dogman2/Textures/human_eyebrow001_diffuse.png using Guid(8db8267f4d24ed040b6ac8e715a819e4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6ab2a033a8e126b4141017400e523519') in 0.0597873 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Models/Dogman2/Textures/eyes_diffuse.png
+  artifactKey: Guid(8deaedb9c82c20c4cafc4683918e5c5c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/Dogman2/Textures/eyes_diffuse.png using Guid(8deaedb9c82c20c4cafc4683918e5c5c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dcb65a50d46f8b9783406bd182c36ff9') in 0.016637 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Models/Dogman2/Textures/Body.mat
+  artifactKey: Guid(a52da56980c3cdd439b389e6ecbfe08a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/Dogman2/Textures/Body.mat using Guid(a52da56980c3cdd439b389e6ecbfe08a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2befdfd60090c9b50021993efa1066c3') in 0.0225305 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/Dogman2/Textures/human_diffuse4k.png
+  artifactKey: Guid(95f191ca29adbc145b3b565112f676df) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/Dogman2/Textures/human_diffuse4k.png using Guid(95f191ca29adbc145b3b565112f676df) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '143ee94c8db53ee661f24210631cf4fa') in 0.0216828 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.310153 seconds.
+  path: Assets/Models/Dogman2/Materials
+  artifactKey: Guid(61ab6759b8b929945a1bd673a50e7f01) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/Dogman2/Materials using Guid(61ab6759b8b929945a1bd673a50e7f01) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '422b13c3533957307a94436451f4f580') in 0.8255708 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/Dogman2/Materials/makeskinmaterial.002.mat
+  artifactKey: Guid(e349dfe4eb3d7a844958bfb318f9bea4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/Dogman2/Materials/makeskinmaterial.002.mat using Guid(e349dfe4eb3d7a844958bfb318f9bea4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1f5d0e01ab3f044e25bccd04ed40dcba') in 0.0132678 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.727618 seconds.
+  path: Assets/Models/Dogman2/Materials/Human.eyebrow001.mat
+  artifactKey: Guid(13ef6baf11443b24d9a5507bd37eaeac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Dogman2/Materials/Human.eyebrow001.mat using Guid(13ef6baf11443b24d9a5507bd37eaeac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '88940b0588639df857b9bd93bd8fd3ed') in 0.0165778 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

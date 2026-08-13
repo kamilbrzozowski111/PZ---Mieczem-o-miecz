@@ -13,6 +13,10 @@ public class GuardAI : MonoBehaviour, IDamageable
     [SerializeField] private Animator animator;
     [SerializeField] private float pathOffsetRange = 1.6f;
 
+    [Header("Prędkości Poruszania się")]
+    [SerializeField] private float walkSpeed = 3.5f;
+    [SerializeField] private float chaseSpeed = 7f;  
+
     [Header("Komponenty Walki")]
     [SerializeField] private EnemyHitbox weaponHitbox;
 
@@ -21,10 +25,9 @@ public class GuardAI : MonoBehaviour, IDamageable
     [SerializeField] private int pathResolution = 50;
 
     [Header("Walka i Atak")]
-    [SerializeField] private float attackRange = 3.5f;       // Zasięg ataku
-    [SerializeField] private float attackCooldown = 2.0f;    // Czas (w sekundach) między uderzeniami
-    [SerializeField] private float waitingRange = 8.0f;      // Dystans oczekiwania dla reszty armii
-
+    [SerializeField] private float attackRange = 3.5f;
+    [SerializeField] private float attackCooldown = 2.0f;
+    [SerializeField] private float waitingRange = 8.0f;
 
     [Header("Typ Przeciwnika i Obrażenia")]
     [SerializeField] private EnemyType enemyType = EnemyType.Guard;
@@ -60,8 +63,8 @@ public class GuardAI : MonoBehaviour, IDamageable
     private GuardPost assignedPost;
     private Bed currentBed;
 
-
     private bool isDead = false;
+
     public void TakeDamage(float damage, Vector3 hitPoint, Vector3 hitNormal)
     {
         if (isDead) return;
@@ -148,6 +151,13 @@ public class GuardAI : MonoBehaviour, IDamageable
         StopAllCoroutines();
         CurrentState = GuardState.Chasing;
 
+        if (agent)
+        {
+            agent.speed = chaseSpeed;
+            agent.acceleration = chaseSpeed * 2.0f;
+            agent.autoBraking = true;
+        }
+
         if (wasSleeping)
         {
             StartCoroutine(WakeUpAndChaseRoutine(target));
@@ -166,169 +176,167 @@ public class GuardAI : MonoBehaviour, IDamageable
     }
 
     private IEnumerator WakeUpAndChaseRoutine(Transform target)
-{
-    Vector3 bedPos = currentBed ? currentBed.sleepAnchor.position : transform.position;
-    Quaternion bedRot = currentBed ? currentBed.sleepAnchor.rotation : transform.rotation;
-
-    if (currentBed)
     {
-        currentBed.IsOccupied = false;
-        currentBed.IsReserved = false;
-        currentBed = null;
-    }
+        Vector3 bedPos = currentBed ? currentBed.sleepAnchor.position : transform.position;
+        Quaternion bedRot = currentBed ? currentBed.sleepAnchor.rotation : transform.rotation;
 
-    // Start animacji wstawania
-    if (animator) animator.SetBool("isSleeping", false);
-
-    // KROK A: Czekanie na przejście do animacji wstawania
-    while (animator != null && (animator.IsInTransition(0) || !animator.GetCurrentAnimatorStateInfo(0).IsName("guard_standup")))
-    {
-        yield return null;
-    }
-
-    // KROK B: Czekanie na zakończenie animacji wstawania
-    while (animator != null && animator.GetCurrentAnimatorStateInfo(0).IsName("guard_standup"))
-    {
-        yield return null;
-    }
-
-    // Ustawienie pozycji na kotwicy łóżka i obrót o 180° na zewnątrz
-    transform.SetPositionAndRotation(bedPos, bedRot * Quaternion.Euler(0f, 180f, 0f));
-
-    if (agent)
-    {
-        agent.enabled = true;
-        if (NavMesh.SamplePosition(bedPos, out NavMeshHit bedHit, 10f, NavMesh.AllAreas))
+        if (currentBed)
         {
-            agent.Warp(bedHit.position);
-        }
-        else
-        {
-            agent.Warp(transform.position);
-        }
-        agent.isStopped = false;
-    }
-
-    yield return StartCoroutine(ChaseRoutine(target));
-}
-
-private IEnumerator ChaseRoutine(Transform target)
-{
-    while (CurrentState == GuardState.Chasing && target != null)
-    {
-        Vector3 cameraPos = target.position;
-        Vector3 feetPos = cameraPos;
-
-        // 1. Dociągnięcie pozycji gracza do podłogi
-        if (Physics.Raycast(cameraPos, Vector3.down, out RaycastHit hit, 20f))
-        {
-            feetPos = hit.point;
+            currentBed.IsOccupied = false;
+            currentBed.IsReserved = false;
+            currentBed = null;
         }
 
-        Vector3 targetNavMeshPos = feetPos;
-        if (NavMesh.SamplePosition(feetPos, out NavMeshHit navHit, 5f, NavMesh.AllAreas))
+        // Start animacji wstawania
+        if (animator) animator.SetBool("isSleeping", false);
+
+        // KROK A: Czekanie na przejście do animacji wstawania
+        while (animator != null && (animator.IsInTransition(0) || !animator.GetCurrentAnimatorStateInfo(0).IsName("guard_standup")))
         {
-            targetNavMeshPos = navHit.position;
+            yield return null;
         }
 
-        bool isPrimaryAttacker = IsClosestChasingGuard(targetNavMeshPos);
-        
-        float currentTargetRange = isPrimaryAttacker ? attackRange : waitingRange;
-
-        if (agent) agent.stoppingDistance = currentTargetRange - 0.5f;
-
-        float distanceToPlayer = Vector3.Distance(transform.position, targetNavMeshPos);
-
-        // 2. LOGIKA RUCHU I ATAKU / GOTOWOŚCI
-        if (distanceToPlayer <= currentTargetRange)
+        // KROK B: Czekanie na zakończenie animacji wstawania
+        while (animator != null && animator.GetCurrentAnimatorStateInfo(0).IsName("guard_standup"))
         {
-            // Osiągnięto docelową pozycję
-            if (agent && agent.enabled)
+            yield return null;
+        }
+
+        // Ustawienie pozycji na kotwicy łóżka i obrót o 180° na zewnątrz
+        transform.SetPositionAndRotation(bedPos, bedRot * Quaternion.Euler(0f, 180f, 0f));
+
+        if (agent)
+        {
+            agent.enabled = true;
+            if (NavMesh.SamplePosition(bedPos, out NavMeshHit bedHit, 10f, NavMesh.AllAreas))
             {
-                agent.isStopped = true;
+                agent.Warp(bedHit.position);
+            }
+            else
+            {
+                agent.Warp(transform.position);
+            }
+            agent.isStopped = false;
+        }
+
+        yield return StartCoroutine(ChaseRoutine(target));
+    }
+
+    private IEnumerator ChaseRoutine(Transform target)
+    {
+        while (CurrentState == GuardState.Chasing && target != null)
+        {
+            Vector3 cameraPos = target.position;
+            Vector3 feetPos = cameraPos;
+
+            int groundLayerMask = LayerMask.GetMask("Ground"); 
+            if (Physics.Raycast(cameraPos, Vector3.down, out RaycastHit hit, 20f, groundLayerMask)){
+                feetPos = hit.point;
             }
 
-            SetAnimSpeed(0f);
-
-            // Każdy strażnik w zasięgu zawsze patrzy na gracza
-            Vector3 lookDir = targetNavMeshPos - transform.position;
-            lookDir.y = 0f;
-            if (lookDir != Vector3.zero)
-            {
-                transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(lookDir), Time.deltaTime * 10f);
+            Vector3 targetNavMeshPos = feetPos;
+            if (NavMesh.SamplePosition(feetPos, out NavMeshHit navHit, 4f, NavMesh.AllAreas)){
+                targetNavMeshPos = navHit.position;
             }
 
-            // Atakuje jedynie główny napastnik, tylko gdy jest w ścisłym zasięgu ataku
-            if (isPrimaryAttacker && distanceToPlayer <= attackRange)
+
+            bool isPrimaryAttacker = IsClosestChasingGuard(targetNavMeshPos);
+            
+            float currentTargetRange = isPrimaryAttacker ? attackRange : waitingRange;
+
+            if (agent) agent.stoppingDistance = currentTargetRange - 0.5f;
+
+            float distanceToPlayer = Vector3.Distance(transform.position, targetNavMeshPos);
+
+            // 2. LOGIKA RUCHU I ATAKU / GOTOWOŚCI
+            if (distanceToPlayer <= currentTargetRange)
             {
-                if (Time.time >= lastAttackTime + attackCooldown)
+                // Osiągnięto docelową pozycję
+                if (agent && agent.enabled)
                 {
-                    lastAttackTime = Time.time;
-                    PerformAttack(target);
+                    agent.isStopped = true;
+                }
+
+                SetAnimSpeed(0f);
+
+                // Każdy strażnik w zasięgu zawsze patrzy na gracza
+                Vector3 lookDir = targetNavMeshPos - transform.position;
+                lookDir.y = 0f;
+                if (lookDir != Vector3.zero)
+                {
+                    transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(lookDir), Time.deltaTime * 10f);
+                }
+
+                // Atakuje jedynie główny napastnik, tylko gdy jest w ścisłym zasięgu ataku
+                if (isPrimaryAttacker && distanceToPlayer <= attackRange)
+                {
+                    if (Time.time >= lastAttackTime + attackCooldown)
+                    {
+                        lastAttackTime = Time.time;
+                        PerformAttack(target);
+                    }
+                }
+            }
+            else
+            {
+                // Podchodzenie / bieganie do gracza
+                if (agent && agent.enabled)
+                {
+                    agent.isStopped = false;
+                    agent.SetDestination(targetNavMeshPos);
+                    UpdateAnimSpeed();
+                }
+            }
+
+            yield return new WaitForSeconds(0.1f);
+        }
+    }
+
+    private bool IsClosestChasingGuard(Vector3 targetPos)
+    {
+        GuardAI[] allGuards = FindObjectsByType<GuardAI>(FindObjectsSortMode.None);
+        float myDistSqr = (transform.position - targetPos).sqrMagnitude;
+
+        foreach (GuardAI guard in allGuards)
+        {
+            if (guard != this && guard.CurrentState == GuardState.Chasing)
+            {
+                float otherDistSqr = (guard.transform.position - targetPos).sqrMagnitude;
+                if (otherDistSqr < myDistSqr)
+                {
+                    return false;
                 }
             }
         }
-        else
-        {
-            // Podchodzenie (atakujący do 3.5m, reszta 7m)
-            if (agent && agent.enabled)
-            {
-                agent.isStopped = false;
-                agent.SetDestination(targetNavMeshPos);
-                UpdateAnimSpeed();
-            }
-        }
+
+        return true;
+    }
+
+    private void PerformAttack(Transform target)
+    {
+        if (animator) animator.SetTrigger("Attack");
+
+        StartCoroutine(AttackHitboxRoutine());
+    }
+
+    private IEnumerator AttackHitboxRoutine()
+    {
+        float calculatedDamage = Random.Range(minDamage, maxDamage);
 
         yield return new WaitForSeconds(0.1f);
-    }
-}
 
-private bool IsClosestChasingGuard(Vector3 targetPos)
-{
-    GuardAI[] allGuards = FindObjectsByType<GuardAI>(FindObjectsSortMode.None);
-    float myDistSqr = (transform.position - targetPos).sqrMagnitude;
-
-    foreach (GuardAI guard in allGuards)
-    {
-        if (guard != this && guard.CurrentState == GuardState.Chasing)
+        if (weaponHitbox != null)
         {
-            float otherDistSqr = (guard.transform.position - targetPos).sqrMagnitude;
-            if (otherDistSqr < myDistSqr)
-            {
-                return false;
-            }
+            weaponHitbox.EnableHitbox(calculatedDamage);
+        }
+
+        yield return new WaitForSeconds(1.4f);
+
+        if (weaponHitbox != null)
+        {
+            weaponHitbox.DisableHitbox();
         }
     }
-
-    return true;
-}
-
-private void PerformAttack(Transform target)
-{
-
-    if (animator) animator.SetTrigger("Attack");
-
-    StartCoroutine(AttackHitboxRoutine());
-}
-
-private IEnumerator AttackHitboxRoutine()
-{
-    float calculatedDamage = Random.Range(minDamage, maxDamage);
-
-    yield return new WaitForSeconds(0.1f);
-
-    if (weaponHitbox != null)
-    {
-        weaponHitbox.EnableHitbox(calculatedDamage);
-    }
-
-    yield return new WaitForSeconds(1.4f);
-
-    if (weaponHitbox != null)
-    {
-        weaponHitbox.DisableHitbox();
-    }
-}
 
     // --- INICJALIZACJA ---
 
@@ -343,6 +351,7 @@ private IEnumerator AttackHitboxRoutine()
         if (agent)
         {
             agent.enabled = true;
+            agent.speed = walkSpeed;
             agent.isStopped = true;
         }
         SetAnimSpeed(0f);
@@ -412,6 +421,7 @@ private IEnumerator AttackHitboxRoutine()
         if (agent)
         {
             agent.enabled = true;
+            agent.speed = walkSpeed;
             agent.isStopped = false;
         }
 
@@ -505,6 +515,7 @@ private IEnumerator AttackHitboxRoutine()
         if (agent)
         {
             agent.enabled = true;
+            agent.speed = walkSpeed;
             agent.isStopped = false;
         }
 
@@ -577,134 +588,134 @@ private IEnumerator AttackHitboxRoutine()
 
     // --- METODA POMOCNICZA DLA MAGISTRALI (SPLINE) ---
 
-   private List<Vector3> GetSplinePathSegment(SplineContainer spline, Vector3 startPos, Vector3 endPos, int resolution = 50)
-{
-    List<Vector3> rawPoints = new List<Vector3>();
-
-    if (spline == null || spline.Spline == null || spline.Spline.Count == 0) 
-        return rawPoints;
-
-    Spline mainSpline = spline.Spline;
-    int knotCount = mainSpline.Count;
-
-    // 1. KNOT WEJŚCIOWY (NAJBLIŻSZY POZYCJI STARTOWEJ)
-    int startKnotIndex = 0;
-    float minStartKnotDist = float.MaxValue;
-    Vector3 startKnotWorldPos = Vector3.zero;
-
-    for (int k = 0; k < knotCount; k++)
+    private List<Vector3> GetSplinePathSegment(SplineContainer spline, Vector3 startPos, Vector3 endPos, int resolution = 50)
     {
-        Vector3 knotWorldPos = spline.transform.TransformPoint((Vector3)mainSpline[k].Position);
-        float dist = Vector3.Distance(startPos, knotWorldPos);
+        List<Vector3> rawPoints = new List<Vector3>();
 
-        if (dist < minStartKnotDist)
+        if (spline == null || spline.Spline == null || spline.Spline.Count == 0) 
+            return rawPoints;
+
+        Spline mainSpline = spline.Spline;
+        int knotCount = mainSpline.Count;
+
+        // 1. KNOT WEJŚCIOWY (NAJBLIŻSZY POZYCJI STARTOWEJ)
+        int startKnotIndex = 0;
+        float minStartKnotDist = float.MaxValue;
+        Vector3 startKnotWorldPos = Vector3.zero;
+
+        for (int k = 0; k < knotCount; k++)
         {
-            minStartKnotDist = dist;
-            startKnotIndex = k;
-            startKnotWorldPos = knotWorldPos;
-        }
-    }
+            Vector3 knotWorldPos = spline.transform.TransformPoint((Vector3)mainSpline[k].Position);
+            float dist = Vector3.Distance(startPos, knotWorldPos);
 
-    // 2. KNOT WYJŚCIOWY (NAJBLIŻSZY POZYCJI KOŃCOWEJ)
-    int endKnotIndex = 0;
-    float minEndKnotDist = float.MaxValue;
-    Vector3 endKnotWorldPos = Vector3.zero;
-
-    for (int k = 0; k < knotCount; k++)
-    {
-        Vector3 knotWorldPos = spline.transform.TransformPoint((Vector3)mainSpline[k].Position);
-        float dist = Vector3.Distance(endPos, knotWorldPos);
-
-        if (dist < minEndKnotDist)
-        {
-            minEndKnotDist = dist;
-            endKnotIndex = k;
-            endKnotWorldPos = knotWorldPos;
-        }
-    }
-
-    // 3. MAPOWANIE KNOTOW NA PUNKTY PRÓBKOWANIA SPLINE'A
-    int startIndex = 0;
-    int endIndex = 0;
-    float minDistStartKnot = float.MaxValue;
-    float minDistEndKnot = float.MaxValue;
-
-    for (int i = 0; i < resolution; i++)
-    {
-        float t = (float)i / (resolution - 1);
-        Vector3 worldPos = spline.EvaluatePosition(t);
-
-        // Najbliższy punkt próbkowania dla Knota Wejściowego
-        float distToStartKnot = Vector3.Distance(startKnotWorldPos, worldPos);
-        if (distToStartKnot < minDistStartKnot)
-        {
-            minDistStartKnot = distToStartKnot;
-            startIndex = i;
+            if (dist < minStartKnotDist)
+            {
+                minStartKnotDist = dist;
+                startKnotIndex = k;
+                startKnotWorldPos = knotWorldPos;
+            }
         }
 
-        // Najbliższy punkt próbkowania dla Knota Wyjściowego
-        float distToEndKnot = Vector3.Distance(endKnotWorldPos, worldPos);
-        if (distToEndKnot < minDistEndKnot)
+        // 2. KNOT WYJŚCIOWY (NAJBLIŻSZY POZYCJI KOŃCOWEJ)
+        int endKnotIndex = 0;
+        float minEndKnotDist = float.MaxValue;
+        Vector3 endKnotWorldPos = Vector3.zero;
+
+        for (int k = 0; k < knotCount; k++)
         {
-            minDistEndKnot = distToEndKnot;
-            endIndex = i;
-        }
-    }
+            Vector3 knotWorldPos = spline.transform.TransformPoint((Vector3)mainSpline[k].Position);
+            float dist = Vector3.Distance(endPos, knotWorldPos);
 
-    // 4. PUNKTY TRASY OD KNOTA WEJŚCIOWEGO DO KNOTA WYJŚCIOWEGO
-    int step = (startIndex <= endIndex) ? 1 : -1;
-    int currentIndex = startIndex;
-
-    while (true)
-    {
-        float t = (float)currentIndex / (resolution - 1);
-        rawPoints.Add(spline.EvaluatePosition(t));
-
-        if (currentIndex == endIndex) break;
-        currentIndex += step;
-    }
-
-    if (rawPoints.Count > 0)
-    {
-        rawPoints[0] = startKnotWorldPos;
-        rawPoints[rawPoints.Count - 1] = endKnotWorldPos;
-    }
-
-    // 5. BOCZNY OFFSET (Z WYGASZANIEM NA WEJŚCIU I WYJŚCIU)
-    List<Vector3> offsetPoints = new List<Vector3>();
-    float guardSideOffset = Random.Range(-pathOffsetRange, pathOffsetRange);
-
-    int count = rawPoints.Count;
-    for (int i = 0; i < count; i++)
-    {
-        Vector3 current = rawPoints[i];
-
-        float blendFactor = 1f;
-        if (count > 2)
-        {
-            float progress = (float)i / (count - 1);
-            blendFactor = Mathf.Sin(progress * Mathf.PI); 
+            if (dist < minEndKnotDist)
+            {
+                minEndKnotDist = dist;
+                endKnotIndex = k;
+                endKnotWorldPos = knotWorldPos;
+            }
         }
 
-        Vector3 forward = Vector3.zero;
-        if (i < count - 1)
-            forward = rawPoints[i + 1] - current;
-        else if (i > 0)
-            forward = current - rawPoints[i - 1];
+        // 3. MAPOWANIE KNOTOW NA PUNKTY PRÓBKOWANIA SPLINE'A
+        int startIndex = 0;
+        int endIndex = 0;
+        float minDistStartKnot = float.MaxValue;
+        float minDistEndKnot = float.MaxValue;
 
-        forward.y = 0f;
-
-        if (forward.sqrMagnitude > 0.001f)
+        for (int i = 0; i < resolution; i++)
         {
-            Vector3 sideDirection = Vector3.Cross(forward.normalized, Vector3.up).normalized;
-            current += sideDirection * (guardSideOffset * blendFactor);
+            float t = (float)i / (resolution - 1);
+            Vector3 worldPos = spline.EvaluatePosition(t);
+
+            // Najbliższy punkt próbkowania dla Knota Wejściowego
+            float distToStartKnot = Vector3.Distance(startKnotWorldPos, worldPos);
+            if (distToStartKnot < minDistStartKnot)
+            {
+                minDistStartKnot = distToStartKnot;
+                startIndex = i;
+            }
+
+            // Najbliższy punkt próbkowania dla Knota Wyjściowego
+            float distToEndKnot = Vector3.Distance(endKnotWorldPos, worldPos);
+            if (distToEndKnot < minDistEndKnot)
+            {
+                minDistEndKnot = distToEndKnot;
+                endIndex = i;
+            }
         }
 
-        offsetPoints.Add(current);
-    }
+        // 4. PUNKTY TRASY OD KNOTA WEJŚCIOWEGO DO KNOTA WYJŚCIOWEGO
+        int step = (startIndex <= endIndex) ? 1 : -1;
+        int currentIndex = startIndex;
 
-    return offsetPoints;
-}
+        while (true)
+        {
+            float t = (float)currentIndex / (resolution - 1);
+            rawPoints.Add(spline.EvaluatePosition(t));
+
+            if (currentIndex == endIndex) break;
+            currentIndex += step;
+        }
+
+        if (rawPoints.Count > 0)
+        {
+            rawPoints[0] = startKnotWorldPos;
+            rawPoints[rawPoints.Count - 1] = endKnotWorldPos;
+        }
+
+        // 5. BOCZNY OFFSET Z WYGASZENIEM
+        List<Vector3> offsetPoints = new List<Vector3>();
+        float guardSideOffset = Random.Range(-pathOffsetRange, pathOffsetRange);
+
+        int count = rawPoints.Count;
+        for (int i = 0; i < count; i++)
+        {
+            Vector3 current = rawPoints[i];
+
+            float blendFactor = 1f;
+            if (count > 2)
+            {
+                float progress = (float)i / (count - 1);
+                blendFactor = Mathf.Sin(progress * Mathf.PI); 
+            }
+
+            Vector3 forward = Vector3.zero;
+            if (i < count - 1)
+                forward = rawPoints[i + 1] - current;
+            else if (i > 0)
+                forward = current - rawPoints[i - 1];
+
+            forward.y = 0f;
+
+            if (forward.sqrMagnitude > 0.001f)
+            {
+                Vector3 sideDirection = Vector3.Cross(forward.normalized, Vector3.up).normalized;
+                current += sideDirection * (guardSideOffset * blendFactor);
+            }
+
+            offsetPoints.Add(current);
+        }
+
+        return offsetPoints;
+    }
 
     // --- FUNKCJE POMOCNICZE ---
 
@@ -712,8 +723,8 @@ private IEnumerator AttackHitboxRoutine()
     {
         if (animator && agent && agent.enabled)
         {
-            float speed = agent.velocity.magnitude / agent.speed;
-            animator.SetFloat("Speed", speed, 0.15f, Time.deltaTime);
+            float currentSpeed = agent.velocity.magnitude;
+            animator.SetFloat("Speed", currentSpeed, 0.15f, Time.deltaTime);
         }
     }
 

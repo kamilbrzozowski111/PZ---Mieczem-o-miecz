@@ -10,7 +10,7 @@ public class CastleShiftManager : MonoBehaviour
     [SerializeField] private GuardAI guardPrefab;
     [SerializeField] private int totalGuards = 40;
     [SerializeField] private float shiftInterval = 12f;
-    [SerializeField] private float handoverTriggerDistance = 30f;
+    [SerializeField] private float handoverTriggerDistance = 3.5f;
 
     [Header("Infrastruktura")]
     [SerializeField] private List<GuardPost> posts;
@@ -67,7 +67,7 @@ public class CastleShiftManager : MonoBehaviour
 
             if (availablePosts.Count == 0) continue;
 
-            // 2. Wybieranie losowego dostępnego posteruneku
+            // 2. Wybieranie losowego dostępnego posterunku
             GuardPost postToChange = availablePosts[Random.Range(0, availablePosts.Count)];
 
             // 3. Losowanie śpiącego strażnika
@@ -94,7 +94,6 @@ public class CastleShiftManager : MonoBehaviour
             return freeBed;
         }
 
-        //zabezpieczenie: jeśli brakuje wolnych rezerwacji
         Bed fallbackBed = beds.FirstOrDefault(b => !b.IsOccupied);
         if (fallbackBed != null)
         {

@@ -9,10 +9,14 @@ public class GuardPost : MonoBehaviour
     public SplineContainer PathFromQuarters => pathFromQuarters;
     
     [HideInInspector] public GuardAI currentGuard;  // Strażnik stojący na posterunku
-    [HideInInspector] public GuardAI incomingGuard; // Strażnik będący w drodze na ten posterunek
-
-    // Posterunek jest zablokowany dla nowych zmian, jeśli ktoś już na niego idzie
+    [HideInInspector] public GuardAI incomingGuard;
     public bool IsTargeted => incomingGuard != null;
 
     public Transform Position => standPoint != null ? standPoint : transform;
+
+    public Quaternion InitialRotation { get; private set; }
+
+    private void Awake(){
+        InitialRotation = Position.rotation;
+    }
 }

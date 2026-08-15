@@ -54,7 +54,7 @@ public class MegalithPass : MonoBehaviour
         if (passCollider != null) passCollider.enabled = true;
 
         // 4. Powiadomienie o sukcesie
-        NotificationManager.Show("Gratulacje! Klucz do zamku znajduje się w samym środku kręgu!", NotificationType.Info);
+        NotificationManager.Show("Gratulacje! Klucz do zamku znajduje się w samym środku kręgu!", NotificationType.Info, 5.0f);
     }
 
     private IEnumerator RotateToTargetAngleRoutine()

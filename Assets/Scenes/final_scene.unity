@@ -1987,6 +1987,26 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 4768581985060083212, guid: e63c3816eadd215428c5033dafbbd27b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4768581985060083212, guid: e63c3816eadd215428c5033dafbbd27b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4768581985060083212, guid: e63c3816eadd215428c5033dafbbd27b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4768581985060083212, guid: e63c3816eadd215428c5033dafbbd27b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4768581985060083212, guid: e63c3816eadd215428c5033dafbbd27b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4839757226874531587, guid: e63c3816eadd215428c5033dafbbd27b, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2632,9 +2652,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 202401544179897496, guid: e63c3816eadd215428c5033dafbbd27b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 315438834}
+    - targetCorrespondingSourceObject: {fileID: 202401544179897496, guid: e63c3816eadd215428c5033dafbbd27b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 315438835}
     - targetCorrespondingSourceObject: {fileID: 1789035731814652118, guid: e63c3816eadd215428c5033dafbbd27b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1959698657}
+    - targetCorrespondingSourceObject: {fileID: 1789035731814652118, guid: e63c3816eadd215428c5033dafbbd27b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1959698658}
     - targetCorrespondingSourceObject: {fileID: -7677471772335586173, guid: e63c3816eadd215428c5033dafbbd27b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 974618166}
@@ -5512,6 +5538,7 @@ GameObject:
   m_Component:
   - component: {fileID: 237544773}
   - component: {fileID: 237544774}
+  - component: {fileID: 237544775}
   m_Layer: 0
   m_Name: Post_MainGate_1
   m_TagString: Untagged
@@ -5552,6 +5579,22 @@ MonoBehaviour:
   pathFromQuarters: {fileID: 0}
   currentGuard: {fileID: 0}
   incomingGuard: {fileID: 0}
+--- !u!114 &237544775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 237544772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c05b01779c25c4e4baec38631ce584eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CastleGatePostController
+  guardPost: {fileID: 237544774}
+  gate: {fileID: 1959698658}
+  triggerDistance: 12
+  noPassMessageCooldown: 8
 --- !u!1 &241371970 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1473553647451373395, guid: e63c3816eadd215428c5033dafbbd27b, type: 3}
@@ -6461,6 +6504,22 @@ MonoBehaviour:
   m_IgnoreFromBuild: 0
   m_ApplyToChildren: 1
   m_AffectedAgents: ffffffff
+--- !u!114 &315438835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315438830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6865cf28568f514469c6bd9735ea714d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CastleGate
+  gateTransform: {fileID: 145955659}
+  openAngle: -93.5
+  openSpeed: 0.5
+  rotationAxis: {x: 1, y: 0, z: 0}
 --- !u!1 &322041279 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8962469952861616074, guid: e63c3816eadd215428c5033dafbbd27b, type: 3}
@@ -7197,15 +7256,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80cd89f1009977e4983088925b9a994e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 190.568
+      value: 190.45
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80cd89f1009977e4983088925b9a994e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.389
+      value: 11.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80cd89f1009977e4983088925b9a994e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 273.96
+      value: 274
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80cd89f1009977e4983088925b9a994e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -15283,6 +15342,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1369397196}
   - component: {fileID: 1369397197}
+  - component: {fileID: 1369397198}
   m_Layer: 0
   m_Name: Post_SideGate_1
   m_TagString: Untagged
@@ -15323,6 +15383,22 @@ MonoBehaviour:
   pathFromQuarters: {fileID: 0}
   currentGuard: {fileID: 0}
   incomingGuard: {fileID: 0}
+--- !u!114 &1369397198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369397195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c05b01779c25c4e4baec38631ce584eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CastleGatePostController
+  guardPost: {fileID: 1369397197}
+  gate: {fileID: 315438835}
+  triggerDistance: 12
+  noPassMessageCooldown: 8
 --- !u!1 &1372790160
 GameObject:
   m_ObjectHideFlags: 0
@@ -21016,6 +21092,22 @@ MonoBehaviour:
   m_IgnoreFromBuild: 0
   m_ApplyToChildren: 1
   m_AffectedAgents: ffffffff
+--- !u!114 &1959698658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24160141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6865cf28568f514469c6bd9735ea714d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CastleGate
+  gateTransform: {fileID: 145955658}
+  openAngle: 91
+  openSpeed: 0.5
+  rotationAxis: {x: 0, y: 0, z: 1}
 --- !u!1 &1962382022 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4828451124335887297, guid: e63c3816eadd215428c5033dafbbd27b, type: 3}

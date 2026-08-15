@@ -49,6 +49,7 @@
     <Analyzer Include="D:\PROGRAMY\UH\editor\6000.3.11f1\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\CastleGate.cs" />
     <Compile Include="Assets\Scripts\EnemyType.cs" />
     <Compile Include="Assets\Scripts\EnemyHitbox.cs" />
     <Compile Include="Assets\Scripts\FakePlayer.cs" />
@@ -56,14 +57,18 @@
     <Compile Include="Assets\Scripts\EnemyPreset.cs" />
     <Compile Include="Assets\Scripts\GuardAi.cs" />
     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
+    <Compile Include="Assets\Scripts\MegalithCircleTrigger.cs" />
     <Compile Include="Assets\Scripts v2\EnemyPool.cs" />
+    <Compile Include="Assets\Scripts\DogmanAi.cs" />
     <Compile Include="Assets\Scripts\PlayerUIWidget.cs" />
     <Compile Include="Assets\Scripts\Bed.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Scripts\CastleGatePostController.cs" />
     <Compile Include="Assets\Scripts\CastleShiftManager.cs" />
     <Compile Include="Assets\Scripts\GuardPost.cs" />
     <Compile Include="Assets\Scripts\IDamageable.cs" />
     <Compile Include="Assets\Scripts\EnemySpawner.cs" />
+    <Compile Include="Assets\Scripts\MegalithPass.cs" />
     <Compile Include="Assets\Scripts\NotificationManager.cs" />
     <Compile Include="Assets\Scripts\VRSword.cs" />
     <Compile Include="Assets\Scripts\ObjectRotator.cs" />

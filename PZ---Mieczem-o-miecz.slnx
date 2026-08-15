@@ -3,10 +3,10 @@
   <Project Path="SteamVR_Input_Editor.csproj" />
   <Project Path="NaughtyAttributes.Core.csproj" />
   <Project Path="SteamVR.csproj" />
+  <Project Path="Assembly-CSharp.csproj" />
   <Project Path="Autohand.Editor.csproj" />
   <Project Path="SteamVR_Editor.csproj" />
   <Project Path="NaughtyAttributes.Editor.csproj" />
-  <Project Path="Assembly-CSharp.csproj" />
   <Project Path="Assembly-CSharp-Editor.csproj" />
   <Project Path="Autohand.XR.csproj" />
   <Project Path="SteamVR_Actions.csproj" />

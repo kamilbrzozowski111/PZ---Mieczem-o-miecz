@@ -8,7 +8,7 @@ public class GuardPost : MonoBehaviour
     [SerializeField] private SplineContainer pathFromQuarters;
     public SplineContainer PathFromQuarters => pathFromQuarters;
     
-    [HideInInspector] public GuardAI currentGuard;  // Strażnik stojący na posterunku
+    [HideInInspector] public GuardAI currentGuard;
     [HideInInspector] public GuardAI incomingGuard;
     public bool IsTargeted => incomingGuard != null;
 

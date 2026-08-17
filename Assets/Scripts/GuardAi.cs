@@ -6,51 +6,63 @@ using UnityEngine.Splines;
 
 public enum GuardState { Sleeping, WalkingToPost, OnDuty, WalkingToQuarters, Alerted, Chasing }
 
-public class GuardAI : MonoBehaviour, IDamageable
+public class GuardAI : BaseEnemyAI
 {
-    [Header("Komponenty")]
-    [SerializeField] private NavMeshAgent agent;
-    [SerializeField] private Animator animator;
+    [Header("Ustawienia Magistrali i Warty")]
     [SerializeField] private float pathOffsetRange = 1.6f;
-
-    [Header("Prędkości Poruszania się")]
     [SerializeField] private float walkSpeed = 3.5f;
-    [SerializeField] private float chaseSpeed = 7f;  
-
-    [Header("Komponenty Walki")]
-    [SerializeField] private EnemyHitbox weaponHitbox;
-
-    [Header("Ustawienia Magistrali")]
     [Tooltip("Gęstość punktów na trasie Spline. Większa wartość = dokładniejsze zakręty.")]
     [SerializeField] private int pathResolution = 50;
-
-    [Header("Walka i Atak")]
-    [SerializeField] private float attackRange = 3.5f;
-    [SerializeField] private float attackCooldown = 2.0f;
     [SerializeField] private float waitingRange = 8.0f;
-
-    [Header("Typ Przeciwnika i Obrażenia")]
-    [SerializeField] private EnemyType enemyType = EnemyType.Guard;
-    [SerializeField] private float minDamage = 2f;
-    [SerializeField] private float maxDamage = 10f;
 
     public bool IsInteracting { get; private set; } = false;
 
-    /// <summary>
-    /// Flaga określająca, czy strażnik opuścił magistralę Spline i przebywa na końcowym odcinku NavMesh do posterunku.
-    /// </summary>
     public bool IsOffSpline { get; private set; } = false;
 
+    public GuardState CurrentState { get; private set; } = GuardState.Sleeping;
+
+    private CastleShiftManager manager;
+    private GuardPost assignedPost;
+    private Bed currentBed;
     private Coroutine activeBehaviorCoroutine;
 
-    private void StartBehaviorCoroutine(IEnumerator routine)
-    {
+    private static bool _legacyAlerted = false;
+    public static bool hasNotifiedAllAlerted{
+        get => (AlertController.Instance != null && AlertController.Instance.IsAlerted) || _legacyAlerted;
+        set{
+            _legacyAlerted = value;
+            if (!value){
+                AlertController.ResetAlert();
+            }
+        }
+    }
+
+    public static void SetLegacyAlertedFlag(bool value){
+        _legacyAlerted = value;
+    }
+
+    protected override void Awake(){
+        base.Awake();
+    }
+
+    private void Start(){
+        if (AlertController.Instance != null){
+            AlertController.Instance.RegisterGuard(this);
+        }
+    }
+
+    private void OnDestroy(){
+        if (AlertController.Instance != null){
+            AlertController.Instance.UnregisterGuard(this);
+        }
+    }
+
+    private void StartBehaviorCoroutine(IEnumerator routine){
         StopBehaviorCoroutine();
         activeBehaviorCoroutine = StartCoroutine(routine);
     }
 
-    private void StopBehaviorCoroutine()
-    {
+    private void StopBehaviorCoroutine(){
         if (activeBehaviorCoroutine != null)
         {
             StopCoroutine(activeBehaviorCoroutine);
@@ -58,8 +70,7 @@ public class GuardAI : MonoBehaviour, IDamageable
         }
     }
 
-    public void SetInteracting(bool value)
-    {
+    public void SetInteracting(bool value){
         IsInteracting = value;
 
         if (agent != null && agent.enabled)
@@ -72,8 +83,8 @@ public class GuardAI : MonoBehaviour, IDamageable
             }
             else
             {
-                if (CurrentState == GuardState.WalkingToPost || 
-                    CurrentState == GuardState.WalkingToQuarters || 
+                if (CurrentState == GuardState.WalkingToPost ||
+                    CurrentState == GuardState.WalkingToQuarters ||
                     CurrentState == GuardState.Chasing)
                 {
                     agent.isStopped = false;
@@ -82,111 +93,31 @@ public class GuardAI : MonoBehaviour, IDamageable
         }
     }
 
-    public void TriggerButtonPushAnimation()
-    {
-        if (animator != null)
-        {
+    public void TriggerButtonPushAnimation(){
+        if (animator != null){
             animator.SetTrigger("PressBtn");
         }
     }
 
-    private void OnValidate()
-    {
-        switch (enemyType)
-        {
-            case EnemyType.Guard:
-                minDamage = 2f;
-                maxDamage = 10f;
-                break;
-            case EnemyType.Dogman:
-                minDamage = 5f;
-                maxDamage = 15f;
-                break;
-            case EnemyType.DarkMage:
-                minDamage = 15f;
-                maxDamage = 20f;
-                break;
-        }
-    }
-
-    private float lastAttackTime;
-
-    [SerializeField] private float health = 100f;
-
-    public GuardState CurrentState { get; private set; } = GuardState.Sleeping;
-
-    private CastleShiftManager manager;
-    private GuardPost assignedPost;
-    private Bed currentBed;
-
-    public bool isDead { get; private set; } = false;
-
-    public void TakeDamage(float damage, Vector3 hitPoint, Vector3 hitNormal)
-    {
-        if (isDead) return;
-
-        health -= damage;
-
-        Transform player = Camera.main != null ? Camera.main.transform : null;
-
+    protected override void OnDamaged(float damage, Vector3 hitPoint, Vector3 hitNormal){
+        Transform player = PlayerTargetProvider.GetPlayerTransform();
         if (player != null)
         {
             AlertGuard(player);
-            AlertAllGuardsOnScene(player);
-        }
-
-        if (health <= 0)
-        {
-            Die();
+            AlertController.TriggerAlert(player);
         }
     }
 
-    public static bool hasNotifiedAllAlerted = false;
-
-    private void AlertAllGuardsOnScene(Transform playerTransform)
-    {
-        GuardAI[] allGuards = FindObjectsByType<GuardAI>(FindObjectsSortMode.None);
-        foreach (GuardAI guard in allGuards)
-        {
-            guard.AlertGuard(playerTransform);
-        }
-
-        if (!hasNotifiedAllAlerted)
-        {
-            hasNotifiedAllAlerted = true;
-            NotificationManager.Show("Wszyscy strażnicy zostali zaalarmowani!", NotificationType.Danger);
-        }
-    }
-
-    private void Die()
-    {
-        if (isDead) return;
-        isDead = true;
-
+    protected override void OnDeath(){
         StopBehaviorCoroutine();
-
-        if (agent != null) agent.enabled = false;
-        if (weaponHitbox != null) weaponHitbox.DisableHitbox();
-
-        foreach (Collider c in GetComponentsInChildren<Collider>())
-        {
-            c.enabled = false;
+        if (AlertController.Instance != null){
+            AlertController.Instance.UnregisterGuard(this);
         }
-
-        if (animator != null) animator.SetTrigger("Die");
-
-        Destroy(gameObject, 6.0f);
+        base.OnDeath();
     }
 
-    private void Awake()
-    {
-        if (!agent) agent = GetComponent<NavMeshAgent>();
-        if (!animator) animator = GetComponent<Animator>();
-    }
-    
-    public void AlertGuard(Transform target)
-    {
-        if (CurrentState == GuardState.Chasing || target == null) return;
+    public void AlertGuard(Transform target){
+        if (CurrentState == GuardState.Chasing || target == null || isDead) return;
 
         bool wasSleeping = (CurrentState == GuardState.Sleeping);
 
@@ -200,23 +131,19 @@ public class GuardAI : MonoBehaviour, IDamageable
         IsInteracting = false;
         CurrentState = GuardState.Chasing;
 
-        if (agent)
-        {
+        if (agent){
             agent.speed = chaseSpeed;
             agent.acceleration = chaseSpeed * 2.0f;
             agent.autoBraking = true;
         }
 
-        if (wasSleeping)
-        {
+        if (wasSleeping){
             StartBehaviorCoroutine(WakeUpAndChaseRoutine(target));
         }
-        else
-        {
-            if (agent)
-            {
+        else{
+            if (agent){
                 agent.enabled = true;
-                agent.Warp(transform.position); 
+                agent.Warp(transform.position);
                 agent.isStopped = false;
             }
 
@@ -224,8 +151,7 @@ public class GuardAI : MonoBehaviour, IDamageable
         }
     }
 
-    private IEnumerator WakeUpAndChaseRoutine(Transform target)
-    {
+    private IEnumerator WakeUpAndChaseRoutine(Transform target){
         Vector3 bedPos = currentBed ? currentBed.sleepAnchor.position : transform.position;
         Quaternion bedRot = currentBed ? currentBed.sleepAnchor.rotation : transform.rotation;
 
@@ -250,8 +176,7 @@ public class GuardAI : MonoBehaviour, IDamageable
 
         transform.SetPositionAndRotation(bedPos, bedRot * Quaternion.Euler(0f, 180f, 0f));
 
-        if (agent)
-        {
+        if (agent){
             agent.enabled = true;
             if (NavMesh.SamplePosition(bedPos, out NavMeshHit bedHit, 10f, NavMesh.AllAreas))
             {
@@ -269,19 +194,12 @@ public class GuardAI : MonoBehaviour, IDamageable
 
     private IEnumerator ChaseRoutine(Transform target)
     {
-        while (CurrentState == GuardState.Chasing && target != null)
+        while (CurrentState == GuardState.Chasing && target != null && !isDead)
         {
-            Vector3 cameraPos = target.position;
-            Vector3 feetPos = cameraPos;
-
-            int groundLayerMask = LayerMask.GetMask("Ground"); 
-            if (Physics.Raycast(cameraPos, Vector3.down, out RaycastHit hit, 20f, groundLayerMask)){
-                feetPos = hit.point;
-            }
-
-            Vector3 targetNavMeshPos = feetPos;
-            if (NavMesh.SamplePosition(feetPos, out NavMeshHit navHit, 4f, NavMesh.AllAreas)){
-                targetNavMeshPos = navHit.position;
+            if (!TryGetTargetNavMeshPosition(target, out Vector3 targetNavMeshPos))
+            {
+                yield return new WaitForSeconds(0.1f);
+                continue;
             }
 
             bool isPrimaryAttacker = IsClosestChasingGuard(targetNavMeshPos);
@@ -299,20 +217,14 @@ public class GuardAI : MonoBehaviour, IDamageable
                 }
 
                 SetAnimSpeed(0f);
-
-                Vector3 lookDir = targetNavMeshPos - transform.position;
-                lookDir.y = 0f;
-                if (lookDir != Vector3.zero)
-                {
-                    transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(lookDir), Time.deltaTime * 10f);
-                }
+                FaceTarget(targetNavMeshPos);
 
                 if (isPrimaryAttacker && distanceToPlayer <= attackRange)
                 {
                     if (Time.time >= lastAttackTime + attackCooldown)
                     {
                         lastAttackTime = Time.time;
-                        PerformAttack(target);
+                        PerformBaseAttack(0.2f, 1.4f);
                     }
                 }
             }
@@ -337,7 +249,7 @@ public class GuardAI : MonoBehaviour, IDamageable
 
         foreach (GuardAI guard in allGuards)
         {
-            if (guard != this && guard.CurrentState == GuardState.Chasing)
+            if (guard != this && guard != null && !guard.isDead && guard.CurrentState == GuardState.Chasing)
             {
                 float otherDistSqr = (guard.transform.position - targetPos).sqrMagnitude;
                 if (otherDistSqr < myDistSqr)
@@ -350,32 +262,7 @@ public class GuardAI : MonoBehaviour, IDamageable
         return true;
     }
 
-    private void PerformAttack(Transform target)
-    {
-        if (animator) animator.SetTrigger("Attack");
-        StartCoroutine(AttackHitboxRoutine());
-    }
-
-    private IEnumerator AttackHitboxRoutine()
-    {
-        float calculatedDamage = Random.Range(minDamage, maxDamage);
-
-        yield return new WaitForSeconds(0.2f);
-
-        if (weaponHitbox != null)
-        {
-            weaponHitbox.EnableHitbox(calculatedDamage);
-        }
-
-        yield return new WaitForSeconds(1.4f);
-
-        if (weaponHitbox != null)
-        {
-            weaponHitbox.DisableHitbox();
-        }
-    }
-
-    // --- INICJALIZACJA ---
+    // --- INICJALIZACJA WARTY I SNU ---
 
     public void InitDuty(GuardPost post, CastleShiftManager shiftManager)
     {
@@ -419,14 +306,14 @@ public class GuardAI : MonoBehaviour, IDamageable
 
     public void WakeUpAndGoToPost(GuardPost targetPost, float triggerDistance)
     {
-        if (CurrentState == GuardState.Chasing || CurrentState == GuardState.Alerted) return;
+        if (CurrentState == GuardState.Chasing || CurrentState == GuardState.Alerted || isDead) return;
         assignedPost = targetPost;
         CurrentState = GuardState.WalkingToPost;
 
         StartBehaviorCoroutine(WakeUpAndGoRoutine());
     }
 
-private IEnumerator WakeUpAndGoRoutine()
+    private IEnumerator WakeUpAndGoRoutine()
     {
         IsOffSpline = false;
 
@@ -506,7 +393,7 @@ private IEnumerator WakeUpAndGoRoutine()
         IsOffSpline = true;
         agent.SetDestination(finalPostPos);
 
-        float handoverDistance = 18.0f; 
+        float handoverDistance = 18.0f;
         bool isWaitingForHandover = false;
 
         while (true)
@@ -523,7 +410,6 @@ private IEnumerator WakeUpAndGoRoutine()
 
             if (isOldGuardValid && isWaitingForHandover)
             {
-                // A) Stary strażnik w trakcie operacji bramy -> Nowy zatrzymuje się i czeka
                 if (oldGuard.IsInteracting)
                 {
                     if (agent && agent.enabled)
@@ -536,14 +422,12 @@ private IEnumerator WakeUpAndGoRoutine()
                     continue;
                 }
 
-                // B) Stary strażnik zakończył operację -> Dopiero teraz odesłanie do kwatery
                 if (oldGuard.CurrentState == GuardState.OnDuty)
                 {
                     oldGuard.ReturnToQuarters();
                 }
             }
 
-            // Obsługa własnej interakcji nowego strażnika
             while (IsInteracting)
             {
                 if (agent && agent.enabled) { agent.isStopped = true; agent.velocity = Vector3.zero; }
@@ -551,7 +435,6 @@ private IEnumerator WakeUpAndGoRoutine()
                 yield return null;
             }
 
-            // Odblokowanie agenta po przejściu strefy oczekiwania
             if (agent && agent.enabled && agent.isStopped)
             {
                 agent.isStopped = false;
@@ -559,7 +442,6 @@ private IEnumerator WakeUpAndGoRoutine()
 
             UpdateAnimSpeed();
 
-            // Osiągnięcie posterunku przez nowego strażnika
             if (!agent.pathPending && agent.remainingDistance <= 0.2f)
             {
                 break;
@@ -567,11 +449,9 @@ private IEnumerator WakeUpAndGoRoutine()
 
             yield return null;
         }
-        // 4. PRZEJĘCIE POSTERUNKU
+
         TakeDutyAtPost();
     }
-
-    
 
     private void TakeDutyAtPost()
     {
@@ -589,7 +469,6 @@ private IEnumerator WakeUpAndGoRoutine()
         }
 
         transform.rotation = assignedPost.InitialRotation;
-
         SetAnimSpeed(0f);
     }
 
@@ -597,7 +476,7 @@ private IEnumerator WakeUpAndGoRoutine()
 
     public void ReturnToQuarters()
     {
-        if (CurrentState == GuardState.Chasing || CurrentState == GuardState.Alerted) return;
+        if (CurrentState == GuardState.Chasing || CurrentState == GuardState.Alerted || isDead) return;
         if (CurrentState == GuardState.WalkingToQuarters) return;
 
         CurrentState = GuardState.WalkingToQuarters;
@@ -606,9 +485,8 @@ private IEnumerator WakeUpAndGoRoutine()
         StartBehaviorCoroutine(ReturnToQuartersRoutine());
     }
 
-private IEnumerator ReturnToQuartersRoutine()
+    private IEnumerator ReturnToQuartersRoutine()
     {
-        // 1. Czekanie na zakończenie ewentualnej interakcji
         while (IsInteracting)
         {
             if (agent && agent.enabled)
@@ -620,7 +498,6 @@ private IEnumerator ReturnToQuartersRoutine()
             yield return null;
         }
 
-        // 2. Przywrócenie pełnej kontroli NavMeshAgent
         if (agent && agent.enabled)
         {
             agent.enabled = true;
@@ -641,14 +518,12 @@ private IEnumerator ReturnToQuartersRoutine()
 
         List<Vector3> splinePoints = GetSplinePathSegment(manager != null ? manager.SharedMainPath : null, startPostPos, bedPos, pathResolution);
 
-        // Powrót z posterunku do węzła Spline
         IsOffSpline = true;
 
         for (int i = 0; i < splinePoints.Count; i++)
         {
             agent.SetDestination(splinePoints[i]);
 
-            // Po osiągnięciu pierwszego punktu magistrali ustawienie IsOffSpline = false
             if (i > 0) IsOffSpline = false;
 
             while (true)
@@ -683,7 +558,6 @@ private IEnumerator ReturnToQuartersRoutine()
             }
         }
 
-        // Zjazd ze Spline do kwatery
         IsOffSpline = true;
         agent.SetDestination(bedPos);
 
@@ -739,7 +613,7 @@ private IEnumerator ReturnToQuartersRoutine()
     {
         List<Vector3> rawPoints = new List<Vector3>();
 
-        if (spline == null || spline.Spline == null || spline.Spline.Count == 0) 
+        if (spline == null || spline.Spline == null || spline.Spline.Count == 0)
             return rawPoints;
 
         Spline mainSpline = spline.Spline;
@@ -834,7 +708,7 @@ private IEnumerator ReturnToQuartersRoutine()
             if (count > 2)
             {
                 float progress = (float)i / (count - 1);
-                blendFactor = Mathf.Sin(progress * Mathf.PI); 
+                blendFactor = Mathf.Sin(progress * Mathf.PI);
             }
 
             Vector3 forward = Vector3.zero;
@@ -855,21 +729,5 @@ private IEnumerator ReturnToQuartersRoutine()
         }
 
         return offsetPoints;
-    }
-
-    // --- FUNKCJE POMOCNICZE ---
-
-    private void UpdateAnimSpeed()
-    {
-        if (animator && agent && agent.enabled)
-        {
-            float currentSpeed = agent.velocity.magnitude;
-            animator.SetFloat("Speed", currentSpeed, 0.15f, Time.deltaTime);
-        }
-    }
-
-    private void SetAnimSpeed(float speed)
-    {
-        if (animator) animator.SetFloat("Speed", speed);
     }
 }

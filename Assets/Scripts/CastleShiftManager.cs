@@ -4,6 +4,10 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Splines;
 
+/// <summary>
+/// Menedżer zmian wartowniczych na terenie zamku.
+/// Odpowiada za cykliczne delegowanie strażników ze strefy odpoczynku do posterunków i z powrotem.
+/// </summary>
 public class CastleShiftManager : MonoBehaviour
 {
     [Header("Ustawienia")]
@@ -22,35 +26,61 @@ public class CastleShiftManager : MonoBehaviour
 
     private void Start()
     {
-        GuardAI.hasNotifiedAllAlerted = false;
+        AlertController.ResetAlert();
         SpawnGuards();
         StartCoroutine(ShiftLoop());
     }
 
     private void SpawnGuards()
     {
-        int spawned = 0;
-
-        foreach (var post in posts)
+        if (guardPrefab == null)
         {
-            if (spawned >= totalGuards) break;
-
-            GuardAI guard = Instantiate(guardPrefab, post.Position.position, post.Position.rotation);
-            guard.gameObject.name = $"Guard_Post_{post.postName}";
-            guard.InitDuty(post, this);
-            guards.Add(guard);
-            spawned++;
+            Debug.LogError("CastleShiftManager: brak przypisanego guardPrefab w Inspektorze!");
+            return;
         }
 
-        foreach (var bed in beds)
-        {
-            if (spawned >= totalGuards) break;
+        int spawned = 0;
 
-            GuardAI guard = Instantiate(guardPrefab, bed.sleepAnchor.position, bed.sleepAnchor.rotation);
-            guard.gameObject.name = $"Guard_Sleeping_{spawned + 1}";
-            guard.InitSleeping(bed, this);
-            guards.Add(guard);
-            spawned++;
+        if (posts != null)
+        {
+            foreach (var post in posts)
+            {
+                if (post == null || post.Position == null) continue;
+                if (spawned >= totalGuards) break;
+
+                GuardAI guard = Instantiate(guardPrefab, post.Position.position, post.Position.rotation);
+                guard.gameObject.name = $"Guard_Post_{post.postName}";
+                guard.InitDuty(post, this);
+                guards.Add(guard);
+
+                if (AlertController.Instance != null)
+                {
+                    AlertController.Instance.RegisterGuard(guard);
+                }
+
+                spawned++;
+            }
+        }
+
+        if (beds != null)
+        {
+            foreach (var bed in beds)
+            {
+                if (bed == null || bed.sleepAnchor == null) continue;
+                if (spawned >= totalGuards) break;
+
+                GuardAI guard = Instantiate(guardPrefab, bed.sleepAnchor.position, bed.sleepAnchor.rotation);
+                guard.gameObject.name = $"Guard_Sleeping_{spawned + 1}";
+                guard.InitSleeping(bed, this);
+                guards.Add(guard);
+
+                if (AlertController.Instance != null)
+                {
+                    AlertController.Instance.RegisterGuard(guard);
+                }
+
+                spawned++;
+            }
         }
     }
 
@@ -71,15 +101,15 @@ public class CastleShiftManager : MonoBehaviour
             GuardPost postToChange = availablePosts[Random.Range(0, availablePosts.Count)];
 
             // 3. Losowanie śpiącego strażnika
-            var sleepingGuards = guards.Where(g => g.CurrentState == GuardState.Sleeping).ToList();
+            var sleepingGuards = guards.Where(g => g.CurrentState == GuardState.Sleeping && !g.isDead).ToList();
 
             if (sleepingGuards.Count > 0)
             {
                 GuardAI newGuard = sleepingGuards[Random.Range(0, sleepingGuards.Count)];
 
                 // REZERWACJA POSTERUNKU
-                postToChange.incomingGuard = newGuard; 
-                
+                postToChange.incomingGuard = newGuard;
+
                 newGuard.WakeUpAndGoToPost(postToChange, handoverTriggerDistance);
             }
         }

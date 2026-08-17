@@ -1,5 +1,4 @@
-public enum EnemyType 
-{ 
+public enum EnemyType { 
     Guard,
     Dogman,
     DarkMage

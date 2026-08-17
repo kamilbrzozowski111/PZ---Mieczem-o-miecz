@@ -1,6 +1,10 @@
 using System.Collections;
 using UnityEngine;
 
+/// <summary>
+/// Kontroler posterunku przy bramie zamkowej.
+/// Odpowiada za weryfikację przepustki gracza i koordynację otwarcia bramy przez pełniącego służbę strażnika.
+/// </summary>
 public class CastleGatePostController : MonoBehaviour
 {
     [Header("Komponenty")]
@@ -14,26 +18,16 @@ public class CastleGatePostController : MonoBehaviour
     private float lastNoPassMessageTime = -10.0f;
     private bool isProcessingGate = false;
     private bool hasBeenOpened = false;
-    private Transform playerTransform;
-
-    private void Start()
-    {
-        if (Camera.main != null)
-        {
-            playerTransform = Camera.main.transform;
-        }
-    }
 
     private void Update()
     {
         if (hasBeenOpened || gate == null || gate.IsOpen || isProcessingGate) return;
 
-        if (playerTransform == null)
-        {
-            if (Camera.main != null) playerTransform = Camera.main.transform;
-            return;
-        }
+        Transform playerTransform = PlayerTargetProvider.GetPlayerTransform();
+        if (playerTransform == null) return;
 
+        // Jeśli w zamku trwa stan alarmu, brama nie zostanie otwarta pokojowo
+        if (AlertController.Instance != null && AlertController.Instance.IsAlerted) return;
         if (GuardAI.hasNotifiedAllAlerted) return;
         if (guardPost == null) return;
 
@@ -55,7 +49,7 @@ public class CastleGatePostController : MonoBehaviour
 
         if (activeGuard == null) return;
 
-        // 2. Sprawdzenie dystansu gracza
+        // 2. Sprawdzenie dystansu gracza do posterunku
         float distanceToPost = Vector3.Distance(playerTransform.position, guardPost.Position.position);
         if (distanceToPost > triggerDistance) return;
 
@@ -74,7 +68,7 @@ public class CastleGatePostController : MonoBehaviour
 
     private bool CheckPlayerPassStatus()
     {
-        PlayerUIWidget uiWidget = FindFirstObjectByType<PlayerUIWidget>();
+        PlayerUIWidget uiWidget = PlayerUIWidget.Instance != null ? PlayerUIWidget.Instance : FindFirstObjectByType<PlayerUIWidget>();
         return uiWidget != null && uiWidget.HasPass;
     }
 

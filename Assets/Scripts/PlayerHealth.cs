@@ -21,7 +21,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
 
     private void Start()
     {
-        // Wywołanie startowe, aby UI zainicjalizowało pełne zdrowie
+        // Wywołanie startowe, inicjalizacja UI
         OnHealthChanged?.Invoke(currentHealth, maxHealth);
     }
     private bool hasWarnedLowHealth = false;
@@ -30,8 +30,6 @@ public class PlayerHealth : MonoBehaviour, IDamageable
         if (currentHealth <= 0) return;
 
         currentHealth = Mathf.Max(0f, currentHealth - damage);
-        
-        // Powiadamiamy UI o aktualizacji HP
         OnHealthChanged?.Invoke(currentHealth, maxHealth);
 
 

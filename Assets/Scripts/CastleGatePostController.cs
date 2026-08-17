@@ -8,11 +8,12 @@ public class CastleGatePostController : MonoBehaviour
     [SerializeField] private CastleGate gate;
 
     [Header("Ustawienia Interakcji")]
-    [SerializeField] private float triggerDistance = 24.0f; // Dostosowane do skali 4x
+    [SerializeField] private float triggerDistance = 32.0f;
     [SerializeField] private float noPassMessageCooldown = 5.0f;
 
     private float lastNoPassMessageTime = -10.0f;
     private bool isProcessingGate = false;
+    private bool hasBeenOpened = false;
     private Transform playerTransform;
 
     private void Start()
@@ -25,7 +26,7 @@ public class CastleGatePostController : MonoBehaviour
 
     private void Update()
     {
-        if (gate == null || gate.IsOpen || isProcessingGate) return;
+        if (hasBeenOpened || gate == null || gate.IsOpen || isProcessingGate) return;
 
         if (playerTransform == null)
         {
@@ -61,6 +62,8 @@ public class CastleGatePostController : MonoBehaviour
         // 3. Weryfikacja przepustki
         if (CheckPlayerPassStatus())
         {
+            hasBeenOpened = true;
+            NotificationManager.Show("Przepustka została uznana, trwa otwieranie bramy wjazdowej!", NotificationType.Info);
             StartCoroutine(OpenGateSequence(activeGuard));
         }
         else
@@ -88,9 +91,6 @@ public class CastleGatePostController : MonoBehaviour
     {
         isProcessingGate = true;
 
-        NotificationManager.Show("Dokument został uznany, trwa otwieranie bramy wjazdowej!", NotificationType.Info);
-
-        // Jeśli obsługę przejął nowy strażnik, czekamy aż dotrze na posterunek i obejmie służbę
         while (guard != null && guard.CurrentState == GuardState.WalkingToPost)
         {
             yield return null;
@@ -102,11 +102,14 @@ public class CastleGatePostController : MonoBehaviour
             yield break;
         }
 
+        // 1. Zablokowanie ruchu i oznaczenie interakcji
         guard.SetInteracting(true);
         guard.TriggerButtonPushAnimation();
 
-        yield return new WaitForSeconds(6.0f);
+        // 2. Czekanie na animację przycisku
+        yield return new WaitForSeconds(7.2f);
 
+        // 3. Otwieranie bramy
         if (gate != null)
         {
             yield return StartCoroutine(gate.OpenGateRoutine());

@@ -7,6 +7,9 @@ public class PlayerUIWidget : MonoBehaviour
     public static PlayerUIWidget Instance { get; private set; }
     public bool HasPass { get; private set; } = false;
 
+    [SerializeField] private GameObject healthGroup;
+    [SerializeField] private GameObject statsIconGroup;
+
     [Header("Pasek i Licznik Życia")]
     [SerializeField] private Image healthBarFill;
     [SerializeField] private TextMeshProUGUI healthText;
@@ -24,9 +27,13 @@ public class PlayerUIWidget : MonoBehaviour
         passIconImage.color = Color.white;
     }
 
+    public void HideHUD(){
+        if (healthGroup != null) healthGroup.SetActive(false);
+        if (statsIconGroup != null) statsIconGroup.SetActive(false);
+    }
+
     private void Awake(){
-        if (Instance != null && Instance != this) 
-        { 
+        if (Instance != null && Instance != this) { 
             Destroy(gameObject); 
             return; 
         }
@@ -45,8 +52,7 @@ public class PlayerUIWidget : MonoBehaviour
         UpdatePassStatus(false);
     }
 
-    private void UpdateHealthUI(float currentHealth, float maxHealth)
-    {
+    private void UpdateHealthUI(float currentHealth, float maxHealth){
         float ratio = Mathf.Clamp01(currentHealth / maxHealth);
 
         if (healthBarFill != null) healthBarFill.fillAmount = ratio;

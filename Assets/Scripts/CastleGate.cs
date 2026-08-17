@@ -10,27 +10,51 @@ public class CastleGate : MonoBehaviour
     [SerializeField] private Vector3 rotationAxis = Vector3.up;
 
     public bool IsOpen { get; private set; } = false;
-    public bool IsOpening { get; private set; } = false;
+
+    private Quaternion closedRotation;
+    private Quaternion openRotation;
+    private Transform targetTransform;
+
+    private void Awake()
+    {
+        targetTransform = gateTransform != null ? gateTransform : transform;
+        closedRotation = targetTransform.localRotation;
+        openRotation = closedRotation * Quaternion.Euler(rotationAxis * openAngle);
+    }
 
     public IEnumerator OpenGateRoutine()
     {
-        if (IsOpen || IsOpening) yield break;
+        if (IsOpen) yield break;
 
-        IsOpening = true;
-        Transform target = gateTransform != null ? gateTransform : transform;
-        
-        Quaternion startRotation = target.localRotation;
-        Quaternion targetRotation = startRotation * Quaternion.Euler(rotationAxis * openAngle);
-
+        Quaternion startRotation = targetTransform.localRotation;
         float progress = 0f;
+
         while (progress < 1f)
         {
             progress += Time.deltaTime * openSpeed;
-            target.localRotation = Quaternion.Slerp(startRotation, targetRotation, progress);
+            targetTransform.localRotation = Quaternion.Slerp(startRotation, openRotation, progress);
             yield return null;
         }
 
+        targetTransform.localRotation = openRotation;
         IsOpen = true;
-        IsOpening = false;
+    }
+
+    public IEnumerator CloseGateRoutine()
+    {
+        if (!IsOpen) yield break;
+
+        Quaternion startRotation = targetTransform.localRotation;
+        float progress = 0f;
+
+        while (progress < 1f)
+        {
+            progress += Time.deltaTime * openSpeed;
+            targetTransform.localRotation = Quaternion.Slerp(startRotation, closedRotation, progress);
+            yield return null;
+        }
+
+        targetTransform.localRotation = closedRotation;
+        IsOpen = false;
     }
 }

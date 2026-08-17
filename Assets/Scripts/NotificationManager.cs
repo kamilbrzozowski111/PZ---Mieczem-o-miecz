@@ -58,7 +58,6 @@ public class NotificationManager : MonoBehaviour
         }
     }
 
-    // --- ENQUEUE & DISPLAY ROUTINE ---
 
     public void EnqueueNotification(string message, float duration, Color color)
     {

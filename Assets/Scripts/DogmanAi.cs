@@ -158,13 +158,11 @@ public class DogmanAI : MonoBehaviour, IDamageable
 
                 Vector3 lookDir = targetNavMeshPos - transform.position;
                 lookDir.y = 0f;
-                if (lookDir != Vector3.zero)
-                {
+                if (lookDir != Vector3.zero){
                     transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(lookDir), Time.deltaTime * 10f);
                 }
 
-                if (Time.time >= lastAttackTime + attackCooldown)
-                {
+                if (Time.time >= lastAttackTime + attackCooldown){
                     lastAttackTime = Time.time;
                     PerformAttack();
                 }
@@ -175,7 +173,7 @@ public class DogmanAI : MonoBehaviour, IDamageable
                 {
                     agent.isStopped = false;
                     agent.SetDestination(targetNavMeshPos);
-                    UpdateAnimSpeed(); // Aktualizacja animacji tylko w ruchu
+                    UpdateAnimSpeed();
                 }
             }
 
@@ -193,7 +191,7 @@ public class DogmanAI : MonoBehaviour, IDamageable
     {
         float calculatedDamage = Random.Range(minDamage, maxDamage);
 
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.2f);
 
         if (weaponHitbox != null)
         {
@@ -208,7 +206,6 @@ public class DogmanAI : MonoBehaviour, IDamageable
         }
     }
 
-    // --- METODY ANIMACJI (IDENTYCZNE JAK U STRAŻNIKA) ---
 
     private void UpdateAnimSpeed()
     {
@@ -219,8 +216,7 @@ public class DogmanAI : MonoBehaviour, IDamageable
         }
     }
 
-    private void SetAnimSpeed(float speed)
-    {
+    private void SetAnimSpeed(float speed){
         if (animator) animator.SetFloat("Speed", speed);
     }
 
@@ -233,13 +229,11 @@ public class DogmanAI : MonoBehaviour, IDamageable
         health -= damage;
 
         Transform player = Camera.main != null ? Camera.main.transform : null;
-        if (player != null && CurrentState == DogmanState.Patrol)
-        {
+        if (player != null && CurrentState == DogmanState.Patrol){
             TriggerCombat(player);
         }
 
-        if (health <= 0f)
-        {
+        if (health <= 0f){
             Die();
         }
     }
@@ -255,15 +249,13 @@ public class DogmanAI : MonoBehaviour, IDamageable
         if (agent != null) agent.enabled = false;
         if (weaponHitbox != null) weaponHitbox.DisableHitbox();
 
-        foreach (Collider c in GetComponentsInChildren<Collider>())
-        {
+        foreach (Collider c in GetComponentsInChildren<Collider>()){
             c.enabled = false;
         }
 
         if (animator != null) animator.SetTrigger("Die");
 
-        if (megalithPass != null)
-        {
+        if (megalithPass != null){
             megalithPass.UnlockPass();
         }
 

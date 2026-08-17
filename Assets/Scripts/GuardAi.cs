@@ -360,7 +360,7 @@ public class GuardAI : MonoBehaviour, IDamageable
     {
         float calculatedDamage = Random.Range(minDamage, maxDamage);
 
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.2f);
 
         if (weaponHitbox != null)
         {
@@ -506,37 +506,40 @@ private IEnumerator WakeUpAndGoRoutine()
         IsOffSpline = true;
         agent.SetDestination(finalPostPos);
 
+        float handoverDistance = 18.0f; 
+        bool isWaitingForHandover = false;
+
         while (true)
         {
             GuardAI oldGuard = assignedPost != null ? assignedPost.currentGuard : null;
             bool isOldGuardValid = (oldGuard != null && oldGuard != this && !oldGuard.isDead);
 
-            if (isOldGuardValid)
-            {
-                bool isOldGuardBusy = oldGuard.IsInteracting;
+            float distToPost = Vector3.Distance(transform.position, finalPostPos);
 
-                // A) Jeśli stary strażnik wykonuje interakcję (otwiera bramę), nowy zatrzymuje się
-                if (isOldGuardBusy)
+            if (distToPost <= handoverDistance)
+            {
+                isWaitingForHandover = true;
+            }
+
+            if (isOldGuardValid && isWaitingForHandover)
+            {
+                // A) Stary strażnik w trakcie operacji bramy -> Nowy zatrzymuje się i czeka
+                if (oldGuard.IsInteracting)
                 {
-                    if (!agent.pathPending && agent.remainingDistance <= 7.5f)
+                    if (agent && agent.enabled)
                     {
-                        if (agent && agent.enabled)
-                        {
-                            agent.isStopped = true;
-                            agent.velocity = Vector3.zero;
-                        }
-                        SetAnimSpeed(0f);
-                        yield return null;
-                        continue; // Czekamy w pętli aż IsInteracting starego straznika zmieni się na false
+                        agent.isStopped = true;
+                        agent.velocity = Vector3.zero;
                     }
+                    SetAnimSpeed(0f);
+                    yield return null;
+                    continue;
                 }
-                else if (oldGuard.CurrentState == GuardState.OnDuty)
+
+                // B) Stary strażnik zakończył operację -> Dopiero teraz odesłanie do kwatery
+                if (oldGuard.CurrentState == GuardState.OnDuty)
                 {
-                    // B)  
-                    if (!agent.pathPending && agent.remainingDistance <= 8.0f)
-                    {
-                        oldGuard.ReturnToQuarters();
-                    }
+                    oldGuard.ReturnToQuarters();
                 }
             }
 
@@ -548,7 +551,7 @@ private IEnumerator WakeUpAndGoRoutine()
                 yield return null;
             }
 
-            // Wznawiamy marsz po postoju
+            // Odblokowanie agenta po przejściu strefy oczekiwania
             if (agent && agent.enabled && agent.isStopped)
             {
                 agent.isStopped = false;
@@ -556,7 +559,7 @@ private IEnumerator WakeUpAndGoRoutine()
 
             UpdateAnimSpeed();
 
-            // Osiągnięcie posterunku
+            // Osiągnięcie posterunku przez nowego strażnika
             if (!agent.pathPending && agent.remainingDistance <= 0.2f)
             {
                 break;
@@ -564,10 +567,11 @@ private IEnumerator WakeUpAndGoRoutine()
 
             yield return null;
         }
-
         // 4. PRZEJĘCIE POSTERUNKU
         TakeDutyAtPost();
     }
+
+    
 
     private void TakeDutyAtPost()
     {
@@ -604,7 +608,7 @@ private IEnumerator WakeUpAndGoRoutine()
 
 private IEnumerator ReturnToQuartersRoutine()
     {
-        // 1. Czekamy na zakończenie ewentualnej animacji/interakcji
+        // 1. Czekanie na zakończenie ewentualnej interakcji
         while (IsInteracting)
         {
             if (agent && agent.enabled)
@@ -616,7 +620,7 @@ private IEnumerator ReturnToQuartersRoutine()
             yield return null;
         }
 
-        // 2. Przywrócenie pełnej kontroli NavMeshAgenta
+        // 2. Przywrócenie pełnej kontroli NavMeshAgent
         if (agent && agent.enabled)
         {
             agent.enabled = true;
@@ -644,7 +648,7 @@ private IEnumerator ReturnToQuartersRoutine()
         {
             agent.SetDestination(splinePoints[i]);
 
-            // Po osiągnięciu pierwszego punktu magistrali ustawiamy IsOffSpline = false
+            // Po osiągnięciu pierwszego punktu magistrali ustawienie IsOffSpline = false
             if (i > 0) IsOffSpline = false;
 
             while (true)

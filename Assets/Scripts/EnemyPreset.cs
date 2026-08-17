@@ -2,6 +2,13 @@ using UnityEngine;
 using System.Collections.Generic;
 using UnityEditor;
 
+[System.Serializable]
+public class EnemyAttack
+{
+    [Tooltip("Alternatively, use this if you trigger animations by string name in an Animator Controller.")]
+    public string animatorTriggerName;
+}
+
 [CreateAssetMenu(fileName = "NewEnemyPreset", menuName = "ScriptableObjects/EnemyPreset")]
 public class EnemyPreset : ScriptableObject
 {
@@ -17,17 +24,20 @@ public class EnemyPreset : ScriptableObject
     public float duelRange = 3f;
     public GameObject meleeWeapon;
 
+    [Header("Attacks & Animations")]
+    public List<EnemyAttack> availableAttacks = new List<EnemyAttack>();
+
     [Header("Sequence Logic")]
     public int minAttackPerSequence = 1;
     public int maxAttackPerSequence = 2;
 
     [Tooltip("Time in seconds between attack sequences")]
-    public float minTimeBetweenSequences = 3.0f; // 3000ms
-    public float maxTimeBetweenSequences = 5.0f; // 5000ms
+    public float minTimeBetweenSequences = 3.0f;
+    public float maxTimeBetweenSequences = 5.0f;
 
     [Tooltip("Time in seconds between individual attacks in a sequence")]
-    public float minTimeBetweenAttacks = 0.7f;   // 700ms
-    public float maxTimeBetweenAttacks = 1.2f;   // 1200ms
+    public float minTimeBetweenAttacks = 0.7f;
+    public float maxTimeBetweenAttacks = 1.2f;
 
     [Header("Special Behaviors")]
     public MonoScript specialBehavior;

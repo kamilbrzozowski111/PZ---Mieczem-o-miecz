@@ -18,13 +18,19 @@ MonoBehaviour:
   minArcMovement: -360
   maxArcMovement: 360
   energyPoints: 3
-  duelRange: 3
-  meleeWeapon: {fileID: 0}
-  minAttackPerSequence: 1
-  maxAttackPerSequence: 3
-  minTimeBetweenSequences: 3
-  maxTimeBetweenSequences: 5
-  minTimeBetweenAttacks: 0.7
-  maxTimeBetweenAttacks: 1.2
+  duelRange: 1.5
+  meleeWeapon: {fileID: 8977739097397808505, guid: 9c2f2ba188f3b8a4abbebc879d4ad631, type: 3}
+  availableAttacks:
+  - animatorTriggerName: Pierce
+  - animatorTriggerName: Right
+  - animatorTriggerName: TopToBottom
+  - animatorTriggerName: BottomToTop
+  - animatorTriggerName: UpRight
+  minAttackPerSequence: 3
+  maxAttackPerSequence: 6
+  minTimeBetweenSequences: 2
+  maxTimeBetweenSequences: 4
+  minTimeBetweenAttacks: 0.2
+  maxTimeBetweenAttacks: 0.6
   specialBehavior: {fileID: 0}
   specialProperties: []

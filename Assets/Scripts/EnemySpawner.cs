@@ -17,7 +17,7 @@ public class EnemySpawner : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!_hasSpawned && other.CompareTag("FakePlayer"))
+        if (!_hasSpawned && other.CompareTag("Player"))
         {
             SpawnEnemy();
             _hasSpawned = true;
@@ -26,7 +26,11 @@ public class EnemySpawner : MonoBehaviour
 
     private void SpawnEnemy()
     {
-        if (enemyPrefab == null || spawnPoints.Length == 0 || possiblePresets.Length == 0) return;
+        if (enemyPrefab == null || spawnPoints.Length == 0 || possiblePresets.Length == 0)
+        {
+            Debug.LogWarning($"[{gameObject.name}] Spawner missing references! Check prefab, spawn points, or presets.");
+            return;
+        }
 
         // Pick random point and random preset
         Transform point = spawnPoints[Random.Range(0, spawnPoints.Length)];
@@ -36,11 +40,18 @@ public class EnemySpawner : MonoBehaviour
         GameObject newEnemy = Instantiate(enemyPrefab, point.position, point.rotation);
         newEnemy.SetActive(true);
 
-        // Inject the preset into the AI
-        EnemyAI ai = newEnemy.GetComponent<EnemyAI>();
+        // FIX: Look deep inside the hierarchy if EnemyAI isn't explicitly on the root object
+        EnemyAI ai = newEnemy.GetComponentInChildren<EnemyAI>();
+
         if (ai != null)
         {
+            // Pass the data down to handle weapon spawning and stat configuration
             ai.Initialize(chosenPreset);
+            Debug.Log($"<color=green>[{gameObject.name}]</color> Successfully spawned enemy initialized with preset: <b>{chosenPreset.name}</b>");
+        }
+        else
+        {
+            Debug.LogError($"<color=red>[{gameObject.name}]</color> Spawned enemy prefab, but could not find the <b>EnemyAI</b> component on it or its children!");
         }
     }
 

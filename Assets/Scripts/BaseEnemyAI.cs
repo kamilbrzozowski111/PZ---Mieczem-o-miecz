@@ -56,15 +56,13 @@ public abstract class BaseEnemyAI : MonoBehaviour, IDamageable
     /// <summary>
     /// Implementacja interfejsu IDamageable - redukcja życia i obsługa śmierci.
     /// </summary>
-    public virtual void TakeDamage(float damage, Vector3 hitPoint, Vector3 hitNormal)
-    {
+    public virtual void TakeDamage(float damage, Vector3 hitPoint, Vector3 hitNormal){
         if (isDead) return;
 
         health -= damage;
         OnDamaged(damage, hitPoint, hitNormal);
 
-        if (health <= 0f)
-        {
+        if (health <= 0f){
             Die();
         }
     }
@@ -107,10 +105,8 @@ public abstract class BaseEnemyAI : MonoBehaviour, IDamageable
     /// <summary>
     /// Aktualizuje parametr prędkości w Animatorze na podstawie prędkości NavMeshAgenta.
     /// </summary>
-    protected void UpdateAnimSpeed()
-    {
-        if (animator && agent && agent.enabled)
-        {
+    protected void UpdateAnimSpeed(){
+        if (animator && agent && agent.enabled){
             float currentSpeed = agent.velocity.magnitude;
             animator.SetFloat("Speed", currentSpeed, 0.15f, Time.deltaTime);
         }
@@ -163,8 +159,7 @@ public abstract class BaseEnemyAI : MonoBehaviour, IDamageable
     /// <summary>
     /// Procedura włączania i wyłączania hitboxa broni z kalkulacją losowych obrażeń.
     /// </summary>
-    protected virtual IEnumerator AttackHitboxRoutine(float enableDelay = 0.2f, float disableDelay = 1.4f)
-    {
+    protected virtual IEnumerator AttackHitboxRoutine(float enableDelay = 0.2f, float disableDelay = 1.4f){
         float calculatedDamage = Random.Range(minDamage, maxDamage);
 
         if (enableDelay > 0f){

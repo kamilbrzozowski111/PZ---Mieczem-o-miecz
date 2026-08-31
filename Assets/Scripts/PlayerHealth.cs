@@ -2,8 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PlayerHealth : MonoBehaviour, IDamageable
-{
+public class PlayerHealth : MonoBehaviour, IDamageable{
     [Header("Statystyki Gracza")]
     [SerializeField] private float maxHealth = 100f;
     private float currentHealth;
@@ -14,19 +13,16 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     public float CurrentHealth => currentHealth;
     public float MaxHealth => maxHealth;
 
-    private void Awake()
-    {
+    private void Awake(){
         currentHealth = maxHealth;
     }
 
-    private void Start()
-    {
+    private void Start(){
         // Wywołanie startowe, inicjalizacja UI
         OnHealthChanged?.Invoke(currentHealth, maxHealth);
     }
     private bool hasWarnedLowHealth = false;
-    public void TakeDamage(float damage, Vector3 hitPoint, Vector3 hitNormal)
-    {
+    public void TakeDamage(float damage, Vector3 hitPoint, Vector3 hitNormal){
         if (currentHealth <= 0) return;
 
         currentHealth = Mathf.Max(0f, currentHealth - damage);
@@ -38,14 +34,12 @@ public class PlayerHealth : MonoBehaviour, IDamageable
              NotificationManager.Show("Uwaga: Twój poziom zdrowia jest niski!", NotificationType.Warning);
         }
 
-        if (currentHealth <= 0)
-        {
+        if (currentHealth <= 0){
             Die();
         }
     }
 
-    private void Die()
-    {
+    private void Die(){
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

@@ -1,7 +1,6 @@
 using UnityEngine;
 
-public class ObjectRotator : MonoBehaviour
-{
+public class ObjectRotator : MonoBehaviour{
     [Header("Ustawienia Obrotu")]
     [Tooltip("Oś obrotu (domyślnie Vector3.up, czyli oś Y)")]
     [SerializeField] private Vector3 rotationAxis = Vector3.up;
@@ -15,32 +14,26 @@ public class ObjectRotator : MonoBehaviour
     [Header("Stan")]
     [SerializeField] private bool isRotating = true;
 
-    public bool IsRotating
-    {
+    public bool IsRotating{
         get => isRotating;
         set => isRotating = value;
     }
 
-    private void Update()
-    {
+    private void Update(){
         if (!isRotating) return;
-
         transform.Rotate(rotationAxis * (rotationSpeed * Time.deltaTime), rotationSpace);
     }
 
 
-    public void EnableRotation()
-    {
+    public void EnableRotation(){
         isRotating = true;
     }
 
-    public void DisableRotation()
-    {
+    public void DisableRotation(){
         isRotating = false;
     }
 
-    public void ToggleRotation()
-    {
+    public void ToggleRotation(){
         isRotating = !isRotating;
     }
 }

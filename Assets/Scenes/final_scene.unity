@@ -1899,6 +1899,10 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6432886653107113866, guid: e63c3816eadd215428c5033dafbbd27b, type: 3}
+      propertyPath: m_Name
+      value: plyta_wyspowa1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6432886653107113866, guid: e63c3816eadd215428c5033dafbbd27b, type: 3}
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
@@ -6339,7 +6343,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80cd89f1009977e4983088925b9a994e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 260.86
+      value: 260.77
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80cd89f1009977e4983088925b9a994e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6388,6 +6392,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 80cd89f1009977e4983088925b9a994e, type: 3}
       propertyPath: m_Name
       value: gate_switch_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 80cd89f1009977e4983088925b9a994e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2872642575519186613, guid: 80cd89f1009977e4983088925b9a994e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7027,6 +7035,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 80cd89f1009977e4983088925b9a994e, type: 3}
       propertyPath: m_Name
       value: gate_switch_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 80cd89f1009977e4983088925b9a994e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2872642575519186613, guid: 80cd89f1009977e4983088925b9a994e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -17120,6 +17132,61 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1588888935}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1592724862
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1592724864}
+  - component: {fileID: 1592724863}
+  m_Layer: 0
+  m_Name: Unity-RecorderBindings
+  m_TagString: EditorOnly
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1592724863
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592724862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a24bc7e8573847adbdf1198360b3c794, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Recorder::UnityEngine.Recorder.RecorderBindings
+  m_References:
+    m_Keys:
+    - a2c79af4d0a1eef438213b21c76e3e34
+    - 6cd2732f7a12ce844b88d6ff1e228edc
+    - 8bf11776443f8f64f9117b2d08439d00
+    - a71c89ced31bfe7488999be3ca2db467
+    m_Values:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+--- !u!4 &1592724864
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592724862}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1594526467 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2585378039139310489, guid: e63c3816eadd215428c5033dafbbd27b, type: 3}
@@ -22208,3 +22275,4 @@ SceneRoots:
   - {fileID: 282136031}
   - {fileID: 2053710083945731694}
   - {fileID: 918294625285510058}
+  - {fileID: 1592724864}

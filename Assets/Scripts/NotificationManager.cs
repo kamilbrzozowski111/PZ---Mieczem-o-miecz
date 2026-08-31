@@ -5,15 +5,13 @@ using UnityEngine.UI;
 using TMPro;
 
 // Typy powiadomień
-public enum NotificationType
-{
+public enum NotificationType{
     Info,
     Warning,
     Danger
 }
 
-public class NotificationManager : MonoBehaviour
-{
+public class NotificationManager : MonoBehaviour{
     public static NotificationManager Instance { get; private set; }
 
     [Header("Komponenty UI")]
@@ -32,8 +30,7 @@ public class NotificationManager : MonoBehaviour
     private readonly Queue<(string message, float duration, Color color)> queue = new Queue<(string, float, Color)>();
     private bool isDisplaying = false;
 
-    private void Awake()
-    {
+    private void Awake(){
         if (Instance != null && Instance != this) { Destroy(gameObject); return; }
         Instance = this;
 
@@ -42,56 +39,45 @@ public class NotificationManager : MonoBehaviour
 
 
     // 1. Domyślne wywołanie z typem powiadomienia
-    public static void Show(string message, NotificationType type = NotificationType.Info, float duration = 3.0f)
-    {
-        if (Instance != null)
-        {
+    public static void Show(string message, NotificationType type = NotificationType.Info, float duration = 3.0f){
+        if (Instance != null){
             Color selectedColor = Instance.GetColorForType(type);
             Instance.EnqueueNotification(message, duration, selectedColor);
         }
     }
-    public static void Show(string message, Color customColor, float duration = 3.0f)
-    {
-        if (Instance != null)
-        {
+    public static void Show(string message, Color customColor, float duration = 3.0f){
+        if (Instance != null){
             Instance.EnqueueNotification(message, duration, customColor);
         }
     }
 
 
-    public void EnqueueNotification(string message, float duration, Color color)
-    {
+    public void EnqueueNotification(string message, float duration, Color color){
         queue.Enqueue((message, duration, color));
-        if (!isDisplaying)
-        {
+        if (!isDisplaying){
             StartCoroutine(DisplayRoutine());
         }
     }
 
-    private IEnumerator DisplayRoutine()
-    {
+    private IEnumerator DisplayRoutine(){
         isDisplaying = true;
 
-        while (queue.Count > 0)
-        {
+        while (queue.Count > 0){
             var item = queue.Dequeue();
 
-            if (notificationText != null)
-            {
+            if (notificationText != null){
                 notificationText.text = item.message;
                 notificationText.color = item.color;
             }
 
-            while (canvasGroup != null && canvasGroup.alpha < 1f)
-            {
+            while (canvasGroup != null && canvasGroup.alpha < 1f){
                 canvasGroup.alpha += Time.deltaTime / fadeSpeed;
                 yield return null;
             }
 
             yield return new WaitForSeconds(item.duration);
 
-            while (canvasGroup != null && canvasGroup.alpha > 0f)
-            {
+            while (canvasGroup != null && canvasGroup.alpha > 0f){
                 canvasGroup.alpha -= Time.deltaTime / fadeSpeed;
                 yield return null;
             }
@@ -100,10 +86,8 @@ public class NotificationManager : MonoBehaviour
         isDisplaying = false;
     }
 
-    private Color GetColorForType(NotificationType type)
-    {
-        switch (type)
-        {
+    private Color GetColorForType(NotificationType type){
+        switch (type){
             case NotificationType.Info:
                 return infoColor;
             case NotificationType.Warning:

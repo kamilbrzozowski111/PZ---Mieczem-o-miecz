@@ -8,8 +8,7 @@ using UnityEngine.Splines;
 /// Menedżer zmian wartowniczych na terenie zamku.
 /// Odpowiada za cykliczne delegowanie strażników ze strefy odpoczynku do posterunków i z powrotem.
 /// </summary>
-public class CastleShiftManager : MonoBehaviour
-{
+public class CastleShiftManager : MonoBehaviour{
     [Header("Ustawienia")]
     [SerializeField] private GuardAI guardPrefab;
     [SerializeField] private int totalGuards = 40;
@@ -24,27 +23,22 @@ public class CastleShiftManager : MonoBehaviour
     [SerializeField] private SplineContainer sharedMainPath;
     public SplineContainer SharedMainPath => sharedMainPath;
 
-    private void Start()
-    {
+    private void Start(){
         AlertController.ResetAlert();
         SpawnGuards();
         StartCoroutine(ShiftLoop());
     }
 
-    private void SpawnGuards()
-    {
-        if (guardPrefab == null)
-        {
+    private void SpawnGuards(){
+        if (guardPrefab == null){
             Debug.LogError("CastleShiftManager: brak przypisanego guardPrefab w Inspektorze!");
             return;
         }
 
         int spawned = 0;
 
-        if (posts != null)
-        {
-            foreach (var post in posts)
-            {
+        if (posts != null){
+            foreach (var post in posts){
                 if (post == null || post.Position == null) continue;
                 if (spawned >= totalGuards) break;
 
@@ -53,8 +47,7 @@ public class CastleShiftManager : MonoBehaviour
                 guard.InitDuty(post, this);
                 guards.Add(guard);
 
-                if (AlertController.Instance != null)
-                {
+                if (AlertController.Instance != null){
                     AlertController.Instance.RegisterGuard(guard);
                 }
 
@@ -62,10 +55,8 @@ public class CastleShiftManager : MonoBehaviour
             }
         }
 
-        if (beds != null)
-        {
-            foreach (var bed in beds)
-            {
+        if (beds != null){
+            foreach (var bed in beds){
                 if (bed == null || bed.sleepAnchor == null) continue;
                 if (spawned >= totalGuards) break;
 
@@ -74,8 +65,7 @@ public class CastleShiftManager : MonoBehaviour
                 guard.InitSleeping(bed, this);
                 guards.Add(guard);
 
-                if (AlertController.Instance != null)
-                {
+                if (AlertController.Instance != null){
                     AlertController.Instance.RegisterGuard(guard);
                 }
 
@@ -84,10 +74,8 @@ public class CastleShiftManager : MonoBehaviour
         }
     }
 
-    private IEnumerator ShiftLoop()
-    {
-        while (true)
-        {
+    private IEnumerator ShiftLoop(){
+        while (true){
             yield return new WaitForSeconds(shiftInterval);
 
             if (posts.Count == 0) continue;
@@ -100,11 +88,10 @@ public class CastleShiftManager : MonoBehaviour
             // 2. Wybieranie losowego dostępnego posterunku
             GuardPost postToChange = availablePosts[Random.Range(0, availablePosts.Count)];
 
-            // 3. Losowanie śpiącego strażnika
+            // 3. Losowanie dostępnego strażnika
             var sleepingGuards = guards.Where(g => g.CurrentState == GuardState.Sleeping && !g.isDead).ToList();
 
-            if (sleepingGuards.Count > 0)
-            {
+            if (sleepingGuards.Count > 0){
                 GuardAI newGuard = sleepingGuards[Random.Range(0, sleepingGuards.Count)];
 
                 // REZERWACJA POSTERUNKU
@@ -115,18 +102,15 @@ public class CastleShiftManager : MonoBehaviour
         }
     }
 
-    public Bed GetAndReserveFreeBed()
-    {
+    public Bed GetAndReserveFreeBed(){
         Bed freeBed = beds.FirstOrDefault(b => b.IsAvailable);
-        if (freeBed != null)
-        {
+        if (freeBed != null){
             freeBed.IsReserved = true;
             return freeBed;
         }
 
         Bed fallbackBed = beds.FirstOrDefault(b => !b.IsOccupied);
-        if (fallbackBed != null)
-        {
+        if (fallbackBed != null){
             fallbackBed.IsReserved = true;
             return fallbackBed;
         }

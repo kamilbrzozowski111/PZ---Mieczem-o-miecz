@@ -15,22 +15,19 @@ public class CastleGate : MonoBehaviour
     private Quaternion openRotation;
     private Transform targetTransform;
 
-    private void Awake()
-    {
+    private void Awake(){
         targetTransform = gateTransform != null ? gateTransform : transform;
         closedRotation = targetTransform.localRotation;
         openRotation = closedRotation * Quaternion.Euler(rotationAxis * openAngle);
     }
 
-    public IEnumerator OpenGateRoutine()
-    {
+    public IEnumerator OpenGateRoutine(){
         if (IsOpen) yield break;
 
         Quaternion startRotation = targetTransform.localRotation;
         float progress = 0f;
 
-        while (progress < 1f)
-        {
+        while (progress < 1f){
             progress += Time.deltaTime * openSpeed;
             targetTransform.localRotation = Quaternion.Slerp(startRotation, openRotation, progress);
             yield return null;
@@ -40,15 +37,13 @@ public class CastleGate : MonoBehaviour
         IsOpen = true;
     }
 
-    public IEnumerator CloseGateRoutine()
-    {
+    public IEnumerator CloseGateRoutine(){
         if (!IsOpen) yield break;
 
         Quaternion startRotation = targetTransform.localRotation;
         float progress = 0f;
 
-        while (progress < 1f)
-        {
+        while (progress < 1f){
             progress += Time.deltaTime * openSpeed;
             targetTransform.localRotation = Quaternion.Slerp(startRotation, closedRotation, progress);
             yield return null;

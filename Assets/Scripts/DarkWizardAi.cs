@@ -7,8 +7,7 @@ using UnityEngine.Rendering;
 
 public enum DarkWizardState { Idle, Chasing, Dead }
 
-public class DarkWizardAI : BaseEnemyAI
-{
+public class DarkWizardAI : BaseEnemyAI{
     [Header("Postac")]
     [SerializeField] private EnemyHitbox magicHitbox;
     [SerializeField] private float detectionRadius = 42.0f;

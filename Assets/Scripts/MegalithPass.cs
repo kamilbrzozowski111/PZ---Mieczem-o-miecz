@@ -2,8 +2,7 @@ using System.Collections;
 using UnityEngine;
 using Autohand;
 
-public class MegalithPass : MonoBehaviour
-{
+public class MegalithPass : MonoBehaviour{
     [Header("Komponenty")]
     [SerializeField] private ObjectRotator rotator;
     [SerializeField] private Grabbable grabbable;
@@ -15,34 +14,27 @@ public class MegalithPass : MonoBehaviour
 
     private bool isCollected = false;
 
-    private void Awake()
-    {
+    private void Awake(){
         if (grabbable != null) grabbable.enabled = false;
         if (passCollider != null) passCollider.enabled = false;
     }
 
-    private void OnEnable()
-    {
-        if (grabbable != null)
-        {
+    private void OnEnable(){
+        if (grabbable != null){
             grabbable.onGrab.AddListener(OnPassGrabbed);
         }
     }
 
-    private void OnDisable()
-    {
-        if (grabbable != null)
-        {
+    private void OnDisable(){
+        if (grabbable != null){
             grabbable.onGrab.RemoveListener(OnPassGrabbed);
         }
     }
 
     // Wywoływane po śmierci Dogmana
-    public void UnlockPass()
-    {
+    public void UnlockPass(){
         // 1. Wyłączenie stałego obracania
-        if (rotator != null)
-        {
+        if (rotator != null){
             rotator.DisableRotation();
         }
 
@@ -57,15 +49,13 @@ public class MegalithPass : MonoBehaviour
         NotificationManager.Show("Gratulacje! Klucz do zamku znajduje się w samym środku kręgu!", NotificationType.Info, 6.0f);
     }
 
-    private IEnumerator RotateToTargetAngleRoutine()
-    {
+    private IEnumerator RotateToTargetAngleRoutine(){
         Quaternion startRot = transform.rotation;
         Vector3 currentEuler = transform.rotation.eulerAngles;
         Quaternion targetRot = Quaternion.Euler(currentEuler.x, targetYAngle, currentEuler.z);
 
         float elapsed = 0f;
-        while (elapsed < rotationDuration)
-        {
+        while (elapsed < rotationDuration){
             elapsed += Time.deltaTime;
             transform.rotation = Quaternion.Slerp(startRot, targetRot, elapsed / rotationDuration);
             yield return null;
@@ -73,34 +63,29 @@ public class MegalithPass : MonoBehaviour
         transform.rotation = targetRot;
     }
 
-    private void OnPassGrabbed(Hand hand, Grabbable grabbedObject)
-    {
+    private void OnPassGrabbed(Hand hand, Grabbable grabbedObject){
         if (isCollected) return;
         isCollected = true;
 
         StartCoroutine(CollectPassRoutine(hand));
     }
 
-    private IEnumerator CollectPassRoutine(Hand hand)
-    {
+    private IEnumerator CollectPassRoutine(Hand hand){
         yield return null;
 
-        if (hand != null)
-        {
+        if (hand != null){
             hand.Release();
         }
 
         // Ukrywanie przedmiotu i wyłączenie kolizji
         if (passCollider != null) passCollider.enabled = false;
-        foreach (Renderer r in GetComponentsInChildren<Renderer>())
-        {
+        foreach (Renderer r in GetComponentsInChildren<Renderer>()){
             r.enabled = false;
         }
 
         // Aktualizacja UI
         PlayerUIWidget uiWidget = FindFirstObjectByType<PlayerUIWidget>();
-        if (uiWidget != null)
-        {
+        if (uiWidget != null){
             uiWidget.UpdatePassStatus(true);
         }
 

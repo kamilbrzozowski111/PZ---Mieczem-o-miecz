@@ -2,8 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class PlayerUIWidget : MonoBehaviour
-{
+public class PlayerUIWidget : MonoBehaviour{
     public static PlayerUIWidget Instance { get; private set; }
     public bool HasPass { get; private set; } = false;
 

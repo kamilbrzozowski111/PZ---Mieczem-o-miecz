@@ -2,8 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GameEndController : MonoBehaviour
-{
+public class GameEndController : MonoBehaviour{
     private static GameEndController _instance;
     public static GameEndController Instance{
         get{
@@ -20,7 +19,7 @@ public class GameEndController : MonoBehaviour
     }
 
     [Header("Komunikaty i Czasy")]
-    [SerializeField] private string victoryMessage = "Gratulacje! Pokonałeś wszystkie przeciwności i przeszedłeś całą misję!";
+    [SerializeField] private string victoryMessage = "Gratulacje! Pokonałeś wszystkie przeciwności i ukończyłeś całą misję!";
     [SerializeField] private float notificationDuration = 12.0f;
     [SerializeField] private float delayBeforeFade = 6.0f;
     [SerializeField] private float fadeDuration = 4.0f;
@@ -100,11 +99,9 @@ public class GameEndController : MonoBehaviour
         }
     }
 
-    private CanvasGroup CreateVRFadeOverlay()
-    {
+    private CanvasGroup CreateVRFadeOverlay(){
         Transform mainCam = PlayerTargetProvider.GetPlayerTransform();
-        if (mainCam == null && Camera.main != null)
-        {
+        if (mainCam == null && Camera.main != null){
             mainCam = Camera.main.transform;
         }
 

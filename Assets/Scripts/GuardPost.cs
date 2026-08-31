@@ -1,8 +1,7 @@
 using UnityEngine;
 using UnityEngine.Splines;
 
-public class GuardPost : MonoBehaviour
-{
+public class GuardPost : MonoBehaviour{
     public string postName = "Brama";
     public Transform standPoint;
     [SerializeField] private SplineContainer pathFromQuarters;

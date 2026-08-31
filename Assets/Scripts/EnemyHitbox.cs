@@ -15,15 +15,14 @@ public class EnemyHitbox : MonoBehaviour{
         Debug.Log("🔴 HITBOX WYŁĄCZONY");
     }
 
-private void OnTriggerEnter(Collider other){
-    if (!isActive) return;
+    private void OnTriggerEnter(Collider other){
+        if (!isActive) return;
 
-    IDamageable target = other.GetComponentInParent<IDamageable>();
+        IDamageable target = other.GetComponentInParent<IDamageable>();
 
-    if (target != null && target is PlayerHealth){
-        target.TakeDamage(currentDamage, transform.position, -transform.forward);
-        isActive = false; 
+        if (target != null && target is PlayerHealth){
+            target.TakeDamage(currentDamage, transform.position, -transform.forward);
+            isActive = false; 
+        }
     }
-}
-
 }

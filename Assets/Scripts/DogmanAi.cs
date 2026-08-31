@@ -2,8 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class DogmanAI : BaseEnemyAI
-{
+public class DogmanAI : BaseEnemyAI{
     public enum DogmanState { Patrol, Chasing, Dead }
 
     [Header("Komponenty Specjalne")]
@@ -17,15 +16,12 @@ public class DogmanAI : BaseEnemyAI
 
     public DogmanState CurrentState { get; private set; } = DogmanState.Patrol;
 
-    protected override void Awake()
-    {
+    protected override void Awake(){
         base.Awake();
     }
 
-    private void Start()
-    {
-        if (agent != null)
-        {
+    private void Start(){
+        if (agent != null){
             agent.enabled = true;
             agent.speed = patrolSpeed;
             agent.autoBraking = false;
@@ -37,12 +33,9 @@ public class DogmanAI : BaseEnemyAI
 
     // --- PŁYNNY PATROL PO OKRĘGU ---
 
-    private IEnumerator SmoothCirclePatrolRoutine()
-    {
-        while (CurrentState == DogmanState.Patrol && !isDead)
-        {
-            if (centerBoulder != null && agent != null && agent.enabled)
-            {
+    private IEnumerator SmoothCirclePatrolRoutine(){
+        while (CurrentState == DogmanState.Patrol && !isDead){
+            if (centerBoulder != null && agent != null && agent.enabled){
                 Vector3 offsetFromCenter = transform.position - centerBoulder.position;
                 offsetFromCenter.y = 0f;
 
@@ -55,8 +48,7 @@ public class DogmanAI : BaseEnemyAI
                     Mathf.Sin(targetAngle) * patrolRadius
                 );
 
-                if (NavMesh.SamplePosition(targetPos, out NavMeshHit hit, 3f, NavMesh.AllAreas))
-                {
+                if (NavMesh.SamplePosition(targetPos, out NavMeshHit hit, 3f, NavMesh.AllAreas)){
                     targetPos = hit.position;
                 }
 
@@ -70,15 +62,13 @@ public class DogmanAI : BaseEnemyAI
 
     // --- LOGIKA WALKI ---
 
-    public void TriggerCombat(Transform target)
-    {
+    public void TriggerCombat(Transform target){
         if (isDead || CurrentState == DogmanState.Chasing || target == null) return;
 
         StopAllCoroutines();
         CurrentState = DogmanState.Chasing;
 
-        if (agent != null)
-        {
+        if (agent != null){
             agent.enabled = true;
             agent.speed = chaseSpeed;
             agent.autoBraking = true;
@@ -88,12 +78,9 @@ public class DogmanAI : BaseEnemyAI
         StartCoroutine(ChaseRoutine(target));
     }
 
-    private IEnumerator ChaseRoutine(Transform target)
-    {
-        while (CurrentState == DogmanState.Chasing && target != null && !isDead)
-        {
-            if (!TryGetTargetNavMeshPosition(target, out Vector3 targetNavMeshPos))
-            {
+    private IEnumerator ChaseRoutine(Transform target){
+        while (CurrentState == DogmanState.Chasing && target != null && !isDead){
+            if (!TryGetTargetNavMeshPosition(target, out Vector3 targetNavMeshPos)){
                 yield return new WaitForSeconds(0.1f);
                 continue;
             }
@@ -102,26 +89,21 @@ public class DogmanAI : BaseEnemyAI
 
             float distanceToPlayer = Vector3.Distance(transform.position, targetNavMeshPos);
 
-            if (distanceToPlayer <= attackRange)
-            {
-                if (agent && agent.enabled)
-                {
+            if (distanceToPlayer <= attackRange){
+                if (agent && agent.enabled){
                     agent.isStopped = true;
                 }
 
                 SetAnimSpeed(0f);
                 FaceTarget(targetNavMeshPos);
 
-                if (Time.time >= lastAttackTime + attackCooldown)
-                {
+                if (Time.time >= lastAttackTime + attackCooldown){
                     lastAttackTime = Time.time;
                     PerformBaseAttack(0.2f, 1.4f);
                 }
             }
-            else
-            {
-                if (agent && agent.enabled)
-                {
+            else{
+                if (agent && agent.enabled){
                     agent.isStopped = false;
                     agent.SetDestination(targetNavMeshPos);
                     UpdateAnimSpeed();
@@ -132,24 +114,19 @@ public class DogmanAI : BaseEnemyAI
         }
     }
 
-    protected override void OnDamaged(float damage, Vector3 hitPoint, Vector3 hitNormal)
-    {
-        if (CurrentState == DogmanState.Patrol)
-        {
+    protected override void OnDamaged(float damage, Vector3 hitPoint, Vector3 hitNormal){
+        if (CurrentState == DogmanState.Patrol){
             Transform player = PlayerTargetProvider.GetPlayerTransform();
-            if (player != null)
-            {
+            if (player != null){
                 TriggerCombat(player);
             }
         }
     }
 
-    protected override void OnDeath()
-    {
+    protected override void OnDeath(){
         CurrentState = DogmanState.Dead;
 
-        if (megalithPass != null)
-        {
+        if (megalithPass != null){
             megalithPass.UnlockPass();
         }
 

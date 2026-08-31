@@ -6,8 +6,7 @@ using UnityEngine.Splines;
 
 public enum GuardState { Sleeping, WalkingToPost, OnDuty, WalkingToQuarters, Alerted, Chasing }
 
-public class GuardAI : BaseEnemyAI
-{
+public class GuardAI : BaseEnemyAI{
     [Header("Ustawienia Magistrali i Warty")]
     [SerializeField] private float pathOffsetRange = 1.6f;
     [SerializeField] private float walkSpeed = 3.5f;
@@ -63,8 +62,7 @@ public class GuardAI : BaseEnemyAI
     }
 
     private void StopBehaviorCoroutine(){
-        if (activeBehaviorCoroutine != null)
-        {
+        if (activeBehaviorCoroutine != null){
             StopCoroutine(activeBehaviorCoroutine);
             activeBehaviorCoroutine = null;
         }
@@ -73,20 +71,16 @@ public class GuardAI : BaseEnemyAI
     public void SetInteracting(bool value){
         IsInteracting = value;
 
-        if (agent != null && agent.enabled)
-        {
-            if (value)
-            {
+        if (agent != null && agent.enabled){
+            if (value){
                 agent.isStopped = true;
                 agent.velocity = Vector3.zero;
                 SetAnimSpeed(0f);
             }
-            else
-            {
+            else{
                 if (CurrentState == GuardState.WalkingToPost ||
                     CurrentState == GuardState.WalkingToQuarters ||
-                    CurrentState == GuardState.Chasing)
-                {
+                    CurrentState == GuardState.Chasing){
                     agent.isStopped = false;
                 }
             }
@@ -101,8 +95,7 @@ public class GuardAI : BaseEnemyAI
 
     protected override void OnDamaged(float damage, Vector3 hitPoint, Vector3 hitNormal){
         Transform player = PlayerTargetProvider.GetPlayerTransform();
-        if (player != null)
-        {
+        if (player != null){
             AlertGuard(player);
             AlertController.TriggerAlert(player);
         }
@@ -121,8 +114,7 @@ public class GuardAI : BaseEnemyAI
 
         bool wasSleeping = (CurrentState == GuardState.Sleeping);
 
-        if (!wasSleeping && currentBed != null)
-        {
+        if (!wasSleeping && currentBed != null){
             currentBed.IsOccupied = false;
             currentBed.IsReserved = false;
             currentBed = null;
@@ -155,8 +147,7 @@ public class GuardAI : BaseEnemyAI
         Vector3 bedPos = currentBed ? currentBed.sleepAnchor.position : transform.position;
         Quaternion bedRot = currentBed ? currentBed.sleepAnchor.rotation : transform.rotation;
 
-        if (currentBed)
-        {
+        if (currentBed){
             currentBed.IsOccupied = false;
             currentBed.IsReserved = false;
             currentBed = null;
@@ -164,13 +155,11 @@ public class GuardAI : BaseEnemyAI
 
         if (animator) animator.SetBool("isSleeping", false);
 
-        while (animator != null && (animator.IsInTransition(0) || !animator.GetCurrentAnimatorStateInfo(0).IsName("guard_standup")))
-        {
+        while (animator != null && (animator.IsInTransition(0) || !animator.GetCurrentAnimatorStateInfo(0).IsName("guard_standup"))){
             yield return null;
         }
 
-        while (animator != null && animator.GetCurrentAnimatorStateInfo(0).IsName("guard_standup"))
-        {
+        while (animator != null && animator.GetCurrentAnimatorStateInfo(0).IsName("guard_standup")){
             yield return null;
         }
 
@@ -178,12 +167,10 @@ public class GuardAI : BaseEnemyAI
 
         if (agent){
             agent.enabled = true;
-            if (NavMesh.SamplePosition(bedPos, out NavMeshHit bedHit, 10f, NavMesh.AllAreas))
-            {
+            if (NavMesh.SamplePosition(bedPos, out NavMeshHit bedHit, 10f, NavMesh.AllAreas)){
                 agent.Warp(bedHit.position);
             }
-            else
-            {
+            else{
                 agent.Warp(transform.position);
             }
             agent.isStopped = false;
@@ -192,12 +179,9 @@ public class GuardAI : BaseEnemyAI
         yield return StartCoroutine(ChaseRoutine(target));
     }
 
-    private IEnumerator ChaseRoutine(Transform target)
-    {
-        while (CurrentState == GuardState.Chasing && target != null && !isDead)
-        {
-            if (!TryGetTargetNavMeshPosition(target, out Vector3 targetNavMeshPos))
-            {
+    private IEnumerator ChaseRoutine(Transform target){
+        while (CurrentState == GuardState.Chasing && target != null && !isDead){
+            if (!TryGetTargetNavMeshPosition(target, out Vector3 targetNavMeshPos)){
                 yield return new WaitForSeconds(0.1f);
                 continue;
             }
@@ -209,29 +193,23 @@ public class GuardAI : BaseEnemyAI
 
             float distanceToPlayer = Vector3.Distance(transform.position, targetNavMeshPos);
 
-            if (distanceToPlayer <= currentTargetRange)
-            {
-                if (agent && agent.enabled)
-                {
+            if (distanceToPlayer <= currentTargetRange){
+                if (agent && agent.enabled){
                     agent.isStopped = true;
                 }
 
                 SetAnimSpeed(0f);
                 FaceTarget(targetNavMeshPos);
 
-                if (isPrimaryAttacker && distanceToPlayer <= attackRange)
-                {
-                    if (Time.time >= lastAttackTime + attackCooldown)
-                    {
+                if (isPrimaryAttacker && distanceToPlayer <= attackRange){
+                    if (Time.time >= lastAttackTime + attackCooldown){
                         lastAttackTime = Time.time;
                         PerformBaseAttack(0.2f, 1.4f);
                     }
                 }
             }
-            else
-            {
-                if (agent && agent.enabled)
-                {
+            else{
+                if (agent && agent.enabled){
                     agent.isStopped = false;
                     agent.SetDestination(targetNavMeshPos);
                     UpdateAnimSpeed();
@@ -242,18 +220,14 @@ public class GuardAI : BaseEnemyAI
         }
     }
 
-    private bool IsClosestChasingGuard(Vector3 targetPos)
-    {
+    private bool IsClosestChasingGuard(Vector3 targetPos){
         GuardAI[] allGuards = FindObjectsByType<GuardAI>(FindObjectsSortMode.None);
         float myDistSqr = (transform.position - targetPos).sqrMagnitude;
 
-        foreach (GuardAI guard in allGuards)
-        {
-            if (guard != this && guard != null && !guard.isDead && guard.CurrentState == GuardState.Chasing)
-            {
+        foreach (GuardAI guard in allGuards){
+            if (guard != this && guard != null && !guard.isDead && guard.CurrentState == GuardState.Chasing){
                 float otherDistSqr = (guard.transform.position - targetPos).sqrMagnitude;
-                if (otherDistSqr < myDistSqr)
-                {
+                if (otherDistSqr < myDistSqr){
                     return false;
                 }
             }
@@ -264,8 +238,7 @@ public class GuardAI : BaseEnemyAI
 
     // --- INICJALIZACJA WARTY I SNU ---
 
-    public void InitDuty(GuardPost post, CastleShiftManager shiftManager)
-    {
+    public void InitDuty(GuardPost post, CastleShiftManager shiftManager){
         manager = shiftManager;
         assignedPost = post;
         assignedPost.currentGuard = this;
@@ -273,8 +246,7 @@ public class GuardAI : BaseEnemyAI
         IsOffSpline = true;
 
         transform.SetPositionAndRotation(post.Position.position, post.Position.rotation);
-        if (agent)
-        {
+        if (agent){
             agent.enabled = true;
             agent.speed = walkSpeed;
             agent.isStopped = true;
@@ -282,8 +254,7 @@ public class GuardAI : BaseEnemyAI
         SetAnimSpeed(0f);
     }
 
-    public void InitSleeping(Bed bed, CastleShiftManager shiftManager)
-    {
+    public void InitSleeping(Bed bed, CastleShiftManager shiftManager){
         manager = shiftManager;
         currentBed = bed;
         currentBed.IsOccupied = true;
@@ -294,8 +265,7 @@ public class GuardAI : BaseEnemyAI
         if (agent) agent.enabled = false;
 
         SetAnimSpeed(0f);
-        if (animator)
-        {
+        if (animator){
             animator.SetBool("isSleeping", true);
             animator.Play("guard_sleeping_loop", 0, 0f);
             animator.Update(0f);
@@ -304,8 +274,7 @@ public class GuardAI : BaseEnemyAI
 
     // --- SEKWENCJA WSTAWANIA I MARSZU NA POSTERUNEK ---
 
-    public void WakeUpAndGoToPost(GuardPost targetPost, float triggerDistance)
-    {
+    public void WakeUpAndGoToPost(GuardPost targetPost, float triggerDistance){
         if (CurrentState == GuardState.Chasing || CurrentState == GuardState.Alerted || isDead) return;
         assignedPost = targetPost;
         CurrentState = GuardState.WalkingToPost;
@@ -313,16 +282,14 @@ public class GuardAI : BaseEnemyAI
         StartBehaviorCoroutine(WakeUpAndGoRoutine());
     }
 
-    private IEnumerator WakeUpAndGoRoutine()
-    {
+    private IEnumerator WakeUpAndGoRoutine(){
         IsOffSpline = false;
 
         // 1. Wstawanie z łóżka
         Vector3 bedPos = currentBed ? currentBed.sleepAnchor.position : transform.position;
         Quaternion bedRot = currentBed ? currentBed.sleepAnchor.rotation : transform.rotation;
 
-        if (currentBed)
-        {
+        if (currentBed){
             currentBed.IsOccupied = false;
             currentBed.IsReserved = false;
             currentBed = null;
@@ -330,20 +297,17 @@ public class GuardAI : BaseEnemyAI
 
         if (animator) animator.SetBool("isSleeping", false);
 
-        while (animator != null && (animator.IsInTransition(0) || !animator.GetCurrentAnimatorStateInfo(0).IsName("guard_standup")))
-        {
+        while (animator != null && (animator.IsInTransition(0) || !animator.GetCurrentAnimatorStateInfo(0).IsName("guard_standup"))){
             yield return null;
         }
 
-        while (animator != null && animator.GetCurrentAnimatorStateInfo(0).IsName("guard_standup"))
-        {
+        while (animator != null && animator.GetCurrentAnimatorStateInfo(0).IsName("guard_standup")){
             yield return null;
         }
 
         transform.SetPositionAndRotation(bedPos, bedRot * Quaternion.Euler(0f, 180f, 0f));
 
-        if (agent)
-        {
+        if (agent){
             agent.enabled = true;
             agent.speed = walkSpeed;
             agent.stoppingDistance = 0f;
@@ -357,21 +321,17 @@ public class GuardAI : BaseEnemyAI
 
         // 2. MARSZ PO MAGISTRALI (SPLINE)
         IsOffSpline = false;
-        for (int i = 0; i < splinePoints.Count; i++)
-        {
+        for (int i = 0; i < splinePoints.Count; i++){
             agent.SetDestination(splinePoints[i]);
 
-            while (true)
-            {
-                while (IsInteracting)
-                {
+            while (true){
+                while (IsInteracting){
                     if (agent && agent.enabled) { agent.isStopped = true; agent.velocity = Vector3.zero; }
                     SetAnimSpeed(0f);
                     yield return null;
                 }
 
-                if (agent && agent.enabled && agent.isStopped)
-                {
+                if (agent && agent.enabled && agent.isStopped){
                     agent.isStopped = false;
                 }
 
@@ -380,8 +340,7 @@ public class GuardAI : BaseEnemyAI
                 Vector3 flatAgentPos = new Vector3(transform.position.x, 0f, transform.position.z);
                 Vector3 flatTargetPos = new Vector3(splinePoints[i].x, 0f, splinePoints[i].z);
 
-                if (!agent.pathPending && Vector3.Distance(flatAgentPos, flatTargetPos) <= 0.6f)
-                {
+                if (!agent.pathPending && Vector3.Distance(flatAgentPos, flatTargetPos) <= 0.6f){
                     break;
                 }
 
@@ -396,24 +355,19 @@ public class GuardAI : BaseEnemyAI
         float handoverDistance = 18.0f;
         bool isWaitingForHandover = false;
 
-        while (true)
-        {
+        while (true){
             GuardAI oldGuard = assignedPost != null ? assignedPost.currentGuard : null;
             bool isOldGuardValid = (oldGuard != null && oldGuard != this && !oldGuard.isDead);
 
             float distToPost = Vector3.Distance(transform.position, finalPostPos);
 
-            if (distToPost <= handoverDistance)
-            {
+            if (distToPost <= handoverDistance){
                 isWaitingForHandover = true;
             }
 
-            if (isOldGuardValid && isWaitingForHandover)
-            {
-                if (oldGuard.IsInteracting)
-                {
-                    if (agent && agent.enabled)
-                    {
+            if (isOldGuardValid && isWaitingForHandover){
+                if (oldGuard.IsInteracting){
+                    if (agent && agent.enabled){
                         agent.isStopped = true;
                         agent.velocity = Vector3.zero;
                     }
@@ -422,28 +376,24 @@ public class GuardAI : BaseEnemyAI
                     continue;
                 }
 
-                if (oldGuard.CurrentState == GuardState.OnDuty)
-                {
+                if (oldGuard.CurrentState == GuardState.OnDuty){
                     oldGuard.ReturnToQuarters();
                 }
             }
 
-            while (IsInteracting)
-            {
+            while (IsInteracting){
                 if (agent && agent.enabled) { agent.isStopped = true; agent.velocity = Vector3.zero; }
                 SetAnimSpeed(0f);
                 yield return null;
             }
 
-            if (agent && agent.enabled && agent.isStopped)
-            {
+            if (agent && agent.enabled && agent.isStopped){
                 agent.isStopped = false;
             }
 
             UpdateAnimSpeed();
 
-            if (!agent.pathPending && agent.remainingDistance <= 0.2f)
-            {
+            if (!agent.pathPending && agent.remainingDistance <= 0.2f){
                 break;
             }
 
@@ -453,8 +403,7 @@ public class GuardAI : BaseEnemyAI
         TakeDutyAtPost();
     }
 
-    private void TakeDutyAtPost()
-    {
+    private void TakeDutyAtPost(){
         if (assignedPost == null) return;
 
         assignedPost.currentGuard = this;
@@ -462,8 +411,7 @@ public class GuardAI : BaseEnemyAI
         CurrentState = GuardState.OnDuty;
         IsOffSpline = true;
 
-        if (agent != null && agent.enabled)
-        {
+        if (agent != null && agent.enabled){
             agent.isStopped = true;
             agent.velocity = Vector3.zero;
         }
@@ -474,8 +422,7 @@ public class GuardAI : BaseEnemyAI
 
     // --- SEKWENCJA POWROTU DO KWATERY I ZAŚNIĘCIA ---
 
-    public void ReturnToQuarters()
-    {
+    public void ReturnToQuarters(){
         if (CurrentState == GuardState.Chasing || CurrentState == GuardState.Alerted || isDead) return;
         if (CurrentState == GuardState.WalkingToQuarters) return;
 
@@ -485,12 +432,9 @@ public class GuardAI : BaseEnemyAI
         StartBehaviorCoroutine(ReturnToQuartersRoutine());
     }
 
-    private IEnumerator ReturnToQuartersRoutine()
-    {
-        while (IsInteracting)
-        {
-            if (agent && agent.enabled)
-            {
+    private IEnumerator ReturnToQuartersRoutine(){
+        while (IsInteracting){
+            if (agent && agent.enabled){
                 agent.isStopped = true;
                 agent.velocity = Vector3.zero;
             }
@@ -498,8 +442,7 @@ public class GuardAI : BaseEnemyAI
             yield return null;
         }
 
-        if (agent && agent.enabled)
-        {
+        if (agent && agent.enabled){
             agent.enabled = true;
             agent.isStopped = false;
             agent.updatePosition = true;
@@ -507,8 +450,7 @@ public class GuardAI : BaseEnemyAI
             agent.speed = walkSpeed;
         }
 
-        if (currentBed == null)
-        {
+        if (currentBed == null){
             Debug.LogWarning($"{gameObject.name}: Brak dostępnego łóżka w kwaterze.");
             yield break;
         }
@@ -520,18 +462,14 @@ public class GuardAI : BaseEnemyAI
 
         IsOffSpline = true;
 
-        for (int i = 0; i < splinePoints.Count; i++)
-        {
+        for (int i = 0; i < splinePoints.Count; i++){
             agent.SetDestination(splinePoints[i]);
 
             if (i > 0) IsOffSpline = false;
 
-            while (true)
-            {
-                while (IsInteracting)
-                {
-                    if (agent && agent.enabled)
-                    {
+            while (true){
+                while (IsInteracting){
+                    if (agent && agent.enabled){
                         agent.isStopped = true;
                         agent.velocity = Vector3.zero;
                     }
@@ -539,8 +477,7 @@ public class GuardAI : BaseEnemyAI
                     yield return null;
                 }
 
-                if (agent && agent.enabled && agent.isStopped)
-                {
+                if (agent && agent.enabled && agent.isStopped){
                     agent.isStopped = false;
                 }
 
@@ -549,8 +486,7 @@ public class GuardAI : BaseEnemyAI
                 Vector3 flatAgentPos = new Vector3(transform.position.x, 0f, transform.position.z);
                 Vector3 flatTargetPos = new Vector3(splinePoints[i].x, 0f, splinePoints[i].z);
 
-                if (!agent.pathPending && Vector3.Distance(flatAgentPos, flatTargetPos) <= 0.6f)
-                {
+                if (!agent.pathPending && Vector3.Distance(flatAgentPos, flatTargetPos) <= 0.6f){
                     break;
                 }
 
@@ -561,12 +497,9 @@ public class GuardAI : BaseEnemyAI
         IsOffSpline = true;
         agent.SetDestination(bedPos);
 
-        while (true)
-        {
-            while (IsInteracting)
-            {
-                if (agent && agent.enabled)
-                {
+        while (true){
+            while (IsInteracting){
+                if (agent && agent.enabled){
                     agent.isStopped = true;
                     agent.velocity = Vector3.zero;
                 }
@@ -574,8 +507,7 @@ public class GuardAI : BaseEnemyAI
                 yield return null;
             }
 
-            if (agent && agent.enabled && agent.isStopped)
-            {
+            if (agent && agent.enabled && agent.isStopped){
                 agent.isStopped = false;
             }
 
@@ -583,16 +515,14 @@ public class GuardAI : BaseEnemyAI
 
             float distToBed = Vector3.Distance(transform.position, bedPos);
 
-            if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance + 0.3f && distToBed <= 1.5f)
-            {
+            if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance + 0.3f && distToBed <= 1.5f){
                 break;
             }
 
             yield return null;
         }
 
-        if (agent)
-        {
+        if (agent){
             agent.isStopped = true;
             agent.enabled = false;
         }
@@ -609,8 +539,7 @@ public class GuardAI : BaseEnemyAI
 
     // --- METODA POMOCNICZA DLA MAGISTRALI (SPLINE) ---
 
-    private List<Vector3> GetSplinePathSegment(SplineContainer spline, Vector3 startPos, Vector3 endPos, int resolution = 50)
-    {
+    private List<Vector3> GetSplinePathSegment(SplineContainer spline, Vector3 startPos, Vector3 endPos, int resolution = 50){
         List<Vector3> rawPoints = new List<Vector3>();
 
         if (spline == null || spline.Spline == null || spline.Spline.Count == 0)
@@ -623,13 +552,11 @@ public class GuardAI : BaseEnemyAI
         float minStartKnotDist = float.MaxValue;
         Vector3 startKnotWorldPos = Vector3.zero;
 
-        for (int k = 0; k < knotCount; k++)
-        {
+        for (int k = 0; k < knotCount; k++){
             Vector3 knotWorldPos = spline.transform.TransformPoint((Vector3)mainSpline[k].Position);
             float dist = Vector3.Distance(startPos, knotWorldPos);
 
-            if (dist < minStartKnotDist)
-            {
+            if (dist < minStartKnotDist){
                 minStartKnotDist = dist;
                 startKnotIndex = k;
                 startKnotWorldPos = knotWorldPos;
@@ -640,13 +567,11 @@ public class GuardAI : BaseEnemyAI
         float minEndKnotDist = float.MaxValue;
         Vector3 endKnotWorldPos = Vector3.zero;
 
-        for (int k = 0; k < knotCount; k++)
-        {
+        for (int k = 0; k < knotCount; k++){
             Vector3 knotWorldPos = spline.transform.TransformPoint((Vector3)mainSpline[k].Position);
             float dist = Vector3.Distance(endPos, knotWorldPos);
 
-            if (dist < minEndKnotDist)
-            {
+            if (dist < minEndKnotDist){
                 minEndKnotDist = dist;
                 endKnotIndex = k;
                 endKnotWorldPos = knotWorldPos;
@@ -658,21 +583,18 @@ public class GuardAI : BaseEnemyAI
         float minDistStartKnot = float.MaxValue;
         float minDistEndKnot = float.MaxValue;
 
-        for (int i = 0; i < resolution; i++)
-        {
+        for (int i = 0; i < resolution; i++){
             float t = (float)i / (resolution - 1);
             Vector3 worldPos = spline.EvaluatePosition(t);
 
             float distToStartKnot = Vector3.Distance(startKnotWorldPos, worldPos);
-            if (distToStartKnot < minDistStartKnot)
-            {
+            if (distToStartKnot < minDistStartKnot){
                 minDistStartKnot = distToStartKnot;
                 startIndex = i;
             }
 
             float distToEndKnot = Vector3.Distance(endKnotWorldPos, worldPos);
-            if (distToEndKnot < minDistEndKnot)
-            {
+            if (distToEndKnot < minDistEndKnot){
                 minDistEndKnot = distToEndKnot;
                 endIndex = i;
             }
@@ -681,8 +603,7 @@ public class GuardAI : BaseEnemyAI
         int step = (startIndex <= endIndex) ? 1 : -1;
         int currentIndex = startIndex;
 
-        while (true)
-        {
+        while (true){
             float t = (float)currentIndex / (resolution - 1);
             rawPoints.Add(spline.EvaluatePosition(t));
 
@@ -690,8 +611,7 @@ public class GuardAI : BaseEnemyAI
             currentIndex += step;
         }
 
-        if (rawPoints.Count > 0)
-        {
+        if (rawPoints.Count > 0){
             rawPoints[0] = startKnotWorldPos;
             rawPoints[rawPoints.Count - 1] = endKnotWorldPos;
         }
@@ -700,13 +620,11 @@ public class GuardAI : BaseEnemyAI
         float guardSideOffset = Random.Range(-pathOffsetRange, pathOffsetRange);
 
         int count = rawPoints.Count;
-        for (int i = 0; i < count; i++)
-        {
+        for (int i = 0; i < count; i++){
             Vector3 current = rawPoints[i];
 
             float blendFactor = 1f;
-            if (count > 2)
-            {
+            if (count > 2){
                 float progress = (float)i / (count - 1);
                 blendFactor = Mathf.Sin(progress * Mathf.PI);
             }
@@ -719,8 +637,7 @@ public class GuardAI : BaseEnemyAI
 
             forward.y = 0f;
 
-            if (forward.sqrMagnitude > 0.001f)
-            {
+            if (forward.sqrMagnitude > 0.001f){
                 Vector3 sideDirection = Vector3.Cross(forward.normalized, Vector3.up).normalized;
                 current += sideDirection * (guardSideOffset * blendFactor);
             }

@@ -5,18 +5,13 @@ using UnityEngine;
 /// <summary>
 /// Dedykowany kontroler zarządzający stanem alarmu na terenie zamku.
 /// </summary>
-public class AlertController : MonoBehaviour
-{
+public class AlertController : MonoBehaviour{
     private static AlertController _instance;
-    public static AlertController Instance
-    {
-        get
-        {
-            if (_instance == null)
-            {
+    public static AlertController Instance{
+        get{
+            if (_instance == null){
                 _instance = FindFirstObjectByType<AlertController>();
-                if (_instance == null)
-                {
+                if (_instance == null){
                     GameObject go = new GameObject("AlertController");
                     _instance = go.AddComponent<AlertController>();
                 }
@@ -36,10 +31,8 @@ public class AlertController : MonoBehaviour
 
     private readonly List<GuardAI> registeredGuards = new List<GuardAI>();
 
-    private void Awake()
-    {
-        if (_instance != null && _instance != this)
-        {
+    private void Awake(){
+        if (_instance != null && _instance != this){
             Destroy(gameObject);
             return;
         }
@@ -49,10 +42,8 @@ public class AlertController : MonoBehaviour
     /// <summary>
     /// Rejestruje strażnika w systemie alarmowym.
     /// </summary>
-    public void RegisterGuard(GuardAI guard)
-    {
-        if (guard != null && !registeredGuards.Contains(guard))
-        {
+    public void RegisterGuard(GuardAI guard){
+        if (guard != null && !registeredGuards.Contains(guard)){
             registeredGuards.Add(guard);
         }
     }
@@ -60,10 +51,8 @@ public class AlertController : MonoBehaviour
     /// <summary>
     /// Wyrejestrowuje strażnika z systemu alarmowego.
     /// </summary>
-    public void UnregisterGuard(GuardAI guard)
-    {
-        if (guard != null)
-        {
+    public void UnregisterGuard(GuardAI guard){
+        if (guard != null){
             registeredGuards.Remove(guard);
         }
     }
@@ -71,22 +60,17 @@ public class AlertController : MonoBehaviour
     /// <summary>
     /// Wyzwala alarm na całej scenie.
     /// </summary>
-    public static void TriggerAlert(Transform playerTransform)
-    {
-        if (Instance != null)
-        {
+    public static void TriggerAlert(Transform playerTransform){
+        if (Instance != null){
             Instance.ExecuteAlert(playerTransform);
         }
-        else
-        {
+        else{
             OnAlertTriggered?.Invoke(playerTransform);
         }
     }
 
-    private void ExecuteAlert(Transform playerTransform)
-    {
-        if (playerTransform == null)
-        {
+    private void ExecuteAlert(Transform playerTransform){
+        if (playerTransform == null){
             playerTransform = PlayerTargetProvider.GetPlayerTransform();
         }
 
@@ -94,8 +78,7 @@ public class AlertController : MonoBehaviour
         IsAlerted = true;
         GuardAI.SetLegacyAlertedFlag(true);
 
-        if (!wasAlertedBefore)
-        {
+        if (!wasAlertedBefore){
             NotificationManager.Show(alertMessage, NotificationType.Danger, alertNotificationDuration);
         }
 
@@ -103,15 +86,12 @@ public class AlertController : MonoBehaviour
         OnAlertTriggered?.Invoke(playerTransform);
 
         // 2. Bezpośrednie zaalarmowanie zarejestrowanych strażników
-        for (int i = registeredGuards.Count - 1; i >= 0; i--)
-        {
+        for (int i = registeredGuards.Count - 1; i >= 0; i--){
             GuardAI guard = registeredGuards[i];
-            if (guard != null && !guard.isDead)
-            {
+            if (guard != null && !guard.isDead){
                 guard.AlertGuard(playerTransform);
             }
-            else if (guard == null)
-            {
+            else if (guard == null){
                 registeredGuards.RemoveAt(i);
             }
         }
@@ -120,10 +100,8 @@ public class AlertController : MonoBehaviour
     /// <summary>
     /// Resetuje stan alarmu
     /// </summary>
-    public static void ResetAlert()
-    {
-        if (_instance != null)
-        {
+    public static void ResetAlert(){
+        if (_instance != null){
             _instance.IsAlerted = false;
         }
         GuardAI.SetLegacyAlertedFlag(false);

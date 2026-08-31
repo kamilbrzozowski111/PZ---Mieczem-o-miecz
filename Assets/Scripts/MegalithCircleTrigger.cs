@@ -1,7 +1,6 @@
 using UnityEngine;
 
-public class MegalithCircleTrigger : MonoBehaviour
-{
+public class MegalithCircleTrigger : MonoBehaviour{
     [SerializeField] private DogmanAI dogman;
 
     private void OnTriggerEnter(Collider other){
